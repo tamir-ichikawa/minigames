@@ -171,6 +171,34 @@ h1 {
 }
 .mini-tile.correct { background: linear-gradient(145deg,#4ade80,#22c55e); }
 .mini-tile.empty { background: rgba(255,255,255,0.045); box-shadow: none; }
+.mole-art {
+  display: grid;
+  place-items: center;
+  background: linear-gradient(180deg,#87ceeb 0 55%,#795548 55% 100%);
+}
+.mole-preview {
+  display: grid;
+  grid-template-columns: repeat(3, 48px);
+  gap: 6px;
+  font-size: 32px;
+  text-align: center;
+  filter: drop-shadow(0 5px 4px rgba(0,0,0,0.2));
+}
+.mole-preview span:nth-child(2), .mole-preview span:nth-child(6) { transform: translateY(14px); }
+.memory-art { display: grid; place-items: center; background: linear-gradient(135deg,#e8f5e9,#e3f2fd,#fce4ec); }
+.memory-preview { display: grid; grid-template-columns: repeat(4, 42px); gap: 7px; }
+.memory-card {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 50px;
+  border-radius: 9px;
+  color: #fff;
+  background: linear-gradient(145deg,#66bb6a,#43a047);
+  box-shadow: 0 4px 10px rgba(67,160,71,0.25);
+  font-size: 22px;
+}
+.memory-card.open { color: #333; background: #fff; }
 .card-body { padding: 22px; }
 .card-kicker { color: #fbbf24; font-size: 12px; font-weight: 900; letter-spacing: 0.12em; }
 .card-title { margin-top: 7px; font-size: 27px; }
@@ -234,6 +262,36 @@ h1 {
             <p class="card-kicker">SLIDE PUZZLE</p>
             <h3 class="card-title">15パズル</h3>
             <p class="card-description">数字をスライドさせて、1から15まで順番に並べよう。</p>
+            <span class="card-cta">プレイする →</span>
+          </div>
+        </a>
+
+        <a class="game-card" href="sample_game/whack-a-mole.html" aria-label="モグラたたきをプレイ">
+          <div class="card-art mole-art" aria-hidden="true">
+            <div class="mole-preview">
+              <span>🐹</span><span>🕳️</span><span>🐹</span>
+              <span>🕳️</span><span>🐰</span><span>🕳️</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="card-kicker">REACTION GAME</p>
+            <h3 class="card-title">モグラたたき</h3>
+            <p class="card-description">飛び出すモグラを素早くタップ。30秒でハイスコアを目指そう。</p>
+            <span class="card-cta">プレイする →</span>
+          </div>
+        </a>
+
+        <a class="game-card" href="sample_game/memory-match.html" aria-label="神経衰弱をプレイ">
+          <div class="card-art memory-art" aria-hidden="true">
+            <div class="memory-preview">
+              <span class="memory-card">🐰</span><span class="memory-card open">🌸</span><span class="memory-card">🐰</span><span class="memory-card open">⭐</span>
+              <span class="memory-card open">⭐</span><span class="memory-card">🐰</span><span class="memory-card open">🌸</span><span class="memory-card">🐰</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="card-kicker">MEMORY GAME</p>
+            <h3 class="card-title">神経衰弱</h3>
+            <p class="card-description">カードの絵柄を覚えて、同じペアを見つけよう。</p>
             <span class="card-cta">プレイする →</span>
           </div>
         </a>

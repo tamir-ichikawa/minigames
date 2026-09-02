@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>神経衰弱 🐰</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;-webkit-user-select:none;user-select:none;}
+html,body{width:100%;height:100%;overflow:auto;font-family:'Segoe UI','Hiragino Sans','Noto Sans JP',sans-serif;}
+body{background:linear-gradient(135deg,#e8f5e9,#e3f2fd,#fce4ec);display:flex;flex-direction:column;align-items:center;padding:16px 8px;min-height:100%;}
+.back-link{position:fixed;top:16px;left:16px;z-index:120;color:#2e7d32;text-decoration:none;font-size:14px;font-weight:700;background:rgba(255,255,255,0.78);border:1px solid rgba(46,125,50,0.18);padding:9px 13px;border-radius:999px;backdrop-filter:blur(7px);box-shadow:0 3px 12px rgba(0,0,0,0.08);transition:background 0.2s,transform 0.2s;}
+.back-link:hover{background:#fff;transform:translateX(-2px);}
+
+.header{text-align:center;margin-bottom:12px;width:100%;}
+.title{font-size:24px;font-weight:900;color:#2e7d32;margin-bottom:4px;}
+.stats{display:flex;gap:16px;justify-content:center;font-size:13px;color:#666;flex-wrap:wrap;}
+.stat-val{font-weight:700;color:#2e7d32;font-size:16px;margin-left:3px;}
+
+.grid{
+  display:grid;gap:8px;justify-content:center;
+  max-width:500px;width:100%;margin:0 auto;
+}
+
+.card{
+  aspect-ratio:1;border-radius:12px;cursor:pointer;position:relative;
+  perspective:600px;
+}
+.card-inner{
+  width:100%;height:100%;position:relative;
+  transition:transform 0.4s ease;transform-style:preserve-3d;
+}
+.card.flipped .card-inner{transform:rotateY(180deg);}
+.card.matched .card-inner{transform:rotateY(180deg);}
+
+.card-front,.card-back{
+  position:absolute;top:0;left:0;width:100%;height:100%;
+  border-radius:12px;backface-visibility:hidden;
+  display:flex;align-items:center;justify-content:center;
+}
+.card-front{
+  background:linear-gradient(145deg,#66bb6a,#43a047);
+  box-shadow:0 3px 10px rgba(67,160,71,0.3);
+}
+.card-front::after{
+  content:'🐰';font-size:28px;opacity:0.7;
+}
+.card-back{
+  transform:rotateY(180deg);
+  background:#fff;
+  box-shadow:0 3px 12px rgba(0,0,0,0.1);
+  font-size:36px;
+}
+.card.matched .card-back{
+  background:linear-gradient(145deg,#e8f5e9,#c8e6c9);
+  box-shadow:0 2px 8px rgba(76,175,80,0.2);
+}
+.card.matched{pointer-events:none;opacity:0.7;transform:scale(0.95);transition:opacity 0.5s,transform 0.5s;}
+
+.card:active .card-inner{transform:scale(0.95);}
+
+.controls{margin-top:14px;display:flex;gap:10px;flex-wrap:wrap;justify-content:center;}
+.btn{
+  padding:9px 22px;border-radius:30px;border:none;cursor:pointer;
+  font-size:14px;font-weight:700;font-family:inherit;transition:transform 0.15s;
+}
+.btn:active{transform:scale(0.94);}
+.btn-primary{background:linear-gradient(135deg,#66bb6a,#43a047);color:#fff;box-shadow:0 3px 12px rgba(67,160,71,0.3);}
+.btn-secondary{background:rgba(0,0,0,0.06);color:#555;}
+
+.difficulty{margin-top:10px;display:flex;gap:8px;align-items:center;flex-wrap:wrap;justify-content:center;}
+.diff-label{font-size:12px;color:#888;}
+.diff-btn{
+  padding:5px 14px;border-radius:20px;border:2px solid #e0e0e0;
+  background:#fff;cursor:pointer;font-size:12px;font-weight:700;
+  font-family:inherit;color:#888;transition:all 0.15s;
+}
+.diff-btn.active{border-color:#2e7d32;color:#2e7d32;background:#e8f5e9;}
+
+.overlay{
+  position:fixed;top:0;left:0;width:100%;height:100%;
+  background:rgba(0,0,0,0.55);
+  display:none;align-items:center;justify-content:center;z-index:100;
+  flex-direction:column;text-align:center;
+}
+.overlay.show{display:flex;}
+.win-box{background:#fff;border-radius:20px;padding:28px 36px;box-shadow:0 10px 40px rgba(0,0,0,0.2);max-width:320px;}
+.win-title{font-size:36px;font-weight:900;color:#2e7d32;margin-bottom:4px;}
+.win-emoji{font-size:48px;margin:10px 0;}
+.win-stats{font-size:16px;color:#555;margin-bottom:4px;line-height:1.6;}
+.win-rank{font-size:14px;color:#888;margin-bottom:16px;}
+
+.confetti-canvas{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:99;}
+
+@media(max-width:360px){
+  .card-front::after{font-size:22px;}
+  .card-back{font-size:28px;}
+}
+</style>
+</head>
+<body>
+
+<a class="back-link" href="../index.html" aria-label="ゲーム一覧へ戻る">← ゲーム一覧</a>
+<div class="header">
+  <div class="title">🃏 神経衰弱</div>
+  <div class="stats">
+    <span>手数: <span class="stat-val" id="moves">0</span></span>
+    <span>ペア: <span class="stat-val" id="pairs">0/0</span></span>
+    <span>時間: <span class="stat-val" id="timer">0:00</span></span>
+    <span>ベスト: <span class="stat-val" id="best">--</span></span>
+  </div>
+</div>
+
+<div class="grid" id="grid"></div>
+
+<div class="controls">
+  <button class="btn btn-primary" id="new-btn">ニューゲーム</button>
+</div>
+
+<div class="difficulty">
+  <span class="diff-label">難易度:</span>
+  <button class="diff-btn active" data-pairs="6">4×3</button>
+  <button class="diff-btn" data-pairs="8">4×4</button>
+  <button class="diff-btn" data-pairs="10">4×5</button>
+</div>
+
+<div class="overlay" id="win-overlay">
+  <div class="win-box">
+    <div class="win-title">🎉 クリア！</div>
+    <div class="win-emoji" id="win-emoji"></div>
+    <div class="win-stats" id="win-stats"></div>
+    <div class="win-rank" id="win-rank"></div>
+    <button class="btn btn-primary" id="replay-btn">もう一回！</button>
+  </div>
+</div>
+
+<canvas class="confetti-canvas" id="confetti"></canvas>
+
+<script>
+(function(){
+  // Emoji pairs for cards
+  var ALL_EMOJIS = [
+    '🐰','🌸','⭐','🎵','🍎','🐱','🌈','💎',
+    '🦋','🍰','🌻','🐬','🎀','🍓','🌙','🔔',
+    '🐼','🎈','🍩','🌺'
+  ];
+
+  var gridEl = document.getElementById('grid');
+  var movesEl = document.getElementById('moves');
+  var pairsEl = document.getElementById('pairs');
+  var timerEl = document.getElementById('timer');
+  var bestEl = document.getElementById('best');
+  var winOverlay = document.getElementById('win-overlay');
+  var winStatsEl = document.getElementById('win-stats');
+  var winRankEl = document.getElementById('win-rank');
+  var winEmojiEl = document.getElementById('win-emoji');
+  var confettiCanvas = document.getElementById('confetti');
+  var confettiCtx = confettiCanvas.getContext('2d');
+
+  var numPairs = 6;
+  var cards = [];
+  var flippedCards = [];
+  var matchedCount = 0;
+  var moves = 0;
+  var timerSec = 0;
+  var timerInterval = null;
+  var playing = false;
+  var locked = false;
+  var bestMoves = {};
+
+  try {
+    bestMoves = JSON.parse(localStorage.getItem('memory_best') || '{}');
+  } catch(e){}
+
+  function updateBestDisplay(){
+    var b = bestMoves[numPairs];
+    bestEl.textContent = b ? b + '手' : '--';
+  }
+
+  // === NEW GAME ===
+  function newGame(){
+    if(timerInterval){clearInterval(timerInterval);timerInterval=null;}
+    playing=false;locked=false;moves=0;matchedCount=0;timerSec=0;
+    flippedCards=[];
+    movesEl.textContent='0';
+    timerEl.textContent='0:00';
+    winOverlay.classList.remove('show');
+
+    // Pick emojis
+    var shuffled = ALL_EMOJIS.slice();
+    for(var i=shuffled.length-1;i>0;i--){
+      var j=Math.floor(Math.random()*(i+1));
+      var t=shuffled[i];shuffled[i]=shuffled[j];shuffled[j]=t;
+    }
+    var chosen = shuffled.slice(0, numPairs);
+
+    // Create pairs
+    cards = [];
+    for(var i=0;i<chosen.length;i++){
+      cards.push({emoji:chosen[i],id:i});
+      cards.push({emoji:chosen[i],id:i});
+    }
+    // Shuffle cards
+    for(var i=cards.length-1;i>0;i--){
+      var j=Math.floor(Math.random()*(i+1));
+      var t=cards[i];cards[i]=cards[j];cards[j]=t;
+    }
+
+    pairsEl.textContent='0/'+numPairs;
+    updateBestDisplay();
+    render();
+  }
+
+  // === RENDER ===
+  function render(){
+    gridEl.innerHTML='';
+    var total = numPairs*2;
+    var cols = 4;
+    if(total === 12) cols=4; // 4x3
+    else if(total === 16) cols=4; // 4x4
+    else if(total === 20) cols=5; // 5x4
+
+    gridEl.style.gridTemplateColumns='repeat('+cols+',1fr)';
+
+    for(var i=0;i<cards.length;i++){
+      var card = document.createElement('div');
+      card.className='card';
+      card.setAttribute('data-idx',i);
+
+      var inner = document.createElement('div');
+      inner.className='card-inner';
+
+      var front = document.createElement('div');
+      front.className='card-front';
+
+      var back = document.createElement('div');
+      back.className='card-back';
+      back.textContent=cards[i].emoji;
+
+      inner.appendChild(front);
+      inner.appendChild(back);
+      card.appendChild(inner);
+      gridEl.appendChild(card);
+    }
+  }
+
+  // === EVENT DELEGATION ===
+  gridEl.addEventListener('click', function(e){
+    if(locked) return;
+    var card = e.target.closest('.card');
+    if(!card) return;
+    var idx = parseInt(card.getAttribute('data-idx'));
+    if(isNaN(idx)) return;
+    flipCard(idx, card);
+  });
+
+  function flipCard(idx, cardEl){
+    // Don't flip if already flipped or matched
+    if(cardEl.classList.contains('flipped')) return;
+    if(cardEl.classList.contains('matched')) return;
+    if(flippedCards.length >= 2) return;
+
+    // Start timer on first flip
+    if(!playing){
+      playing=true;
+      timerInterval=setInterval(function(){
+        timerSec++;
+        var m=Math.floor(timerSec/60);
+        var s=timerSec%60;
+        timerEl.textContent=m+':'+(s<10?'0':'')+s;
+      },1000);
+    }
+
+    cardEl.classList.add('flipped');
+    flippedCards.push({idx:idx, el:cardEl, card:cards[idx]});
+
+    if(flippedCards.length === 2){
+      moves++;
+      movesEl.textContent=moves;
+
+      var a = flippedCards[0];
+      var b = flippedCards[1];
+
+      if(a.card.id === b.card.id){
+        // Match!
+        locked = true;
+        setTimeout(function(){
+          a.el.classList.add('matched');
+          b.el.classList.add('matched');
+          matchedCount++;
+          pairsEl.textContent=matchedCount+'/'+numPairs;
+          flippedCards=[];
+          locked=false;
+
+          if(matchedCount===numPairs){
+            clearInterval(timerInterval);
+            playing=false;
+            onWin();
+          }
+        },400);
+      } else {
+        // No match — flip back
+        locked = true;
+        setTimeout(function(){
+          a.el.classList.remove('flipped');
+          b.el.classList.remove('flipped');
+          flippedCards=[];
+          locked=false;
+        },800);
+      }
+    }
+  }
+
+  // === WIN ===
+  function onWin(){
+    var m=Math.floor(timerSec/60);
+    var s=timerSec%60;
+    var timeStr=m+':'+(s<10?'0':'')+s;
+
+    var isNewBest=false;
+    if(!bestMoves[numPairs]||moves<bestMoves[numPairs]){
+      bestMoves[numPairs]=moves;isNewBest=true;
+      try{localStorage.setItem('memory_best',JSON.stringify(bestMoves));}catch(e){}
+      bestEl.textContent=moves+'手';
+    }
+
+    // Rank
+    var ratio = moves / numPairs;
+    var rank='';
+    if(ratio<=1.2) rank='🏆 天才！完璧すぎる！';
+    else if(ratio<=1.5) rank='⭐ すごい記憶力！';
+    else if(ratio<=2.0) rank='👍 なかなかの腕前！';
+    else if(ratio<=3.0) rank='😊 よくできました！';
+    else rank='💪 練習あるのみ！';
+
+    winStatsEl.innerHTML=moves+'手 / '+timeStr;
+    winRankEl.textContent=isNewBest?'🎉 NEW BEST! '+rank:rank;
+    winEmojiEl.textContent='🐰✨';
+
+    setTimeout(function(){
+      winOverlay.classList.add('show');
+      startConfetti();
+    },500);
+  }
+
+  // === BUTTONS ===
+  document.getElementById('new-btn').addEventListener('click',newGame);
+  document.getElementById('replay-btn').addEventListener('click',newGame);
+
+  // === DIFFICULTY ===
+  var diffBtns=document.querySelectorAll('.diff-btn');
+  for(var i=0;i<diffBtns.length;i++){
+    diffBtns[i].addEventListener('click',function(){
+      for(var j=0;j<diffBtns.length;j++) diffBtns[j].classList.remove('active');
+      this.classList.add('active');
+      numPairs=parseInt(this.getAttribute('data-pairs'));
+      newGame();
+    });
+  }
+
+  // === CONFETTI ===
+  var confettiParts=[],confettiAnim=null;
+  function startConfetti(){
+    confettiCanvas.width=window.innerWidth;confettiCanvas.height=window.innerHeight;
+    confettiParts=[];
+    var colors=['#66bb6a','#f06292','#ffd54f','#4fc3f7','#ba68c8','#ff8a65','#a5d6a7'];
+    for(var i=0;i<100;i++){
+      confettiParts.push({
+        x:Math.random()*confettiCanvas.width,
+        y:Math.random()*-confettiCanvas.height,
+        w:Math.random()*8+4,h:Math.random()*6+3,
+        color:colors[Math.floor(Math.random()*colors.length)],
+        vy:Math.random()*3+2,vx:(Math.random()-0.5)*2,
+        rot:Math.random()*360,rotSpeed:(Math.random()-0.5)*10,life:1
+      });
+    }
+    if(confettiAnim)cancelAnimationFrame(confettiAnim);
+    animConfetti();
+  }
+  function animConfetti(){
+    confettiCtx.clearRect(0,0,confettiCanvas.width,confettiCanvas.height);
+    var alive=false;
+    for(var i=0;i<confettiParts.length;i++){
+      var p=confettiParts[i];
+      p.y+=p.vy;p.x+=p.vx;p.rot+=p.rotSpeed;p.life-=0.003;
+      if(p.life<=0)continue;alive=true;
+      confettiCtx.save();confettiCtx.translate(p.x,p.y);
+      confettiCtx.rotate(p.rot*Math.PI/180);
+      confettiCtx.globalAlpha=p.life;confettiCtx.fillStyle=p.color;
+      confettiCtx.fillRect(-p.w/2,-p.h/2,p.w,p.h);confettiCtx.restore();
+    }
+    if(alive)confettiAnim=requestAnimationFrame(animConfetti);
+  }
+
+  // === START ===
+  newGame();
+})();
+</script>
+</body>
+</html>

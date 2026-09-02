@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>モグラたたき 🐰</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;-webkit-user-select:none;user-select:none;}
+html,body{width:100%;height:100%;overflow:hidden;font-family:'Segoe UI','Hiragino Sans',sans-serif;}
+body{background:linear-gradient(180deg,#87CEEB 0%,#87CEEB 45%,#8B4513 45%,#654321 100%);display:flex;flex-direction:column;align-items:center;justify-content:center;}
+.back-link{position:fixed;top:16px;left:16px;z-index:120;color:rgba(255,255,255,0.9);text-decoration:none;font-size:14px;font-weight:700;background:rgba(44,62,30,0.46);border:1px solid rgba(255,255,255,0.22);padding:9px 13px;border-radius:999px;backdrop-filter:blur(7px);transition:background 0.2s,transform 0.2s;}
+.back-link:hover{background:rgba(255,255,255,0.22);transform:translateX(-2px);}
+
+.header{text-align:center;margin-bottom:10px;z-index:10;}
+.title{font-size:24px;font-weight:900;color:#fff;text-shadow:0 2px 6px rgba(0,0,0,0.3);margin-bottom:4px;}
+.stats{display:flex;gap:16px;justify-content:center;font-size:13px;color:rgba(255,255,255,0.85);}
+.stat-val{font-weight:700;color:#fff;font-size:17px;margin-left:3px;}
+
+.grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:12px;
+  max-width:340px;width:100%;margin:0 auto;z-index:10;
+}
+
+.hole{
+  width:100px;height:100px;margin:0 auto;position:relative;cursor:pointer;
+  -webkit-tap-highlight-color:transparent;
+}
+.hole-bg{
+  position:absolute;bottom:0;left:50%;transform:translateX(-50%);
+  width:90px;height:36px;background:radial-gradient(ellipse,#3e2723,#5d4037);
+  border-radius:50%;z-index:2;
+}
+.mole-wrap{
+  position:absolute;bottom:14px;left:50%;transform:translateX(-50%);
+  width:60px;height:70px;overflow:hidden;z-index:1;
+}
+.mole{
+  position:absolute;bottom:-70px;left:0;width:60px;height:70px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:44px;
+  transition:bottom 0.12s ease-out;
+}
+.mole.up{bottom:0;}
+.mole.hit{bottom:0;}
+
+.hit-effect{
+  position:absolute;top:0;left:50%;transform:translateX(-50%);
+  font-size:24px;font-weight:900;color:#ff1744;
+  opacity:0;pointer-events:none;z-index:20;
+}
+.hit-effect.show{
+  animation:hitPop 0.5s ease-out forwards;
+}
+@keyframes hitPop{
+  0%{opacity:1;transform:translateX(-50%) translateY(0) scale(0.5);}
+  50%{opacity:1;transform:translateX(-50%) translateY(-20px) scale(1.2);}
+  100%{opacity:0;transform:translateX(-50%) translateY(-40px) scale(0.8);}
+}
+
+.miss-effect{
+  position:absolute;top:10px;left:50%;transform:translateX(-50%);
+  font-size:18px;font-weight:700;color:#fff;
+  opacity:0;pointer-events:none;z-index:20;
+}
+.miss-effect.show{
+  animation:missPop 0.4s ease-out forwards;
+}
+@keyframes missPop{
+  0%{opacity:1;transform:translateX(-50%) translateY(0);}
+  100%{opacity:0;transform:translateX(-50%) translateY(-30px);}
+}
+
+/* Grass overlay on top of holes */
+.grass{
+  position:absolute;bottom:0;left:50%;transform:translateX(-50%);
+  width:100px;height:20px;z-index:3;pointer-events:none;
+}
+.grass-blade{
+  position:absolute;bottom:12px;width:8px;height:18px;
+  background:#4caf50;border-radius:50% 50% 0 0;
+}
+
+.controls{margin-top:14px;z-index:10;display:flex;gap:10px;}
+.btn{
+  padding:10px 26px;border-radius:30px;border:none;cursor:pointer;
+  font-size:15px;font-weight:700;font-family:inherit;transition:transform 0.12s;
+}
+.btn:active{transform:scale(0.94);}
+.btn-primary{background:linear-gradient(135deg,#ff9800,#f57c00);color:#fff;box-shadow:0 3px 12px rgba(255,152,0,0.4);}
+.btn-secondary{background:rgba(255,255,255,0.2);color:#fff;box-shadow:0 2px 8px rgba(0,0,0,0.1);}
+
+.overlay{
+  position:fixed;top:0;left:0;width:100%;height:100%;
+  background:rgba(0,0,0,0.6);display:none;
+  align-items:center;justify-content:center;z-index:100;
+  flex-direction:column;text-align:center;
+}
+.overlay.show{display:flex;}
+.result-box{background:#fff;border-radius:20px;padding:28px 36px;box-shadow:0 10px 40px rgba(0,0,0,0.25);max-width:320px;}
+.result-title{font-size:32px;font-weight:900;color:#ff9800;margin-bottom:8px;}
+.result-emoji{font-size:48px;margin:8px 0;}
+.result-stats{font-size:15px;color:#555;line-height:1.8;margin-bottom:6px;}
+.result-rank{font-size:14px;color:#888;margin-bottom:16px;}
+
+.start-overlay{
+  position:fixed;top:0;left:0;width:100%;height:100%;
+  background:rgba(0,0,0,0.5);display:flex;
+  align-items:center;justify-content:center;z-index:100;
+  flex-direction:column;text-align:center;
+}
+.start-box{background:#fff;border-radius:20px;padding:30px 40px;box-shadow:0 10px 40px rgba(0,0,0,0.2);}
+.start-title{font-size:36px;font-weight:900;color:#ff9800;margin-bottom:4px;}
+.start-desc{font-size:14px;color:#777;margin-bottom:8px;line-height:1.6;}
+.start-rules{font-size:12px;color:#999;margin-bottom:16px;line-height:1.6;text-align:left;}
+
+.timer-bar{
+  width:280px;max-width:90%;height:10px;background:rgba(255,255,255,0.3);
+  border-radius:5px;margin-top:8px;overflow:hidden;z-index:10;
+}
+.timer-fill{height:100%;background:linear-gradient(90deg,#ff9800,#ff5722);border-radius:5px;transition:width 0.1s linear;}
+
+.confetti-canvas{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:99;}
+
+/* Cloud decorations */
+.cloud{position:absolute;background:#fff;border-radius:50%;opacity:0.7;z-index:0;pointer-events:none;}
+
+@media(max-width:360px){
+  .hole{width:85px;height:85px;}
+  .hole-bg{width:76px;height:30px;}
+  .mole-wrap{width:52px;height:60px;}
+  .mole{width:52px;height:60px;font-size:36px;}
+  .grid{gap:8px;max-width:290px;}
+}
+</style>
+</head>
+<body>
+
+<a class="back-link" href="../index.html" aria-label="ゲーム一覧へ戻る">← ゲーム一覧</a>
+<!-- Clouds -->
+<div class="cloud" style="width:80px;height:30px;top:8%;left:5%;"></div>
+<div class="cloud" style="width:50px;height:20px;top:5%;left:8%;margin-top:-10px;margin-left:15px;"></div>
+<div class="cloud" style="width:100px;height:35px;top:12%;right:10%;"></div>
+<div class="cloud" style="width:60px;height:22px;top:9%;right:13%;margin-top:-8px;"></div>
+<div class="cloud" style="width:70px;height:25px;top:20%;left:40%;"></div>
+
+<div class="header">
+  <div class="title">🔨 モグラたたき</div>
+  <div class="stats">
+    <span>スコア: <span class="stat-val" id="score">0</span></span>
+    <span>ミス: <span class="stat-val" id="misses">0</span></span>
+    <span>ベスト: <span class="stat-val" id="best">--</span></span>
+  </div>
+</div>
+
+<div class="timer-bar"><div class="timer-fill" id="timer-fill" style="width:100%"></div></div>
+
+<div class="grid" id="grid"></div>
+
+<div class="controls">
+  <button class="btn btn-primary" id="start-btn">スタート</button>
+</div>
+
+<!-- Start overlay -->
+<div class="start-overlay" id="start-overlay">
+  <div class="start-box">
+    <div class="start-title">🔨 モグラたたき</div>
+    <div class="start-desc">出てきたモグラをタップしてたたこう！</div>
+    <div class="start-rules">
+      🐹 モグラが出たらすばやくタップ！<br>
+      ⏱ 制限時間 30秒<br>
+      💥 たたくとスコア +1<br>
+      ❌ 逃したらミス +1<br>
+      ⚡ だんだん速くなるよ！
+    </div>
+    <button class="btn btn-primary" id="go-btn">スタート！</button>
+  </div>
+</div>
+
+<!-- Result overlay -->
+<div class="overlay" id="result-overlay">
+  <div class="result-box">
+    <div class="result-title">タイムアップ！</div>
+    <div class="result-emoji" id="result-emoji">🐹</div>
+    <div class="result-stats" id="result-stats"></div>
+    <div class="result-rank" id="result-rank"></div>
+    <button class="btn btn-primary" id="replay-btn">もう一回！</button>
+  </div>
+</div>
+
+<canvas class="confetti-canvas" id="confetti"></canvas>
+
+<script>
+(function(){
+  var GAME_TIME = 30; // seconds
+  var NUM_HOLES = 9;
+  var MOLE_FACES = ['🐹','🐹','🐹','🐹','🐹','🐹','🐹','🐹','🐰']; // rare bunny!
+
+  var gridEl = document.getElementById('grid');
+  var scoreEl = document.getElementById('score');
+  var missesEl = document.getElementById('misses');
+  var bestEl = document.getElementById('best');
+  var timerFill = document.getElementById('timer-fill');
+  var startOverlay = document.getElementById('start-overlay');
+  var resultOverlay = document.getElementById('result-overlay');
+  var resultStatsEl = document.getElementById('result-stats');
+  var resultRankEl = document.getElementById('result-rank');
+  var resultEmojiEl = document.getElementById('result-emoji');
+  var confettiCanvas = document.getElementById('confetti');
+  var confettiCtx = confettiCanvas.getContext('2d');
+
+  var score = 0;
+  var misses = 0;
+  var timeLeft = GAME_TIME;
+  var gameInterval = null;
+  var timerInterval = null;
+  var moleTimeouts = [];
+  var isPlaying = false;
+  var bestScore = null;
+  var holes = []; // DOM references
+  var moleStates = []; // {up, hit, timeout}
+
+  try{ bestScore = parseInt(localStorage.getItem('mogura_best')); if(isNaN(bestScore)) bestScore=null; }catch(e){}
+  if(bestScore!==null) bestEl.textContent = bestScore;
+
+  // === BUILD GRID ===
+  function buildGrid(){
+    gridEl.innerHTML='';
+    holes=[];
+    moleStates=[];
+    for(var i=0;i<NUM_HOLES;i++){
+      var hole = document.createElement('div');
+      hole.className='hole';
+      hole.setAttribute('data-idx',i);
+
+      var moleWrap = document.createElement('div');
+      moleWrap.className='mole-wrap';
+
+      var mole = document.createElement('div');
+      mole.className='mole';
+      mole.textContent='🐹';
+
+      var holeBg = document.createElement('div');
+      holeBg.className='hole-bg';
+
+      var hitFx = document.createElement('div');
+      hitFx.className='hit-effect';
+      hitFx.textContent='💥';
+
+      var missFx = document.createElement('div');
+      missFx.className='miss-effect';
+      missFx.textContent='💨';
+
+      // Simple grass blades
+      var grass = document.createElement('div');
+      grass.className='grass';
+      for(var g=0;g<5;g++){
+        var blade = document.createElement('div');
+        blade.className='grass-blade';
+        blade.style.left=(g*22+Math.random()*8)+'px';
+        blade.style.height=(14+Math.random()*8)+'px';
+        blade.style.background=['#4caf50','#66bb6a','#43a047','#2e7d32','#81c784'][g];
+        blade.style.transform='rotate('+(Math.random()*20-10)+'deg)';
+        grass.appendChild(blade);
+      }
+
+      moleWrap.appendChild(mole);
+      hole.appendChild(moleWrap);
+      hole.appendChild(holeBg);
+      hole.appendChild(grass);
+      hole.appendChild(hitFx);
+      hole.appendChild(missFx);
+      gridEl.appendChild(hole);
+
+      holes.push({el:hole, mole:mole, hitFx:hitFx, missFx:missFx});
+      moleStates.push({up:false, hit:false, timeout:null});
+    }
+  }
+
+  // === EVENT DELEGATION ===
+  gridEl.addEventListener('pointerdown', function(e){
+    if(!isPlaying) return;
+    var hole = e.target.closest('.hole');
+    if(!hole) return;
+    e.preventDefault();
+    var idx = parseInt(hole.getAttribute('data-idx'));
+    if(isNaN(idx)) return;
+    whack(idx);
+  });
+
+  function whack(idx){
+    var state = moleStates[idx];
+    var h = holes[idx];
+    if(!state.up || state.hit) return;
+
+    state.hit = true;
+    score++;
+    scoreEl.textContent = score;
+
+    // Visual feedback - instant!
+    h.mole.textContent = '😵';
+    h.hitFx.classList.remove('show');
+    void h.hitFx.offsetWidth; // force reflow
+    h.hitFx.classList.add('show');
+
+    // Hide after short delay
+    setTimeout(function(){
+      h.mole.classList.remove('up');
+      state.up = false;
+      state.hit = false;
+      h.mole.textContent = '🐹';
+    }, 200);
+  }
+
+  // === SPAWN MOLE ===
+  function spawnMole(){
+    if(!isPlaying) return;
+
+    // Pick random empty hole
+    var available = [];
+    for(var i=0;i<NUM_HOLES;i++){
+      if(!moleStates[i].up) available.push(i);
+    }
+    if(available.length === 0) return;
+
+    var idx = available[Math.floor(Math.random()*available.length)];
+    var state = moleStates[idx];
+    var h = holes[idx];
+
+    state.up = true;
+    state.hit = false;
+
+    // Random face (rare bunny)
+    h.mole.textContent = MOLE_FACES[Math.floor(Math.random()*MOLE_FACES.length)];
+    h.mole.classList.add('up');
+
+    // How long mole stays up — gets shorter over time
+    var elapsed = GAME_TIME - timeLeft;
+    var stayTime = Math.max(600, 1400 - elapsed * 25);
+
+    state.timeout = setTimeout(function(){
+      if(state.up && !state.hit){
+        // Missed!
+        misses++;
+        missesEl.textContent = misses;
+        h.missFx.classList.remove('show');
+        void h.missFx.offsetWidth;
+        h.missFx.classList.add('show');
+      }
+      h.mole.classList.remove('up');
+      state.up = false;
+      state.hit = false;
+      h.mole.textContent = '🐹';
+    }, stayTime);
+  }
+
+  // === GAME LOOP ===
+  function startGame(){
+    score=0;misses=0;timeLeft=GAME_TIME;isPlaying=true;
+    scoreEl.textContent='0';missesEl.textContent='0';
+    timerFill.style.width='100%';
+    startOverlay.style.display='none';
+    resultOverlay.classList.remove('show');
+
+    buildGrid();
+
+    // Spawn moles at intervals — speeds up over time
+    function scheduleNext(){
+      if(!isPlaying) return;
+      var elapsed = GAME_TIME - timeLeft;
+      var interval = Math.max(300, 900 - elapsed * 18);
+      // Sometimes spawn 2 at once later in game
+      var count = (elapsed > 15 && Math.random() > 0.6) ? 2 : 1;
+      for(var c=0;c<count;c++) spawnMole();
+      gameInterval = setTimeout(scheduleNext, interval);
+    }
+    scheduleNext();
+
+    // Timer
+    var timerStart = Date.now();
+    timerInterval = setInterval(function(){
+      var elapsed = (Date.now() - timerStart) / 1000;
+      timeLeft = Math.max(0, GAME_TIME - elapsed);
+      timerFill.style.width = (timeLeft/GAME_TIME*100)+'%';
+
+      if(timeLeft <= 5) {
+        timerFill.style.background = 'linear-gradient(90deg,#ff1744,#ff5252)';
+      }
+
+      if(timeLeft <= 0){
+        endGame();
+      }
+    }, 50);
+  }
+
+  function endGame(){
+    isPlaying = false;
+    clearTimeout(gameInterval);
+    clearInterval(timerInterval);
+    timerFill.style.background = 'linear-gradient(90deg,#ff9800,#ff5722)';
+
+    // Clear all mole timeouts
+    for(var i=0;i<NUM_HOLES;i++){
+      if(moleStates[i].timeout) clearTimeout(moleStates[i].timeout);
+      holes[i].mole.classList.remove('up');
+      moleStates[i].up = false;
+    }
+
+    var isNewBest = false;
+    if(bestScore === null || score > bestScore){
+      bestScore = score;
+      isNewBest = true;
+      try{localStorage.setItem('mogura_best', bestScore);}catch(e){}
+      bestEl.textContent = bestScore;
+    }
+
+    var total = score + misses;
+    var accuracy = total > 0 ? Math.round(score/total*100) : 0;
+
+    var rank='';
+    if(score>=30) rank='🏆 モグラたたきマスター！';
+    else if(score>=20) rank='⭐ すごい反射神経！';
+    else if(score>=15) rank='👍 なかなかやるね！';
+    else if(score>=10) rank='😊 いい感じ！';
+    else rank='💪 練習あるのみ！';
+
+    resultStatsEl.innerHTML='スコア: <b>'+score+'</b><br>ミス: <b>'+misses+'</b><br>命中率: <b>'+accuracy+'%</b>';
+    resultRankEl.textContent = isNewBest ? '🎉 NEW BEST! '+rank : rank;
+    resultEmojiEl.textContent = score >= 20 ? '🔨✨' : '🐹💨';
+
+    setTimeout(function(){
+      resultOverlay.classList.add('show');
+      if(score >= 15) startConfetti();
+    }, 300);
+  }
+
+  // === BUTTONS ===
+  document.getElementById('go-btn').addEventListener('click', startGame);
+  document.getElementById('start-btn').addEventListener('click', startGame);
+  document.getElementById('replay-btn').addEventListener('click', startGame);
+
+  // === CONFETTI ===
+  var confettiParts=[],confettiAnim=null;
+  function startConfetti(){
+    confettiCanvas.width=window.innerWidth;confettiCanvas.height=window.innerHeight;
+    confettiParts=[];
+    var colors=['#ff9800','#ff5722','#4caf50','#2196f3','#9c27b0','#ffeb3b','#e91e63'];
+    for(var i=0;i<90;i++){
+      confettiParts.push({
+        x:Math.random()*confettiCanvas.width,
+        y:Math.random()*-confettiCanvas.height,
+        w:Math.random()*8+4,h:Math.random()*6+3,
+        color:colors[Math.floor(Math.random()*colors.length)],
+        vy:Math.random()*3+2,vx:(Math.random()-0.5)*2,
+        rot:Math.random()*360,rotSpeed:(Math.random()-0.5)*10,life:1
+      });
+    }
+    if(confettiAnim)cancelAnimationFrame(confettiAnim);
+    animConfetti();
+  }
+  function animConfetti(){
+    confettiCtx.clearRect(0,0,confettiCanvas.width,confettiCanvas.height);
+    var alive=false;
+    for(var i=0;i<confettiParts.length;i++){
+      var p=confettiParts[i];
+      p.y+=p.vy;p.x+=p.vx;p.rot+=p.rotSpeed;p.life-=0.003;
+      if(p.life<=0)continue;alive=true;
+      confettiCtx.save();confettiCtx.translate(p.x,p.y);
+      confettiCtx.rotate(p.rot*Math.PI/180);
+      confettiCtx.globalAlpha=p.life;confettiCtx.fillStyle=p.color;
+      confettiCtx.fillRect(-p.w/2,-p.h/2,p.w,p.h);confettiCtx.restore();
+    }
+    if(alive)confettiAnim=requestAnimationFrame(animConfetti);
+  }
+
+  // === INIT ===
+  buildGrid();
+})();
+</script>
+</body>
+</html>
