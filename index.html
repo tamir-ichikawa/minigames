@@ -148,6 +148,29 @@ h1 {
 .bar.one { left: 18%; bottom: 30px; width: 42%; color: #4ade80; background: currentColor; }
 .bar.two { right: 10%; top: 90px; width: 25%; color: #22d3ee; background: currentColor; }
 .bar.three { left: 8%; top: 54px; width: 22%; color: #f472b6; background: currentColor; }
+.puzzle-art { display: grid; place-items: center; }
+.mini-board {
+  display: grid;
+  grid-template-columns: repeat(4, 34px);
+  gap: 5px;
+  padding: 9px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.07);
+  box-shadow: 0 14px 32px rgba(0,0,0,0.28);
+}
+.mini-tile {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background: linear-gradient(145deg,#667eea,#764ba2);
+  box-shadow: 0 3px 8px rgba(102,126,234,0.3);
+  font-size: 13px;
+  font-weight: 900;
+}
+.mini-tile.correct { background: linear-gradient(145deg,#4ade80,#22c55e); }
+.mini-tile.empty { background: rgba(255,255,255,0.045); box-shadow: none; }
 .card-body { padding: 22px; }
 .card-kicker { color: #fbbf24; font-size: 12px; font-weight: 900; letter-spacing: 0.12em; }
 .card-title { margin-top: 7px; font-size: 27px; }
@@ -194,6 +217,23 @@ h1 {
             <p class="card-kicker">ONE TAP ACTION</p>
             <h3 class="card-title">スカイジャンプ！</h3>
             <p class="card-description">動く足場をタイミングよく渡って、空の彼方を目指そう。</p>
+            <span class="card-cta">プレイする →</span>
+          </div>
+        </a>
+
+        <a class="game-card" href="sample_game/15パズル_v2.html" aria-label="15パズルをプレイ">
+          <div class="card-art puzzle-art" aria-hidden="true">
+            <div class="mini-board">
+              <span class="mini-tile correct">1</span><span class="mini-tile correct">2</span><span class="mini-tile correct">3</span><span class="mini-tile correct">4</span>
+              <span class="mini-tile">5</span><span class="mini-tile">6</span><span class="mini-tile">7</span><span class="mini-tile">8</span>
+              <span class="mini-tile">9</span><span class="mini-tile">10</span><span class="mini-tile">11</span><span class="mini-tile">12</span>
+              <span class="mini-tile">13</span><span class="mini-tile">14</span><span class="mini-tile empty"></span><span class="mini-tile">15</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="card-kicker">SLIDE PUZZLE</p>
+            <h3 class="card-title">15パズル</h3>
+            <p class="card-description">数字をスライドさせて、1から15まで順番に並べよう。</p>
             <span class="card-cta">プレイする →</span>
           </div>
         </a>

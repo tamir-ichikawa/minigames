@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>15パズル</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;-webkit-user-select:none;user-select:none;}
+html,body{width:100%;height:100%;overflow:hidden;font-family:'Segoe UI','Hiragino Sans','Noto Sans JP',sans-serif;}
+body{background:linear-gradient(135deg,#0f0c29,#302b63,#24243e);display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;}
+.back-link{position:fixed;top:16px;left:16px;z-index:20;color:rgba(255,255,255,0.82);text-decoration:none;font-size:14px;font-weight:700;background:rgba(15,12,41,0.52);border:1px solid rgba(255,255,255,0.14);padding:9px 13px;border-radius:999px;backdrop-filter:blur(7px);transition:background 0.2s,transform 0.2s;}
+.back-link:hover{background:rgba(255,255,255,0.15);transform:translateX(-2px);}
+
+.header{text-align:center;margin-bottom:16px;}
+.title{font-size:28px;font-weight:900;color:#fbbf24;text-shadow:0 0 15px rgba(251,191,36,0.4);margin-bottom:6px;}
+.stats{display:flex;gap:24px;justify-content:center;font-size:14px;color:rgba(255,255,255,0.7);}
+.stats span{display:inline-block;}
+.stat-val{font-weight:700;color:#fff;font-size:18px;margin-left:4px;}
+
+.grid-wrap{position:relative;background:rgba(255,255,255,0.06);border-radius:16px;padding:8px;box-shadow:0 8px 32px rgba(0,0,0,0.4);}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;}
+.grid.is-animating{pointer-events:none;}
+
+.tile{
+  width:72px;height:72px;border-radius:12px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:26px;font-weight:800;
+  position:relative;
+  transition:transform 0.16s ease, box-shadow 0.16s ease;
+  will-change:transform;
+}
+.tile[data-val]{
+  background:linear-gradient(145deg,#667eea,#764ba2);
+  color:#fff;box-shadow:0 3px 10px rgba(102,126,234,0.35);
+  cursor:pointer;
+}
+.tile[data-val].movable{
+  animation:wiggle 0.6s ease;
+}
+@keyframes wiggle{0%,100%{transform:scale(1)}25%{transform:scale(1.06)}50%{transform:scale(0.97)}75%{transform:scale(1.03)}}
+.tile[data-val]:active{transform:scale(0.92);}
+.tile[data-val].correct{
+  background:linear-gradient(145deg,#4ade80,#22c55e);
+  box-shadow:0 3px 10px rgba(74,222,128,0.35);
+}
+.tile.empty-tile{background:rgba(255,255,255,0.04);cursor:default;}
+
+.controls{margin-top:18px;display:flex;gap:12px;}
+.btn{
+  padding:10px 28px;border-radius:30px;border:none;cursor:pointer;
+  font-size:15px;font-weight:700;font-family:inherit;
+  transition:transform 0.15s;
+}
+.btn:active{transform:scale(0.94);}
+.btn-primary{background:linear-gradient(135deg,#fbbf24,#f59e0b);color:#1a1a2e;box-shadow:0 4px 16px rgba(251,191,36,0.3);}
+.btn-secondary{background:rgba(255,255,255,0.12);color:#fff;box-shadow:0 4px 16px rgba(0,0,0,0.15);}
+
+.overlay{
+  position:fixed;top:0;left:0;width:100%;height:100%;
+  background:rgba(0,0,0,0.75);
+  display:none;align-items:center;justify-content:center;z-index:100;
+  flex-direction:column;text-align:center;
+}
+.overlay.show{display:flex;}
+.win-title{font-size:42px;font-weight:900;color:#fbbf24;margin-bottom:8px;text-shadow:0 0 20px rgba(251,191,36,0.5);}
+.win-sub{font-size:16px;color:rgba(255,255,255,0.7);margin-bottom:24px;line-height:1.6;}
+.win-stats{font-size:20px;color:#fff;margin-bottom:24px;}
+
+.confetti-canvas{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:99;}
+
+@media(max-width:360px){.tile{width:64px;height:64px;font-size:22px;}}
+@media(min-width:500px){.tile{width:84px;height:84px;font-size:30px;}}
+</style>
+</head>
+<body>
+
+<a class="back-link" href="../index.html" aria-label="ゲーム一覧へ戻る">← ゲーム一覧</a>
+<div class="header">
+  <div class="title">15パズル</div>
+  <div class="stats">
+    <span>手数: <span class="stat-val" id="moves">0</span></span>
+    <span>時間: <span class="stat-val" id="timer">0:00</span></span>
+    <span>ベスト: <span class="stat-val" id="best">--</span></span>
+  </div>
+</div>
+
+<div class="grid-wrap">
+  <div class="grid" id="grid"></div>
+</div>
+
+<div class="controls">
+  <button class="btn btn-primary" id="shuffle-btn">シャッフル</button>
+  <button class="btn btn-secondary" id="hint-btn">ヒント</button>
+</div>
+
+<div class="overlay" id="win-overlay">
+  <div class="win-title">🎉 クリア！</div>
+  <div class="win-stats" id="win-stats"></div>
+  <div class="win-sub">おめでとう！すごいね！</div>
+  <button class="btn btn-primary" id="replay-btn">もう一回！</button>
+</div>
+
+<canvas class="confetti-canvas" id="confetti"></canvas>
+
+<script>
+(function(){
+  // === STATE ===
+  var board = [];
+  var emptyIdx = 15;
+  var moves = 0;
+  var timerSec = 0;
+  var timerInterval = null;
+  var playing = false;
+  var animating = false;
+  var bestMoves = null;
+  try { bestMoves = parseInt(localStorage.getItem('15puzzle_best')); if(isNaN(bestMoves)) bestMoves = null; } catch(e){}
+
+  var gridEl = document.getElementById('grid');
+  var movesEl = document.getElementById('moves');
+  var timerEl = document.getElementById('timer');
+  var bestEl = document.getElementById('best');
+  var winOverlay = document.getElementById('win-overlay');
+  var winStatsEl = document.getElementById('win-stats');
+  var confettiCanvas = document.getElementById('confetti');
+  var confettiCtx = confettiCanvas.getContext('2d');
+
+  if(bestMoves !== null) bestEl.textContent = bestMoves + '手';
+
+  // === SOLVABILITY ===
+  function countInversions(arr){
+    var inv = 0;
+    var nums = [];
+    for(var i=0;i<arr.length;i++) if(arr[i]!==0) nums.push(arr[i]);
+    for(var i=0;i<nums.length;i++){
+      for(var j=i+1;j<nums.length;j++){
+        if(nums[i]>nums[j]) inv++;
+      }
+    }
+    return inv;
+  }
+  function isSolvable(arr){
+    var inv = countInversions(arr);
+    var emptyRow = Math.floor(arr.indexOf(0)/4);
+    var blankFromBottom = 3-emptyRow;
+    return (inv+blankFromBottom)%2===0;
+  }
+
+  // === SHUFFLE ===
+  function doShuffle(){
+    if(timerInterval){ clearInterval(timerInterval); timerInterval=null; }
+    playing = false;
+    moves = 0; timerSec = 0;
+    movesEl.textContent = '0';
+    timerEl.textContent = '0:00';
+    winOverlay.classList.remove('show');
+
+    do {
+      var nums = [];
+      for(var i=0;i<16;i++) nums.push(i);
+      for(var i=nums.length-1;i>0;i--){
+        var j=Math.floor(Math.random()*(i+1));
+        var tmp=nums[i]; nums[i]=nums[j]; nums[j]=tmp;
+      }
+      board = nums;
+    } while(!isSolvable(board) || checkWin());
+
+    emptyIdx = board.indexOf(0);
+    render();
+  }
+
+  // === RENDER ===
+  function render(){
+    gridEl.innerHTML = '';
+    for(var i=0;i<16;i++){
+      var tile = document.createElement('div');
+      tile.className = 'tile';
+      if(board[i] === 0){
+        tile.classList.add('empty-tile');
+      } else {
+        tile.setAttribute('data-val', board[i]);
+        tile.setAttribute('data-idx', i);
+        tile.textContent = board[i];
+        if(board[i] === i+1) tile.classList.add('correct');
+      }
+      gridEl.appendChild(tile);
+    }
+  }
+
+  function animateMove(tile, deltaX, deltaY){
+    var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if(reduceMotion){
+      animating = false;
+      return;
+    }
+
+    gridEl.classList.add('is-animating');
+    tile.style.transition = 'none';
+    tile.style.transform = 'translate('+deltaX+'px, '+deltaY+'px) scale(0.96)';
+    tile.style.boxShadow = '0 10px 24px rgba(0,0,0,0.42)';
+    tile.getBoundingClientRect();
+
+    var finished = false;
+    var finish = function(){
+      if(finished) return;
+      finished = true;
+      animating = false;
+      gridEl.classList.remove('is-animating');
+      tile.style.transition = '';
+      tile.style.transform = '';
+      tile.style.boxShadow = '';
+    };
+
+    tile.addEventListener('transitionend', function(e){
+      if(e.propertyName === 'transform') finish();
+    }, {once:true});
+
+    requestAnimationFrame(function(){
+      requestAnimationFrame(function(){
+        tile.style.transition = 'transform 280ms cubic-bezier(0.22, 1, 0.36, 1), box-shadow 280ms ease';
+        tile.style.transform = 'translate(0, 0) scale(1)';
+        tile.style.boxShadow = '0 3px 10px rgba(102,126,234,0.35)';
+      });
+    });
+    setTimeout(finish, 340);
+  }
+
+  // === TAP (via event delegation on grid) ===
+  gridEl.addEventListener('click', function(e){
+    var tile = e.target;
+    if(!tile.hasAttribute('data-idx')) return;
+    var idx = parseInt(tile.getAttribute('data-idx'));
+    if(isNaN(idx)) return;
+    moveTile(idx);
+  });
+
+  // Also handle touch for faster response
+  gridEl.addEventListener('touchend', function(e){
+    e.preventDefault(); // prevent double-fire with click
+    var touch = e.changedTouches[0];
+    var tile = document.elementFromPoint(touch.clientX, touch.clientY);
+    if(!tile || !tile.hasAttribute('data-idx')) return;
+    var idx = parseInt(tile.getAttribute('data-idx'));
+    if(isNaN(idx)) return;
+    moveTile(idx);
+  });
+
+  function moveTile(idx){
+    if(animating) return;
+    var row = Math.floor(idx/4);
+    var col = idx%4;
+    var eRow = Math.floor(emptyIdx/4);
+    var eCol = emptyIdx%4;
+
+    var dist = Math.abs(row-eRow)+Math.abs(col-eCol);
+    if(dist !== 1) return;
+
+    var startRect = gridEl.children[idx].getBoundingClientRect();
+    animating = true;
+
+    // Start timer on first move
+    if(!playing){
+      playing = true;
+      timerInterval = setInterval(function(){
+        timerSec++;
+        var m = Math.floor(timerSec/60);
+        var s = timerSec%60;
+        timerEl.textContent = m+':'+(s<10?'0':'')+s;
+      }, 1000);
+    }
+
+    // Swap
+    var tmp = board[idx];
+    board[idx] = board[emptyIdx];
+    board[emptyIdx] = tmp;
+    var newPos = emptyIdx; // tile's new position after swap
+    emptyIdx = idx;
+    moves++;
+    movesEl.textContent = moves;
+
+    render();
+    var movedTile = gridEl.children[newPos];
+    var endRect = movedTile.getBoundingClientRect();
+    animateMove(movedTile, startRect.left-endRect.left, startRect.top-endRect.top);
+
+    if(checkWin()){
+      clearInterval(timerInterval);
+      playing = false;
+      onWin();
+    }
+  }
+
+  // === WIN ===
+  function checkWin(){
+    for(var i=0;i<15;i++){
+      if(board[i]!==i+1) return false;
+    }
+    return board[15]===0;
+  }
+
+  function onWin(){
+    var m=Math.floor(timerSec/60);
+    var s=timerSec%60;
+    var timeStr=m+':'+(s<10?'0':'')+s;
+
+    if(bestMoves===null || moves<bestMoves){
+      bestMoves=moves;
+      try{localStorage.setItem('15puzzle_best',bestMoves);}catch(e){}
+      bestEl.textContent=bestMoves+'手';
+    }
+    winStatsEl.textContent=moves+'手 / '+timeStr;
+    setTimeout(function(){
+      winOverlay.classList.add('show');
+      startConfetti();
+    },400);
+  }
+
+  // === HINT ===
+  document.getElementById('hint-btn').addEventListener('click', function(){
+    var tiles = gridEl.children;
+    var eRow = Math.floor(emptyIdx/4);
+    var eCol = emptyIdx%4;
+    for(var i=0;i<16;i++){
+      var row=Math.floor(i/4);
+      var col=i%4;
+      if((Math.abs(row-eRow)+Math.abs(col-eCol))===1 && board[i]!==0){
+        tiles[i].classList.add('movable');
+        tiles[i].style.boxShadow='0 0 20px 6px #fbbf24';
+        (function(t){
+          setTimeout(function(){
+            t.classList.remove('movable');
+            t.style.boxShadow='';
+          },800);
+        })(tiles[i]);
+      }
+    }
+  });
+
+  // === BUTTONS ===
+  document.getElementById('shuffle-btn').addEventListener('click', doShuffle);
+  document.getElementById('replay-btn').addEventListener('click', doShuffle);
+
+  // === KEYBOARD ===
+  document.addEventListener('keydown', function(e){
+    var eRow=Math.floor(emptyIdx/4);
+    var eCol=emptyIdx%4;
+    var target=-1;
+    switch(e.key){
+      case 'ArrowUp':    if(eRow<3) target=emptyIdx+4; break;
+      case 'ArrowDown':  if(eRow>0) target=emptyIdx-4; break;
+      case 'ArrowLeft':  if(eCol<3) target=emptyIdx+1; break;
+      case 'ArrowRight': if(eCol>0) target=emptyIdx-1; break;
+    }
+    if(target>=0 && target<16){
+      e.preventDefault();
+      moveTile(target);
+    }
+  });
+
+  // === CONFETTI ===
+  var confettiParts=[];
+  var confettiAnim=null;
+
+  function startConfetti(){
+    confettiCanvas.width=window.innerWidth;
+    confettiCanvas.height=window.innerHeight;
+    confettiParts=[];
+    var colors=['#fbbf24','#f472b6','#4ade80','#22d3ee','#a78bfa','#fb923c','#f87171'];
+    for(var i=0;i<120;i++){
+      confettiParts.push({
+        x:Math.random()*confettiCanvas.width,
+        y:Math.random()*-confettiCanvas.height,
+        w:Math.random()*8+4, h:Math.random()*6+3,
+        color:colors[Math.floor(Math.random()*colors.length)],
+        vy:Math.random()*3+2, vx:(Math.random()-0.5)*2,
+        rot:Math.random()*360, rotSpeed:(Math.random()-0.5)*10,
+        life:1
+      });
+    }
+    if(confettiAnim) cancelAnimationFrame(confettiAnim);
+    animConfetti();
+  }
+
+  function animConfetti(){
+    confettiCtx.clearRect(0,0,confettiCanvas.width,confettiCanvas.height);
+    var alive=false;
+    for(var i=0;i<confettiParts.length;i++){
+      var p=confettiParts[i];
+      p.y+=p.vy; p.x+=p.vx; p.rot+=p.rotSpeed; p.life-=0.003;
+      if(p.life<=0) continue;
+      alive=true;
+      confettiCtx.save();
+      confettiCtx.translate(p.x,p.y);
+      confettiCtx.rotate(p.rot*Math.PI/180);
+      confettiCtx.globalAlpha=p.life;
+      confettiCtx.fillStyle=p.color;
+      confettiCtx.fillRect(-p.w/2,-p.h/2,p.w,p.h);
+      confettiCtx.restore();
+    }
+    if(alive) confettiAnim=requestAnimationFrame(animConfetti);
+  }
+
+  // === START ===
+  doShuffle();
+})();
+</script>
+</body>
+</html>
