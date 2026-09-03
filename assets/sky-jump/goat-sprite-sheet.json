@@ -1,0 +1,10 @@
+{
+  "image": "goat-sprite-sheet-v1.png",
+  "width": 1536,
+  "height": 1026,
+  "columns": 4,
+  "rows": 3,
+  "frameWidth": 384,
+  "frameHeight": 342,
+  "frames": { "idle": 0, "idleBlink": 1, "anticipation": 2, "takeoff": 3, "riseTuck": 4, "riseStretch": 5, "apex": 6, "fallEarly": 7, "fallFast": 8, "land": 9, "recover": 10, "hurt": 11 }
+}

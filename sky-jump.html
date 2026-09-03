@@ -1,432 +1,48 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<title>🐰 スカイジャンプ！</title>
-<style>
-* { margin:0; padding:0; box-sizing:border-box; }
-html, body { width:100%; height:100%; overflow:hidden; background:#1a1a2e; font-family:'Segoe UI','Hiragino Sans',sans-serif; }
-canvas { display:block; }
-.back-link {
-  position: absolute; top: 18px; left: 18px; z-index: 30;
-  display: inline-flex; align-items: center; gap: 7px;
-  color: rgba(255,255,255,0.82); text-decoration: none; font-size: 14px; font-weight: 700;
-  background: rgba(15,15,35,0.55); border: 1px solid rgba(255,255,255,0.14);
-  padding: 9px 13px; border-radius: 999px; backdrop-filter: blur(7px);
-  transition: background 0.2s, transform 0.2s;
-}
-.back-link:hover { background: rgba(255,255,255,0.15); transform: translateX(-2px); }
-.back-link:active { transform: scale(0.96); }
-#ui-overlay {
-  position:absolute; top:0; left:0; width:100%; height:100%;
-  display:flex; flex-direction:column; align-items:center; justify-content:center;
-  pointer-events:none; z-index:10;
-}
-#score-display {
-  position:absolute; top:20px; left:50%; transform:translateX(-50%);
-  font-size:48px; font-weight:900; color:rgba(255,255,255,0.85);
-  text-shadow:0 2px 10px rgba(0,0,0,0.4); pointer-events:none;
-  letter-spacing:2px;
-}
-#start-screen, #gameover-screen {
-  display:flex; flex-direction:column; align-items:center; justify-content:center;
-  pointer-events:auto; text-align:center; color:#fff;
-}
-#gameover-screen { display:none; }
-.title { font-size:42px; font-weight:900; margin-bottom:8px; color:#FFD700;
-  text-shadow:0 0 20px rgba(255,215,0,0.5); }
-.subtitle { font-size:16px; color:rgba(255,255,255,0.7); margin-bottom:30px; }
-.tap-hint {
-  font-size:20px; color:#fff; animation:pulse 1.5s infinite;
-  background:rgba(255,255,255,0.15); padding:14px 36px; border-radius:50px;
-  backdrop-filter:blur(5px); cursor:pointer;
-}
-@keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.6;transform:scale(0.96)} }
-.final-score { font-size:72px; font-weight:900; color:#FFD700;
-  text-shadow:0 0 30px rgba(255,215,0,0.5); margin:10px 0; }
-.best-label { font-size:16px; color:rgba(255,255,255,0.6); margin-bottom:20px; }
-.retry-btn {
-  font-size:18px; color:#fff; background:linear-gradient(135deg,#667eea,#764ba2);
-  padding:14px 40px; border-radius:50px; cursor:pointer;
-  box-shadow:0 4px 20px rgba(102,126,234,0.4); transition:transform 0.2s;
-}
-.retry-btn:active { transform:scale(0.95); }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta name="theme-color" content="#ff9b54">
+  <title>GOAT JUMP</title>
+  <link rel="stylesheet" href="styles/sky-jump.css">
 </head>
 <body>
-
-<a class="back-link" href="index.html" aria-label="ゲーム一覧へ戻る">← ゲーム一覧</a>
-<canvas id="game"></canvas>
-
-<div id="ui-overlay">
-  <div id="score-display" style="display:none;">0</div>
-
-  <div id="start-screen">
-    <div class="title">🐰 スカイジャンプ！</div>
-    <div class="subtitle">タップで足場を渡ってどこまでも登ろう！</div>
-    <div class="tap-hint" id="start-btn">タップでスタート</div>
-  </div>
-
-  <div id="gameover-screen">
-    <div style="font-size:24px; margin-bottom:4px;">ゲームオーバー</div>
-    <div class="final-score" id="final-score">0</div>
-    <div class="best-label" id="best-label">ベスト: 0</div>
-    <div class="retry-btn" id="retry-btn">もう一回！</div>
-  </div>
-</div>
-
-<script>
-const canvas = document.getElementById('game');
-const ctx = canvas.getContext('2d');
-
-let W, H, dpr;
-function resize() {
-  dpr = window.devicePixelRatio || 1;
-  W = window.innerWidth; H = window.innerHeight;
-  canvas.width = W * dpr; canvas.height = H * dpr;
-  canvas.style.width = W + 'px'; canvas.style.height = H + 'px';
-  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-}
-resize();
-window.addEventListener('resize', resize);
-
-// Game state
-const STATE = { MENU:0, PLAYING:1, DEAD:2 };
-let state = STATE.MENU;
-let score = 0, bestScore = +(localStorage.getItem('skyJumpBest') || 0);
-let player, platforms, particles, cameraY, lastPlatY;
-let bgStars = [];
-
-// Colors
-const COLORS = {
-  platform: ['#4ade80','#22d3ee','#a78bfa','#f472b6','#fbbf24','#fb923c'],
-  player: '#FFD700',
-  trail: '#FFD700',
-};
-
-function pickColor(i) { return COLORS.platform[i % COLORS.platform.length]; }
-
-// Init stars
-function initStars() {
-  bgStars = [];
-  for (let i = 0; i < 80; i++) {
-    bgStars.push({ x: Math.random()*W, y: Math.random()*H*3, r: Math.random()*1.5+0.5, a: Math.random() });
-  }
-}
-initStars();
-
-class Platform {
-  constructor(x, y, w, idx, moving = true) {
-    this.x = x; this.y = y; this.w = w; this.h = 14;
-    this.color = pickColor(idx);
-    this.landed = false;
-    const speed = 0.65 + Math.random() * 0.55 + Math.min(score * 0.025, 0.8);
-    this.vx = moving ? speed * (Math.random() < 0.5 ? -1 : 1) : 0;
-    this.dx = 0;
-  }
-  update(dt) {
-    const oldX = this.x;
-    this.x += this.vx * dt * 60;
-
-    // 画面の端で反射させ、リサイズ後も足場が画面外に残らないようにする
-    if (this.x <= 8) {
-      this.x = 8;
-      this.vx = Math.abs(this.vx);
-    } else if (this.x + this.w >= W - 8) {
-      this.x = W - this.w - 8;
-      this.vx = -Math.abs(this.vx);
-    }
-    this.dx = this.x - oldX;
-  }
-  draw(oy) {
-    const sy = this.y - oy;
-    // glow
-    ctx.shadowColor = this.color;
-    ctx.shadowBlur = this.landed ? 18 : 8;
-    // rounded rect
-    const r = 7;
-    ctx.beginPath();
-    ctx.moveTo(this.x + r, sy);
-    ctx.lineTo(this.x + this.w - r, sy);
-    ctx.quadraticCurveTo(this.x + this.w, sy, this.x + this.w, sy + r);
-    ctx.lineTo(this.x + this.w, sy + this.h - r);
-    ctx.quadraticCurveTo(this.x + this.w, sy + this.h, this.x + this.w - r, sy + this.h);
-    ctx.lineTo(this.x + r, sy + this.h);
-    ctx.quadraticCurveTo(this.x, sy + this.h, this.x, sy + this.h - r);
-    ctx.lineTo(this.x, sy + r);
-    ctx.quadraticCurveTo(this.x, sy, this.x + r, sy);
-    ctx.closePath();
-    ctx.fillStyle = this.color;
-    ctx.fill();
-    ctx.shadowBlur = 0;
-  }
-}
-
-class Particle {
-  constructor(x, y, color) {
-    this.x = x; this.y = y;
-    this.vx = (Math.random()-0.5)*6;
-    this.vy = (Math.random()-0.5)*6 - 2;
-    this.life = 1;
-    this.color = color;
-    this.r = Math.random()*3+2;
-  }
-  update(dt) {
-    this.x += this.vx * dt * 60;
-    this.y += this.vy * dt * 60;
-    this.vy += 0.12 * dt * 60;
-    this.life -= dt * 2;
-  }
-  draw(oy) {
-    if (this.life <= 0) return;
-    ctx.globalAlpha = this.life;
-    ctx.fillStyle = this.color;
-    ctx.beginPath();
-    ctx.arc(this.x, this.y - oy, this.r * this.life, 0, Math.PI*2);
-    ctx.fill();
-    ctx.globalAlpha = 1;
-  }
-}
-
-function initGame() {
-  score = 0;
-  cameraY = 0;
-  particles = [];
-  platforms = [];
-
-  // Starting platform (wide, centered)
-  const startP = new Platform(W/2 - 60, H - 80, 120, 0, false);
-  startP.landed = true;
-  platforms.push(startP);
-  lastPlatY = startP.y;
-
-  // Generate initial platforms
-  for (let i = 0; i < 20; i++) generatePlatform(i+1);
-
-  player = {
-    x: W/2, y: H - 80 - 20,
-    vx: 0, vy: 0,
-    w: 18, h: 18,
-    onGround: true,
-    supportPlatform: startP,
-    jumpCount: 0,
-    trail: [],
-  };
-}
-
-function generatePlatform(idx) {
-  const gap = 55 + Math.min(score * 0.3, 30) + Math.random() * 30;
-  const pw = 50 + Math.random() * 50 - Math.min(score * 0.3, 20);
-  const clampW = Math.max(pw, 35);
-  const nx = Math.random() * (W - clampW - 20) + 10;
-  const ny = lastPlatY - gap;
-  platforms.push(new Platform(nx, ny, clampW, idx, true));
-  lastPlatY = ny;
-}
-
-function jump() {
-  if (state !== STATE.PLAYING) return;
-  if (player.jumpCount < 2) {
-    player.vy = -10 - Math.min(score * 0.02, 2);
-    player.onGround = false;
-    player.supportPlatform = null;
-    player.jumpCount++;
-    // Jump particles
-    for (let i = 0; i < 6; i++) {
-      particles.push(new Particle(player.x, player.y + player.h/2, COLORS.trail));
-    }
-  }
-}
-
-function handleTap() {
-  if (state === STATE.MENU) {
-    state = STATE.PLAYING;
-    document.getElementById('start-screen').style.display = 'none';
-    document.getElementById('score-display').style.display = 'block';
-    initGame();
-    document.getElementById('score-display').textContent = '0';
-  } else if (state === STATE.PLAYING) {
-    jump();
-  }
-}
-
-function startFromGameover() {
-  state = STATE.PLAYING;
-  document.getElementById('gameover-screen').style.display = 'none';
-  document.getElementById('score-display').style.display = 'block';
-  initGame();
-  document.getElementById('score-display').textContent = '0';
-}
-
-// Input
-canvas.addEventListener('pointerdown', (e) => { e.preventDefault(); handleTap(); });
-document.getElementById('start-btn').addEventListener('pointerdown', (e) => { e.preventDefault(); handleTap(); });
-document.getElementById('retry-btn').addEventListener('pointerdown', (e) => { e.preventDefault(); startFromGameover(); });
-
-// Game loop
-let lastTime = 0;
-function loop(t) {
-  const dt = Math.min((t - lastTime) / 1000, 0.05);
-  lastTime = t;
-  requestAnimationFrame(loop);
-
-  // Clear
-  ctx.fillStyle = '#1a1a2e';
-  ctx.fillRect(0, 0, W, H);
-
-  // Draw stars
-  bgStars.forEach(s => {
-    const sy = ((s.y - cameraY * 0.3) % (H * 3) + H * 3) % (H * 3) - H;
-    ctx.globalAlpha = 0.3 + 0.3 * Math.sin(t/1000 + s.a * 10);
-    ctx.fillStyle = '#fff';
-    ctx.beginPath(); ctx.arc(s.x, sy, s.r, 0, Math.PI*2); ctx.fill();
-  });
-  ctx.globalAlpha = 1;
-
-  if (state === STATE.MENU) return;
-
-  if (state === STATE.PLAYING) {
-    // Move the bars first. A bunny standing on one is carried with it.
-    platforms.forEach(p => p.update(dt));
-    if (player.onGround && player.supportPlatform) {
-      player.x += player.supportPlatform.dx;
-    }
-
-    // Gravity
-    const previousY = player.y;
-    player.vy += 0.45 * dt * 60;
-    player.x += player.vx * dt * 60;
-    player.y += player.vy * dt * 60;
-
-    // Horizontal auto-movement (slight drift towards center)
-    if (player.onGround) player.vx *= 0.85;
-
-    // Wall wrap
-    if (player.x < -player.w) player.x = W;
-    if (player.x > W + player.w) player.x = -player.w;
-
-    // Platform collision. Re-evaluate the support every frame so the bunny
-    // starts falling naturally when a moving bar slides out from underneath.
-    player.onGround = false;
-    player.supportPlatform = null;
-    const previousBottom = previousY + player.h/2;
-    const currentBottom = player.y + player.h/2;
-    platforms.forEach(p => {
-      if (player.vy >= 0 &&
-          player.x + player.w/2 > p.x &&
-          player.x - player.w/2 < p.x + p.w &&
-          previousBottom <= p.y + 4 &&
-          currentBottom >= p.y &&
-          currentBottom <= p.y + p.h + 8) {
-        player.y = p.y - player.h/2;
-        player.vy = 0;
-        player.onGround = true;
-        player.supportPlatform = p;
-        player.jumpCount = 0;
-        if (!p.landed) {
-          p.landed = true;
-          score++;
-          document.getElementById('score-display').textContent = score;
-          // Landing particles
-          for (let i = 0; i < 10; i++) {
-            particles.push(new Particle(player.x, player.y + player.h/2, p.color));
-          }
-        }
-      }
-    });
-
-    // Camera follow
-    const targetCam = player.y - H * 0.4;
-    if (targetCam < cameraY) {
-      cameraY += (targetCam - cameraY) * 0.08 * dt * 60;
-    }
-
-    // Generate new platforms
-    while (lastPlatY > cameraY - H) {
-      generatePlatform(platforms.length);
-    }
-
-    // Remove old platforms
-    platforms = platforms.filter(p => p.y - cameraY < H + 100);
-
-    // Death: fall below screen
-    if (player.y - cameraY > H + 50) {
-      state = STATE.DEAD;
-      if (score > bestScore) {
-        bestScore = score;
-        localStorage.setItem('skyJumpBest', bestScore);
-      }
-      document.getElementById('score-display').style.display = 'none';
-      document.getElementById('final-score').textContent = score;
-      document.getElementById('best-label').textContent = 'ベスト: ' + bestScore;
-      document.getElementById('gameover-screen').style.display = 'flex';
-    }
-
-    // Trail
-    player.trail.push({ x: player.x, y: player.y, life: 1 });
-    if (player.trail.length > 12) player.trail.shift();
-  }
-
-  // Draw platforms
-  platforms.forEach(p => p.draw(cameraY));
-
-  // Draw trail
-  if (player) {
-    player.trail.forEach((tr, i) => {
-      tr.life -= dt * 4;
-      if (tr.life <= 0) return;
-      ctx.globalAlpha = tr.life * 0.3;
-      ctx.fillStyle = COLORS.trail;
-      const s = player.w * tr.life * 0.6;
-      ctx.beginPath();
-      ctx.arc(tr.x, tr.y - cameraY, s/2, 0, Math.PI*2);
-      ctx.fill();
-    });
-    ctx.globalAlpha = 1;
-    player.trail = player.trail.filter(tr => tr.life > 0);
-
-    // Draw player (bunny!)
-    const px = player.x, py = player.y - cameraY;
-    // Body
-    ctx.fillStyle = '#FFD700';
-    ctx.shadowColor = '#FFD700';
-    ctx.shadowBlur = 15;
-    ctx.beginPath();
-    ctx.arc(px, py, player.w/2, 0, Math.PI*2);
-    ctx.fill();
-    ctx.shadowBlur = 0;
-    // Ears
-    ctx.fillStyle = '#FFD700';
-    ctx.beginPath();
-    ctx.ellipse(px - 5, py - 14, 3, 8, -0.15, 0, Math.PI*2);
-    ctx.fill();
-    ctx.beginPath();
-    ctx.ellipse(px + 5, py - 14, 3, 8, 0.15, 0, Math.PI*2);
-    ctx.fill();
-    // Inner ears
-    ctx.fillStyle = '#FFB6C1';
-    ctx.beginPath();
-    ctx.ellipse(px - 5, py - 14, 1.5, 5, -0.15, 0, Math.PI*2);
-    ctx.fill();
-    ctx.beginPath();
-    ctx.ellipse(px + 5, py - 14, 1.5, 5, 0.15, 0, Math.PI*2);
-    ctx.fill();
-    // Eyes
-    ctx.fillStyle = '#1a1a2e';
-    ctx.beginPath(); ctx.arc(px - 3.5, py - 2, 2, 0, Math.PI*2); ctx.fill();
-    ctx.beginPath(); ctx.arc(px + 3.5, py - 2, 2, 0, Math.PI*2); ctx.fill();
-    // Nose
-    ctx.fillStyle = '#FF69B4';
-    ctx.beginPath(); ctx.arc(px, py + 1.5, 1.2, 0, Math.PI*2); ctx.fill();
-  }
-
-  // Particles
-  particles.forEach(p => { p.update(dt); p.draw(cameraY); });
-  particles = particles.filter(p => p.life > 0);
-}
-
-requestAnimationFrame(loop);
-</script>
+  <a class="back-link" href="index.html" aria-label="ゲーム一覧へ戻る">← ゲーム一覧</a>
+  <main class="game-shell" aria-label="GOAT JUMP">
+    <canvas id="game" aria-label="右へ進みながら動く足場を登るジャンプゲーム"></canvas>
+    <section class="hud" id="hud" hidden aria-live="polite">
+      <div class="hud-card hud-stage"><span class="hud-label">STAGE</span><strong id="stage-value">1</strong></div>
+      <div class="hud-card hud-progress">
+        <div class="hud-row"><span class="hud-label">GOAL</span><strong><span id="climb-value">0</span>/<span id="goal-value">10</span></strong></div>
+        <div class="progress-track" aria-hidden="true"><span id="progress-fill"></span></div>
+      </div>
+      <div class="hud-card hud-time" id="time-card"><span class="hud-label">TIME</span><strong id="time-value">30.0</strong></div>
+      <div class="combo" id="combo" hidden>COMBO ×2</div>
+    </section>
+    <div class="toast" id="toast" hidden></div>
+    <section class="panel" id="start-screen">
+      <div class="panel-card hero-card">
+        <p class="eyebrow">ONE TAP SKY ACTION</p>
+        <h1>GOAT <span>JUMP</span></h1>
+        <p class="lead">動く足場をつないで、制限時間内にゴールへ。<br>タイミングよく右へ駆け上がろう！</p>
+        <div class="mission-preview"><span>STAGE 1</span><strong>30秒で 10本 登る</strong></div>
+        <button class="primary-button" id="start-btn" type="button">ジャンプ開始</button>
+        <p class="controls">タップ / クリック / Space：ジャンプ　<span>空中でも1回OK</span></p>
+      </div>
+    </section>
+    <section class="panel" id="result-screen" hidden>
+      <div class="panel-card result-card">
+        <p class="eyebrow" id="result-kicker">TRY AGAIN</p>
+        <h2 id="result-title">ゲームオーバー</h2>
+        <div class="result-score"><strong id="result-value">0</strong><span>本</span></div>
+        <p id="result-message">あと少し！もう一度挑戦しよう。</p>
+        <div class="result-meta"><span>BEST <strong id="best-value">0</strong></span><span>COMBO <strong id="best-combo-value">0</strong></span></div>
+        <button class="primary-button" id="next-btn" type="button">もう一度</button>
+      </div>
+    </section>
+    <noscript>このゲームを遊ぶにはJavaScriptを有効にしてください。</noscript>
+  </main>
+  <script src="scripts/sky-jump.js" defer></script>
 </body>
 </html>
