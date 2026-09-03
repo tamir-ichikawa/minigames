@@ -199,6 +199,44 @@ h1 {
   font-size: 22px;
 }
 .memory-card.open { color: #333; background: #fff; }
+.marimo-art {
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(circle at 16% 20%, rgba(255,255,255,.55) 0 5%, transparent 5.4%),
+    linear-gradient(145deg,#4ec8e3,#9aebd4);
+}
+.marimo-preview { position: relative; width: 190px; height: 120px; }
+.marimo-runner {
+  position: absolute;
+  left: 22px;
+  bottom: 14px;
+  display: grid;
+  place-items: center;
+  width: 72px;
+  height: 72px;
+  border-radius: 48% 52% 46% 54%;
+  background: radial-gradient(circle at 36% 28%,#92ef8f,#35a968 68%,#218c59);
+  box-shadow: 0 9px 0 rgba(33,140,89,.18), inset -8px -9px 0 rgba(17,107,69,.12);
+  font-size: 31px;
+}
+.marimo-runner::after { content: "•ᴗ•"; color: #19404a; font-weight: 900; }
+.marimo-monster {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 48% 52% 45% 55%;
+  color: #fff;
+  background: #ff7d78;
+  box-shadow: 0 6px 0 rgba(221,79,99,.22);
+  font-size: 17px;
+  font-weight: 900;
+}
+.marimo-monster.one { right: 13px; bottom: 23px; }
+.marimo-monster.two { right: 59px; top: 8px; background: #8b77ee; transform: scale(.78); }
+.marimo-speed { position: absolute; left: 0; top: 27px; color: rgba(255,255,255,.85); font-size: 26px; letter-spacing: -7px; }
 .card-body { padding: 22px; }
 .card-kicker { color: #fbbf24; font-size: 12px; font-weight: 900; letter-spacing: 0.12em; }
 .card-title { margin-top: 7px; font-size: 27px; }
@@ -292,6 +330,23 @@ h1 {
             <p class="card-kicker">MEMORY GAME</p>
             <h3 class="card-title">神経衰弱</h3>
             <p class="card-description">カードの絵柄を覚えて、同じペアを見つけよう。</p>
+            <span class="card-cta">プレイする →</span>
+          </div>
+        </a>
+
+        <a class="game-card" href="sample_game/marimo-run/index.html" aria-label="まりもランをプレイ">
+          <div class="card-art marimo-art" aria-hidden="true">
+            <div class="marimo-preview">
+              <span class="marimo-speed">≋≋</span>
+              <span class="marimo-runner"></span>
+              <span class="marimo-monster one">×ᴗ×</span>
+              <span class="marimo-monster two">•̀ᴗ•́</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="card-kicker">ONE CLICK RUN</p>
+            <h3 class="card-title">ぱくぱく！まりもラン</h3>
+            <p class="card-description">迫るモンスターをタイミングよく食べて、ハイスコアを目指そう。</p>
             <span class="card-cta">プレイする →</span>
           </div>
         </a>
