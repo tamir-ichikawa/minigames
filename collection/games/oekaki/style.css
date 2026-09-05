@@ -1,0 +1,22 @@
+
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;user-select:none}
+body{background:linear-gradient(135deg,#FFF3E0,#FFECB3);display:flex;justify-content:center;align-items:center;height:100vh;height:100dvh;overflow:hidden;font-family:'Hiragino Kaku Gothic ProN','Meiryo',sans-serif}
+#wrap{display:flex;flex-direction:column;align-items:center;gap:6px;padding:8px;width:100%;max-width:420px}
+h1{font-size:20px;color:#FF6F00}
+canvas{display:block;touch-action:none;border:2px solid #FFB74D;border-radius:8px;background:#fff;cursor:crosshair}
+.toolbar{display:flex;gap:4px;flex-wrap:wrap;justify-content:center;margin:4px 0}
+.color-btn{width:32px;height:32px;border-radius:50%;border:3px solid transparent;cursor:pointer;-webkit-appearance:none}
+.color-btn.active{border-color:#333;box-shadow:0 0 6px rgba(0,0,0,0.3)}
+.tool-btn{height:32px;padding:0 10px;border:2px solid #FFB74D;border-radius:8px;background:#fff;font-size:12px;font-family:inherit;cursor:pointer;display:flex;align-items:center;gap:4px;-webkit-appearance:none;color:#333}
+.tool-btn:active,.tool-btn.active{background:#FFB74D;color:#fff}
+.size-slider{width:80px;height:6px;-webkit-appearance:none;background:#FFB74D;border-radius:3px;outline:none}
+.size-slider::-webkit-slider-thumb{-webkit-appearance:none;width:20px;height:20px;border-radius:50%;background:#FF6F00;border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,0.2)}
+.bottom-bar{display:flex;gap:6px;align-items:center}
+.speech{background:#fff;border-radius:12px;padding:6px 12px;font-size:12px;color:#888;box-shadow:0 1px 4px rgba(0,0,0,0.06);text-align:center}
+.emoji-bar{display:flex;gap:4px;flex-wrap:wrap;justify-content:center}
+.emoji-btn{width:32px;height:32px;border:2px solid #FFE0B2;border-radius:8px;background:#fff;font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;-webkit-appearance:none}
+.emoji-btn:active{background:#FFF3E0}
+
+.toolbar{flex-wrap:wrap}.toolbar button,.toolbar select{min-height:34px}.emoji-btn.active,[data-shape].active{outline:3px solid #5b438b;outline-offset:1px}#c{max-width:100%;height:auto}
+
+.toolbar>button{border:1px solid #dc9a46;border-radius:9px;background:#fff9ed;color:#664722;padding:5px 9px;font:inherit;font-size:12px;cursor:pointer}.toolbar label{font-size:12px;color:#664722}.toolbar select{border:1px solid #dc9a46;border-radius:8px;background:#fff9ed;padding:4px}

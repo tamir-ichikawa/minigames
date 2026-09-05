@@ -1,0 +1,23 @@
+
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;user-select:none}
+body{background:linear-gradient(135deg,#E3F2FD,#dfe7ef);display:flex;justify-content:center;align-items:center;height:100vh;height:100dvh;overflow:hidden;font-family:'Hiragino Kaku Gothic ProN','Meiryo',sans-serif}
+#g{width:100%;max-width:400px;padding:12px;text-align:center}
+h1{font-size:22px;color:#5C6BC0;margin-bottom:4px}
+.info{font-size:13px;color:#888;margin:4px 0}
+.info span{font-weight:bold;color:#5C6BC0}
+.board{display:grid;grid-template-columns:repeat(4,1fr);gap:3px;max-width:280px;margin:8px auto;background:#B0BEC5;padding:3px;border-radius:6px}
+.cell{aspect-ratio:1;background:#fff;border:none;border-radius:4px;font-size:28px;font-weight:bold;display:flex;align-items:center;justify-content:center;cursor:pointer;color:#333;-webkit-appearance:none;transition:background 0.15s}
+.cell.given{color:#5C6BC0;background:#E8EAF6;cursor:default}
+.cell.selected{background:#BBDEFB;box-shadow:0 0 0 2px #42A5F5}
+.cell.error{background:#FFCDD2;color:#D32F2F}
+.cell.correct{background:#C8E6C9}
+.numpad{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;max-width:260px;margin:10px auto}
+.nbtn{height:44px;border:2px solid #B0BEC5;border-radius:10px;background:#fff;font-size:20px;font-weight:bold;color:#333;cursor:pointer;-webkit-appearance:none}
+.nbtn:active{background:#E3F2FD}
+.nbtn.erase{font-size:14px;color:#EF5350}
+.speech{background:#fff;border-radius:14px;padding:8px 14px;margin:8px auto;max-width:300px;font-size:13px;color:#555;box-shadow:0 2px 6px rgba(0,0,0,0.06);min-height:36px;display:flex;align-items:center;justify-content:center}
+.diff-btns{display:flex;gap:6px;justify-content:center;margin:6px 0}
+.diff-btn{padding:6px 14px;border:2px solid #B0BEC5;border-radius:8px;background:#fff;color:#5C6BC0;font-size:13px;font-family:inherit;cursor:pointer;-webkit-appearance:none}
+.diff-btn:active,.diff-btn.active{background:#5C6BC0;color:#fff;border-color:#5C6BC0}
+.btn{background:#587998;color:#fff;border:none;padding:8px 24px;border-radius:10px;font-size:15px;font-family:inherit;cursor:pointer;margin-top:6px;-webkit-appearance:none}
+.btn:active{background:#651FFF}

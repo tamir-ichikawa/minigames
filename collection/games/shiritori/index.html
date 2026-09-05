@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>ことばの小径</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../../shared/shell.css"><script>window.GAME_CONFIG={"id":"shiritori","title":"ことばの小径","controls":[{"label":"選択 1","code":"Digit1","choice":0},{"label":"選択 2","code":"Digit2","choice":1},{"label":"選択 3","code":"Digit3","choice":2},{"label":"選択 4","code":"Digit4","choice":3},{"label":"選択 5","code":"Digit5","choice":4},{"label":"選択 6","code":"Digit6","choice":5}],"choice":".choice","fixed60":false}</script><script src="../../shared/shell.js"></script><script src="../../shared/art.js"></script><link rel="icon" type="image/svg+xml" href="../../shared/favicon.svg"></head>
+<body>
+<div id="g">
+  <div id="titleScreen" class="screen active">
+    <h1>ことばの小径💬</h1>
+    <div style="font-size:50px;margin:10px 0">🐍💬</div>
+    <p style="font-size:14px;color:#888;margin:6px 20px;line-height:1.6">えもじの「よみ」の最後の文字ではじまるえもじをえらんでね〜！</p>
+    <p style="font-size:13px;color:#aaa;margin:4px">例: 🍎(りんご) → 🦍(ごりら)</p>
+    <label class="practice"><input id="practice" type="checkbox"> 時間制限なしで練習</label><button class="btn" id="startBtn">10こつなげよう！</button>
+  </div>
+
+  <div id="playScreen" class="screen">
+    <div class="info">
+      <div>つなげた数: <span id="cnt">0</span></div>
+      <div>スコア: <span id="sc">0</span></div>
+    </div>
+    <div class="timer-bar"><div class="timer-fill" id="timerFill" style="width:100%"></div></div>
+    <div class="chain" id="chain"></div>
+    <div class="prompt">
+      <div class="label">この文字ではじまるえもじは？</div>
+      <div class="char" id="nextChar"></div>
+    </div>
+    <div class="choices" id="choices"></div>
+    <div class="speech" id="speech">しりとりしよ〜！🐍</div>
+  </div>
+
+  <div id="resultScreen" class="screen">
+    <div class="result">
+      <h2 id="rTitle"></h2>
+      <div style="font-size:50px;margin:10px 0" id="rEmoji"></div>
+      <p id="rMsg"></p>
+      <p id="rScore" style="font-weight:bold;color:#FF6F00;font-size:18px"></p>
+      <button class="btn" id="retryBtn">もういっかい！</button>
+    </div>
+  </div>
+</div>
+<script src="../../shared/rules.js"></script><script src="data.js"></script><script src="game.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>小さな騎士の五連戦</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../../shared/shell.css"><script>window.GAME_CONFIG={"id":"card_battle","title":"小さな騎士の五連戦","controls":[{"label":"選択 1","code":"Digit1","choice":0},{"label":"選択 2","code":"Digit2","choice":1},{"label":"選択 3","code":"Digit3","choice":2}],"choice":"#hand .card","fixed60":false}</script><script src="../../shared/shell.js"></script><script src="../../shared/art.js"></script><link rel="icon" type="image/svg+xml" href="../../shared/favicon.svg"></head>
+<body>
+<div id="g">
+  <div id="title-screen" class="screen">
+    <h1>小さな騎士の五連戦</h1>
+    <div class="sub">🛡️⚔️</div>
+    <p style="color:#aaa;font-size:14px;margin:10px 30px;text-align:center;line-height:1.6">カードをタップして<br>モンスターをたおそう！</p>
+    <button class="btn" onclick="startGame()">バトル開始！</button>
+  </div>
+
+  <div id="battle-screen" class="screen hidden">
+    <div class="round-info" id="roundInfo"></div>
+    <div class="hp-area">
+      <span id="eName">???</span>
+      <div class="hp-bar-bg"><div class="hp-bar enemy" id="eBar" style="width:100%"></div></div>
+      <span id="eHP">50/50</span>
+    </div>
+    <div class="arena" id="arena">
+      <div class="char" id="pChar">🛡️</div>
+      <div class="vs-text">VS</div>
+      <div class="char" id="eChar">👾</div>
+    </div>
+    <div class="hp-area">
+      <span>騎士ルク</span>
+      <div class="hp-bar-bg"><div class="hp-bar player" id="pBar" style="width:100%"></div></div>
+      <span id="pHP">100/100</span>
+    </div>
+    <div class="msg-bar" id="msg">カードをえらんでね！</div>
+    <p id="intent" class="v2-actions" aria-live="polite"></p><div class="hand" id="hand"></div>
+  </div>
+
+  <div id="result-screen" class="screen hidden">
+    <h2 id="resultTitle"></h2>
+    <p id="resultMsg"></p>
+    <button class="btn" onclick="backToTitle()">タイトルへ</button>
+  </div>
+</div>
+
+<script src="../../shared/rules.js"></script><script src="game.js"></script>
+</body>
+</html>

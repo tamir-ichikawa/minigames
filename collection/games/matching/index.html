@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>珊瑚のペア図鑑</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../../shared/shell.css"><script>window.GAME_CONFIG={"id":"matching","title":"珊瑚のペア図鑑","controls":[],"choice":null,"fixed60":false}</script><script src="../../shared/shell.js"></script><script src="../../shared/art.js"></script><link rel="icon" type="image/svg+xml" href="../../shared/favicon.svg"></head>
+<body>
+<div id="g">
+  <h1>珊瑚のペア図鑑🐠</h1>
+  <div class="diff-btns">
+    <button class="diff-btn active" id="d1">3×2</button>
+    <button class="diff-btn" id="d2">4×3</button>
+    <button class="diff-btn" id="d3">4×4</button>
+  </div>
+  <div class="info">
+    <div>ペア: <span id="pairs">0</span>/<span id="total">0</span></div>
+    <div>タップ: <span id="taps">0</span></div>
+    <div>タイム: <span id="timer">0</span>秒</div>
+  </div>
+  <div class="board" id="board"></div>
+  <div class="speech" id="speech">あのねあのね、おなじえもじをみつけてね〜！🐠</div>
+  <button class="btn" id="newBtn" style="display:none">もういっかい！</button>
+</div>
+<script src="../../shared/rules.js"></script><script src="game.js"></script>
+</body>
+</html>

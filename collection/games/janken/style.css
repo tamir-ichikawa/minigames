@@ -1,0 +1,65 @@
+
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;user-select:none}
+body{background:linear-gradient(135deg,#eee0cc,#E8F5E9);display:flex;justify-content:center;align-items:center;height:100vh;height:100dvh;overflow:hidden;font-family:'Hiragino Kaku Gothic ProN','Meiryo',sans-serif}
+#g{width:100%;max-width:420px;height:100%;position:relative;overflow:hidden;background:linear-gradient(180deg,#eee0cc,#eee0cc,#eee0cc)}
+.screen{position:absolute;top:0;left:0;right:0;bottom:0;display:none;flex-direction:column;align-items:center;justify-content:center;padding:16px}
+.screen.active{display:flex}
+
+h1{font-size:26px;color:#94683b;margin:10px 0}
+.emoji-big{font-size:60px;margin:10px 0}
+.sub{color:#888;font-size:15px;margin:10px 0}
+
+.mode-btns{display:flex;gap:10px;margin:20px 0}
+.mode-btn{background:#FF80AB;color:#fff;border:none;padding:12px 20px;border-radius:12px;font-size:16px;font-family:inherit;cursor:pointer;-webkit-appearance:none}
+.mode-btn:active{transform:scale(0.95);background:#94683b}
+
+.mitan-area{text-align:center;margin:8px 0}
+.mitan-area .face{font-size:44px}
+.mitan-area .hand{font-size:56px;min-height:65px;margin:4px 0}
+.speech{background:#fff;border-radius:16px;padding:10px 16px;margin:8px auto;max-width:300px;font-size:14px;color:#555;box-shadow:0 2px 8px rgba(0,0,0,0.08);min-height:44px;display:flex;align-items:center;justify-content:center;line-height:1.5;text-align:center}
+
+.countdown{font-size:32px;font-weight:bold;color:#94683b;min-height:44px;margin:6px 0;text-align:center}
+
+/* バトル表示 */
+.battle-display{display:flex;align-items:center;justify-content:center;gap:12px;margin:10px 0;min-height:90px}
+.battle-hand{text-align:center}
+.battle-hand .label{font-size:12px;color:#888;margin-bottom:2px}
+.battle-hand .emoji{font-size:50px}
+.battle-vs{font-size:20px;font-weight:bold;color:#94683b}
+.battle-result{font-size:22px;font-weight:bold;text-align:center;min-height:32px;margin:4px 0}
+.result-win{color:#94683b}
+.result-lose{color:#5C6BC0}
+.result-draw{color:#FFB300}
+
+.choice-btns{display:flex;gap:12px;margin:14px 0}
+.choice-btn{width:88px;height:88px;border-radius:20px;border:3px solid #FFB6C1;background:#fff;font-size:14px;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;-webkit-appearance:none}
+.choice-btn .em{font-size:34px}
+.choice-btn:active{transform:scale(0.9);background:#eee0cc}
+.choice-btn.disabled{opacity:0.3;pointer-events:none}
+
+.score-bar{display:flex;gap:16px;padding:10px 16px;background:rgba(255,255,255,0.8);border-radius:12px;font-size:14px;color:#666;margin:6px 0}
+.score-bar span{font-weight:bold}
+.score-bar .w{color:#94683b}
+.score-bar .l{color:#5C6BC0}
+.score-bar .d{color:#FFB300}
+
+.streak{color:#FF6D00;font-size:15px;font-weight:bold;min-height:22px;margin:2px 0;text-align:center}
+
+/* ラウンド履歴 */
+.history{display:flex;gap:6px;margin:6px 0;flex-wrap:wrap;justify-content:center}
+.history-item{width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:bold;color:#fff}
+.history-item.win{background:#94683b}
+.history-item.lose{background:#5C6BC0}
+.history-item.draw{background:#FFB300}
+.history-item.empty{background:#eee;color:#ccc}
+
+.result-panel{text-align:center;padding:20px}
+.result-panel h2{font-size:28px;margin:10px 0}
+.result-panel p{color:#777;font-size:16px;margin:6px 0}
+
+.btn{background:#FF80AB;color:#fff;border:none;padding:12px 36px;border-radius:14px;font-size:18px;font-family:inherit;cursor:pointer;margin-top:15px;-webkit-appearance:none}
+.btn:active{transform:scale(0.95)}
+
+.stats{font-size:13px;color:#999;margin-top:6px}
+
+@media(max-height:700px){#g{height:auto;overflow:visible}.screen{position:relative;inset:auto;min-height:450px}}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>ポン太の三手勝負</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../../shared/shell.css"><script>window.GAME_CONFIG={"id":"janken","title":"ポン太の三手勝負","controls":[{"label":"選択 1","code":"Digit1","choice":0},{"label":"選択 2","code":"Digit2","choice":1},{"label":"選択 3","code":"Digit3","choice":2}],"choice":".choice-btn","fixed60":false}</script><script src="../../shared/shell.js"></script><script src="../../shared/art.js"></script><link rel="icon" type="image/svg+xml" href="../../shared/favicon.svg"></head>
+<body>
+<div id="g">
+  <!-- タイトル -->
+  <div id="title" class="screen active">
+    <h1>ポン太の三手勝負</h1>
+    <div class="emoji-big">✊✌️🖐️</div>
+    <div class="emoji-big">🐻</div>
+    <p class="sub">モードをえらんでね！</p>
+    <div class="mode-btns">
+      <button class="mode-btn" id="btn3">3回勝負</button>
+      <button class="mode-btn" id="btn5">5回勝負</button>
+      <button class="mode-btn" id="btn7">7回勝負</button>
+    </div>
+    <div class="stats" id="totalStats"></div>
+  </div>
+
+  <!-- プレイ -->
+  <div id="play" class="screen">
+    <div class="score-bar">
+      <div>⭕ <span class="w" id="sWin">0</span></div>
+      <div>❌ <span class="l" id="sLose">0</span></div>
+      <div>△ <span class="d" id="sDraw">0</span></div>
+      <div style="color:#aaa" id="sRound">1回目</div>
+    </div>
+    <div class="history" id="history"></div>
+    <div class="streak" id="streak"></div>
+
+    <div class="mitan-area">
+      <div class="face">🐻</div>
+    </div>
+    <div class="speech" id="mSpeech">じゃんけんしよ〜！🐻</div>
+
+    <div class="battle-display" id="battleArea" style="display:none">
+      <div class="battle-hand">
+        <div class="label">あなた</div>
+        <div class="emoji" id="pHand"></div>
+      </div>
+      <div class="battle-vs">VS</div>
+      <div class="battle-hand">
+        <div class="label">ポン太</div>
+        <div class="emoji" id="mHand2"></div>
+      </div>
+    </div>
+    <div class="battle-result" id="battleResult"></div>
+
+    <div class="countdown" id="cd"></div>
+    <div class="choice-btns" id="choices">
+      <button class="choice-btn" id="c0"><span class="em">✊</span>グー</button>
+      <button class="choice-btn" id="c1"><span class="em">✌️</span>チョキ</button>
+      <button class="choice-btn" id="c2"><span class="em">🖐️</span>パー</button>
+    </div>
+  </div>
+
+  <!-- リザルト -->
+  <div id="result" class="screen">
+    <div class="result-panel">
+      <h2 id="rTitle"></h2>
+      <div style="font-size:60px;margin:10px 0" id="rEmoji"></div>
+      <p id="rMsg"></p>
+      <p id="rScore" style="font-weight:bold;color:#E91E63;font-size:18px"></p>
+      <div class="history" id="historyResult"></div>
+      <button class="btn" id="btnBack">タイトルへ</button>
+    </div>
+  </div>
+</div>
+
+<script src="../../shared/rules.js"></script><script src="game.js"></script>
+</body>
+</html>

@@ -1,0 +1,202 @@
+[
+  {
+    "id": "dash",
+    "title": "コハク便ダッシュ",
+    "character": "コハク",
+    "icon": "🦊",
+    "ink": "#ad5c28",
+    "color": "#fae5c8",
+    "description": "安全な配達列か、金星への寄り道か。ルートを選ぼう。",
+    "old": "みーたんダッシュ"
+  },
+  {
+    "id": "shooting",
+    "title": "アストラ・パトロール",
+    "character": "アストラ",
+    "icon": "🚀",
+    "ink": "#357c9c",
+    "color": "#dce8f2",
+    "description": "編隊を迎撃し、60秒で中ボス。予告を見て回避・反撃。",
+    "old": "みーたんシューティング"
+  },
+  {
+    "id": "jump",
+    "title": "ケロの空中遺跡",
+    "character": "ケロ",
+    "icon": "🐸",
+    "ink": "#357858",
+    "color": "#deedcf",
+    "description": "左右移動、動く足場、壊れる足場を順に学ぶ空中遺跡。",
+    "old": "みーたんジャンプ"
+  },
+  {
+    "id": "flappy",
+    "title": "ルナの夜間飛行",
+    "character": "ルナ",
+    "icon": "🦉",
+    "ink": "#69568c",
+    "color": "#e5def4",
+    "description": "最初の3門は練習コース。10門・20門を目指そう。",
+    "old": "みーたんフラッピー"
+  },
+  {
+    "id": "flick",
+    "title": "ポストン仕分け局",
+    "character": "ポストン",
+    "icon": "📦",
+    "ink": "#94702d",
+    "color": "#f2e6c7",
+    "description": "次の荷物を見て仕分け。30個配送とエンドレス。",
+    "old": "みーたんフリック仕分け"
+  },
+  {
+    "id": "tsumiki",
+    "title": "星灯りタワー",
+    "character": "灯台守",
+    "icon": "🏙️",
+    "ink": "#75619f",
+    "color": "#e3ddf2",
+    "description": "切れ端が落ち、10段ごとに空が変わる灯りのタワー。",
+    "old": "みーたんつみき"
+  },
+  {
+    "id": "tetris",
+    "title": "プリズム・ライン",
+    "character": "プリズム",
+    "icon": "💎",
+    "ink": "#297d83",
+    "color": "#d5eeeb",
+    "description": "壁際回転と接地猶予で、最後の一手を整えよう。",
+    "old": "みーたんテトリス"
+  },
+  {
+    "id": "maze",
+    "title": "こもれび迷宮",
+    "character": "探検家",
+    "icon": "🧭",
+    "ink": "#568051",
+    "color": "#e3edd4",
+    "description": "最短で出口へ、または寄り道して木の実を集めよう。",
+    "old": "みーたん迷路"
+  },
+  {
+    "id": "matching",
+    "title": "珊瑚のペア図鑑",
+    "character": "サンゴ",
+    "icon": "🐠",
+    "ink": "#357f99",
+    "color": "#d7edf0",
+    "description": "海の専用イラストをペアに。全札プレビュー練習も。",
+    "old": "みーたんマッチング"
+  },
+  {
+    "id": "sudoku",
+    "title": "ロジの数字研究所",
+    "character": "ロジ",
+    "icon": "🤖",
+    "ink": "#587998",
+    "color": "#dfe7ef",
+    "description": "候補メモと理由ヒント。行・列・四角で考える数字パズル。",
+    "old": "みーたんすうじパズル"
+  },
+  {
+    "id": "marubatsu",
+    "title": "ノヴァと三目勝負",
+    "character": "ノヴァ",
+    "icon": "🤖",
+    "ink": "#776398",
+    "color": "#e8e0ef",
+    "description": "通常対戦と、一手で勝つ・リーチを止める詰め問題。",
+    "old": "みーたんと○×ゲーム"
+  },
+  {
+    "id": "machigai",
+    "title": "ミッケの鑑定室",
+    "character": "ミッケ",
+    "icon": "🔎",
+    "ink": "#3a7d8d",
+    "color": "#d8ebed",
+    "description": "色だけでなく形も見比べる、二列の模様鑑定。",
+    "old": "みーたんまちがいさがし"
+  },
+  {
+    "id": "anzan",
+    "title": "ひらめき発電所",
+    "character": "スパーク",
+    "icon": "⚡",
+    "ink": "#927225",
+    "color": "#f3eac6",
+    "description": "計算の種類を選び、間違えた問題をゆっくり復習。",
+    "old": "みーたん暗算チャレンジ"
+  },
+  {
+    "id": "karuta",
+    "title": "季節の絵札帖",
+    "character": "絵札案内人",
+    "icon": "🎴",
+    "ink": "#967346",
+    "color": "#f0e4cf",
+    "description": "季節ごとの絵札と文章。任意の読み上げにも対応。",
+    "old": "みーたんかるた"
+  },
+  {
+    "id": "shiritori",
+    "title": "ことばの小径",
+    "character": "ツナギ",
+    "icon": "🐍",
+    "ink": "#4f8469",
+    "color": "#dfeddb",
+    "description": "複数の正しい言葉から選んで、10回つなごう。",
+    "old": "みーたんしりとり"
+  },
+  {
+    "id": "typing",
+    "title": "ことば通信局",
+    "character": "通信士",
+    "icon": "⌨️",
+    "ink": "#50768d",
+    "color": "#dce7ef",
+    "description": "文字数・正確さ・入力時間を分けて練習。",
+    "old": "みーたんタイピング"
+  },
+  {
+    "id": "card_battle",
+    "title": "小さな騎士の五連戦",
+    "character": "騎士ルク",
+    "icon": "🛡️",
+    "ink": "#766182",
+    "color": "#e8deeb",
+    "description": "敵の予告を読んでカードを選び、戦闘後に成長。",
+    "old": "みーたんカードバトル"
+  },
+  {
+    "id": "janken",
+    "title": "ポン太の三手勝負",
+    "character": "ポン太",
+    "icon": "🐻",
+    "ink": "#94683b",
+    "color": "#eee0cc",
+    "description": "気分の予告、くり返し派、均等確率から相手を選ぶ。",
+    "old": "みーたんとじゃんけん"
+  },
+  {
+    "id": "oekaki",
+    "title": "いろのアトリエ",
+    "character": "パレット",
+    "icon": "🎨",
+    "ink": "#907254",
+    "color": "#eee5d7",
+    "description": "ペン・直線・丸・下絵。UndoとRedoで自由に描こう。",
+    "old": "みーたんおえかき"
+  },
+  {
+    "id": "marimo-run",
+    "title": "モグモグ・ポム",
+    "character": "ポム",
+    "icon": "🍊",
+    "ink": "#b47736",
+    "color": "#f3e5cf",
+    "description": "最初の敵で食べるタイミングを練習。3段階の変身へ。",
+    "old": "ぱくぱく！まりもラン"
+  }
+]

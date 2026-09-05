@@ -1,0 +1,18 @@
+
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;user-select:none}
+body{background:linear-gradient(135deg,#E8F5E9,#FFF3E0);display:flex;justify-content:center;align-items:center;height:100vh;height:100dvh;overflow:hidden;font-family:'Hiragino Kaku Gothic ProN','Meiryo',sans-serif}
+#wrap{display:flex;flex-direction:column;align-items:center;gap:8px;padding:10px}
+h1{font-size:22px;color:#4CAF50;margin-bottom:2px}
+.info{display:flex;gap:20px;font-size:14px;color:#666}
+.info span{font-weight:bold;color:#4CAF50}
+canvas{display:block;touch-action:none;border:2px solid #A5D6A7;border-radius:8px;background:#fff}
+.controls{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;width:180px;margin-top:6px}
+.dbtn{width:56px;height:48px;border:2px solid #A5D6A7;border-radius:10px;background:#fff;font-size:22px;cursor:pointer;display:flex;align-items:center;justify-content:center;-webkit-appearance:none}
+.dbtn:active{background:#E8F5E9}
+.dbtn.blank{border:none;background:transparent}
+.msg{font-size:16px;color:#4CAF50;font-weight:bold;min-height:24px;margin:4px 0;text-align:center}
+.btn{background:#66BB6A;color:#fff;border:none;padding:10px 24px;border-radius:12px;font-size:16px;font-family:inherit;cursor:pointer;margin-top:6px;-webkit-appearance:none}
+.btn:active{background:#43A047}
+.size-btns{display:flex;gap:8px;margin:6px 0}
+.size-btn{padding:6px 14px;border:2px solid #A5D6A7;border-radius:8px;background:#fff;color:#4CAF50;font-size:13px;font-family:inherit;cursor:pointer;-webkit-appearance:none}
+.size-btn:active,.size-btn.active{background:#66BB6A;color:#fff}

@@ -1,0 +1,22 @@
+
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;user-select:none}
+body{background:#1a1a2e;display:flex;justify-content:center;align-items:center;height:100vh;height:100dvh;overflow:hidden;font-family:'Hiragino Kaku Gothic ProN','Meiryo',sans-serif}
+#wrap{display:flex;flex-direction:column;align-items:center;gap:8px}
+canvas{display:block;touch-action:none;background:#0a0a1a;border:2px solid #333;border-radius:4px}
+.info{display:flex;gap:20px;color:#fff;font-size:14px}
+.info span{font-weight:bold;color:#FF80AB}
+.controls{display:flex;gap:8px;margin-top:6px}
+.cbtn{width:60px;height:50px;border:2px solid #555;border-radius:10px;background:rgba(255,255,255,0.08);color:#fff;font-size:22px;cursor:pointer;display:flex;align-items:center;justify-content:center;-webkit-appearance:none}
+.cbtn:active{background:rgba(255,255,255,0.2)}
+.cbtn.wide{width:130px;font-size:14px}
+#overlay{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.7);display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;z-index:10}
+#overlay h2{font-size:28px;color:#FF80AB;margin-bottom:10px}
+#overlay p{font-size:16px;margin:4px 0;color:#ccc}
+#overlay button{margin-top:16px;padding:12px 32px;border:none;border-radius:12px;background:#FF80AB;color:#fff;font-size:18px;font-family:inherit;cursor:pointer;-webkit-appearance:none}
+#overlay button:active{background:#297d83}
+.hidden{display:none!important}
+
+#nextPiece{display:inline-grid;gap:2px;vertical-align:middle;min-height:26px;align-content:center}
+#nextPiece i{display:block;width:12px;height:12px;border-radius:2px}
+
+.controls{display:none}#c{width:auto;height:clamp(260px,calc(100dvh - 224px),560px);max-width:90vw}#wrap .v2-actions{color:#e2eed2;margin:4px}.info{gap:12px}#overlay{top:48px;bottom:56px}

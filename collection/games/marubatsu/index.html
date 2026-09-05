@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>ノヴァと三目勝負</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../../shared/shell.css"><script>window.GAME_CONFIG={"id":"marubatsu","title":"ノヴァと三目勝負","controls":[],"choice":null,"fixed60":false}</script><script src="../../shared/shell.js"></script><script src="../../shared/art.js"></script><link rel="icon" type="image/svg+xml" href="../../shared/favicon.svg"></head>
+<body>
+<div id="g">
+  <h1>ノヴァと三目勝負🤖</h1>
+  <div class="score-row">
+    <div>あなた(⭕): <span class="you" id="sYou">0</span></div>
+    <div>ノヴァ(❌): <span class="mt" id="sMt">0</span></div>
+    <div>引分: <span id="sDr">0</span></div>
+  </div>
+  <div class="diff-btns">
+    <button class="diff-btn active" id="dEasy">かんたん</button>
+    <button class="diff-btn" id="dHard">つよい</button>
+  </div>
+  <div class="status" id="status">あなたのばんだよ！⭕</div>
+  <label class="v2-actions">先手<select id="firstPlayer"><option value="1">あなた</option><option value="2">ノヴァ</option></select></label><div class="board" id="board"></div>
+  <div class="speech" id="speech">じゃあ先にどうぞ〜🤖</div>
+  <button class="btn hidden" id="resetBtn" style="display:none">もう一回！</button>
+</div>
+<script src="../../shared/rules.js"></script><script src="game.js"></script>
+</body>
+</html>

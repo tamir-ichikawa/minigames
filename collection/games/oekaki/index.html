@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>いろのアトリエ</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../../shared/shell.css"><script>window.GAME_CONFIG={"id":"oekaki","title":"いろのアトリエ","controls":[{"label":"もどす","code":"KeyZ","selector":"#undoBtn"},{"label":"けしゴム","code":"KeyE","selector":"#eraserBtn"},{"label":"保存","code":"KeyS","selector":"#saveBtn"}],"choice":null,"fixed60":false}</script><script src="../../shared/shell.js"></script><script src="../../shared/art.js"></script><link rel="icon" type="image/svg+xml" href="../../shared/favicon.svg"></head>
+<body>
+<div id="wrap">
+  <h1>いろのアトリエ🎨🎨</h1>
+  <div class="toolbar" id="colors"></div>
+  <div class="toolbar">
+    <input type="range" class="size-slider" id="sizeSlider" min="1" max="20" value="4">
+    <button class="tool-btn" id="eraserBtn">🧽けしゴム</button>
+    <button class="tool-btn" id="undoBtn">↩もどす</button>
+    <button class="tool-btn" id="clearBtn">🗑ぜんぶけす</button>
+  </div>
+  <canvas id="c"></canvas>
+  <div class="toolbar emoji-bar" id="emojis"></div>
+  <div class="bottom-bar">
+    <button class="tool-btn" id="saveBtn">💾ほぞん</button>
+    <div class="speech" id="speech">すきなえをかいてね〜！🎨✨</div>
+  </div>
+</div>
+<script src="../../shared/rules.js"></script><script src="game.js"></script>
+</body>
+</html>

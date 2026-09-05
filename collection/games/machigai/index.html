@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>ミッケの鑑定室</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../../shared/shell.css"><script>window.GAME_CONFIG={"id":"machigai","title":"ミッケの鑑定室","controls":[{"label":"場所 1","code":"Digit1","choice":0},{"label":"場所 2","code":"Digit2","choice":1},{"label":"場所 3","code":"Digit3","choice":2},{"label":"場所 4","code":"Digit4","choice":3},{"label":"場所 5","code":"Digit5","choice":4},{"label":"場所 6","code":"Digit6","choice":5}],"choice":"#rowB .emoji-cell","fixed60":false}</script><script src="../../shared/shell.js"></script><script src="../../shared/art.js"></script><link rel="icon" type="image/svg+xml" href="../../shared/favicon.svg"></head>
+<body>
+<div id="g">
+  <div id="titleScreen" class="screen active">
+    <h1>ミッケの鑑定室🔍</h1>
+    <div style="font-size:50px;margin:10px 0">🔎🔍</div>
+    <p class="sub">2つのれつをくらべて</p>
+    <p class="sub">ちがうえもじをタップしてね〜！</p>
+    <label class="practice"><input id="practice" type="checkbox"> 時間制限なしで練習</label><button class="btn" id="startBtn">はじめる！</button>
+  </div>
+
+  <div id="playScreen" class="screen">
+    <div class="info">
+      <div>レベル: <span id="lv">1</span></div>
+      <div>スコア: <span id="sc">0</span></div>
+      <div>のこり: <span id="remain">1</span></div>
+    </div>
+    <div class="timer-bar"><div class="timer-fill" id="timerFill" style="width:100%"></div></div>
+    <div class="rows">
+      <div><div class="row-label">▼ お手本</div><div class="emoji-row" id="rowA"></div></div>
+      <div><div class="row-label">▼ まちがいをさがしてタップ！</div><div class="emoji-row" id="rowB"></div></div>
+    </div>
+    <div class="speech" id="speech">ちがうところをみつけてね〜！🔎</div>
+  </div>
+
+  <div id="resultScreen" class="screen">
+    <div class="result">
+      <h2 id="rTitle"></h2>
+      <div style="font-size:50px;margin:10px 0" id="rEmoji"></div>
+      <p id="rMsg"></p>
+      <p id="rScore" style="font-weight:bold;color:#2E7D32;font-size:18px"></p>
+      <button class="btn" id="retryBtn">もういっかい！</button>
+    </div>
+  </div>
+</div>
+<script src="../../shared/rules.js"></script><script src="game.js"></script>
+</body>
+</html>

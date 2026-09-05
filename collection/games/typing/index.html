@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>ことば通信局</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../../shared/shell.css"><script>window.GAME_CONFIG={"id":"typing","title":"ことば通信局","controls":[],"choice":null,"fixed60":false}</script><script src="../../shared/shell.js"></script><script src="../../shared/art.js"></script><link rel="icon" type="image/svg+xml" href="../../shared/favicon.svg"></head>
+<body>
+<div id="g">
+  <div id="titleScreen" class="screen active">
+    <h1>ことば通信局⌨️</h1>
+    <div style="font-size:50px;margin:10px 0">⌨️⌨️</div>
+    <p class="sub">もじをはやくうってね〜！</p>
+    <div class="mode-btns">
+      <button class="mode-btn active" id="mHira">ひらがな</button>
+      <button class="mode-btn" id="mAlpha">ABC</button>
+    </div>
+    <label class="practice"><input id="practice" type="checkbox"> 時間制限なしで練習</label><button class="btn" id="startBtn">はじめる！</button>
+  </div>
+
+  <div id="playScreen" class="screen">
+    <div class="info">
+      <div>もんだい: <span id="qNum">1</span>/10</div>
+      <div>スコア: <span id="sc">0</span></div>
+    </div>
+    <div class="timer-bar"><div class="timer-fill" id="timerFill" style="width:100%"></div></div>
+    <div class="word-display">
+      <div style="font-size:12px;color:#aaa">うってね！</div>
+      <div class="target" id="target"></div>
+      <div class="typed" id="typed"></div>
+    </div>
+    <div class="input-area"><input type="text" id="inp" autocomplete="off" autocapitalize="off" spellcheck="false" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="ここにうつ"></div>
+    <div class="kb" id="keyboard"></div>
+    <div class="speech" id="speech">がんばって〜！⌨️</div>
+  </div>
+
+  <div id="resultScreen" class="screen">
+    <div class="result">
+      <h2 id="rTitle"></h2>
+      <div style="font-size:50px;margin:10px 0" id="rEmoji"></div>
+      <p id="rMsg"></p>
+      <p id="rScore" style="font-weight:bold;color:#5C6BC0;font-size:18px"></p>
+      <button class="btn" id="retryBtn">もういっかい！</button>
+      <button class="btn sec" id="backBtn">タイトルへ</button>
+    </div>
+  </div>
+</div>
+<script src="../../shared/rules.js"></script><script src="game.js"></script>
+</body>
+</html>

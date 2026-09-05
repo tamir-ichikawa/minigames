@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>ロジの数字研究所</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../../shared/shell.css"><script>window.GAME_CONFIG={"id":"sudoku","title":"ロジの数字研究所","controls":[{"label":"選択 1","code":"Digit1","choice":0},{"label":"選択 2","code":"Digit2","choice":1},{"label":"選択 3","code":"Digit3","choice":2},{"label":"選択 4","code":"Digit4","choice":3},{"label":"選択 5","code":"Digit5","choice":4}],"choice":".nbtn","fixed60":false}</script><script src="../../shared/shell.js"></script><script src="../../shared/art.js"></script><link rel="icon" type="image/svg+xml" href="../../shared/favicon.svg"></head>
+<body>
+<div id="g">
+  <h1>ロジの数字研究所🤖</h1>
+  <div class="diff-btns">
+    <button class="diff-btn active" id="d1">かんたん</button>
+    <button class="diff-btn" id="d2">ふつう</button>
+    <button class="diff-btn" id="d3">むずかしい</button>
+  </div>
+  <div class="info">のこり: <span id="remain">0</span>マス / まちがい: <span id="errors">0</span></div>
+  <div class="board" id="board"></div>
+  <div class="numpad" id="numpad"></div>
+  <div class="speech" id="speech">あのねあのね、すうじをうめてね〜！🤖</div>
+  <button class="btn" id="newBtn" style="display:none">あたらしいもんだい！</button>
+</div>
+<script src="../../shared/rules.js"></script><script src="game.js"></script>
+</body>
+</html>
