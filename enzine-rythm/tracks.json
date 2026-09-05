@@ -4,5 +4,35 @@
     "chart": "kappa-drums.json",
     "subtitle": "あなたのタップでドラムを演奏 / フル尺 5:16",
     "icon": "◉"
+  },
+  {
+    "id": "kappa-vocals",
+    "chart": "kappa-vocals.json",
+    "subtitle": "歌い出しやフレーズをタップ / フル尺 5:16",
+    "icon": "♬"
+  },
+  {
+    "id": "edge-on-the-bit-drums",
+    "chart": "edge-on-the-bit-drums.json",
+    "subtitle": "強いビートをドラムで演奏 / フル尺",
+    "icon": "◆"
+  },
+  {
+    "id": "pulse-drums",
+    "chart": "pulse-drums.json",
+    "subtitle": "PULSEのビートを演奏 / ドラム",
+    "icon": "●"
+  },
+  {
+    "id": "pulse-bass",
+    "chart": "pulse-bass.json",
+    "subtitle": "低音のグルーヴを演奏 / ベース",
+    "icon": "▰"
+  },
+  {
+    "id": "pulse-guitar",
+    "chart": "pulse-guitar.json",
+    "subtitle": "リフとアタックを演奏 / ギター",
+    "icon": "⌁"
   }
 ]

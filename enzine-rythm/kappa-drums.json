@@ -9,11 +9,13 @@
   "stems": [
     {
       "id": "backing",
+      "label": "伴奏",
       "audio": "assets/bgm/kappa-backing.mp3",
       "role": "backing"
     },
     {
       "id": "drums",
+      "label": "ドラム",
       "audio": "assets/bgm/kappa-drums.mp3",
       "role": "playable"
     }

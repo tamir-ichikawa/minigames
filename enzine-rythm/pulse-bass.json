@@ -1,0 +1,7364 @@
+{
+  "version": 1,
+  "id": "pulse-bass",
+  "title": "PULSE — ベース演奏",
+  "audio": "assets/bgm/pulse-without-bass.mp3",
+  "clipStart": 0,
+  "duration": 196.4398185941043,
+  "estimatedBpm": null,
+  "stems": [
+    {
+      "id": "backing",
+      "label": "伴奏",
+      "audio": "assets/bgm/pulse-without-bass.mp3",
+      "role": "backing"
+    },
+    {
+      "id": "bass",
+      "label": "ベース",
+      "audio": "assets/bgm/pulse-bass.mp3",
+      "role": "playable",
+      "gain": 1,
+      "defaultVolume": 2
+    }
+  ],
+  "chartRevision": "bass-impact-1",
+  "playback": "input-timed-slices",
+  "analysis": "ベース stem spectral onsets in 35-650 Hz; three progressive densities.",
+  "charts": {
+    "easy": [
+      {
+        "time": 4.808,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.807,
+        "strength": 2.45,
+        "accent": "bass"
+      },
+      {
+        "time": 5.615,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.808,
+        "strength": 1.22,
+        "accent": "bass"
+      },
+      {
+        "time": 6.424,
+        "lane": 1,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 0.69,
+        "accent": "bass"
+      },
+      {
+        "time": 9.951,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.628,
+        "strength": 1.34,
+        "accent": "bass"
+      },
+      {
+        "time": 10.579,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.714,
+        "strength": 1.42,
+        "accent": "bass"
+      },
+      {
+        "time": 11.293,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.813,
+        "strength": 1.03,
+        "accent": "bass"
+      },
+      {
+        "time": 12.106,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.69,
+        "strength": 2.52,
+        "accent": "bass"
+      },
+      {
+        "time": 12.796,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.981,
+        "strength": 1.98,
+        "accent": "bass"
+      },
+      {
+        "time": 13.777,
+        "lane": 2,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 1.98,
+        "accent": "bass"
+      },
+      {
+        "time": 14.949,
+        "lane": 0,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 1.58,
+        "accent": "bass"
+      },
+      {
+        "time": 16.029,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.826,
+        "strength": 1.08,
+        "accent": "bass"
+      },
+      {
+        "time": 16.855,
+        "lane": 1,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 2.47,
+        "accent": "bass"
+      },
+      {
+        "time": 18.012,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.743,
+        "strength": 2.3,
+        "accent": "bass"
+      },
+      {
+        "time": 18.756,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.659,
+        "strength": 0.46,
+        "accent": "bass"
+      },
+      {
+        "time": 19.415,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.833,
+        "strength": 1.63,
+        "accent": "bass"
+      },
+      {
+        "time": 20.247,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.833,
+        "strength": 0.83,
+        "accent": "bass"
+      },
+      {
+        "time": 21.081,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.703,
+        "strength": 2.05,
+        "accent": "bass"
+      },
+      {
+        "time": 21.784,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.694,
+        "strength": 3.6,
+        "accent": "bass"
+      },
+      {
+        "time": 22.478,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.868,
+        "strength": 1.85,
+        "accent": "bass"
+      },
+      {
+        "time": 23.345,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.639,
+        "strength": 0.99,
+        "accent": "bass"
+      },
+      {
+        "time": 23.984,
+        "lane": 2,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 1.46,
+        "accent": "bass"
+      },
+      {
+        "time": 25.035,
+        "lane": 3,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 1.58,
+        "accent": "bass"
+      },
+      {
+        "time": 26.109,
+        "lane": 1,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 0.96,
+        "accent": "bass"
+      },
+      {
+        "time": 27.346,
+        "lane": 2,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 1.24,
+        "accent": "bass"
+      },
+      {
+        "time": 36.595,
+        "lane": 3,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 1.64,
+        "accent": "bass"
+      },
+      {
+        "time": 39.246,
+        "lane": 1,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 0.75,
+        "accent": "bass"
+      },
+      {
+        "time": 41.414,
+        "lane": 2,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 1.17,
+        "accent": "bass"
+      },
+      {
+        "time": 43.455,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.759,
+        "strength": 0.78,
+        "accent": "bass"
+      },
+      {
+        "time": 44.214,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.712,
+        "strength": 0.85,
+        "accent": "bass"
+      },
+      {
+        "time": 44.926,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.824,
+        "strength": 1.1,
+        "accent": "bass"
+      },
+      {
+        "time": 45.75,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.997,
+        "strength": 1.97,
+        "accent": "bass"
+      },
+      {
+        "time": 46.747,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.968,
+        "strength": 1.71,
+        "accent": "bass"
+      },
+      {
+        "time": 47.715,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.983,
+        "strength": 1.27,
+        "accent": "bass"
+      },
+      {
+        "time": 48.698,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.677,
+        "strength": 1.97,
+        "accent": "bass"
+      },
+      {
+        "time": 49.375,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.914,
+        "strength": 0.65,
+        "accent": "bass"
+      },
+      {
+        "time": 50.289,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.639,
+        "strength": 0.59,
+        "accent": "bass"
+      },
+      {
+        "time": 50.927,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.856,
+        "strength": 1.6,
+        "accent": "bass"
+      },
+      {
+        "time": 51.784,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.713,
+        "strength": 1.7,
+        "accent": "bass"
+      },
+      {
+        "time": 52.497,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.67,
+        "strength": 1.71,
+        "accent": "bass"
+      },
+      {
+        "time": 53.167,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.734,
+        "strength": 1.75,
+        "accent": "bass"
+      },
+      {
+        "time": 53.902,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.987,
+        "strength": 1.49,
+        "accent": "bass"
+      },
+      {
+        "time": 54.888,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.803,
+        "strength": 1.94,
+        "accent": "bass"
+      },
+      {
+        "time": 55.692,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.988,
+        "strength": 1.84,
+        "accent": "bass"
+      },
+      {
+        "time": 56.679,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.849,
+        "strength": 1.27,
+        "accent": "bass"
+      },
+      {
+        "time": 57.528,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.846,
+        "strength": 1.59,
+        "accent": "bass"
+      },
+      {
+        "time": 58.375,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.625,
+        "strength": 1.33,
+        "accent": "bass"
+      },
+      {
+        "time": 58.999,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.918,
+        "strength": 0.85,
+        "accent": "bass"
+      },
+      {
+        "time": 59.917,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.629,
+        "strength": 1.5,
+        "accent": "bass"
+      },
+      {
+        "time": 60.546,
+        "lane": 3,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 0.65,
+        "accent": "bass"
+      },
+      {
+        "time": 61.728,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.778,
+        "strength": 1.15,
+        "accent": "bass"
+      },
+      {
+        "time": 62.506,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.863,
+        "strength": 0.72,
+        "accent": "bass"
+      },
+      {
+        "time": 63.369,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.919,
+        "strength": 0.99,
+        "accent": "bass"
+      },
+      {
+        "time": 64.288,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.832,
+        "strength": 0.89,
+        "accent": "bass"
+      },
+      {
+        "time": 65.12,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.649,
+        "strength": 0.91,
+        "accent": "bass"
+      },
+      {
+        "time": 65.769,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.703,
+        "strength": 0.61,
+        "accent": "bass"
+      },
+      {
+        "time": 66.472,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.723,
+        "strength": 0.76,
+        "accent": "bass"
+      },
+      {
+        "time": 67.195,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.839,
+        "strength": 0.8,
+        "accent": "bass"
+      },
+      {
+        "time": 68.035,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.702,
+        "strength": 0.51,
+        "accent": "bass"
+      },
+      {
+        "time": 68.737,
+        "lane": 2,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 1.14,
+        "accent": "bass"
+      },
+      {
+        "time": 69.906,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.895,
+        "strength": 0.73,
+        "accent": "bass"
+      },
+      {
+        "time": 70.801,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.754,
+        "strength": 0.86,
+        "accent": "bass"
+      },
+      {
+        "time": 71.556,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.719,
+        "strength": 1.11,
+        "accent": "bass"
+      },
+      {
+        "time": 72.274,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.699,
+        "strength": 1.48,
+        "accent": "bass"
+      },
+      {
+        "time": 72.973,
+        "lane": 3,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 1.19,
+        "accent": "bass"
+      },
+      {
+        "time": 74.938,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.699,
+        "strength": 1.76,
+        "accent": "bass"
+      },
+      {
+        "time": 75.637,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.668,
+        "strength": 1.57,
+        "accent": "bass"
+      },
+      {
+        "time": 76.305,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.768,
+        "strength": 0.69,
+        "accent": "bass"
+      },
+      {
+        "time": 77.073,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.629,
+        "strength": 1.16,
+        "accent": "bass"
+      },
+      {
+        "time": 77.702,
+        "lane": 1,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 1.89,
+        "accent": "bass"
+      },
+      {
+        "time": 78.857,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.795,
+        "strength": 1.52,
+        "accent": "bass"
+      },
+      {
+        "time": 79.652,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.738,
+        "strength": 0.53,
+        "accent": "bass"
+      },
+      {
+        "time": 80.39,
+        "lane": 2,
+        "part": "bass",
+        "duration": 1.038,
+        "strength": 1.07,
+        "accent": "bass"
+      },
+      {
+        "time": 81.429,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.758,
+        "strength": 0.69,
+        "accent": "bass"
+      },
+      {
+        "time": 82.186,
+        "lane": 2,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 1.29,
+        "accent": "bass"
+      },
+      {
+        "time": 83.329,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.933,
+        "strength": 1.89,
+        "accent": "bass"
+      },
+      {
+        "time": 84.262,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.764,
+        "strength": 0.66,
+        "accent": "bass"
+      },
+      {
+        "time": 85.025,
+        "lane": 2,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 1.92,
+        "accent": "bass"
+      },
+      {
+        "time": 86.128,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.977,
+        "strength": 1.43,
+        "accent": "bass"
+      },
+      {
+        "time": 87.105,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.663,
+        "strength": 1.04,
+        "accent": "bass"
+      },
+      {
+        "time": 87.769,
+        "lane": 1,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 0.6,
+        "accent": "bass"
+      },
+      {
+        "time": 88.913,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.672,
+        "strength": 0.67,
+        "accent": "bass"
+      },
+      {
+        "time": 89.585,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.909,
+        "strength": 0.59,
+        "accent": "bass"
+      },
+      {
+        "time": 90.493,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.967,
+        "strength": 1.47,
+        "accent": "bass"
+      },
+      {
+        "time": 91.46,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.883,
+        "strength": 0.94,
+        "accent": "bass"
+      },
+      {
+        "time": 92.343,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.678,
+        "strength": 0.96,
+        "accent": "bass"
+      },
+      {
+        "time": 93.022,
+        "lane": 1,
+        "part": "bass",
+        "duration": 1.003,
+        "strength": 0.59,
+        "accent": "bass"
+      },
+      {
+        "time": 94.024,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.668,
+        "strength": 0.65,
+        "accent": "bass"
+      },
+      {
+        "time": 94.693,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.973,
+        "strength": 0.75,
+        "accent": "bass"
+      },
+      {
+        "time": 95.666,
+        "lane": 2,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 0.57,
+        "accent": "bass"
+      },
+      {
+        "time": 97.107,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.642,
+        "strength": 0.56,
+        "accent": "bass"
+      },
+      {
+        "time": 97.75,
+        "lane": 0,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 0.46,
+        "accent": "bass"
+      },
+      {
+        "time": 99.367,
+        "lane": 2,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 0.57,
+        "accent": "bass"
+      },
+      {
+        "time": 101.103,
+        "lane": 1,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 1.37,
+        "accent": "bass"
+      },
+      {
+        "time": 102.351,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.929,
+        "strength": 1.68,
+        "accent": "bass"
+      },
+      {
+        "time": 103.279,
+        "lane": 1,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 0.65,
+        "accent": "bass"
+      },
+      {
+        "time": 104.615,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.654,
+        "strength": 1.73,
+        "accent": "bass"
+      },
+      {
+        "time": 105.27,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.624,
+        "strength": 0.47,
+        "accent": "bass"
+      },
+      {
+        "time": 105.893,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.992,
+        "strength": 2.35,
+        "accent": "bass"
+      },
+      {
+        "time": 106.885,
+        "lane": 1,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 1.21,
+        "accent": "bass"
+      },
+      {
+        "time": 108.117,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.983,
+        "strength": 1.72,
+        "accent": "bass"
+      },
+      {
+        "time": 109.1,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.953,
+        "strength": 1.33,
+        "accent": "bass"
+      },
+      {
+        "time": 110.053,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.758,
+        "strength": 0.97,
+        "accent": "bass"
+      },
+      {
+        "time": 110.811,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.649,
+        "strength": 0.65,
+        "accent": "bass"
+      },
+      {
+        "time": 111.461,
+        "lane": 1,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 0.48,
+        "accent": "bass"
+      },
+      {
+        "time": 112.537,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.668,
+        "strength": 0.81,
+        "accent": "bass"
+      },
+      {
+        "time": 113.206,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.816,
+        "strength": 0.47,
+        "accent": "bass"
+      },
+      {
+        "time": 114.021,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.662,
+        "strength": 0.61,
+        "accent": "bass"
+      },
+      {
+        "time": 114.684,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.637,
+        "strength": 0.54,
+        "accent": "bass"
+      },
+      {
+        "time": 115.321,
+        "lane": 3,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 1.07,
+        "accent": "bass"
+      },
+      {
+        "time": 116.668,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.821,
+        "strength": 0.74,
+        "accent": "bass"
+      },
+      {
+        "time": 117.489,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.925,
+        "strength": 0.62,
+        "accent": "bass"
+      },
+      {
+        "time": 118.414,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.858,
+        "strength": 0.77,
+        "accent": "bass"
+      },
+      {
+        "time": 119.273,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.834,
+        "strength": 0.67,
+        "accent": "bass"
+      },
+      {
+        "time": 120.106,
+        "lane": 2,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 0.61,
+        "accent": "bass"
+      },
+      {
+        "time": 121.997,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.749,
+        "strength": 0.51,
+        "accent": "bass"
+      },
+      {
+        "time": 122.746,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.652,
+        "strength": 1.03,
+        "accent": "bass"
+      },
+      {
+        "time": 123.398,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.753,
+        "strength": 0.61,
+        "accent": "bass"
+      },
+      {
+        "time": 124.151,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.654,
+        "strength": 1.57,
+        "accent": "bass"
+      },
+      {
+        "time": 124.805,
+        "lane": 1,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 1.32,
+        "accent": "bass"
+      },
+      {
+        "time": 125.897,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.788,
+        "strength": 1.06,
+        "accent": "bass"
+      },
+      {
+        "time": 126.685,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.629,
+        "strength": 0.54,
+        "accent": "bass"
+      },
+      {
+        "time": 127.314,
+        "lane": 2,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 0.76,
+        "accent": "bass"
+      },
+      {
+        "time": 128.548,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.886,
+        "strength": 0.64,
+        "accent": "bass"
+      },
+      {
+        "time": 129.434,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.973,
+        "strength": 0.81,
+        "accent": "bass"
+      },
+      {
+        "time": 130.407,
+        "lane": 1,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 1.44,
+        "accent": "bass"
+      },
+      {
+        "time": 131.695,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.683,
+        "strength": 1.26,
+        "accent": "bass"
+      },
+      {
+        "time": 132.378,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.86,
+        "strength": 0.78,
+        "accent": "bass"
+      },
+      {
+        "time": 133.238,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.676,
+        "strength": 1.96,
+        "accent": "bass"
+      },
+      {
+        "time": 133.914,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.713,
+        "strength": 1.93,
+        "accent": "bass"
+      },
+      {
+        "time": 134.627,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.879,
+        "strength": 1.13,
+        "accent": "bass"
+      },
+      {
+        "time": 135.506,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.958,
+        "strength": 1.25,
+        "accent": "bass"
+      },
+      {
+        "time": 136.464,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.641,
+        "strength": 1.08,
+        "accent": "bass"
+      },
+      {
+        "time": 137.105,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.643,
+        "strength": 0.46,
+        "accent": "bass"
+      },
+      {
+        "time": 137.748,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.79,
+        "strength": 1.9,
+        "accent": "bass"
+      },
+      {
+        "time": 138.538,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.849,
+        "strength": 0.76,
+        "accent": "bass"
+      },
+      {
+        "time": 139.387,
+        "lane": 0,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 1.2,
+        "accent": "bass"
+      },
+      {
+        "time": 148.771,
+        "lane": 1,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 0.66,
+        "accent": "bass"
+      },
+      {
+        "time": 151.06,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.624,
+        "strength": 0.51,
+        "accent": "bass"
+      },
+      {
+        "time": 151.683,
+        "lane": 0,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 0.71,
+        "accent": "bass"
+      },
+      {
+        "time": 152.861,
+        "lane": 2,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 0.65,
+        "accent": "bass"
+      },
+      {
+        "time": 154.188,
+        "lane": 1,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 0.44,
+        "accent": "bass"
+      },
+      {
+        "time": 155.56,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.648,
+        "strength": 0.87,
+        "accent": "bass"
+      },
+      {
+        "time": 156.208,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.624,
+        "strength": 0.63,
+        "accent": "bass"
+      },
+      {
+        "time": 156.832,
+        "lane": 1,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 0.51,
+        "accent": "bass"
+      },
+      {
+        "time": 160.155,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.683,
+        "strength": 1.1,
+        "accent": "bass"
+      },
+      {
+        "time": 160.838,
+        "lane": 1,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 1.29,
+        "accent": "bass"
+      },
+      {
+        "time": 162.095,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.785,
+        "strength": 2.45,
+        "accent": "bass"
+      },
+      {
+        "time": 162.88,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.622,
+        "strength": 0.93,
+        "accent": "bass"
+      },
+      {
+        "time": 163.502,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.753,
+        "strength": 1.64,
+        "accent": "bass"
+      },
+      {
+        "time": 164.255,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.943,
+        "strength": 0.91,
+        "accent": "bass"
+      },
+      {
+        "time": 165.198,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.629,
+        "strength": 1.53,
+        "accent": "bass"
+      },
+      {
+        "time": 165.826,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.778,
+        "strength": 0.55,
+        "accent": "bass"
+      },
+      {
+        "time": 166.605,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.958,
+        "strength": 1.41,
+        "accent": "bass"
+      },
+      {
+        "time": 167.562,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.793,
+        "strength": 2.41,
+        "accent": "bass"
+      },
+      {
+        "time": 168.356,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.748,
+        "strength": 0.78,
+        "accent": "bass"
+      },
+      {
+        "time": 169.104,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.704,
+        "strength": 1.34,
+        "accent": "bass"
+      },
+      {
+        "time": 169.808,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.818,
+        "strength": 1.9,
+        "accent": "bass"
+      },
+      {
+        "time": 170.626,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.728,
+        "strength": 0.73,
+        "accent": "bass"
+      },
+      {
+        "time": 171.354,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.762,
+        "strength": 1.83,
+        "accent": "bass"
+      },
+      {
+        "time": 172.116,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.667,
+        "strength": 1.24,
+        "accent": "bass"
+      },
+      {
+        "time": 172.782,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.831,
+        "strength": 1.0,
+        "accent": "bass"
+      },
+      {
+        "time": 173.614,
+        "lane": 2,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 1.31,
+        "accent": "bass"
+      },
+      {
+        "time": 174.747,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.688,
+        "strength": 2.0,
+        "accent": "bass"
+      },
+      {
+        "time": 175.434,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.869,
+        "strength": 1.03,
+        "accent": "bass"
+      },
+      {
+        "time": 176.303,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.643,
+        "strength": 1.29,
+        "accent": "bass"
+      },
+      {
+        "time": 176.946,
+        "lane": 3,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 1.25,
+        "accent": "bass"
+      },
+      {
+        "time": 178.034,
+        "lane": 1,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 0.88,
+        "accent": "bass"
+      },
+      {
+        "time": 179.225,
+        "lane": 2,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 1.5,
+        "accent": "bass"
+      },
+      {
+        "time": 180.359,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.688,
+        "strength": 1.36,
+        "accent": "bass"
+      },
+      {
+        "time": 181.047,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.714,
+        "strength": 1.86,
+        "accent": "bass"
+      },
+      {
+        "time": 181.761,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.827,
+        "strength": 1.18,
+        "accent": "bass"
+      },
+      {
+        "time": 182.588,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.978,
+        "strength": 1.6,
+        "accent": "bass"
+      },
+      {
+        "time": 183.566,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.873,
+        "strength": 1.61,
+        "accent": "bass"
+      },
+      {
+        "time": 184.439,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.643,
+        "strength": 1.67,
+        "accent": "bass"
+      },
+      {
+        "time": 185.082,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.923,
+        "strength": 1.5,
+        "accent": "bass"
+      },
+      {
+        "time": 186.005,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.808,
+        "strength": 1.24,
+        "accent": "bass"
+      },
+      {
+        "time": 186.814,
+        "lane": 2,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 1.36,
+        "accent": "bass"
+      },
+      {
+        "time": 188.037,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.708,
+        "strength": 1.7,
+        "accent": "bass"
+      },
+      {
+        "time": 188.745,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.862,
+        "strength": 0.84,
+        "accent": "bass"
+      },
+      {
+        "time": 189.607,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.709,
+        "strength": 1.68,
+        "accent": "bass"
+      },
+      {
+        "time": 190.316,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.659,
+        "strength": 0.92,
+        "accent": "bass"
+      },
+      {
+        "time": 190.975,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.648,
+        "strength": 1.31,
+        "accent": "bass"
+      },
+      {
+        "time": 191.623,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.643,
+        "strength": 0.49,
+        "accent": "bass"
+      },
+      {
+        "time": 192.266,
+        "lane": 3,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 1.99,
+        "accent": "bass"
+      },
+      {
+        "time": 193.524,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.679,
+        "strength": 2.03,
+        "accent": "bass"
+      },
+      {
+        "time": 194.203,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.787,
+        "strength": 1.04,
+        "accent": "bass"
+      },
+      {
+        "time": 194.99,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.664,
+        "strength": 1.03,
+        "accent": "bass"
+      },
+      {
+        "time": 195.654,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.786,
+        "strength": 0.83,
+        "accent": "bass"
+      }
+    ],
+    "normal": [
+      {
+        "time": 4.808,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.807,
+        "strength": 2.45,
+        "accent": "bass"
+      },
+      {
+        "time": 5.615,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.589,
+        "strength": 1.22,
+        "accent": "bass"
+      },
+      {
+        "time": 6.204,
+        "lane": 1,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 0.92,
+        "accent": "bass"
+      },
+      {
+        "time": 9.951,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.628,
+        "strength": 1.34,
+        "accent": "bass"
+      },
+      {
+        "time": 10.579,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.42,
+        "strength": 1.42,
+        "accent": "bass"
+      },
+      {
+        "time": 10.999,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.568,
+        "strength": 1.06,
+        "accent": "bass"
+      },
+      {
+        "time": 11.567,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.539,
+        "strength": 1.26,
+        "accent": "bass"
+      },
+      {
+        "time": 12.106,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.597,
+        "strength": 2.52,
+        "accent": "bass"
+      },
+      {
+        "time": 12.702,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.551,
+        "strength": 2.11,
+        "accent": "bass"
+      },
+      {
+        "time": 13.254,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.523,
+        "strength": 1.51,
+        "accent": "bass"
+      },
+      {
+        "time": 13.777,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.604,
+        "strength": 1.98,
+        "accent": "bass"
+      },
+      {
+        "time": 14.38,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.569,
+        "strength": 1.22,
+        "accent": "bass"
+      },
+      {
+        "time": 14.949,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.519,
+        "strength": 1.58,
+        "accent": "bass"
+      },
+      {
+        "time": 15.468,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.506,
+        "strength": 1.4,
+        "accent": "bass"
+      },
+      {
+        "time": 15.974,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.391,
+        "strength": 0.48,
+        "accent": "bass"
+      },
+      {
+        "time": 16.365,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.49,
+        "strength": 1.49,
+        "accent": "bass"
+      },
+      {
+        "time": 16.855,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.439,
+        "strength": 2.47,
+        "accent": "bass"
+      },
+      {
+        "time": 17.294,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.718,
+        "strength": 1.44,
+        "accent": "bass"
+      },
+      {
+        "time": 18.012,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.559,
+        "strength": 2.3,
+        "accent": "bass"
+      },
+      {
+        "time": 18.571,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.445,
+        "strength": 1.81,
+        "accent": "bass"
+      },
+      {
+        "time": 19.016,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.399,
+        "strength": 0.58,
+        "accent": "bass"
+      },
+      {
+        "time": 19.415,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.553,
+        "strength": 1.63,
+        "accent": "bass"
+      },
+      {
+        "time": 19.968,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.554,
+        "strength": 1.08,
+        "accent": "bass"
+      },
+      {
+        "time": 20.522,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.559,
+        "strength": 1.89,
+        "accent": "bass"
+      },
+      {
+        "time": 21.081,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.703,
+        "strength": 2.05,
+        "accent": "bass"
+      },
+      {
+        "time": 21.784,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.694,
+        "strength": 3.6,
+        "accent": "bass"
+      },
+      {
+        "time": 22.478,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.699,
+        "strength": 1.85,
+        "accent": "bass"
+      },
+      {
+        "time": 23.177,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.393,
+        "strength": 0.89,
+        "accent": "bass"
+      },
+      {
+        "time": 23.57,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.414,
+        "strength": 1.31,
+        "accent": "bass"
+      },
+      {
+        "time": 23.984,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.481,
+        "strength": 1.46,
+        "accent": "bass"
+      },
+      {
+        "time": 24.465,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.57,
+        "strength": 0.98,
+        "accent": "bass"
+      },
+      {
+        "time": 25.035,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.515,
+        "strength": 1.58,
+        "accent": "bass"
+      },
+      {
+        "time": 25.55,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.559,
+        "strength": 0.54,
+        "accent": "bass"
+      },
+      {
+        "time": 26.109,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.48,
+        "strength": 0.96,
+        "accent": "bass"
+      },
+      {
+        "time": 26.589,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.757,
+        "strength": 0.57,
+        "accent": "bass"
+      },
+      {
+        "time": 27.346,
+        "lane": 2,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 1.24,
+        "accent": "bass"
+      },
+      {
+        "time": 36.091,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.504,
+        "strength": 0.87,
+        "accent": "bass"
+      },
+      {
+        "time": 36.595,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.449,
+        "strength": 1.64,
+        "accent": "bass"
+      },
+      {
+        "time": 37.044,
+        "lane": 2,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 1.55,
+        "accent": "bass"
+      },
+      {
+        "time": 38.78,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.465,
+        "strength": 0.67,
+        "accent": "bass"
+      },
+      {
+        "time": 39.246,
+        "lane": 0,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 0.75,
+        "accent": "bass"
+      },
+      {
+        "time": 41.005,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.409,
+        "strength": 0.76,
+        "accent": "bass"
+      },
+      {
+        "time": 41.414,
+        "lane": 1,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 1.17,
+        "accent": "bass"
+      },
+      {
+        "time": 43.255,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.404,
+        "strength": 0.68,
+        "accent": "bass"
+      },
+      {
+        "time": 43.659,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.555,
+        "strength": 0.84,
+        "accent": "bass"
+      },
+      {
+        "time": 44.214,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.435,
+        "strength": 0.85,
+        "accent": "bass"
+      },
+      {
+        "time": 44.648,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.573,
+        "strength": 0.91,
+        "accent": "bass"
+      },
+      {
+        "time": 45.221,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.529,
+        "strength": 1.29,
+        "accent": "bass"
+      },
+      {
+        "time": 45.75,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.548,
+        "strength": 1.97,
+        "accent": "bass"
+      },
+      {
+        "time": 46.298,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.449,
+        "strength": 1.19,
+        "accent": "bass"
+      },
+      {
+        "time": 46.747,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.469,
+        "strength": 1.71,
+        "accent": "bass"
+      },
+      {
+        "time": 47.216,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.499,
+        "strength": 0.68,
+        "accent": "bass"
+      },
+      {
+        "time": 47.715,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.574,
+        "strength": 1.27,
+        "accent": "bass"
+      },
+      {
+        "time": 48.288,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.409,
+        "strength": 1.41,
+        "accent": "bass"
+      },
+      {
+        "time": 48.698,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.419,
+        "strength": 1.97,
+        "accent": "bass"
+      },
+      {
+        "time": 49.117,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.457,
+        "strength": 1.26,
+        "accent": "bass"
+      },
+      {
+        "time": 49.573,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.541,
+        "strength": 0.54,
+        "accent": "bass"
+      },
+      {
+        "time": 50.114,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.409,
+        "strength": 0.45,
+        "accent": "bass"
+      },
+      {
+        "time": 50.523,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.404,
+        "strength": 0.96,
+        "accent": "bass"
+      },
+      {
+        "time": 50.927,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.856,
+        "strength": 1.6,
+        "accent": "bass"
+      },
+      {
+        "time": 51.784,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.713,
+        "strength": 1.7,
+        "accent": "bass"
+      },
+      {
+        "time": 52.497,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.67,
+        "strength": 1.71,
+        "accent": "bass"
+      },
+      {
+        "time": 53.167,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.734,
+        "strength": 1.75,
+        "accent": "bass"
+      },
+      {
+        "time": 53.902,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.553,
+        "strength": 1.49,
+        "accent": "bass"
+      },
+      {
+        "time": 54.455,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.434,
+        "strength": 1.08,
+        "accent": "bass"
+      },
+      {
+        "time": 54.888,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.409,
+        "strength": 1.94,
+        "accent": "bass"
+      },
+      {
+        "time": 55.298,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.394,
+        "strength": 1.78,
+        "accent": "bass"
+      },
+      {
+        "time": 55.692,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.424,
+        "strength": 1.84,
+        "accent": "bass"
+      },
+      {
+        "time": 56.116,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.563,
+        "strength": 1.18,
+        "accent": "bass"
+      },
+      {
+        "time": 56.679,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.849,
+        "strength": 1.27,
+        "accent": "bass"
+      },
+      {
+        "time": 57.528,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.444,
+        "strength": 1.59,
+        "accent": "bass"
+      },
+      {
+        "time": 57.972,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.402,
+        "strength": 1.15,
+        "accent": "bass"
+      },
+      {
+        "time": 58.375,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.625,
+        "strength": 1.33,
+        "accent": "bass"
+      },
+      {
+        "time": 58.999,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.479,
+        "strength": 0.85,
+        "accent": "bass"
+      },
+      {
+        "time": 59.478,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.439,
+        "strength": 0.67,
+        "accent": "bass"
+      },
+      {
+        "time": 59.917,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.409,
+        "strength": 1.5,
+        "accent": "bass"
+      },
+      {
+        "time": 60.326,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.414,
+        "strength": 0.83,
+        "accent": "bass"
+      },
+      {
+        "time": 60.74,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.394,
+        "strength": 0.45,
+        "accent": "bass"
+      },
+      {
+        "time": 61.134,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.594,
+        "strength": 0.61,
+        "accent": "bass"
+      },
+      {
+        "time": 61.728,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.778,
+        "strength": 1.15,
+        "accent": "bass"
+      },
+      {
+        "time": 62.506,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.455,
+        "strength": 0.72,
+        "accent": "bass"
+      },
+      {
+        "time": 62.961,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.408,
+        "strength": 0.51,
+        "accent": "bass"
+      },
+      {
+        "time": 63.369,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.919,
+        "strength": 0.99,
+        "accent": "bass"
+      },
+      {
+        "time": 64.288,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.434,
+        "strength": 0.89,
+        "accent": "bass"
+      },
+      {
+        "time": 64.721,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.399,
+        "strength": 0.75,
+        "accent": "bass"
+      },
+      {
+        "time": 65.12,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.414,
+        "strength": 0.91,
+        "accent": "bass"
+      },
+      {
+        "time": 65.534,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.444,
+        "strength": 0.64,
+        "accent": "bass"
+      },
+      {
+        "time": 65.979,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.494,
+        "strength": 0.49,
+        "accent": "bass"
+      },
+      {
+        "time": 66.472,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.723,
+        "strength": 0.76,
+        "accent": "bass"
+      },
+      {
+        "time": 67.195,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.504,
+        "strength": 0.8,
+        "accent": "bass"
+      },
+      {
+        "time": 67.699,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.619,
+        "strength": 0.59,
+        "accent": "bass"
+      },
+      {
+        "time": 68.318,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.419,
+        "strength": 0.74,
+        "accent": "bass"
+      },
+      {
+        "time": 68.737,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.409,
+        "strength": 1.14,
+        "accent": "bass"
+      },
+      {
+        "time": 69.146,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.76,
+        "strength": 1.0,
+        "accent": "bass"
+      },
+      {
+        "time": 69.906,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.498,
+        "strength": 0.73,
+        "accent": "bass"
+      },
+      {
+        "time": 70.404,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.398,
+        "strength": 0.52,
+        "accent": "bass"
+      },
+      {
+        "time": 70.801,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.754,
+        "strength": 0.86,
+        "accent": "bass"
+      },
+      {
+        "time": 71.556,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.719,
+        "strength": 1.11,
+        "accent": "bass"
+      },
+      {
+        "time": 72.274,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.699,
+        "strength": 1.48,
+        "accent": "bass"
+      },
+      {
+        "time": 72.973,
+        "lane": 3,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 1.19,
+        "accent": "bass"
+      },
+      {
+        "time": 74.938,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.699,
+        "strength": 1.76,
+        "accent": "bass"
+      },
+      {
+        "time": 75.637,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.406,
+        "strength": 1.57,
+        "accent": "bass"
+      },
+      {
+        "time": 76.043,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.712,
+        "strength": 1.28,
+        "accent": "bass"
+      },
+      {
+        "time": 76.755,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.549,
+        "strength": 0.87,
+        "accent": "bass"
+      },
+      {
+        "time": 77.303,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.399,
+        "strength": 1.32,
+        "accent": "bass"
+      },
+      {
+        "time": 77.702,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.408,
+        "strength": 1.89,
+        "accent": "bass"
+      },
+      {
+        "time": 78.111,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.746,
+        "strength": 1.01,
+        "accent": "bass"
+      },
+      {
+        "time": 78.857,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.601,
+        "strength": 1.52,
+        "accent": "bass"
+      },
+      {
+        "time": 79.458,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.932,
+        "strength": 0.69,
+        "accent": "bass"
+      },
+      {
+        "time": 80.39,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.65,
+        "strength": 1.07,
+        "accent": "bass"
+      },
+      {
+        "time": 81.041,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.602,
+        "strength": 0.52,
+        "accent": "bass"
+      },
+      {
+        "time": 81.643,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.544,
+        "strength": 1.11,
+        "accent": "bass"
+      },
+      {
+        "time": 82.186,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.599,
+        "strength": 1.29,
+        "accent": "bass"
+      },
+      {
+        "time": 82.785,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.544,
+        "strength": 1.35,
+        "accent": "bass"
+      },
+      {
+        "time": 83.329,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.933,
+        "strength": 1.89,
+        "accent": "bass"
+      },
+      {
+        "time": 84.262,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.764,
+        "strength": 0.66,
+        "accent": "bass"
+      },
+      {
+        "time": 85.025,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.499,
+        "strength": 1.92,
+        "accent": "bass"
+      },
+      {
+        "time": 85.524,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.604,
+        "strength": 0.49,
+        "accent": "bass"
+      },
+      {
+        "time": 86.128,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.586,
+        "strength": 1.43,
+        "accent": "bass"
+      },
+      {
+        "time": 86.714,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.391,
+        "strength": 0.59,
+        "accent": "bass"
+      },
+      {
+        "time": 87.105,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.663,
+        "strength": 1.04,
+        "accent": "bass"
+      },
+      {
+        "time": 87.769,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.744,
+        "strength": 0.6,
+        "accent": "bass"
+      },
+      {
+        "time": 88.512,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.4,
+        "strength": 0.63,
+        "accent": "bass"
+      },
+      {
+        "time": 88.913,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.672,
+        "strength": 0.67,
+        "accent": "bass"
+      },
+      {
+        "time": 89.585,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.404,
+        "strength": 0.59,
+        "accent": "bass"
+      },
+      {
+        "time": 89.989,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.505,
+        "strength": 0.42,
+        "accent": "bass"
+      },
+      {
+        "time": 90.493,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.568,
+        "strength": 1.47,
+        "accent": "bass"
+      },
+      {
+        "time": 91.061,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.399,
+        "strength": 0.71,
+        "accent": "bass"
+      },
+      {
+        "time": 91.46,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.414,
+        "strength": 0.94,
+        "accent": "bass"
+      },
+      {
+        "time": 91.874,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.469,
+        "strength": 0.84,
+        "accent": "bass"
+      },
+      {
+        "time": 92.343,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.678,
+        "strength": 0.96,
+        "accent": "bass"
+      },
+      {
+        "time": 93.022,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.454,
+        "strength": 0.59,
+        "accent": "bass"
+      },
+      {
+        "time": 93.476,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.404,
+        "strength": 0.59,
+        "accent": "bass"
+      },
+      {
+        "time": 93.88,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.394,
+        "strength": 0.42,
+        "accent": "bass"
+      },
+      {
+        "time": 94.274,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.419,
+        "strength": 0.73,
+        "accent": "bass"
+      },
+      {
+        "time": 94.693,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.619,
+        "strength": 0.75,
+        "accent": "bass"
+      },
+      {
+        "time": 95.312,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.505,
+        "strength": 0.7,
+        "accent": "bass"
+      },
+      {
+        "time": 95.816,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.857,
+        "strength": 0.52,
+        "accent": "bass"
+      },
+      {
+        "time": 96.673,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.434,
+        "strength": 0.48,
+        "accent": "bass"
+      },
+      {
+        "time": 97.107,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.642,
+        "strength": 0.56,
+        "accent": "bass"
+      },
+      {
+        "time": 97.75,
+        "lane": 0,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 0.46,
+        "accent": "bass"
+      },
+      {
+        "time": 99.367,
+        "lane": 3,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 0.57,
+        "accent": "bass"
+      },
+      {
+        "time": 101.103,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.439,
+        "strength": 1.37,
+        "accent": "bass"
+      },
+      {
+        "time": 101.543,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.808,
+        "strength": 0.73,
+        "accent": "bass"
+      },
+      {
+        "time": 102.351,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.509,
+        "strength": 1.68,
+        "accent": "bass"
+      },
+      {
+        "time": 102.859,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.42,
+        "strength": 0.56,
+        "accent": "bass"
+      },
+      {
+        "time": 103.279,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.473,
+        "strength": 0.65,
+        "accent": "bass"
+      },
+      {
+        "time": 103.753,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.395,
+        "strength": 0.48,
+        "accent": "bass"
+      },
+      {
+        "time": 104.147,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.468,
+        "strength": 0.52,
+        "accent": "bass"
+      },
+      {
+        "time": 104.615,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.822,
+        "strength": 1.73,
+        "accent": "bass"
+      },
+      {
+        "time": 105.437,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.456,
+        "strength": 0.62,
+        "accent": "bass"
+      },
+      {
+        "time": 105.893,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.992,
+        "strength": 2.35,
+        "accent": "bass"
+      },
+      {
+        "time": 106.885,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.519,
+        "strength": 1.21,
+        "accent": "bass"
+      },
+      {
+        "time": 107.404,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.713,
+        "strength": 0.79,
+        "accent": "bass"
+      },
+      {
+        "time": 108.117,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.579,
+        "strength": 1.72,
+        "accent": "bass"
+      },
+      {
+        "time": 108.696,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.404,
+        "strength": 1.12,
+        "accent": "bass"
+      },
+      {
+        "time": 109.1,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.502,
+        "strength": 1.33,
+        "accent": "bass"
+      },
+      {
+        "time": 109.602,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.451,
+        "strength": 0.71,
+        "accent": "bass"
+      },
+      {
+        "time": 110.053,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.758,
+        "strength": 0.97,
+        "accent": "bass"
+      },
+      {
+        "time": 110.811,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.414,
+        "strength": 0.65,
+        "accent": "bass"
+      },
+      {
+        "time": 111.225,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.839,
+        "strength": 0.5,
+        "accent": "bass"
+      },
+      {
+        "time": 112.064,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.473,
+        "strength": 0.44,
+        "accent": "bass"
+      },
+      {
+        "time": 112.537,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.589,
+        "strength": 0.81,
+        "accent": "bass"
+      },
+      {
+        "time": 113.126,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.459,
+        "strength": 0.48,
+        "accent": "bass"
+      },
+      {
+        "time": 113.585,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.436,
+        "strength": 0.42,
+        "accent": "bass"
+      },
+      {
+        "time": 114.021,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.696,
+        "strength": 0.61,
+        "accent": "bass"
+      },
+      {
+        "time": 114.717,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.604,
+        "strength": 1.02,
+        "accent": "bass"
+      },
+      {
+        "time": 115.321,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.575,
+        "strength": 1.07,
+        "accent": "bass"
+      },
+      {
+        "time": 115.896,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.772,
+        "strength": 0.77,
+        "accent": "bass"
+      },
+      {
+        "time": 116.668,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.821,
+        "strength": 0.74,
+        "accent": "bass"
+      },
+      {
+        "time": 117.489,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.467,
+        "strength": 0.62,
+        "accent": "bass"
+      },
+      {
+        "time": 117.956,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.458,
+        "strength": 0.54,
+        "accent": "bass"
+      },
+      {
+        "time": 118.414,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.459,
+        "strength": 0.77,
+        "accent": "bass"
+      },
+      {
+        "time": 118.873,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.399,
+        "strength": 0.43,
+        "accent": "bass"
+      },
+      {
+        "time": 119.273,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.834,
+        "strength": 0.67,
+        "accent": "bass"
+      },
+      {
+        "time": 120.106,
+        "lane": 0,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 0.61,
+        "accent": "bass"
+      },
+      {
+        "time": 121.997,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.749,
+        "strength": 0.51,
+        "accent": "bass"
+      },
+      {
+        "time": 122.746,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.582,
+        "strength": 1.03,
+        "accent": "bass"
+      },
+      {
+        "time": 123.328,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.823,
+        "strength": 0.83,
+        "accent": "bass"
+      },
+      {
+        "time": 124.151,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.654,
+        "strength": 1.57,
+        "accent": "bass"
+      },
+      {
+        "time": 124.805,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.478,
+        "strength": 1.32,
+        "accent": "bass"
+      },
+      {
+        "time": 125.283,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.614,
+        "strength": 0.66,
+        "accent": "bass"
+      },
+      {
+        "time": 125.897,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.399,
+        "strength": 1.06,
+        "accent": "bass"
+      },
+      {
+        "time": 126.296,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.449,
+        "strength": 0.5,
+        "accent": "bass"
+      },
+      {
+        "time": 126.745,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.569,
+        "strength": 0.69,
+        "accent": "bass"
+      },
+      {
+        "time": 127.314,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.549,
+        "strength": 0.76,
+        "accent": "bass"
+      },
+      {
+        "time": 127.863,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.404,
+        "strength": 0.66,
+        "accent": "bass"
+      },
+      {
+        "time": 128.267,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.558,
+        "strength": 0.62,
+        "accent": "bass"
+      },
+      {
+        "time": 128.825,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.609,
+        "strength": 0.79,
+        "accent": "bass"
+      },
+      {
+        "time": 129.434,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.549,
+        "strength": 0.81,
+        "accent": "bass"
+      },
+      {
+        "time": 129.983,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.424,
+        "strength": 0.56,
+        "accent": "bass"
+      },
+      {
+        "time": 130.407,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.594,
+        "strength": 1.44,
+        "accent": "bass"
+      },
+      {
+        "time": 131.0,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.695,
+        "strength": 1.12,
+        "accent": "bass"
+      },
+      {
+        "time": 131.695,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.683,
+        "strength": 1.26,
+        "accent": "bass"
+      },
+      {
+        "time": 132.378,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.428,
+        "strength": 0.78,
+        "accent": "bass"
+      },
+      {
+        "time": 132.806,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.431,
+        "strength": 0.47,
+        "accent": "bass"
+      },
+      {
+        "time": 133.238,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.676,
+        "strength": 1.96,
+        "accent": "bass"
+      },
+      {
+        "time": 133.914,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.713,
+        "strength": 1.93,
+        "accent": "bass"
+      },
+      {
+        "time": 134.627,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.429,
+        "strength": 1.13,
+        "accent": "bass"
+      },
+      {
+        "time": 135.056,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.45,
+        "strength": 0.52,
+        "accent": "bass"
+      },
+      {
+        "time": 135.506,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.563,
+        "strength": 1.25,
+        "accent": "bass"
+      },
+      {
+        "time": 136.069,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.395,
+        "strength": 0.81,
+        "accent": "bass"
+      },
+      {
+        "time": 136.464,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.87,
+        "strength": 1.08,
+        "accent": "bass"
+      },
+      {
+        "time": 137.334,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.414,
+        "strength": 1.07,
+        "accent": "bass"
+      },
+      {
+        "time": 137.748,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.527,
+        "strength": 1.9,
+        "accent": "bass"
+      },
+      {
+        "time": 138.275,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.557,
+        "strength": 1.63,
+        "accent": "bass"
+      },
+      {
+        "time": 138.833,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.555,
+        "strength": 1.08,
+        "accent": "bass"
+      },
+      {
+        "time": 139.387,
+        "lane": 2,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 1.2,
+        "accent": "bass"
+      },
+      {
+        "time": 148.771,
+        "lane": 0,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 0.66,
+        "accent": "bass"
+      },
+      {
+        "time": 151.14,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.544,
+        "strength": 0.6,
+        "accent": "bass"
+      },
+      {
+        "time": 151.683,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.439,
+        "strength": 0.71,
+        "accent": "bass"
+      },
+      {
+        "time": 152.122,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.739,
+        "strength": 0.67,
+        "accent": "bass"
+      },
+      {
+        "time": 152.861,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.409,
+        "strength": 0.65,
+        "accent": "bass"
+      },
+      {
+        "time": 153.27,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.918,
+        "strength": 0.46,
+        "accent": "bass"
+      },
+      {
+        "time": 154.188,
+        "lane": 2,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 0.44,
+        "accent": "bass"
+      },
+      {
+        "time": 155.56,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.648,
+        "strength": 0.87,
+        "accent": "bass"
+      },
+      {
+        "time": 156.208,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.489,
+        "strength": 0.63,
+        "accent": "bass"
+      },
+      {
+        "time": 156.698,
+        "lane": 1,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 0.55,
+        "accent": "bass"
+      },
+      {
+        "time": 160.155,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.683,
+        "strength": 1.1,
+        "accent": "bass"
+      },
+      {
+        "time": 160.838,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.449,
+        "strength": 1.29,
+        "accent": "bass"
+      },
+      {
+        "time": 161.287,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.808,
+        "strength": 1.24,
+        "accent": "bass"
+      },
+      {
+        "time": 162.095,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.465,
+        "strength": 2.45,
+        "accent": "bass"
+      },
+      {
+        "time": 162.56,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.524,
+        "strength": 1.21,
+        "accent": "bass"
+      },
+      {
+        "time": 163.083,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.418,
+        "strength": 1.48,
+        "accent": "bass"
+      },
+      {
+        "time": 163.502,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.753,
+        "strength": 1.64,
+        "accent": "bass"
+      },
+      {
+        "time": 164.255,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.405,
+        "strength": 0.91,
+        "accent": "bass"
+      },
+      {
+        "time": 164.66,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.538,
+        "strength": 1.48,
+        "accent": "bass"
+      },
+      {
+        "time": 165.198,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.566,
+        "strength": 1.53,
+        "accent": "bass"
+      },
+      {
+        "time": 165.764,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.841,
+        "strength": 1.17,
+        "accent": "bass"
+      },
+      {
+        "time": 166.605,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.527,
+        "strength": 1.41,
+        "accent": "bass"
+      },
+      {
+        "time": 167.131,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.431,
+        "strength": 0.65,
+        "accent": "bass"
+      },
+      {
+        "time": 167.562,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.415,
+        "strength": 2.41,
+        "accent": "bass"
+      },
+      {
+        "time": 167.977,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.643,
+        "strength": 0.86,
+        "accent": "bass"
+      },
+      {
+        "time": 168.62,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.484,
+        "strength": 0.74,
+        "accent": "bass"
+      },
+      {
+        "time": 169.104,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.704,
+        "strength": 1.34,
+        "accent": "bass"
+      },
+      {
+        "time": 169.808,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.424,
+        "strength": 1.9,
+        "accent": "bass"
+      },
+      {
+        "time": 170.232,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.558,
+        "strength": 1.19,
+        "accent": "bass"
+      },
+      {
+        "time": 170.79,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.564,
+        "strength": 0.99,
+        "accent": "bass"
+      },
+      {
+        "time": 171.354,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.569,
+        "strength": 1.83,
+        "accent": "bass"
+      },
+      {
+        "time": 171.923,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.86,
+        "strength": 1.5,
+        "accent": "bass"
+      },
+      {
+        "time": 172.782,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.427,
+        "strength": 1.0,
+        "accent": "bass"
+      },
+      {
+        "time": 173.21,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.404,
+        "strength": 0.77,
+        "accent": "bass"
+      },
+      {
+        "time": 173.614,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.688,
+        "strength": 1.31,
+        "accent": "bass"
+      },
+      {
+        "time": 174.302,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.445,
+        "strength": 1.56,
+        "accent": "bass"
+      },
+      {
+        "time": 174.747,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.543,
+        "strength": 2.0,
+        "accent": "bass"
+      },
+      {
+        "time": 175.29,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.579,
+        "strength": 1.15,
+        "accent": "bass"
+      },
+      {
+        "time": 175.869,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.434,
+        "strength": 1.25,
+        "accent": "bass"
+      },
+      {
+        "time": 176.303,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.643,
+        "strength": 1.29,
+        "accent": "bass"
+      },
+      {
+        "time": 176.946,
+        "lane": 0,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 1.25,
+        "accent": "bass"
+      },
+      {
+        "time": 178.034,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.623,
+        "strength": 0.88,
+        "accent": "bass"
+      },
+      {
+        "time": 178.657,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.567,
+        "strength": 1.28,
+        "accent": "bass"
+      },
+      {
+        "time": 179.225,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.545,
+        "strength": 1.5,
+        "accent": "bass"
+      },
+      {
+        "time": 179.77,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.589,
+        "strength": 1.31,
+        "accent": "bass"
+      },
+      {
+        "time": 180.359,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.688,
+        "strength": 1.36,
+        "accent": "bass"
+      },
+      {
+        "time": 181.047,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.394,
+        "strength": 1.86,
+        "accent": "bass"
+      },
+      {
+        "time": 181.441,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.559,
+        "strength": 1.0,
+        "accent": "bass"
+      },
+      {
+        "time": 182.0,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.589,
+        "strength": 1.42,
+        "accent": "bass"
+      },
+      {
+        "time": 182.588,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.449,
+        "strength": 1.6,
+        "accent": "bass"
+      },
+      {
+        "time": 183.037,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.529,
+        "strength": 1.47,
+        "accent": "bass"
+      },
+      {
+        "time": 183.566,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.414,
+        "strength": 1.61,
+        "accent": "bass"
+      },
+      {
+        "time": 183.98,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.459,
+        "strength": 1.33,
+        "accent": "bass"
+      },
+      {
+        "time": 184.439,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.523,
+        "strength": 1.67,
+        "accent": "bass"
+      },
+      {
+        "time": 184.962,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.402,
+        "strength": 1.51,
+        "accent": "bass"
+      },
+      {
+        "time": 185.363,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.642,
+        "strength": 1.12,
+        "accent": "bass"
+      },
+      {
+        "time": 186.005,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.405,
+        "strength": 1.24,
+        "accent": "bass"
+      },
+      {
+        "time": 186.41,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.404,
+        "strength": 0.98,
+        "accent": "bass"
+      },
+      {
+        "time": 186.814,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.54,
+        "strength": 1.36,
+        "accent": "bass"
+      },
+      {
+        "time": 187.354,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.683,
+        "strength": 1.15,
+        "accent": "bass"
+      },
+      {
+        "time": 188.037,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.408,
+        "strength": 1.7,
+        "accent": "bass"
+      },
+      {
+        "time": 188.445,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.689,
+        "strength": 1.33,
+        "accent": "bass"
+      },
+      {
+        "time": 189.134,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.473,
+        "strength": 1.22,
+        "accent": "bass"
+      },
+      {
+        "time": 189.607,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.409,
+        "strength": 1.68,
+        "accent": "bass"
+      },
+      {
+        "time": 190.016,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.404,
+        "strength": 1.25,
+        "accent": "bass"
+      },
+      {
+        "time": 190.42,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.555,
+        "strength": 1.01,
+        "accent": "bass"
+      },
+      {
+        "time": 190.975,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.88,
+        "strength": 1.31,
+        "accent": "bass"
+      },
+      {
+        "time": 191.855,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.411,
+        "strength": 1.31,
+        "accent": "bass"
+      },
+      {
+        "time": 192.266,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.701,
+        "strength": 1.99,
+        "accent": "bass"
+      },
+      {
+        "time": 192.967,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.557,
+        "strength": 1.35,
+        "accent": "bass"
+      },
+      {
+        "time": 193.524,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.679,
+        "strength": 2.03,
+        "accent": "bass"
+      },
+      {
+        "time": 194.203,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.787,
+        "strength": 1.04,
+        "accent": "bass"
+      },
+      {
+        "time": 194.99,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.664,
+        "strength": 1.03,
+        "accent": "bass"
+      },
+      {
+        "time": 195.654,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.786,
+        "strength": 0.83,
+        "accent": "bass"
+      }
+    ],
+    "hard": [
+      {
+        "time": 4.808,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.279,
+        "strength": 2.45,
+        "accent": "bass"
+      },
+      {
+        "time": 5.087,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.259,
+        "strength": 1.74,
+        "accent": "bass"
+      },
+      {
+        "time": 5.346,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.269,
+        "strength": 0.8,
+        "accent": "bass"
+      },
+      {
+        "time": 5.615,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.299,
+        "strength": 1.22,
+        "accent": "bass"
+      },
+      {
+        "time": 5.915,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.29,
+        "strength": 0.73,
+        "accent": "bass"
+      },
+      {
+        "time": 6.204,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.244,
+        "strength": 0.92,
+        "accent": "bass"
+      },
+      {
+        "time": 6.449,
+        "lane": 3,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 0.68,
+        "accent": "bass"
+      },
+      {
+        "time": 9.681,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.27,
+        "strength": 0.53,
+        "accent": "bass"
+      },
+      {
+        "time": 9.951,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.284,
+        "strength": 1.34,
+        "accent": "bass"
+      },
+      {
+        "time": 10.236,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.343,
+        "strength": 0.57,
+        "accent": "bass"
+      },
+      {
+        "time": 10.579,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.42,
+        "strength": 1.42,
+        "accent": "bass"
+      },
+      {
+        "time": 10.999,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.294,
+        "strength": 1.06,
+        "accent": "bass"
+      },
+      {
+        "time": 11.293,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.274,
+        "strength": 1.03,
+        "accent": "bass"
+      },
+      {
+        "time": 11.567,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.289,
+        "strength": 1.26,
+        "accent": "bass"
+      },
+      {
+        "time": 11.856,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.249,
+        "strength": 1.6,
+        "accent": "bass"
+      },
+      {
+        "time": 12.106,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.284,
+        "strength": 2.52,
+        "accent": "bass"
+      },
+      {
+        "time": 12.39,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.312,
+        "strength": 1.83,
+        "accent": "bass"
+      },
+      {
+        "time": 12.702,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.287,
+        "strength": 2.11,
+        "accent": "bass"
+      },
+      {
+        "time": 12.99,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.264,
+        "strength": 0.58,
+        "accent": "bass"
+      },
+      {
+        "time": 13.254,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.523,
+        "strength": 1.51,
+        "accent": "bass"
+      },
+      {
+        "time": 13.777,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.355,
+        "strength": 1.98,
+        "accent": "bass"
+      },
+      {
+        "time": 14.132,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.249,
+        "strength": 0.76,
+        "accent": "bass"
+      },
+      {
+        "time": 14.38,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.255,
+        "strength": 1.22,
+        "accent": "bass"
+      },
+      {
+        "time": 14.635,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.314,
+        "strength": 1.33,
+        "accent": "bass"
+      },
+      {
+        "time": 14.949,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.519,
+        "strength": 1.58,
+        "accent": "bass"
+      },
+      {
+        "time": 15.468,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.279,
+        "strength": 1.4,
+        "accent": "bass"
+      },
+      {
+        "time": 15.747,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.282,
+        "strength": 0.84,
+        "accent": "bass"
+      },
+      {
+        "time": 16.029,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.24,
+        "strength": 1.08,
+        "accent": "bass"
+      },
+      {
+        "time": 16.269,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.311,
+        "strength": 0.55,
+        "accent": "bass"
+      },
+      {
+        "time": 16.58,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.274,
+        "strength": 1.78,
+        "accent": "bass"
+      },
+      {
+        "time": 16.855,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.311,
+        "strength": 2.47,
+        "accent": "bass"
+      },
+      {
+        "time": 17.166,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.273,
+        "strength": 2.1,
+        "accent": "bass"
+      },
+      {
+        "time": 17.439,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.289,
+        "strength": 0.76,
+        "accent": "bass"
+      },
+      {
+        "time": 17.728,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.284,
+        "strength": 1.2,
+        "accent": "bass"
+      },
+      {
+        "time": 18.012,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.269,
+        "strength": 2.3,
+        "accent": "bass"
+      },
+      {
+        "time": 18.282,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.289,
+        "strength": 1.11,
+        "accent": "bass"
+      },
+      {
+        "time": 18.571,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.295,
+        "strength": 1.81,
+        "accent": "bass"
+      },
+      {
+        "time": 18.866,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.279,
+        "strength": 0.99,
+        "accent": "bass"
+      },
+      {
+        "time": 19.145,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.27,
+        "strength": 1.46,
+        "accent": "bass"
+      },
+      {
+        "time": 19.415,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.304,
+        "strength": 1.63,
+        "accent": "bass"
+      },
+      {
+        "time": 19.719,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.249,
+        "strength": 0.59,
+        "accent": "bass"
+      },
+      {
+        "time": 19.968,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.28,
+        "strength": 1.08,
+        "accent": "bass"
+      },
+      {
+        "time": 20.247,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.275,
+        "strength": 0.83,
+        "accent": "bass"
+      },
+      {
+        "time": 20.522,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.305,
+        "strength": 1.89,
+        "accent": "bass"
+      },
+      {
+        "time": 20.827,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.254,
+        "strength": 1.78,
+        "accent": "bass"
+      },
+      {
+        "time": 21.081,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.354,
+        "strength": 2.05,
+        "accent": "bass"
+      },
+      {
+        "time": 21.434,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.35,
+        "strength": 1.04,
+        "accent": "bass"
+      },
+      {
+        "time": 21.784,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.404,
+        "strength": 3.6,
+        "accent": "bass"
+      },
+      {
+        "time": 22.188,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.289,
+        "strength": 1.17,
+        "accent": "bass"
+      },
+      {
+        "time": 22.478,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.281,
+        "strength": 1.85,
+        "accent": "bass"
+      },
+      {
+        "time": 22.759,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.253,
+        "strength": 1.76,
+        "accent": "bass"
+      },
+      {
+        "time": 23.012,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.334,
+        "strength": 0.65,
+        "accent": "bass"
+      },
+      {
+        "time": 23.345,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.254,
+        "strength": 0.99,
+        "accent": "bass"
+      },
+      {
+        "time": 23.6,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.384,
+        "strength": 1.4,
+        "accent": "bass"
+      },
+      {
+        "time": 23.984,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.481,
+        "strength": 1.46,
+        "accent": "bass"
+      },
+      {
+        "time": 24.465,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.278,
+        "strength": 0.98,
+        "accent": "bass"
+      },
+      {
+        "time": 24.742,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.292,
+        "strength": 0.68,
+        "accent": "bass"
+      },
+      {
+        "time": 25.035,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.258,
+        "strength": 1.58,
+        "accent": "bass"
+      },
+      {
+        "time": 25.292,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.258,
+        "strength": 1.21,
+        "accent": "bass"
+      },
+      {
+        "time": 25.55,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.28,
+        "strength": 0.54,
+        "accent": "bass"
+      },
+      {
+        "time": 25.83,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.279,
+        "strength": 0.46,
+        "accent": "bass"
+      },
+      {
+        "time": 26.109,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.354,
+        "strength": 0.96,
+        "accent": "bass"
+      },
+      {
+        "time": 26.463,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.324,
+        "strength": 0.72,
+        "accent": "bass"
+      },
+      {
+        "time": 26.787,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.285,
+        "strength": 0.53,
+        "accent": "bass"
+      },
+      {
+        "time": 27.073,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.274,
+        "strength": 0.69,
+        "accent": "bass"
+      },
+      {
+        "time": 27.346,
+        "lane": 1,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 1.24,
+        "accent": "bass"
+      },
+      {
+        "time": 36.222,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.373,
+        "strength": 0.96,
+        "accent": "bass"
+      },
+      {
+        "time": 36.595,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.449,
+        "strength": 1.64,
+        "accent": "bass"
+      },
+      {
+        "time": 37.044,
+        "lane": 3,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 1.55,
+        "accent": "bass"
+      },
+      {
+        "time": 38.78,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.465,
+        "strength": 0.67,
+        "accent": "bass"
+      },
+      {
+        "time": 39.246,
+        "lane": 2,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 0.75,
+        "accent": "bass"
+      },
+      {
+        "time": 41.025,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.389,
+        "strength": 1.05,
+        "accent": "bass"
+      },
+      {
+        "time": 41.414,
+        "lane": 2,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 1.17,
+        "accent": "bass"
+      },
+      {
+        "time": 43.255,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.404,
+        "strength": 0.68,
+        "accent": "bass"
+      },
+      {
+        "time": 43.659,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.555,
+        "strength": 0.84,
+        "accent": "bass"
+      },
+      {
+        "time": 44.214,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.435,
+        "strength": 0.85,
+        "accent": "bass"
+      },
+      {
+        "time": 44.648,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.278,
+        "strength": 0.91,
+        "accent": "bass"
+      },
+      {
+        "time": 44.926,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.295,
+        "strength": 1.1,
+        "accent": "bass"
+      },
+      {
+        "time": 45.221,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.275,
+        "strength": 1.29,
+        "accent": "bass"
+      },
+      {
+        "time": 45.497,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.253,
+        "strength": 1.34,
+        "accent": "bass"
+      },
+      {
+        "time": 45.75,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.274,
+        "strength": 1.97,
+        "accent": "bass"
+      },
+      {
+        "time": 46.024,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.439,
+        "strength": 1.09,
+        "accent": "bass"
+      },
+      {
+        "time": 46.463,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.285,
+        "strength": 1.26,
+        "accent": "bass"
+      },
+      {
+        "time": 46.747,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.369,
+        "strength": 1.71,
+        "accent": "bass"
+      },
+      {
+        "time": 47.116,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.325,
+        "strength": 0.87,
+        "accent": "bass"
+      },
+      {
+        "time": 47.441,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.274,
+        "strength": 0.88,
+        "accent": "bass"
+      },
+      {
+        "time": 47.715,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.574,
+        "strength": 1.27,
+        "accent": "bass"
+      },
+      {
+        "time": 48.288,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.409,
+        "strength": 1.41,
+        "accent": "bass"
+      },
+      {
+        "time": 48.698,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.259,
+        "strength": 1.97,
+        "accent": "bass"
+      },
+      {
+        "time": 48.957,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.418,
+        "strength": 1.49,
+        "accent": "bass"
+      },
+      {
+        "time": 49.375,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.33,
+        "strength": 0.65,
+        "accent": "bass"
+      },
+      {
+        "time": 49.705,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.409,
+        "strength": 0.52,
+        "accent": "bass"
+      },
+      {
+        "time": 50.114,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.409,
+        "strength": 0.45,
+        "accent": "bass"
+      },
+      {
+        "time": 50.523,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.404,
+        "strength": 0.96,
+        "accent": "bass"
+      },
+      {
+        "time": 50.927,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.285,
+        "strength": 1.6,
+        "accent": "bass"
+      },
+      {
+        "time": 51.213,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.315,
+        "strength": 0.9,
+        "accent": "bass"
+      },
+      {
+        "time": 51.527,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.256,
+        "strength": 0.56,
+        "accent": "bass"
+      },
+      {
+        "time": 51.784,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.289,
+        "strength": 1.7,
+        "accent": "bass"
+      },
+      {
+        "time": 52.072,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.425,
+        "strength": 1.42,
+        "accent": "bass"
+      },
+      {
+        "time": 52.497,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.261,
+        "strength": 1.71,
+        "accent": "bass"
+      },
+      {
+        "time": 52.758,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.409,
+        "strength": 1.21,
+        "accent": "bass"
+      },
+      {
+        "time": 53.167,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.424,
+        "strength": 1.75,
+        "accent": "bass"
+      },
+      {
+        "time": 53.591,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.31,
+        "strength": 1.41,
+        "accent": "bass"
+      },
+      {
+        "time": 53.902,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.263,
+        "strength": 1.49,
+        "accent": "bass"
+      },
+      {
+        "time": 54.165,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.432,
+        "strength": 0.95,
+        "accent": "bass"
+      },
+      {
+        "time": 54.597,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.292,
+        "strength": 1.23,
+        "accent": "bass"
+      },
+      {
+        "time": 54.888,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.409,
+        "strength": 1.94,
+        "accent": "bass"
+      },
+      {
+        "time": 55.298,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.394,
+        "strength": 1.78,
+        "accent": "bass"
+      },
+      {
+        "time": 55.692,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.424,
+        "strength": 1.84,
+        "accent": "bass"
+      },
+      {
+        "time": 56.116,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.239,
+        "strength": 1.18,
+        "accent": "bass"
+      },
+      {
+        "time": 56.355,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.324,
+        "strength": 0.54,
+        "accent": "bass"
+      },
+      {
+        "time": 56.679,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.549,
+        "strength": 1.27,
+        "accent": "bass"
+      },
+      {
+        "time": 57.228,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.3,
+        "strength": 1.09,
+        "accent": "bass"
+      },
+      {
+        "time": 57.528,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.444,
+        "strength": 1.59,
+        "accent": "bass"
+      },
+      {
+        "time": 57.972,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.402,
+        "strength": 1.15,
+        "accent": "bass"
+      },
+      {
+        "time": 58.375,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.301,
+        "strength": 1.33,
+        "accent": "bass"
+      },
+      {
+        "time": 58.675,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.324,
+        "strength": 0.46,
+        "accent": "bass"
+      },
+      {
+        "time": 58.999,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.364,
+        "strength": 0.85,
+        "accent": "bass"
+      },
+      {
+        "time": 59.363,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.25,
+        "strength": 0.74,
+        "accent": "bass"
+      },
+      {
+        "time": 59.613,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.304,
+        "strength": 0.63,
+        "accent": "bass"
+      },
+      {
+        "time": 59.917,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.26,
+        "strength": 1.5,
+        "accent": "bass"
+      },
+      {
+        "time": 60.177,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.369,
+        "strength": 0.87,
+        "accent": "bass"
+      },
+      {
+        "time": 60.546,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.269,
+        "strength": 0.65,
+        "accent": "bass"
+      },
+      {
+        "time": 60.815,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.319,
+        "strength": 0.48,
+        "accent": "bass"
+      },
+      {
+        "time": 61.134,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.594,
+        "strength": 0.61,
+        "accent": "bass"
+      },
+      {
+        "time": 61.728,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.344,
+        "strength": 1.15,
+        "accent": "bass"
+      },
+      {
+        "time": 62.072,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.434,
+        "strength": 0.69,
+        "accent": "bass"
+      },
+      {
+        "time": 62.506,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.619,
+        "strength": 0.72,
+        "accent": "bass"
+      },
+      {
+        "time": 63.125,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.245,
+        "strength": 0.68,
+        "accent": "bass"
+      },
+      {
+        "time": 63.369,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.26,
+        "strength": 0.99,
+        "accent": "bass"
+      },
+      {
+        "time": 63.629,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.329,
+        "strength": 0.47,
+        "accent": "bass"
+      },
+      {
+        "time": 63.958,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.33,
+        "strength": 0.76,
+        "accent": "bass"
+      },
+      {
+        "time": 64.288,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.434,
+        "strength": 0.89,
+        "accent": "bass"
+      },
+      {
+        "time": 64.721,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.399,
+        "strength": 0.75,
+        "accent": "bass"
+      },
+      {
+        "time": 65.12,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.37,
+        "strength": 0.91,
+        "accent": "bass"
+      },
+      {
+        "time": 65.49,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.279,
+        "strength": 0.76,
+        "accent": "bass"
+      },
+      {
+        "time": 65.769,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.356,
+        "strength": 0.61,
+        "accent": "bass"
+      },
+      {
+        "time": 66.125,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.347,
+        "strength": 0.75,
+        "accent": "bass"
+      },
+      {
+        "time": 66.472,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.389,
+        "strength": 0.76,
+        "accent": "bass"
+      },
+      {
+        "time": 66.861,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.334,
+        "strength": 0.52,
+        "accent": "bass"
+      },
+      {
+        "time": 67.195,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.504,
+        "strength": 0.8,
+        "accent": "bass"
+      },
+      {
+        "time": 67.699,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.336,
+        "strength": 0.59,
+        "accent": "bass"
+      },
+      {
+        "time": 68.035,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.283,
+        "strength": 0.51,
+        "accent": "bass"
+      },
+      {
+        "time": 68.318,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.419,
+        "strength": 0.74,
+        "accent": "bass"
+      },
+      {
+        "time": 68.737,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.409,
+        "strength": 1.14,
+        "accent": "bass"
+      },
+      {
+        "time": 69.146,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.519,
+        "strength": 1.0,
+        "accent": "bass"
+      },
+      {
+        "time": 69.665,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.241,
+        "strength": 0.72,
+        "accent": "bass"
+      },
+      {
+        "time": 69.906,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.498,
+        "strength": 0.73,
+        "accent": "bass"
+      },
+      {
+        "time": 70.404,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.398,
+        "strength": 0.52,
+        "accent": "bass"
+      },
+      {
+        "time": 70.801,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.306,
+        "strength": 0.86,
+        "accent": "bass"
+      },
+      {
+        "time": 71.108,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.448,
+        "strength": 0.44,
+        "accent": "bass"
+      },
+      {
+        "time": 71.556,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.476,
+        "strength": 1.11,
+        "accent": "bass"
+      },
+      {
+        "time": 72.032,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.242,
+        "strength": 0.44,
+        "accent": "bass"
+      },
+      {
+        "time": 72.274,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.339,
+        "strength": 1.48,
+        "accent": "bass"
+      },
+      {
+        "time": 72.613,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.36,
+        "strength": 0.42,
+        "accent": "bass"
+      },
+      {
+        "time": 72.973,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.269,
+        "strength": 1.19,
+        "accent": "bass"
+      },
+      {
+        "time": 73.242,
+        "lane": 1,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 0.93,
+        "accent": "bass"
+      },
+      {
+        "time": 74.938,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.322,
+        "strength": 1.76,
+        "accent": "bass"
+      },
+      {
+        "time": 75.26,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.377,
+        "strength": 0.58,
+        "accent": "bass"
+      },
+      {
+        "time": 75.637,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.406,
+        "strength": 1.57,
+        "accent": "bass"
+      },
+      {
+        "time": 76.043,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.262,
+        "strength": 1.28,
+        "accent": "bass"
+      },
+      {
+        "time": 76.305,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.45,
+        "strength": 0.69,
+        "accent": "bass"
+      },
+      {
+        "time": 76.755,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.244,
+        "strength": 0.87,
+        "accent": "bass"
+      },
+      {
+        "time": 76.998,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.305,
+        "strength": 0.99,
+        "accent": "bass"
+      },
+      {
+        "time": 77.303,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.399,
+        "strength": 1.32,
+        "accent": "bass"
+      },
+      {
+        "time": 77.702,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.408,
+        "strength": 1.89,
+        "accent": "bass"
+      },
+      {
+        "time": 78.111,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.284,
+        "strength": 1.01,
+        "accent": "bass"
+      },
+      {
+        "time": 78.395,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.462,
+        "strength": 0.56,
+        "accent": "bass"
+      },
+      {
+        "time": 78.857,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.237,
+        "strength": 1.52,
+        "accent": "bass"
+      },
+      {
+        "time": 79.094,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.364,
+        "strength": 0.44,
+        "accent": "bass"
+      },
+      {
+        "time": 79.458,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.599,
+        "strength": 0.69,
+        "accent": "bass"
+      },
+      {
+        "time": 80.057,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.333,
+        "strength": 0.59,
+        "accent": "bass"
+      },
+      {
+        "time": 80.39,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.267,
+        "strength": 1.07,
+        "accent": "bass"
+      },
+      {
+        "time": 80.657,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.611,
+        "strength": 0.51,
+        "accent": "bass"
+      },
+      {
+        "time": 81.268,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.374,
+        "strength": 0.67,
+        "accent": "bass"
+      },
+      {
+        "time": 81.643,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.274,
+        "strength": 1.11,
+        "accent": "bass"
+      },
+      {
+        "time": 81.917,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.269,
+        "strength": 0.74,
+        "accent": "bass"
+      },
+      {
+        "time": 82.186,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.276,
+        "strength": 1.29,
+        "accent": "bass"
+      },
+      {
+        "time": 82.462,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.323,
+        "strength": 0.51,
+        "accent": "bass"
+      },
+      {
+        "time": 82.785,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.544,
+        "strength": 1.35,
+        "accent": "bass"
+      },
+      {
+        "time": 83.329,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.269,
+        "strength": 1.89,
+        "accent": "bass"
+      },
+      {
+        "time": 83.598,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.414,
+        "strength": 0.58,
+        "accent": "bass"
+      },
+      {
+        "time": 84.012,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.249,
+        "strength": 0.53,
+        "accent": "bass"
+      },
+      {
+        "time": 84.262,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.384,
+        "strength": 0.66,
+        "accent": "bass"
+      },
+      {
+        "time": 84.646,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.38,
+        "strength": 0.56,
+        "accent": "bass"
+      },
+      {
+        "time": 85.025,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.245,
+        "strength": 1.92,
+        "accent": "bass"
+      },
+      {
+        "time": 85.27,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.254,
+        "strength": 0.68,
+        "accent": "bass"
+      },
+      {
+        "time": 85.524,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.24,
+        "strength": 0.49,
+        "accent": "bass"
+      },
+      {
+        "time": 85.764,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.364,
+        "strength": 0.67,
+        "accent": "bass"
+      },
+      {
+        "time": 86.128,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.266,
+        "strength": 1.43,
+        "accent": "bass"
+      },
+      {
+        "time": 86.394,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.382,
+        "strength": 0.58,
+        "accent": "bass"
+      },
+      {
+        "time": 86.776,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.329,
+        "strength": 0.67,
+        "accent": "bass"
+      },
+      {
+        "time": 87.105,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.354,
+        "strength": 1.04,
+        "accent": "bass"
+      },
+      {
+        "time": 87.459,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.309,
+        "strength": 0.56,
+        "accent": "bass"
+      },
+      {
+        "time": 87.769,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.255,
+        "strength": 0.6,
+        "accent": "bass"
+      },
+      {
+        "time": 88.024,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.24,
+        "strength": 0.55,
+        "accent": "bass"
+      },
+      {
+        "time": 88.263,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.249,
+        "strength": 0.54,
+        "accent": "bass"
+      },
+      {
+        "time": 88.512,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.4,
+        "strength": 0.63,
+        "accent": "bass"
+      },
+      {
+        "time": 88.913,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.264,
+        "strength": 0.67,
+        "accent": "bass"
+      },
+      {
+        "time": 89.177,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.408,
+        "strength": 0.43,
+        "accent": "bass"
+      },
+      {
+        "time": 89.585,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.404,
+        "strength": 0.59,
+        "accent": "bass"
+      },
+      {
+        "time": 89.989,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.505,
+        "strength": 0.42,
+        "accent": "bass"
+      },
+      {
+        "time": 90.493,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.349,
+        "strength": 1.47,
+        "accent": "bass"
+      },
+      {
+        "time": 90.842,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.269,
+        "strength": 0.81,
+        "accent": "bass"
+      },
+      {
+        "time": 91.111,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.349,
+        "strength": 0.59,
+        "accent": "bass"
+      },
+      {
+        "time": 91.46,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.414,
+        "strength": 0.94,
+        "accent": "bass"
+      },
+      {
+        "time": 91.874,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.469,
+        "strength": 0.84,
+        "accent": "bass"
+      },
+      {
+        "time": 92.343,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.354,
+        "strength": 0.96,
+        "accent": "bass"
+      },
+      {
+        "time": 92.698,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.324,
+        "strength": 0.59,
+        "accent": "bass"
+      },
+      {
+        "time": 93.022,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.454,
+        "strength": 0.59,
+        "accent": "bass"
+      },
+      {
+        "time": 93.476,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.31,
+        "strength": 0.59,
+        "accent": "bass"
+      },
+      {
+        "time": 93.786,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.239,
+        "strength": 0.44,
+        "accent": "bass"
+      },
+      {
+        "time": 94.024,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.249,
+        "strength": 0.65,
+        "accent": "bass"
+      },
+      {
+        "time": 94.274,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.419,
+        "strength": 0.73,
+        "accent": "bass"
+      },
+      {
+        "time": 94.693,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.25,
+        "strength": 0.75,
+        "accent": "bass"
+      },
+      {
+        "time": 94.942,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.369,
+        "strength": 0.51,
+        "accent": "bass"
+      },
+      {
+        "time": 95.312,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.355,
+        "strength": 0.7,
+        "accent": "bass"
+      },
+      {
+        "time": 95.666,
+        "lane": 3,
+        "part": "bass",
+        "duration": 1.007,
+        "strength": 0.57,
+        "accent": "bass"
+      },
+      {
+        "time": 96.673,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.434,
+        "strength": 0.48,
+        "accent": "bass"
+      },
+      {
+        "time": 97.107,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.642,
+        "strength": 0.56,
+        "accent": "bass"
+      },
+      {
+        "time": 97.75,
+        "lane": 0,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 0.46,
+        "accent": "bass"
+      },
+      {
+        "time": 99.367,
+        "lane": 2,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 0.57,
+        "accent": "bass"
+      },
+      {
+        "time": 101.103,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.37,
+        "strength": 1.37,
+        "accent": "bass"
+      },
+      {
+        "time": 101.474,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.39,
+        "strength": 1.0,
+        "accent": "bass"
+      },
+      {
+        "time": 101.864,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.487,
+        "strength": 0.6,
+        "accent": "bass"
+      },
+      {
+        "time": 102.351,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.354,
+        "strength": 1.68,
+        "accent": "bass"
+      },
+      {
+        "time": 102.705,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.295,
+        "strength": 0.62,
+        "accent": "bass"
+      },
+      {
+        "time": 103.0,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.279,
+        "strength": 0.52,
+        "accent": "bass"
+      },
+      {
+        "time": 103.279,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.299,
+        "strength": 0.65,
+        "accent": "bass"
+      },
+      {
+        "time": 103.578,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.28,
+        "strength": 0.54,
+        "accent": "bass"
+      },
+      {
+        "time": 103.858,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.473,
+        "strength": 0.49,
+        "accent": "bass"
+      },
+      {
+        "time": 104.331,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.284,
+        "strength": 0.54,
+        "accent": "bass"
+      },
+      {
+        "time": 104.615,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.235,
+        "strength": 1.73,
+        "accent": "bass"
+      },
+      {
+        "time": 104.851,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.238,
+        "strength": 0.49,
+        "accent": "bass"
+      },
+      {
+        "time": 105.088,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.349,
+        "strength": 0.54,
+        "accent": "bass"
+      },
+      {
+        "time": 105.437,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.456,
+        "strength": 0.62,
+        "accent": "bass"
+      },
+      {
+        "time": 105.893,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.992,
+        "strength": 2.35,
+        "accent": "bass"
+      },
+      {
+        "time": 106.885,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.235,
+        "strength": 1.21,
+        "accent": "bass"
+      },
+      {
+        "time": 107.12,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.284,
+        "strength": 0.57,
+        "accent": "bass"
+      },
+      {
+        "time": 107.404,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.439,
+        "strength": 0.79,
+        "accent": "bass"
+      },
+      {
+        "time": 107.843,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.274,
+        "strength": 0.49,
+        "accent": "bass"
+      },
+      {
+        "time": 108.117,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.339,
+        "strength": 1.72,
+        "accent": "bass"
+      },
+      {
+        "time": 108.457,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.239,
+        "strength": 0.7,
+        "accent": "bass"
+      },
+      {
+        "time": 108.696,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.404,
+        "strength": 1.12,
+        "accent": "bass"
+      },
+      {
+        "time": 109.1,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.502,
+        "strength": 1.33,
+        "accent": "bass"
+      },
+      {
+        "time": 109.602,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.451,
+        "strength": 0.71,
+        "accent": "bass"
+      },
+      {
+        "time": 110.053,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.34,
+        "strength": 0.97,
+        "accent": "bass"
+      },
+      {
+        "time": 110.393,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.419,
+        "strength": 0.47,
+        "accent": "bass"
+      },
+      {
+        "time": 110.811,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.414,
+        "strength": 0.65,
+        "accent": "bass"
+      },
+      {
+        "time": 111.225,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.235,
+        "strength": 0.5,
+        "accent": "bass"
+      },
+      {
+        "time": 111.461,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.603,
+        "strength": 0.48,
+        "accent": "bass"
+      },
+      {
+        "time": 112.064,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.473,
+        "strength": 0.44,
+        "accent": "bass"
+      },
+      {
+        "time": 112.537,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.365,
+        "strength": 0.81,
+        "accent": "bass"
+      },
+      {
+        "time": 112.902,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.304,
+        "strength": 0.68,
+        "accent": "bass"
+      },
+      {
+        "time": 113.206,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.259,
+        "strength": 0.47,
+        "accent": "bass"
+      },
+      {
+        "time": 113.465,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.275,
+        "strength": 0.47,
+        "accent": "bass"
+      },
+      {
+        "time": 113.74,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.281,
+        "strength": 0.57,
+        "accent": "bass"
+      },
+      {
+        "time": 114.021,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.696,
+        "strength": 0.61,
+        "accent": "bass"
+      },
+      {
+        "time": 114.717,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.604,
+        "strength": 1.02,
+        "accent": "bass"
+      },
+      {
+        "time": 115.321,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.575,
+        "strength": 1.07,
+        "accent": "bass"
+      },
+      {
+        "time": 115.896,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.523,
+        "strength": 0.77,
+        "accent": "bass"
+      },
+      {
+        "time": 116.419,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.249,
+        "strength": 0.67,
+        "accent": "bass"
+      },
+      {
+        "time": 116.668,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.539,
+        "strength": 0.74,
+        "accent": "bass"
+      },
+      {
+        "time": 117.207,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.282,
+        "strength": 0.5,
+        "accent": "bass"
+      },
+      {
+        "time": 117.489,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.261,
+        "strength": 0.62,
+        "accent": "bass"
+      },
+      {
+        "time": 117.751,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.279,
+        "strength": 0.46,
+        "accent": "bass"
+      },
+      {
+        "time": 118.03,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.385,
+        "strength": 0.62,
+        "accent": "bass"
+      },
+      {
+        "time": 118.414,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.59,
+        "strength": 0.77,
+        "accent": "bass"
+      },
+      {
+        "time": 119.004,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.269,
+        "strength": 0.53,
+        "accent": "bass"
+      },
+      {
+        "time": 119.273,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.33,
+        "strength": 0.67,
+        "accent": "bass"
+      },
+      {
+        "time": 119.602,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.504,
+        "strength": 0.57,
+        "accent": "bass"
+      },
+      {
+        "time": 120.106,
+        "lane": 2,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 0.61,
+        "accent": "bass"
+      },
+      {
+        "time": 121.997,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.508,
+        "strength": 0.51,
+        "accent": "bass"
+      },
+      {
+        "time": 122.505,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.241,
+        "strength": 0.47,
+        "accent": "bass"
+      },
+      {
+        "time": 122.746,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.582,
+        "strength": 1.03,
+        "accent": "bass"
+      },
+      {
+        "time": 123.328,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.454,
+        "strength": 0.83,
+        "accent": "bass"
+      },
+      {
+        "time": 123.782,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.369,
+        "strength": 0.47,
+        "accent": "bass"
+      },
+      {
+        "time": 124.151,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.369,
+        "strength": 1.57,
+        "accent": "bass"
+      },
+      {
+        "time": 124.52,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.285,
+        "strength": 1.0,
+        "accent": "bass"
+      },
+      {
+        "time": 124.805,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.478,
+        "strength": 1.32,
+        "accent": "bass"
+      },
+      {
+        "time": 125.283,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.364,
+        "strength": 0.66,
+        "accent": "bass"
+      },
+      {
+        "time": 125.648,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.249,
+        "strength": 0.87,
+        "accent": "bass"
+      },
+      {
+        "time": 125.897,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.276,
+        "strength": 1.06,
+        "accent": "bass"
+      },
+      {
+        "time": 126.173,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.298,
+        "strength": 0.46,
+        "accent": "bass"
+      },
+      {
+        "time": 126.471,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.275,
+        "strength": 0.58,
+        "accent": "bass"
+      },
+      {
+        "time": 126.745,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.275,
+        "strength": 0.69,
+        "accent": "bass"
+      },
+      {
+        "time": 127.02,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.294,
+        "strength": 0.48,
+        "accent": "bass"
+      },
+      {
+        "time": 127.314,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.357,
+        "strength": 0.76,
+        "accent": "bass"
+      },
+      {
+        "time": 127.671,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.596,
+        "strength": 0.75,
+        "accent": "bass"
+      },
+      {
+        "time": 128.267,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.281,
+        "strength": 0.62,
+        "accent": "bass"
+      },
+      {
+        "time": 128.548,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.277,
+        "strength": 0.64,
+        "accent": "bass"
+      },
+      {
+        "time": 128.825,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.365,
+        "strength": 0.79,
+        "accent": "bass"
+      },
+      {
+        "time": 129.191,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.243,
+        "strength": 0.55,
+        "accent": "bass"
+      },
+      {
+        "time": 129.434,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.324,
+        "strength": 0.81,
+        "accent": "bass"
+      },
+      {
+        "time": 129.758,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.341,
+        "strength": 0.62,
+        "accent": "bass"
+      },
+      {
+        "time": 130.099,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.307,
+        "strength": 0.46,
+        "accent": "bass"
+      },
+      {
+        "time": 130.407,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.594,
+        "strength": 1.44,
+        "accent": "bass"
+      },
+      {
+        "time": 131.0,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.389,
+        "strength": 1.12,
+        "accent": "bass"
+      },
+      {
+        "time": 131.39,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.306,
+        "strength": 0.54,
+        "accent": "bass"
+      },
+      {
+        "time": 131.695,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.324,
+        "strength": 1.26,
+        "accent": "bass"
+      },
+      {
+        "time": 132.019,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.359,
+        "strength": 0.58,
+        "accent": "bass"
+      },
+      {
+        "time": 132.378,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.359,
+        "strength": 0.78,
+        "accent": "bass"
+      },
+      {
+        "time": 132.737,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.501,
+        "strength": 0.54,
+        "accent": "bass"
+      },
+      {
+        "time": 133.238,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.282,
+        "strength": 1.96,
+        "accent": "bass"
+      },
+      {
+        "time": 133.52,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.394,
+        "strength": 1.06,
+        "accent": "bass"
+      },
+      {
+        "time": 133.914,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.434,
+        "strength": 1.93,
+        "accent": "bass"
+      },
+      {
+        "time": 134.348,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.279,
+        "strength": 0.71,
+        "accent": "bass"
+      },
+      {
+        "time": 134.627,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.308,
+        "strength": 1.13,
+        "accent": "bass"
+      },
+      {
+        "time": 134.935,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.572,
+        "strength": 0.54,
+        "accent": "bass"
+      },
+      {
+        "time": 135.506,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.563,
+        "strength": 1.25,
+        "accent": "bass"
+      },
+      {
+        "time": 136.069,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.395,
+        "strength": 0.81,
+        "accent": "bass"
+      },
+      {
+        "time": 136.464,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.361,
+        "strength": 1.08,
+        "accent": "bass"
+      },
+      {
+        "time": 136.826,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.246,
+        "strength": 0.62,
+        "accent": "bass"
+      },
+      {
+        "time": 137.072,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.329,
+        "strength": 0.49,
+        "accent": "bass"
+      },
+      {
+        "time": 137.401,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.347,
+        "strength": 1.56,
+        "accent": "bass"
+      },
+      {
+        "time": 137.748,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.277,
+        "strength": 1.9,
+        "accent": "bass"
+      },
+      {
+        "time": 138.025,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.25,
+        "strength": 1.51,
+        "accent": "bass"
+      },
+      {
+        "time": 138.275,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.263,
+        "strength": 1.63,
+        "accent": "bass"
+      },
+      {
+        "time": 138.538,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.294,
+        "strength": 0.76,
+        "accent": "bass"
+      },
+      {
+        "time": 138.833,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.269,
+        "strength": 1.08,
+        "accent": "bass"
+      },
+      {
+        "time": 139.102,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.285,
+        "strength": 1.1,
+        "accent": "bass"
+      },
+      {
+        "time": 139.387,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.244,
+        "strength": 1.2,
+        "accent": "bass"
+      },
+      {
+        "time": 139.631,
+        "lane": 1,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 0.49,
+        "accent": "bass"
+      },
+      {
+        "time": 148.771,
+        "lane": 2,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 0.66,
+        "accent": "bass"
+      },
+      {
+        "time": 151.14,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.299,
+        "strength": 0.6,
+        "accent": "bass"
+      },
+      {
+        "time": 151.439,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.244,
+        "strength": 0.49,
+        "accent": "bass"
+      },
+      {
+        "time": 151.683,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.439,
+        "strength": 0.71,
+        "accent": "bass"
+      },
+      {
+        "time": 152.122,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.314,
+        "strength": 0.67,
+        "accent": "bass"
+      },
+      {
+        "time": 152.437,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.425,
+        "strength": 0.64,
+        "accent": "bass"
+      },
+      {
+        "time": 152.861,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.344,
+        "strength": 0.65,
+        "accent": "bass"
+      },
+      {
+        "time": 153.205,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.74,
+        "strength": 0.47,
+        "accent": "bass"
+      },
+      {
+        "time": 153.945,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.243,
+        "strength": 0.43,
+        "accent": "bass"
+      },
+      {
+        "time": 154.188,
+        "lane": 0,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 0.44,
+        "accent": "bass"
+      },
+      {
+        "time": 155.56,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.329,
+        "strength": 0.87,
+        "accent": "bass"
+      },
+      {
+        "time": 155.889,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.319,
+        "strength": 0.61,
+        "accent": "bass"
+      },
+      {
+        "time": 156.208,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.489,
+        "strength": 0.63,
+        "accent": "bass"
+      },
+      {
+        "time": 156.698,
+        "lane": 3,
+        "part": "bass",
+        "duration": 1.05,
+        "strength": 0.55,
+        "accent": "bass"
+      },
+      {
+        "time": 159.912,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.243,
+        "strength": 0.98,
+        "accent": "bass"
+      },
+      {
+        "time": 160.155,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.314,
+        "strength": 1.1,
+        "accent": "bass"
+      },
+      {
+        "time": 160.469,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.368,
+        "strength": 0.77,
+        "accent": "bass"
+      },
+      {
+        "time": 160.838,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.449,
+        "strength": 1.29,
+        "accent": "bass"
+      },
+      {
+        "time": 161.287,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.549,
+        "strength": 1.24,
+        "accent": "bass"
+      },
+      {
+        "time": 161.835,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.259,
+        "strength": 1.44,
+        "accent": "bass"
+      },
+      {
+        "time": 162.095,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.327,
+        "strength": 2.45,
+        "accent": "bass"
+      },
+      {
+        "time": 162.422,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.271,
+        "strength": 1.09,
+        "accent": "bass"
+      },
+      {
+        "time": 162.693,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.39,
+        "strength": 1.43,
+        "accent": "bass"
+      },
+      {
+        "time": 163.083,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.418,
+        "strength": 1.48,
+        "accent": "bass"
+      },
+      {
+        "time": 163.502,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.3,
+        "strength": 1.64,
+        "accent": "bass"
+      },
+      {
+        "time": 163.801,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.453,
+        "strength": 1.28,
+        "accent": "bass"
+      },
+      {
+        "time": 164.255,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.405,
+        "strength": 0.91,
+        "accent": "bass"
+      },
+      {
+        "time": 164.66,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.264,
+        "strength": 1.48,
+        "accent": "bass"
+      },
+      {
+        "time": 164.924,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.274,
+        "strength": 1.45,
+        "accent": "bass"
+      },
+      {
+        "time": 165.198,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.33,
+        "strength": 1.53,
+        "accent": "bass"
+      },
+      {
+        "time": 165.527,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.237,
+        "strength": 0.68,
+        "accent": "bass"
+      },
+      {
+        "time": 165.764,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.557,
+        "strength": 1.17,
+        "accent": "bass"
+      },
+      {
+        "time": 166.321,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.283,
+        "strength": 0.85,
+        "accent": "bass"
+      },
+      {
+        "time": 166.605,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.314,
+        "strength": 1.41,
+        "accent": "bass"
+      },
+      {
+        "time": 166.919,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.284,
+        "strength": 0.65,
+        "accent": "bass"
+      },
+      {
+        "time": 167.203,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.359,
+        "strength": 0.81,
+        "accent": "bass"
+      },
+      {
+        "time": 167.562,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.349,
+        "strength": 2.41,
+        "accent": "bass"
+      },
+      {
+        "time": 167.912,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.444,
+        "strength": 0.97,
+        "accent": "bass"
+      },
+      {
+        "time": 168.356,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.479,
+        "strength": 0.78,
+        "accent": "bass"
+      },
+      {
+        "time": 168.835,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.269,
+        "strength": 0.99,
+        "accent": "bass"
+      },
+      {
+        "time": 169.104,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.385,
+        "strength": 1.34,
+        "accent": "bass"
+      },
+      {
+        "time": 169.489,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.319,
+        "strength": 0.85,
+        "accent": "bass"
+      },
+      {
+        "time": 169.808,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.288,
+        "strength": 1.9,
+        "accent": "bass"
+      },
+      {
+        "time": 170.097,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.289,
+        "strength": 1.56,
+        "accent": "bass"
+      },
+      {
+        "time": 170.386,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.404,
+        "strength": 0.65,
+        "accent": "bass"
+      },
+      {
+        "time": 170.79,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.29,
+        "strength": 0.99,
+        "accent": "bass"
+      },
+      {
+        "time": 171.08,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.274,
+        "strength": 1.1,
+        "accent": "bass"
+      },
+      {
+        "time": 171.354,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.31,
+        "strength": 1.83,
+        "accent": "bass"
+      },
+      {
+        "time": 171.664,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.259,
+        "strength": 1.0,
+        "accent": "bass"
+      },
+      {
+        "time": 171.923,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.299,
+        "strength": 1.5,
+        "accent": "bass"
+      },
+      {
+        "time": 172.222,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.255,
+        "strength": 0.73,
+        "accent": "bass"
+      },
+      {
+        "time": 172.477,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.306,
+        "strength": 0.81,
+        "accent": "bass"
+      },
+      {
+        "time": 172.782,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.283,
+        "strength": 1.0,
+        "accent": "bass"
+      },
+      {
+        "time": 173.065,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.307,
+        "strength": 0.88,
+        "accent": "bass"
+      },
+      {
+        "time": 173.372,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.242,
+        "strength": 0.69,
+        "accent": "bass"
+      },
+      {
+        "time": 173.614,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.274,
+        "strength": 1.31,
+        "accent": "bass"
+      },
+      {
+        "time": 173.888,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.414,
+        "strength": 1.17,
+        "accent": "bass"
+      },
+      {
+        "time": 174.302,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.445,
+        "strength": 1.56,
+        "accent": "bass"
+      },
+      {
+        "time": 174.747,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.252,
+        "strength": 2.0,
+        "accent": "bass"
+      },
+      {
+        "time": 174.999,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.291,
+        "strength": 0.53,
+        "accent": "bass"
+      },
+      {
+        "time": 175.29,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.28,
+        "strength": 1.15,
+        "accent": "bass"
+      },
+      {
+        "time": 175.57,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.299,
+        "strength": 0.94,
+        "accent": "bass"
+      },
+      {
+        "time": 175.869,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.434,
+        "strength": 1.25,
+        "accent": "bass"
+      },
+      {
+        "time": 176.303,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.27,
+        "strength": 1.29,
+        "accent": "bass"
+      },
+      {
+        "time": 176.573,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.373,
+        "strength": 0.96,
+        "accent": "bass"
+      },
+      {
+        "time": 176.946,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.315,
+        "strength": 1.25,
+        "accent": "bass"
+      },
+      {
+        "time": 177.261,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.773,
+        "strength": 0.6,
+        "accent": "bass"
+      },
+      {
+        "time": 178.034,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.299,
+        "strength": 0.88,
+        "accent": "bass"
+      },
+      {
+        "time": 178.333,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.324,
+        "strength": 0.54,
+        "accent": "bass"
+      },
+      {
+        "time": 178.657,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.241,
+        "strength": 1.28,
+        "accent": "bass"
+      },
+      {
+        "time": 178.898,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.326,
+        "strength": 0.65,
+        "accent": "bass"
+      },
+      {
+        "time": 179.225,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.252,
+        "strength": 1.5,
+        "accent": "bass"
+      },
+      {
+        "time": 179.476,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.293,
+        "strength": 0.86,
+        "accent": "bass"
+      },
+      {
+        "time": 179.77,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.255,
+        "strength": 1.31,
+        "accent": "bass"
+      },
+      {
+        "time": 180.024,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.334,
+        "strength": 0.47,
+        "accent": "bass"
+      },
+      {
+        "time": 180.359,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.404,
+        "strength": 1.36,
+        "accent": "bass"
+      },
+      {
+        "time": 180.763,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.284,
+        "strength": 0.83,
+        "accent": "bass"
+      },
+      {
+        "time": 181.047,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.284,
+        "strength": 1.86,
+        "accent": "bass"
+      },
+      {
+        "time": 181.331,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.43,
+        "strength": 1.58,
+        "accent": "bass"
+      },
+      {
+        "time": 181.761,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.239,
+        "strength": 1.18,
+        "accent": "bass"
+      },
+      {
+        "time": 182.0,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.269,
+        "strength": 1.42,
+        "accent": "bass"
+      },
+      {
+        "time": 182.269,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.319,
+        "strength": 1.23,
+        "accent": "bass"
+      },
+      {
+        "time": 182.588,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.449,
+        "strength": 1.6,
+        "accent": "bass"
+      },
+      {
+        "time": 183.037,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.259,
+        "strength": 1.47,
+        "accent": "bass"
+      },
+      {
+        "time": 183.297,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.269,
+        "strength": 1.57,
+        "accent": "bass"
+      },
+      {
+        "time": 183.566,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.414,
+        "strength": 1.61,
+        "accent": "bass"
+      },
+      {
+        "time": 183.98,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.459,
+        "strength": 1.33,
+        "accent": "bass"
+      },
+      {
+        "time": 184.439,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.24,
+        "strength": 1.67,
+        "accent": "bass"
+      },
+      {
+        "time": 184.679,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.283,
+        "strength": 0.94,
+        "accent": "bass"
+      },
+      {
+        "time": 184.962,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.402,
+        "strength": 1.51,
+        "accent": "bass"
+      },
+      {
+        "time": 185.363,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.288,
+        "strength": 1.12,
+        "accent": "bass"
+      },
+      {
+        "time": 185.651,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.354,
+        "strength": 0.82,
+        "accent": "bass"
+      },
+      {
+        "time": 186.005,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.405,
+        "strength": 1.24,
+        "accent": "bass"
+      },
+      {
+        "time": 186.41,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.404,
+        "strength": 0.98,
+        "accent": "bass"
+      },
+      {
+        "time": 186.814,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.278,
+        "strength": 1.36,
+        "accent": "bass"
+      },
+      {
+        "time": 187.092,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.262,
+        "strength": 1.19,
+        "accent": "bass"
+      },
+      {
+        "time": 187.354,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.409,
+        "strength": 1.15,
+        "accent": "bass"
+      },
+      {
+        "time": 187.763,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.274,
+        "strength": 1.29,
+        "accent": "bass"
+      },
+      {
+        "time": 188.037,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.408,
+        "strength": 1.7,
+        "accent": "bass"
+      },
+      {
+        "time": 188.445,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.3,
+        "strength": 1.33,
+        "accent": "bass"
+      },
+      {
+        "time": 188.745,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.269,
+        "strength": 0.84,
+        "accent": "bass"
+      },
+      {
+        "time": 189.014,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.304,
+        "strength": 1.04,
+        "accent": "bass"
+      },
+      {
+        "time": 189.318,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.289,
+        "strength": 1.65,
+        "accent": "bass"
+      },
+      {
+        "time": 189.607,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.315,
+        "strength": 1.68,
+        "accent": "bass"
+      },
+      {
+        "time": 189.922,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.249,
+        "strength": 1.37,
+        "accent": "bass"
+      },
+      {
+        "time": 190.172,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.249,
+        "strength": 0.47,
+        "accent": "bass"
+      },
+      {
+        "time": 190.42,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.555,
+        "strength": 1.01,
+        "accent": "bass"
+      },
+      {
+        "time": 190.975,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.309,
+        "strength": 1.31,
+        "accent": "bass"
+      },
+      {
+        "time": 191.284,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.274,
+        "strength": 1.03,
+        "accent": "bass"
+      },
+      {
+        "time": 191.558,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.297,
+        "strength": 0.89,
+        "accent": "bass"
+      },
+      {
+        "time": 191.855,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.411,
+        "strength": 1.31,
+        "accent": "bass"
+      },
+      {
+        "time": 192.266,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.275,
+        "strength": 1.99,
+        "accent": "bass"
+      },
+      {
+        "time": 192.541,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.427,
+        "strength": 1.02,
+        "accent": "bass"
+      },
+      {
+        "time": 192.967,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.277,
+        "strength": 1.35,
+        "accent": "bass"
+      },
+      {
+        "time": 193.244,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.28,
+        "strength": 1.28,
+        "accent": "bass"
+      },
+      {
+        "time": 193.524,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.289,
+        "strength": 2.03,
+        "accent": "bass"
+      },
+      {
+        "time": 193.813,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.389,
+        "strength": 1.32,
+        "accent": "bass"
+      },
+      {
+        "time": 194.203,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.24,
+        "strength": 1.04,
+        "accent": "bass"
+      },
+      {
+        "time": 194.443,
+        "lane": 3,
+        "part": "bass",
+        "duration": 0.258,
+        "strength": 0.75,
+        "accent": "bass"
+      },
+      {
+        "time": 194.701,
+        "lane": 1,
+        "part": "bass",
+        "duration": 0.289,
+        "strength": 0.63,
+        "accent": "bass"
+      },
+      {
+        "time": 194.99,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.33,
+        "strength": 1.03,
+        "accent": "bass"
+      },
+      {
+        "time": 195.32,
+        "lane": 0,
+        "part": "bass",
+        "duration": 0.334,
+        "strength": 0.87,
+        "accent": "bass"
+      },
+      {
+        "time": 195.654,
+        "lane": 2,
+        "part": "bass",
+        "duration": 0.786,
+        "strength": 0.83,
+        "accent": "bass"
+      }
+    ]
+  }
+}

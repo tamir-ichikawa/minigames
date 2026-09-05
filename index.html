@@ -59,7 +59,7 @@ body::before {
   height: 88px;
   margin-bottom: 24px;
   border: 1px solid rgba(255,255,255,0.16);
-  border-radius: 28px;
+  border-radius: 18px;
   background: linear-gradient(145deg, rgba(255,255,255,0.18), rgba(255,255,255,0.05));
   box-shadow: 0 20px 60px rgba(0,0,0,0.28), inset 0 1px rgba(255,255,255,0.18);
   font-size: 42px;
@@ -105,21 +105,21 @@ h1 {
 .selection {
   display: none;
   align-content: center;
-  width: min(960px, 100%);
+  width: min(1180px, 100%);
   margin: 0 auto;
 }
 .selection.is-visible { display: grid; animation: enter 0.55s ease both; }
 .selection-header { margin-bottom: 28px; }
 .selection h2 { font-size: clamp(30px, 6vw, 48px); }
 .selection-copy { margin-top: 8px; color: rgba(255,255,255,0.6); }
-.game-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 360px)); gap: 22px; }
+.game-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
 .game-card {
   position: relative;
   display: block;
-  min-height: 330px;
+  min-height: 230px;
   overflow: hidden;
   border: 1px solid rgba(255,255,255,0.14);
-  border-radius: 28px;
+  border-radius: 18px;
   color: inherit;
   text-decoration: none;
   background: linear-gradient(155deg, rgba(255,255,255,0.14), rgba(255,255,255,0.045));
@@ -129,7 +129,7 @@ h1 {
 .game-card:hover { transform: translateY(-6px); border-color: rgba(255,215,0,0.52); }
 .card-art {
   position: relative;
-  height: 190px;
+  height: 110px;
   overflow: hidden;
   background: linear-gradient(180deg, #232345, #17172f);
 }
@@ -245,23 +245,46 @@ h1 {
 .rhythm-disc {
   display: grid;
   place-items: center;
-  width: 126px;
-  height: 126px;
+  width: 72px;
+  height: 72px;
   border: 1px solid rgba(216,236,121,.5);
   border-radius: 50%;
   color: #d8ec79;
   background: repeating-radial-gradient(#263c2e 0 4px,#14271c 5px 9px);
   box-shadow: 0 0 38px rgba(216,236,121,.18);
-  font-size: 43px;
+  font-size: 28px;
 }
-.card-body { padding: 22px; }
+.card-body { padding: 14px; }
 .card-kicker { color: #fbbf24; font-size: 12px; font-weight: 900; letter-spacing: 0.12em; }
-.card-title { margin-top: 7px; font-size: 27px; }
-.card-description { margin-top: 8px; color: rgba(255,255,255,0.62); line-height: 1.65; }
-.card-cta { display: inline-block; margin-top: 17px; color: #fff3b0; font-weight: 900; }
+.card-title { margin-top: 5px; font-size: 18px; line-height: 1.25; }
+.card-description { margin-top: 6px; color: rgba(255,255,255,0.62); font-size: 12px; line-height: 1.5; }
+.card-cta { display: inline-block; margin-top: 10px; color: #fff3b0; font-size: 12px; font-weight: 900; }
 .footer-note { margin-top: 30px; color: rgba(255,255,255,0.34); font-size: 12px; }
 @keyframes float { 50% { transform: translateY(-8px) rotate(2deg); } }
 @keyframes enter { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+@media (max-width: 700px) {
+  .screen { padding: 22px 12px; }
+  .selection-header { margin-bottom: 18px; }
+  .game-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+  .game-card { min-height: 142px; border-radius: 12px; }
+  .card-art { height: 68px; }
+  .card-body { padding: 9px 8px 10px; }
+  .card-kicker, .card-description { display: none; }
+  .card-title { margin: 0; font-size: 12px; overflow-wrap: anywhere; }
+  .card-cta { margin-top: 6px; font-size: 10px; }
+  .moon { top: 9px; right: 12px; width: 24px; height: 24px; }
+  .bunny { bottom: 10px; font-size: 27px; }
+  .bar { height: 5px; }
+  .bar.two { top: 34px; }
+  .bar.three { top: 18px; }
+  .mini-board { grid-template-columns: repeat(4, 13px); gap: 2px; padding: 4px; border-radius: 6px; }
+  .mini-tile { width: 13px; height: 13px; border-radius: 3px; font-size: 6px; }
+  .mole-preview { grid-template-columns: repeat(3, 22px); gap: 2px; font-size: 17px; }
+  .memory-preview { grid-template-columns: repeat(4, 17px); gap: 2px; }
+  .memory-card { width: 17px; height: 21px; border-radius: 3px; font-size: 10px; }
+  .marimo-preview { transform: scale(.48); }
+  .rhythm-disc { width: 48px; height: 48px; font-size: 20px; }
+}
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
 }
@@ -300,6 +323,18 @@ h1 {
             <p class="card-kicker">ONE TAP ACTION</p>
             <h3 class="card-title">GOAT JUMP</h3>
             <p class="card-description">30秒で10本！動く足場をつないで右へ駆け上がろう。</p>
+            <span class="card-cta">プレイする →</span>
+          </div>
+        </a>
+
+        <a class="game-card" href="enzine-rythm/" aria-label="Enzine Rythmをプレイ">
+          <div class="card-art rhythm-art" aria-hidden="true">
+            <span class="rhythm-disc">♪</span>
+          </div>
+          <div class="card-body">
+            <p class="card-kicker">PLAY THE DRUMS</p>
+            <h3 class="card-title">Enzine Rythm</h3>
+            <p class="card-description">ドラム、ボーカル、ベース、ギターを選び、タップした瞬間に音を奏でるフル尺リズムゲーム。</p>
             <span class="card-cta">プレイする →</span>
           </div>
         </a>
@@ -364,18 +399,6 @@ h1 {
             <p class="card-kicker">ONE CLICK RUN</p>
             <h3 class="card-title">ぱくぱく！まりもラン</h3>
             <p class="card-description">迫るモンスターをタイミングよく食べて、ハイスコアを目指そう。</p>
-            <span class="card-cta">プレイする →</span>
-          </div>
-        </a>
-
-        <a class="game-card" href="enzine-rythm/" aria-label="Enzine Rythmをプレイ">
-          <div class="card-art rhythm-art" aria-hidden="true">
-            <span class="rhythm-disc">♪</span>
-          </div>
-          <div class="card-body">
-            <p class="card-kicker">PLAY THE DRUMS</p>
-            <h3 class="card-title">Enzine Rythm</h3>
-            <p class="card-description">タップした瞬間にドラムが鳴る、フル尺のリズムゲーム。1タップと4レーン、3難度で遊べます。</p>
             <span class="card-cta">プレイする →</span>
           </div>
         </a>

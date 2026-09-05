@@ -1,0 +1,7443 @@
+{
+  "version": 1,
+  "id": "pulse-guitar",
+  "title": "PULSE — ギター演奏",
+  "audio": "assets/bgm/pulse-without-guitar.mp3",
+  "clipStart": 0,
+  "duration": 196.4398185941043,
+  "estimatedBpm": null,
+  "stems": [
+    {
+      "id": "backing",
+      "label": "伴奏",
+      "audio": "assets/bgm/pulse-without-guitar.mp3",
+      "role": "backing"
+    },
+    {
+      "id": "guitar",
+      "label": "ギター",
+      "audio": "assets/bgm/pulse-guitar.mp3",
+      "role": "playable",
+      "gain": 1.18
+    }
+  ],
+  "chartRevision": "guitar-impact-1",
+  "playback": "input-timed-slices",
+  "analysis": "ギター stem spectral onsets in 90-5200 Hz; three progressive densities.",
+  "charts": {
+    "easy": [
+      {
+        "time": 1.021,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.693,
+        "strength": 0.95,
+        "accent": "guitar"
+      },
+      {
+        "time": 1.714,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.833,
+        "strength": 1.3,
+        "accent": "guitar"
+      },
+      {
+        "time": 2.547,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 1.07,
+        "accent": "guitar"
+      },
+      {
+        "time": 3.555,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.678,
+        "strength": 0.94,
+        "accent": "guitar"
+      },
+      {
+        "time": 4.234,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.698,
+        "strength": 1.31,
+        "accent": "guitar"
+      },
+      {
+        "time": 4.932,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.739,
+        "strength": 0.97,
+        "accent": "guitar"
+      },
+      {
+        "time": 5.671,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.798,
+        "strength": 1.43,
+        "accent": "guitar"
+      },
+      {
+        "time": 6.468,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.688,
+        "strength": 1.37,
+        "accent": "guitar"
+      },
+      {
+        "time": 7.157,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 0.97,
+        "accent": "guitar"
+      },
+      {
+        "time": 8.155,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 1.33,
+        "accent": "guitar"
+      },
+      {
+        "time": 9.147,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.703,
+        "strength": 1.61,
+        "accent": "guitar"
+      },
+      {
+        "time": 9.851,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.709,
+        "strength": 1.02,
+        "accent": "guitar"
+      },
+      {
+        "time": 10.56,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.848,
+        "strength": 1.74,
+        "accent": "guitar"
+      },
+      {
+        "time": 11.408,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.693,
+        "strength": 1.45,
+        "accent": "guitar"
+      },
+      {
+        "time": 12.101,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.703,
+        "strength": 1.17,
+        "accent": "guitar"
+      },
+      {
+        "time": 12.804,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.838,
+        "strength": 1.47,
+        "accent": "guitar"
+      },
+      {
+        "time": 13.642,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.698,
+        "strength": 1.61,
+        "accent": "guitar"
+      },
+      {
+        "time": 14.341,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 1.04,
+        "accent": "guitar"
+      },
+      {
+        "time": 15.324,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.703,
+        "strength": 1.94,
+        "accent": "guitar"
+      },
+      {
+        "time": 16.027,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 1.45,
+        "accent": "guitar"
+      },
+      {
+        "time": 16.88,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.828,
+        "strength": 1.18,
+        "accent": "guitar"
+      },
+      {
+        "time": 17.708,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.703,
+        "strength": 1.62,
+        "accent": "guitar"
+      },
+      {
+        "time": 18.411,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.708,
+        "strength": 0.92,
+        "accent": "guitar"
+      },
+      {
+        "time": 19.12,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 1.21,
+        "accent": "guitar"
+      },
+      {
+        "time": 20.093,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 1.89,
+        "accent": "guitar"
+      },
+      {
+        "time": 21.08,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.704,
+        "strength": 1.3,
+        "accent": "guitar"
+      },
+      {
+        "time": 21.784,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.833,
+        "strength": 1.7,
+        "accent": "guitar"
+      },
+      {
+        "time": 22.617,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.704,
+        "strength": 1.41,
+        "accent": "guitar"
+      },
+      {
+        "time": 23.321,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 1.07,
+        "accent": "guitar"
+      },
+      {
+        "time": 24.573,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.703,
+        "strength": 1.63,
+        "accent": "guitar"
+      },
+      {
+        "time": 25.276,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 0.94,
+        "accent": "guitar"
+      },
+      {
+        "time": 26.174,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 0.71,
+        "accent": "guitar"
+      },
+      {
+        "time": 27.246,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.839,
+        "strength": 0.74,
+        "accent": "guitar"
+      },
+      {
+        "time": 28.085,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.827,
+        "strength": 1.2,
+        "accent": "guitar"
+      },
+      {
+        "time": 28.912,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 0.94,
+        "accent": "guitar"
+      },
+      {
+        "time": 29.786,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 0.9,
+        "accent": "guitar"
+      },
+      {
+        "time": 32.275,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.669,
+        "strength": 1.04,
+        "accent": "guitar"
+      },
+      {
+        "time": 32.944,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.748,
+        "strength": 0.61,
+        "accent": "guitar"
+      },
+      {
+        "time": 33.692,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.823,
+        "strength": 1.76,
+        "accent": "guitar"
+      },
+      {
+        "time": 34.515,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 1.11,
+        "accent": "guitar"
+      },
+      {
+        "time": 35.518,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 0.91,
+        "accent": "guitar"
+      },
+      {
+        "time": 36.914,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 0.85,
+        "accent": "guitar"
+      },
+      {
+        "time": 38.78,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 0.78,
+        "accent": "guitar"
+      },
+      {
+        "time": 41.018,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 0.87,
+        "accent": "guitar"
+      },
+      {
+        "time": 42.147,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 0.78,
+        "accent": "guitar"
+      },
+      {
+        "time": 43.231,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.822,
+        "strength": 0.72,
+        "accent": "guitar"
+      },
+      {
+        "time": 44.053,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 2.37,
+        "accent": "guitar"
+      },
+      {
+        "time": 45.47,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 2.37,
+        "accent": "guitar"
+      },
+      {
+        "time": 48.234,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.813,
+        "strength": 0.64,
+        "accent": "guitar"
+      },
+      {
+        "time": 49.047,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 0.5,
+        "accent": "guitar"
+      },
+      {
+        "time": 50.374,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.838,
+        "strength": 2.9,
+        "accent": "guitar"
+      },
+      {
+        "time": 51.212,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.704,
+        "strength": 2.33,
+        "accent": "guitar"
+      },
+      {
+        "time": 51.915,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.698,
+        "strength": 1.06,
+        "accent": "guitar"
+      },
+      {
+        "time": 52.614,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.833,
+        "strength": 2.12,
+        "accent": "guitar"
+      },
+      {
+        "time": 53.447,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 1.85,
+        "accent": "guitar"
+      },
+      {
+        "time": 54.3,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 1.29,
+        "accent": "guitar"
+      },
+      {
+        "time": 59.563,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.768,
+        "strength": 0.71,
+        "accent": "guitar"
+      },
+      {
+        "time": 60.331,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 0.91,
+        "accent": "guitar"
+      },
+      {
+        "time": 61.444,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 1.46,
+        "accent": "guitar"
+      },
+      {
+        "time": 63.411,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.841,
+        "strength": 1.6,
+        "accent": "guitar"
+      },
+      {
+        "time": 64.252,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.834,
+        "strength": 0.84,
+        "accent": "guitar"
+      },
+      {
+        "time": 65.086,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.663,
+        "strength": 1.22,
+        "accent": "guitar"
+      },
+      {
+        "time": 65.749,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.733,
+        "strength": 0.69,
+        "accent": "guitar"
+      },
+      {
+        "time": 66.482,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.738,
+        "strength": 1.35,
+        "accent": "guitar"
+      },
+      {
+        "time": 67.22,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.669,
+        "strength": 0.62,
+        "accent": "guitar"
+      },
+      {
+        "time": 67.889,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 1.41,
+        "accent": "guitar"
+      },
+      {
+        "time": 68.742,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.828,
+        "strength": 1.24,
+        "accent": "guitar"
+      },
+      {
+        "time": 69.57,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.699,
+        "strength": 1.11,
+        "accent": "guitar"
+      },
+      {
+        "time": 70.269,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.718,
+        "strength": 0.73,
+        "accent": "guitar"
+      },
+      {
+        "time": 70.987,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.828,
+        "strength": 1.25,
+        "accent": "guitar"
+      },
+      {
+        "time": 71.815,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 1.2,
+        "accent": "guitar"
+      },
+      {
+        "time": 72.937,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 1.68,
+        "accent": "guitar"
+      },
+      {
+        "time": 75.192,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 1.32,
+        "accent": "guitar"
+      },
+      {
+        "time": 76.315,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 1.1,
+        "accent": "guitar"
+      },
+      {
+        "time": 77.427,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 1.52,
+        "accent": "guitar"
+      },
+      {
+        "time": 78.565,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 1.29,
+        "accent": "guitar"
+      },
+      {
+        "time": 79.682,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 1.15,
+        "accent": "guitar"
+      },
+      {
+        "time": 80.815,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.679,
+        "strength": 1.22,
+        "accent": "guitar"
+      },
+      {
+        "time": 81.494,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.703,
+        "strength": 0.84,
+        "accent": "guitar"
+      },
+      {
+        "time": 82.196,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 1.12,
+        "accent": "guitar"
+      },
+      {
+        "time": 83.049,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 1.17,
+        "accent": "guitar"
+      },
+      {
+        "time": 84.182,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.683,
+        "strength": 0.96,
+        "accent": "guitar"
+      },
+      {
+        "time": 84.865,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.703,
+        "strength": 1.13,
+        "accent": "guitar"
+      },
+      {
+        "time": 85.569,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.833,
+        "strength": 1.01,
+        "accent": "guitar"
+      },
+      {
+        "time": 86.402,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 1.08,
+        "accent": "guitar"
+      },
+      {
+        "time": 87.534,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 1.26,
+        "accent": "guitar"
+      },
+      {
+        "time": 88.647,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.838,
+        "strength": 1.21,
+        "accent": "guitar"
+      },
+      {
+        "time": 89.485,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.849,
+        "strength": 0.97,
+        "accent": "guitar"
+      },
+      {
+        "time": 90.334,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.704,
+        "strength": 1.11,
+        "accent": "guitar"
+      },
+      {
+        "time": 91.037,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.682,
+        "strength": 0.65,
+        "accent": "guitar"
+      },
+      {
+        "time": 91.72,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 0.55,
+        "accent": "guitar"
+      },
+      {
+        "time": 92.698,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 0.64,
+        "accent": "guitar"
+      },
+      {
+        "time": 94.913,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 0.65,
+        "accent": "guitar"
+      },
+      {
+        "time": 97.122,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 0.71,
+        "accent": "guitar"
+      },
+      {
+        "time": 101.328,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.769,
+        "strength": 0.74,
+        "accent": "guitar"
+      },
+      {
+        "time": 102.096,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 1.77,
+        "accent": "guitar"
+      },
+      {
+        "time": 103.214,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.729,
+        "strength": 1.77,
+        "accent": "guitar"
+      },
+      {
+        "time": 103.942,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.828,
+        "strength": 0.69,
+        "accent": "guitar"
+      },
+      {
+        "time": 104.77,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.683,
+        "strength": 1.55,
+        "accent": "guitar"
+      },
+      {
+        "time": 105.454,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.718,
+        "strength": 1.79,
+        "accent": "guitar"
+      },
+      {
+        "time": 106.172,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.828,
+        "strength": 1.01,
+        "accent": "guitar"
+      },
+      {
+        "time": 107.0,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.693,
+        "strength": 1.37,
+        "accent": "guitar"
+      },
+      {
+        "time": 107.693,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.848,
+        "strength": 1.77,
+        "accent": "guitar"
+      },
+      {
+        "time": 108.541,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.713,
+        "strength": 0.74,
+        "accent": "guitar"
+      },
+      {
+        "time": 109.255,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.689,
+        "strength": 1.13,
+        "accent": "guitar"
+      },
+      {
+        "time": 109.944,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.624,
+        "strength": 1.93,
+        "accent": "guitar"
+      },
+      {
+        "time": 110.568,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.783,
+        "strength": 0.76,
+        "accent": "guitar"
+      },
+      {
+        "time": 111.35,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.683,
+        "strength": 1.13,
+        "accent": "guitar"
+      },
+      {
+        "time": 112.034,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.728,
+        "strength": 0.8,
+        "accent": "guitar"
+      },
+      {
+        "time": 112.762,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.828,
+        "strength": 0.98,
+        "accent": "guitar"
+      },
+      {
+        "time": 113.59,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.838,
+        "strength": 0.84,
+        "accent": "guitar"
+      },
+      {
+        "time": 114.428,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 1.12,
+        "accent": "guitar"
+      },
+      {
+        "time": 115.281,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 0.98,
+        "accent": "guitar"
+      },
+      {
+        "time": 116.404,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 0.89,
+        "accent": "guitar"
+      },
+      {
+        "time": 117.257,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.833,
+        "strength": 0.94,
+        "accent": "guitar"
+      },
+      {
+        "time": 118.09,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 1.1,
+        "accent": "guitar"
+      },
+      {
+        "time": 119.222,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.693,
+        "strength": 1.02,
+        "accent": "guitar"
+      },
+      {
+        "time": 119.916,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 1.26,
+        "accent": "guitar"
+      },
+      {
+        "time": 122.006,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.713,
+        "strength": 1.0,
+        "accent": "guitar"
+      },
+      {
+        "time": 122.719,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 1.04,
+        "accent": "guitar"
+      },
+      {
+        "time": 123.697,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 1.11,
+        "accent": "guitar"
+      },
+      {
+        "time": 124.562,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.807,
+        "strength": 0.96,
+        "accent": "guitar"
+      },
+      {
+        "time": 125.368,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.703,
+        "strength": 0.97,
+        "accent": "guitar"
+      },
+      {
+        "time": 126.072,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.703,
+        "strength": 0.99,
+        "accent": "guitar"
+      },
+      {
+        "time": 126.775,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.838,
+        "strength": 1.07,
+        "accent": "guitar"
+      },
+      {
+        "time": 127.613,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.704,
+        "strength": 0.94,
+        "accent": "guitar"
+      },
+      {
+        "time": 128.317,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.693,
+        "strength": 0.92,
+        "accent": "guitar"
+      },
+      {
+        "time": 129.01,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.639,
+        "strength": 1.16,
+        "accent": "guitar"
+      },
+      {
+        "time": 129.649,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 0.9,
+        "accent": "guitar"
+      },
+      {
+        "time": 130.562,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.728,
+        "strength": 0.93,
+        "accent": "guitar"
+      },
+      {
+        "time": 131.29,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.673,
+        "strength": 0.95,
+        "accent": "guitar"
+      },
+      {
+        "time": 131.963,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 1.11,
+        "accent": "guitar"
+      },
+      {
+        "time": 133.046,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.644,
+        "strength": 0.96,
+        "accent": "guitar"
+      },
+      {
+        "time": 133.69,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.649,
+        "strength": 0.82,
+        "accent": "guitar"
+      },
+      {
+        "time": 134.339,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.698,
+        "strength": 1.01,
+        "accent": "guitar"
+      },
+      {
+        "time": 135.036,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.698,
+        "strength": 0.85,
+        "accent": "guitar"
+      },
+      {
+        "time": 135.735,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 1.09,
+        "accent": "guitar"
+      },
+      {
+        "time": 136.897,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.813,
+        "strength": 1.0,
+        "accent": "guitar"
+      },
+      {
+        "time": 137.71,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.723,
+        "strength": 1.15,
+        "accent": "guitar"
+      },
+      {
+        "time": 138.434,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.698,
+        "strength": 1.11,
+        "accent": "guitar"
+      },
+      {
+        "time": 139.132,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 1.27,
+        "accent": "guitar"
+      },
+      {
+        "time": 148.691,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 0.61,
+        "accent": "guitar"
+      },
+      {
+        "time": 150.96,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 0.55,
+        "accent": "guitar"
+      },
+      {
+        "time": 154.008,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 0.64,
+        "accent": "guitar"
+      },
+      {
+        "time": 160.149,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.688,
+        "strength": 0.82,
+        "accent": "guitar"
+      },
+      {
+        "time": 160.838,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 1.02,
+        "accent": "guitar"
+      },
+      {
+        "time": 162.095,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 1.1,
+        "accent": "guitar"
+      },
+      {
+        "time": 163.088,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 1.04,
+        "accent": "guitar"
+      },
+      {
+        "time": 164.345,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 1.11,
+        "accent": "guitar"
+      },
+      {
+        "time": 165.337,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.669,
+        "strength": 1.2,
+        "accent": "guitar"
+      },
+      {
+        "time": 166.006,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 1.01,
+        "accent": "guitar"
+      },
+      {
+        "time": 167.169,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.829,
+        "strength": 1.07,
+        "accent": "guitar"
+      },
+      {
+        "time": 167.998,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.824,
+        "strength": 1.18,
+        "accent": "guitar"
+      },
+      {
+        "time": 168.821,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 1.14,
+        "accent": "guitar"
+      },
+      {
+        "time": 169.827,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.673,
+        "strength": 1.23,
+        "accent": "guitar"
+      },
+      {
+        "time": 170.501,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 0.96,
+        "accent": "guitar"
+      },
+      {
+        "time": 171.658,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.823,
+        "strength": 1.03,
+        "accent": "guitar"
+      },
+      {
+        "time": 172.481,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.708,
+        "strength": 0.96,
+        "accent": "guitar"
+      },
+      {
+        "time": 173.19,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 1.05,
+        "accent": "guitar"
+      },
+      {
+        "time": 174.322,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 1.09,
+        "accent": "guitar"
+      },
+      {
+        "time": 175.579,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 1.11,
+        "accent": "guitar"
+      },
+      {
+        "time": 176.557,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 0.94,
+        "accent": "guitar"
+      },
+      {
+        "time": 177.809,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.834,
+        "strength": 1.77,
+        "accent": "guitar"
+      },
+      {
+        "time": 178.643,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.703,
+        "strength": 1.03,
+        "accent": "guitar"
+      },
+      {
+        "time": 179.346,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.688,
+        "strength": 1.66,
+        "accent": "guitar"
+      },
+      {
+        "time": 180.034,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 1.12,
+        "accent": "guitar"
+      },
+      {
+        "time": 181.027,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.833,
+        "strength": 1.76,
+        "accent": "guitar"
+      },
+      {
+        "time": 181.86,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.698,
+        "strength": 1.31,
+        "accent": "guitar"
+      },
+      {
+        "time": 182.558,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.714,
+        "strength": 1.26,
+        "accent": "guitar"
+      },
+      {
+        "time": 183.272,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.833,
+        "strength": 1.61,
+        "accent": "guitar"
+      },
+      {
+        "time": 184.105,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.708,
+        "strength": 1.37,
+        "accent": "guitar"
+      },
+      {
+        "time": 184.813,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 1.48,
+        "accent": "guitar"
+      },
+      {
+        "time": 186.076,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.688,
+        "strength": 1.45,
+        "accent": "guitar"
+      },
+      {
+        "time": 186.764,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 1.09,
+        "accent": "guitar"
+      },
+      {
+        "time": 187.756,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.843,
+        "strength": 1.65,
+        "accent": "guitar"
+      },
+      {
+        "time": 188.6,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.698,
+        "strength": 1.41,
+        "accent": "guitar"
+      },
+      {
+        "time": 189.298,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.704,
+        "strength": 1.22,
+        "accent": "guitar"
+      },
+      {
+        "time": 190.002,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 1.77,
+        "accent": "guitar"
+      },
+      {
+        "time": 190.984,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.833,
+        "strength": 1.16,
+        "accent": "guitar"
+      },
+      {
+        "time": 191.817,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 1.26,
+        "accent": "guitar"
+      },
+      {
+        "time": 192.81,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.688,
+        "strength": 1.57,
+        "accent": "guitar"
+      },
+      {
+        "time": 193.498,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.708,
+        "strength": 1.74,
+        "accent": "guitar"
+      },
+      {
+        "time": 194.207,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 0.79,
+        "accent": "guitar"
+      },
+      {
+        "time": 195.19,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 1.05,
+        "accent": "guitar"
+      }
+    ],
+    "normal": [
+      {
+        "time": 0.722,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.579,
+        "strength": 0.77,
+        "accent": "guitar"
+      },
+      {
+        "time": 1.3,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.414,
+        "strength": 0.95,
+        "accent": "guitar"
+      },
+      {
+        "time": 1.714,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.833,
+        "strength": 1.3,
+        "accent": "guitar"
+      },
+      {
+        "time": 2.547,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.424,
+        "strength": 1.07,
+        "accent": "guitar"
+      },
+      {
+        "time": 2.972,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.583,
+        "strength": 0.78,
+        "accent": "guitar"
+      },
+      {
+        "time": 3.555,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.678,
+        "strength": 0.94,
+        "accent": "guitar"
+      },
+      {
+        "time": 4.234,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.698,
+        "strength": 1.31,
+        "accent": "guitar"
+      },
+      {
+        "time": 4.932,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.739,
+        "strength": 0.97,
+        "accent": "guitar"
+      },
+      {
+        "time": 5.671,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.798,
+        "strength": 1.43,
+        "accent": "guitar"
+      },
+      {
+        "time": 6.468,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.688,
+        "strength": 1.37,
+        "accent": "guitar"
+      },
+      {
+        "time": 7.157,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.574,
+        "strength": 0.97,
+        "accent": "guitar"
+      },
+      {
+        "time": 7.731,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.424,
+        "strength": 1.12,
+        "accent": "guitar"
+      },
+      {
+        "time": 8.155,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.564,
+        "strength": 1.33,
+        "accent": "guitar"
+      },
+      {
+        "time": 8.718,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.429,
+        "strength": 1.54,
+        "accent": "guitar"
+      },
+      {
+        "time": 9.147,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.414,
+        "strength": 1.61,
+        "accent": "guitar"
+      },
+      {
+        "time": 9.561,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.429,
+        "strength": 1.49,
+        "accent": "guitar"
+      },
+      {
+        "time": 9.99,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.57,
+        "strength": 1.19,
+        "accent": "guitar"
+      },
+      {
+        "time": 10.56,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.559,
+        "strength": 1.74,
+        "accent": "guitar"
+      },
+      {
+        "time": 11.119,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.413,
+        "strength": 1.6,
+        "accent": "guitar"
+      },
+      {
+        "time": 11.532,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.429,
+        "strength": 1.37,
+        "accent": "guitar"
+      },
+      {
+        "time": 11.961,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.424,
+        "strength": 1.05,
+        "accent": "guitar"
+      },
+      {
+        "time": 12.385,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.419,
+        "strength": 1.24,
+        "accent": "guitar"
+      },
+      {
+        "time": 12.804,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.419,
+        "strength": 1.47,
+        "accent": "guitar"
+      },
+      {
+        "time": 13.223,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.419,
+        "strength": 1.25,
+        "accent": "guitar"
+      },
+      {
+        "time": 13.642,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.414,
+        "strength": 1.61,
+        "accent": "guitar"
+      },
+      {
+        "time": 14.056,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.698,
+        "strength": 1.19,
+        "accent": "guitar"
+      },
+      {
+        "time": 14.755,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.569,
+        "strength": 0.99,
+        "accent": "guitar"
+      },
+      {
+        "time": 15.324,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.553,
+        "strength": 1.94,
+        "accent": "guitar"
+      },
+      {
+        "time": 15.877,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.713,
+        "strength": 1.65,
+        "accent": "guitar"
+      },
+      {
+        "time": 16.59,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.709,
+        "strength": 1.23,
+        "accent": "guitar"
+      },
+      {
+        "time": 17.299,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.409,
+        "strength": 1.46,
+        "accent": "guitar"
+      },
+      {
+        "time": 17.708,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.429,
+        "strength": 1.62,
+        "accent": "guitar"
+      },
+      {
+        "time": 18.137,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.409,
+        "strength": 1.17,
+        "accent": "guitar"
+      },
+      {
+        "time": 18.546,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.574,
+        "strength": 1.13,
+        "accent": "guitar"
+      },
+      {
+        "time": 19.12,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.416,
+        "strength": 1.21,
+        "accent": "guitar"
+      },
+      {
+        "time": 19.536,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.557,
+        "strength": 1.62,
+        "accent": "guitar"
+      },
+      {
+        "time": 20.093,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.703,
+        "strength": 1.89,
+        "accent": "guitar"
+      },
+      {
+        "time": 20.796,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.414,
+        "strength": 1.1,
+        "accent": "guitar"
+      },
+      {
+        "time": 21.21,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.574,
+        "strength": 1.35,
+        "accent": "guitar"
+      },
+      {
+        "time": 21.784,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.554,
+        "strength": 1.7,
+        "accent": "guitar"
+      },
+      {
+        "time": 22.338,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.423,
+        "strength": 1.46,
+        "accent": "guitar"
+      },
+      {
+        "time": 22.761,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.559,
+        "strength": 1.2,
+        "accent": "guitar"
+      },
+      {
+        "time": 23.321,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.699,
+        "strength": 1.07,
+        "accent": "guitar"
+      },
+      {
+        "time": 24.019,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.554,
+        "strength": 1.57,
+        "accent": "guitar"
+      },
+      {
+        "time": 24.573,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.418,
+        "strength": 1.63,
+        "accent": "guitar"
+      },
+      {
+        "time": 24.991,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.594,
+        "strength": 1.02,
+        "accent": "guitar"
+      },
+      {
+        "time": 25.585,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.589,
+        "strength": 0.86,
+        "accent": "guitar"
+      },
+      {
+        "time": 26.174,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.414,
+        "strength": 0.71,
+        "accent": "guitar"
+      },
+      {
+        "time": 26.588,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.659,
+        "strength": 0.47,
+        "accent": "guitar"
+      },
+      {
+        "time": 27.246,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.839,
+        "strength": 0.74,
+        "accent": "guitar"
+      },
+      {
+        "time": 28.085,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.414,
+        "strength": 1.2,
+        "accent": "guitar"
+      },
+      {
+        "time": 28.499,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.413,
+        "strength": 1.15,
+        "accent": "guitar"
+      },
+      {
+        "time": 28.912,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 0.94,
+        "accent": "guitar"
+      },
+      {
+        "time": 29.786,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.458,
+        "strength": 0.9,
+        "accent": "guitar"
+      },
+      {
+        "time": 30.245,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 0.45,
+        "accent": "guitar"
+      },
+      {
+        "time": 32.275,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 1.04,
+        "accent": "guitar"
+      },
+      {
+        "time": 33.273,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.419,
+        "strength": 0.88,
+        "accent": "guitar"
+      },
+      {
+        "time": 33.692,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.409,
+        "strength": 1.76,
+        "accent": "guitar"
+      },
+      {
+        "time": 34.101,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.414,
+        "strength": 0.54,
+        "accent": "guitar"
+      },
+      {
+        "time": 34.515,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 1.11,
+        "accent": "guitar"
+      },
+      {
+        "time": 35.518,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 0.91,
+        "accent": "guitar"
+      },
+      {
+        "time": 36.914,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 0.85,
+        "accent": "guitar"
+      },
+      {
+        "time": 38.78,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.474,
+        "strength": 0.78,
+        "accent": "guitar"
+      },
+      {
+        "time": 39.254,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 0.72,
+        "accent": "guitar"
+      },
+      {
+        "time": 41.018,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.411,
+        "strength": 0.87,
+        "accent": "guitar"
+      },
+      {
+        "time": 41.429,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.718,
+        "strength": 0.86,
+        "accent": "guitar"
+      },
+      {
+        "time": 42.147,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 0.78,
+        "accent": "guitar"
+      },
+      {
+        "time": 43.505,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.548,
+        "strength": 1.08,
+        "accent": "guitar"
+      },
+      {
+        "time": 44.053,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.434,
+        "strength": 2.37,
+        "accent": "guitar"
+      },
+      {
+        "time": 44.487,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 0.82,
+        "accent": "guitar"
+      },
+      {
+        "time": 45.47,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 2.37,
+        "accent": "guitar"
+      },
+      {
+        "time": 48.234,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.813,
+        "strength": 0.64,
+        "accent": "guitar"
+      },
+      {
+        "time": 49.047,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 0.5,
+        "accent": "guitar"
+      },
+      {
+        "time": 50.374,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.419,
+        "strength": 2.9,
+        "accent": "guitar"
+      },
+      {
+        "time": 50.793,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.419,
+        "strength": 1.95,
+        "accent": "guitar"
+      },
+      {
+        "time": 51.212,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.429,
+        "strength": 2.33,
+        "accent": "guitar"
+      },
+      {
+        "time": 51.641,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.404,
+        "strength": 1.62,
+        "accent": "guitar"
+      },
+      {
+        "time": 52.045,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.569,
+        "strength": 1.6,
+        "accent": "guitar"
+      },
+      {
+        "time": 52.614,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.559,
+        "strength": 2.12,
+        "accent": "guitar"
+      },
+      {
+        "time": 53.172,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.564,
+        "strength": 1.95,
+        "accent": "guitar"
+      },
+      {
+        "time": 53.736,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.564,
+        "strength": 1.45,
+        "accent": "guitar"
+      },
+      {
+        "time": 54.3,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 1.29,
+        "accent": "guitar"
+      },
+      {
+        "time": 59.563,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.768,
+        "strength": 0.71,
+        "accent": "guitar"
+      },
+      {
+        "time": 60.331,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 0.91,
+        "accent": "guitar"
+      },
+      {
+        "time": 61.444,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 1.46,
+        "accent": "guitar"
+      },
+      {
+        "time": 63.411,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.422,
+        "strength": 1.6,
+        "accent": "guitar"
+      },
+      {
+        "time": 63.833,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.419,
+        "strength": 1.27,
+        "accent": "guitar"
+      },
+      {
+        "time": 64.252,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.834,
+        "strength": 0.84,
+        "accent": "guitar"
+      },
+      {
+        "time": 65.086,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.558,
+        "strength": 1.22,
+        "accent": "guitar"
+      },
+      {
+        "time": 65.644,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.394,
+        "strength": 1.19,
+        "accent": "guitar"
+      },
+      {
+        "time": 66.038,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.444,
+        "strength": 0.58,
+        "accent": "guitar"
+      },
+      {
+        "time": 66.482,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.449,
+        "strength": 1.35,
+        "accent": "guitar"
+      },
+      {
+        "time": 66.931,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.414,
+        "strength": 0.67,
+        "accent": "guitar"
+      },
+      {
+        "time": 67.345,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.544,
+        "strength": 1.26,
+        "accent": "guitar"
+      },
+      {
+        "time": 67.889,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.444,
+        "strength": 1.41,
+        "accent": "guitar"
+      },
+      {
+        "time": 68.333,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.409,
+        "strength": 0.91,
+        "accent": "guitar"
+      },
+      {
+        "time": 68.742,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.394,
+        "strength": 1.24,
+        "accent": "guitar"
+      },
+      {
+        "time": 69.136,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.434,
+        "strength": 0.77,
+        "accent": "guitar"
+      },
+      {
+        "time": 69.57,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.425,
+        "strength": 1.11,
+        "accent": "guitar"
+      },
+      {
+        "time": 69.995,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.433,
+        "strength": 0.92,
+        "accent": "guitar"
+      },
+      {
+        "time": 70.428,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.559,
+        "strength": 1.03,
+        "accent": "guitar"
+      },
+      {
+        "time": 70.987,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.414,
+        "strength": 1.25,
+        "accent": "guitar"
+      },
+      {
+        "time": 71.401,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.414,
+        "strength": 0.88,
+        "accent": "guitar"
+      },
+      {
+        "time": 71.815,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.604,
+        "strength": 1.2,
+        "accent": "guitar"
+      },
+      {
+        "time": 72.419,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.518,
+        "strength": 0.96,
+        "accent": "guitar"
+      },
+      {
+        "time": 72.937,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 1.68,
+        "accent": "guitar"
+      },
+      {
+        "time": 74.653,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.539,
+        "strength": 1.07,
+        "accent": "guitar"
+      },
+      {
+        "time": 75.192,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.7,
+        "strength": 1.32,
+        "accent": "guitar"
+      },
+      {
+        "time": 75.892,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.423,
+        "strength": 1.1,
+        "accent": "guitar"
+      },
+      {
+        "time": 76.315,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.574,
+        "strength": 1.1,
+        "accent": "guitar"
+      },
+      {
+        "time": 76.889,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.538,
+        "strength": 1.08,
+        "accent": "guitar"
+      },
+      {
+        "time": 77.427,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.703,
+        "strength": 1.52,
+        "accent": "guitar"
+      },
+      {
+        "time": 78.131,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.434,
+        "strength": 1.11,
+        "accent": "guitar"
+      },
+      {
+        "time": 78.565,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.564,
+        "strength": 1.29,
+        "accent": "guitar"
+      },
+      {
+        "time": 79.128,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.554,
+        "strength": 0.97,
+        "accent": "guitar"
+      },
+      {
+        "time": 79.682,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.704,
+        "strength": 1.15,
+        "accent": "guitar"
+      },
+      {
+        "time": 80.386,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.428,
+        "strength": 1.16,
+        "accent": "guitar"
+      },
+      {
+        "time": 80.815,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.549,
+        "strength": 1.22,
+        "accent": "guitar"
+      },
+      {
+        "time": 81.363,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.434,
+        "strength": 1.08,
+        "accent": "guitar"
+      },
+      {
+        "time": 81.797,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.399,
+        "strength": 0.68,
+        "accent": "guitar"
+      },
+      {
+        "time": 82.196,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.444,
+        "strength": 1.12,
+        "accent": "guitar"
+      },
+      {
+        "time": 82.64,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.409,
+        "strength": 0.93,
+        "accent": "guitar"
+      },
+      {
+        "time": 83.049,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.554,
+        "strength": 1.17,
+        "accent": "guitar"
+      },
+      {
+        "time": 83.603,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.404,
+        "strength": 1.08,
+        "accent": "guitar"
+      },
+      {
+        "time": 84.007,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.439,
+        "strength": 0.74,
+        "accent": "guitar"
+      },
+      {
+        "time": 84.446,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.419,
+        "strength": 1.1,
+        "accent": "guitar"
+      },
+      {
+        "time": 84.865,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.414,
+        "strength": 1.13,
+        "accent": "guitar"
+      },
+      {
+        "time": 85.279,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.554,
+        "strength": 1.13,
+        "accent": "guitar"
+      },
+      {
+        "time": 85.833,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.569,
+        "strength": 0.99,
+        "accent": "guitar"
+      },
+      {
+        "time": 86.402,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.723,
+        "strength": 1.08,
+        "accent": "guitar"
+      },
+      {
+        "time": 87.125,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.409,
+        "strength": 1.01,
+        "accent": "guitar"
+      },
+      {
+        "time": 87.534,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.564,
+        "strength": 1.26,
+        "accent": "guitar"
+      },
+      {
+        "time": 88.098,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.548,
+        "strength": 0.98,
+        "accent": "guitar"
+      },
+      {
+        "time": 88.647,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.838,
+        "strength": 1.21,
+        "accent": "guitar"
+      },
+      {
+        "time": 89.485,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.444,
+        "strength": 0.97,
+        "accent": "guitar"
+      },
+      {
+        "time": 89.929,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.405,
+        "strength": 0.7,
+        "accent": "guitar"
+      },
+      {
+        "time": 90.334,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.573,
+        "strength": 1.11,
+        "accent": "guitar"
+      },
+      {
+        "time": 90.907,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.813,
+        "strength": 0.66,
+        "accent": "guitar"
+      },
+      {
+        "time": 91.72,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 0.55,
+        "accent": "guitar"
+      },
+      {
+        "time": 92.698,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 0.64,
+        "accent": "guitar"
+      },
+      {
+        "time": 94.913,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.404,
+        "strength": 0.65,
+        "accent": "guitar"
+      },
+      {
+        "time": 95.317,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 0.47,
+        "accent": "guitar"
+      },
+      {
+        "time": 97.122,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.449,
+        "strength": 0.71,
+        "accent": "guitar"
+      },
+      {
+        "time": 97.571,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 0.51,
+        "accent": "guitar"
+      },
+      {
+        "time": 101.542,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.554,
+        "strength": 1.02,
+        "accent": "guitar"
+      },
+      {
+        "time": 102.096,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.708,
+        "strength": 1.77,
+        "accent": "guitar"
+      },
+      {
+        "time": 102.805,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.409,
+        "strength": 1.27,
+        "accent": "guitar"
+      },
+      {
+        "time": 103.214,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.569,
+        "strength": 1.77,
+        "accent": "guitar"
+      },
+      {
+        "time": 103.783,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.422,
+        "strength": 1.04,
+        "accent": "guitar"
+      },
+      {
+        "time": 104.204,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.566,
+        "strength": 0.99,
+        "accent": "guitar"
+      },
+      {
+        "time": 104.77,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.683,
+        "strength": 1.55,
+        "accent": "guitar"
+      },
+      {
+        "time": 105.454,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.574,
+        "strength": 1.79,
+        "accent": "guitar"
+      },
+      {
+        "time": 106.027,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.434,
+        "strength": 1.08,
+        "accent": "guitar"
+      },
+      {
+        "time": 106.461,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.539,
+        "strength": 1.16,
+        "accent": "guitar"
+      },
+      {
+        "time": 107.0,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.693,
+        "strength": 1.37,
+        "accent": "guitar"
+      },
+      {
+        "time": 107.693,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.594,
+        "strength": 1.77,
+        "accent": "guitar"
+      },
+      {
+        "time": 108.287,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.718,
+        "strength": 1.24,
+        "accent": "guitar"
+      },
+      {
+        "time": 109.005,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.519,
+        "strength": 0.56,
+        "accent": "guitar"
+      },
+      {
+        "time": 109.525,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.419,
+        "strength": 1.15,
+        "accent": "guitar"
+      },
+      {
+        "time": 109.944,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.564,
+        "strength": 1.93,
+        "accent": "guitar"
+      },
+      {
+        "time": 110.507,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.419,
+        "strength": 1.16,
+        "accent": "guitar"
+      },
+      {
+        "time": 110.926,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.424,
+        "strength": 0.74,
+        "accent": "guitar"
+      },
+      {
+        "time": 111.35,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.569,
+        "strength": 1.13,
+        "accent": "guitar"
+      },
+      {
+        "time": 111.919,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.424,
+        "strength": 1.06,
+        "accent": "guitar"
+      },
+      {
+        "time": 112.343,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.419,
+        "strength": 0.8,
+        "accent": "guitar"
+      },
+      {
+        "time": 112.762,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.559,
+        "strength": 0.98,
+        "accent": "guitar"
+      },
+      {
+        "time": 113.321,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.484,
+        "strength": 0.87,
+        "accent": "guitar"
+      },
+      {
+        "time": 113.805,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.624,
+        "strength": 0.83,
+        "accent": "guitar"
+      },
+      {
+        "time": 114.428,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.449,
+        "strength": 1.12,
+        "accent": "guitar"
+      },
+      {
+        "time": 114.877,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.404,
+        "strength": 0.71,
+        "accent": "guitar"
+      },
+      {
+        "time": 115.281,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.598,
+        "strength": 0.98,
+        "accent": "guitar"
+      },
+      {
+        "time": 115.88,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.42,
+        "strength": 0.91,
+        "accent": "guitar"
+      },
+      {
+        "time": 116.299,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.414,
+        "strength": 0.67,
+        "accent": "guitar"
+      },
+      {
+        "time": 116.713,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.544,
+        "strength": 0.9,
+        "accent": "guitar"
+      },
+      {
+        "time": 117.257,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.424,
+        "strength": 0.94,
+        "accent": "guitar"
+      },
+      {
+        "time": 117.681,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.409,
+        "strength": 0.82,
+        "accent": "guitar"
+      },
+      {
+        "time": 118.09,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.564,
+        "strength": 1.1,
+        "accent": "guitar"
+      },
+      {
+        "time": 118.654,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.569,
+        "strength": 1.08,
+        "accent": "guitar"
+      },
+      {
+        "time": 119.222,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.693,
+        "strength": 1.02,
+        "accent": "guitar"
+      },
+      {
+        "time": 119.916,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.409,
+        "strength": 1.26,
+        "accent": "guitar"
+      },
+      {
+        "time": 120.325,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 1.06,
+        "accent": "guitar"
+      },
+      {
+        "time": 122.006,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.713,
+        "strength": 1.0,
+        "accent": "guitar"
+      },
+      {
+        "time": 122.719,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.434,
+        "strength": 1.04,
+        "accent": "guitar"
+      },
+      {
+        "time": 123.153,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.544,
+        "strength": 0.93,
+        "accent": "guitar"
+      },
+      {
+        "time": 123.697,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.434,
+        "strength": 1.11,
+        "accent": "guitar"
+      },
+      {
+        "time": 124.131,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.431,
+        "strength": 0.77,
+        "accent": "guitar"
+      },
+      {
+        "time": 124.562,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.408,
+        "strength": 0.96,
+        "accent": "guitar"
+      },
+      {
+        "time": 124.969,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.399,
+        "strength": 0.91,
+        "accent": "guitar"
+      },
+      {
+        "time": 125.368,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.703,
+        "strength": 0.97,
+        "accent": "guitar"
+      },
+      {
+        "time": 126.072,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.703,
+        "strength": 0.99,
+        "accent": "guitar"
+      },
+      {
+        "time": 126.775,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.414,
+        "strength": 1.07,
+        "accent": "guitar"
+      },
+      {
+        "time": 127.189,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.424,
+        "strength": 0.84,
+        "accent": "guitar"
+      },
+      {
+        "time": 127.613,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.559,
+        "strength": 0.94,
+        "accent": "guitar"
+      },
+      {
+        "time": 128.172,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.439,
+        "strength": 0.89,
+        "accent": "guitar"
+      },
+      {
+        "time": 128.611,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.399,
+        "strength": 0.98,
+        "accent": "guitar"
+      },
+      {
+        "time": 129.01,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.434,
+        "strength": 1.16,
+        "accent": "guitar"
+      },
+      {
+        "time": 129.444,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.723,
+        "strength": 0.94,
+        "accent": "guitar"
+      },
+      {
+        "time": 130.168,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.394,
+        "strength": 0.93,
+        "accent": "guitar"
+      },
+      {
+        "time": 130.562,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.419,
+        "strength": 0.93,
+        "accent": "guitar"
+      },
+      {
+        "time": 130.98,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.559,
+        "strength": 0.91,
+        "accent": "guitar"
+      },
+      {
+        "time": 131.539,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.424,
+        "strength": 1.01,
+        "accent": "guitar"
+      },
+      {
+        "time": 131.963,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.419,
+        "strength": 1.11,
+        "accent": "guitar"
+      },
+      {
+        "time": 132.382,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.663,
+        "strength": 0.95,
+        "accent": "guitar"
+      },
+      {
+        "time": 133.046,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.444,
+        "strength": 0.96,
+        "accent": "guitar"
+      },
+      {
+        "time": 133.49,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.429,
+        "strength": 0.87,
+        "accent": "guitar"
+      },
+      {
+        "time": 133.919,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.42,
+        "strength": 0.97,
+        "accent": "guitar"
+      },
+      {
+        "time": 134.339,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.429,
+        "strength": 1.01,
+        "accent": "guitar"
+      },
+      {
+        "time": 134.767,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.41,
+        "strength": 0.72,
+        "accent": "guitar"
+      },
+      {
+        "time": 135.177,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.558,
+        "strength": 0.97,
+        "accent": "guitar"
+      },
+      {
+        "time": 135.735,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.429,
+        "strength": 1.09,
+        "accent": "guitar"
+      },
+      {
+        "time": 136.164,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.733,
+        "strength": 1.08,
+        "accent": "guitar"
+      },
+      {
+        "time": 136.897,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.399,
+        "strength": 1.0,
+        "accent": "guitar"
+      },
+      {
+        "time": 137.296,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.414,
+        "strength": 0.97,
+        "accent": "guitar"
+      },
+      {
+        "time": 137.71,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.454,
+        "strength": 1.15,
+        "accent": "guitar"
+      },
+      {
+        "time": 138.164,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.414,
+        "strength": 0.73,
+        "accent": "guitar"
+      },
+      {
+        "time": 138.578,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.554,
+        "strength": 1.11,
+        "accent": "guitar"
+      },
+      {
+        "time": 139.132,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.569,
+        "strength": 1.27,
+        "accent": "guitar"
+      },
+      {
+        "time": 139.701,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 1.11,
+        "accent": "guitar"
+      },
+      {
+        "time": 148.691,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 0.61,
+        "accent": "guitar"
+      },
+      {
+        "time": 150.96,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 0.55,
+        "accent": "guitar"
+      },
+      {
+        "time": 154.008,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 0.64,
+        "accent": "guitar"
+      },
+      {
+        "time": 159.965,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.459,
+        "strength": 0.8,
+        "accent": "guitar"
+      },
+      {
+        "time": 160.424,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.414,
+        "strength": 0.88,
+        "accent": "guitar"
+      },
+      {
+        "time": 160.838,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.733,
+        "strength": 1.02,
+        "accent": "guitar"
+      },
+      {
+        "time": 161.571,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.524,
+        "strength": 1.02,
+        "accent": "guitar"
+      },
+      {
+        "time": 162.095,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.599,
+        "strength": 1.1,
+        "accent": "guitar"
+      },
+      {
+        "time": 162.693,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.394,
+        "strength": 1.08,
+        "accent": "guitar"
+      },
+      {
+        "time": 163.088,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.723,
+        "strength": 1.04,
+        "accent": "guitar"
+      },
+      {
+        "time": 163.811,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.534,
+        "strength": 0.94,
+        "accent": "guitar"
+      },
+      {
+        "time": 164.345,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.543,
+        "strength": 1.11,
+        "accent": "guitar"
+      },
+      {
+        "time": 164.888,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.449,
+        "strength": 1.03,
+        "accent": "guitar"
+      },
+      {
+        "time": 165.337,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.669,
+        "strength": 1.2,
+        "accent": "guitar"
+      },
+      {
+        "time": 166.006,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.564,
+        "strength": 1.01,
+        "accent": "guitar"
+      },
+      {
+        "time": 166.57,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.599,
+        "strength": 0.93,
+        "accent": "guitar"
+      },
+      {
+        "time": 167.169,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.434,
+        "strength": 1.07,
+        "accent": "guitar"
+      },
+      {
+        "time": 167.603,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.395,
+        "strength": 0.89,
+        "accent": "guitar"
+      },
+      {
+        "time": 167.998,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.413,
+        "strength": 1.18,
+        "accent": "guitar"
+      },
+      {
+        "time": 168.411,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.41,
+        "strength": 0.76,
+        "accent": "guitar"
+      },
+      {
+        "time": 168.821,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.607,
+        "strength": 1.14,
+        "accent": "guitar"
+      },
+      {
+        "time": 169.428,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.399,
+        "strength": 0.97,
+        "accent": "guitar"
+      },
+      {
+        "time": 169.827,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.673,
+        "strength": 1.23,
+        "accent": "guitar"
+      },
+      {
+        "time": 170.501,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.569,
+        "strength": 0.96,
+        "accent": "guitar"
+      },
+      {
+        "time": 171.069,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.589,
+        "strength": 1.02,
+        "accent": "guitar"
+      },
+      {
+        "time": 171.658,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.399,
+        "strength": 1.03,
+        "accent": "guitar"
+      },
+      {
+        "time": 172.057,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.734,
+        "strength": 1.0,
+        "accent": "guitar"
+      },
+      {
+        "time": 172.791,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.399,
+        "strength": 0.97,
+        "accent": "guitar"
+      },
+      {
+        "time": 173.19,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.708,
+        "strength": 1.05,
+        "accent": "guitar"
+      },
+      {
+        "time": 173.898,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.424,
+        "strength": 0.99,
+        "accent": "guitar"
+      },
+      {
+        "time": 174.322,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.663,
+        "strength": 1.09,
+        "accent": "guitar"
+      },
+      {
+        "time": 174.985,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.594,
+        "strength": 1.0,
+        "accent": "guitar"
+      },
+      {
+        "time": 175.579,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.554,
+        "strength": 1.11,
+        "accent": "guitar"
+      },
+      {
+        "time": 176.133,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.424,
+        "strength": 1.07,
+        "accent": "guitar"
+      },
+      {
+        "time": 176.557,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.673,
+        "strength": 0.94,
+        "accent": "guitar"
+      },
+      {
+        "time": 177.23,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.579,
+        "strength": 0.99,
+        "accent": "guitar"
+      },
+      {
+        "time": 177.809,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.544,
+        "strength": 1.77,
+        "accent": "guitar"
+      },
+      {
+        "time": 178.353,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.444,
+        "strength": 1.08,
+        "accent": "guitar"
+      },
+      {
+        "time": 178.797,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.549,
+        "strength": 1.12,
+        "accent": "guitar"
+      },
+      {
+        "time": 179.346,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.414,
+        "strength": 1.66,
+        "accent": "guitar"
+      },
+      {
+        "time": 179.76,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.563,
+        "strength": 1.21,
+        "accent": "guitar"
+      },
+      {
+        "time": 180.323,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.704,
+        "strength": 1.11,
+        "accent": "guitar"
+      },
+      {
+        "time": 181.027,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.553,
+        "strength": 1.76,
+        "accent": "guitar"
+      },
+      {
+        "time": 181.58,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.419,
+        "strength": 1.44,
+        "accent": "guitar"
+      },
+      {
+        "time": 182.0,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.559,
+        "strength": 1.22,
+        "accent": "guitar"
+      },
+      {
+        "time": 182.558,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.714,
+        "strength": 1.26,
+        "accent": "guitar"
+      },
+      {
+        "time": 183.272,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.559,
+        "strength": 1.61,
+        "accent": "guitar"
+      },
+      {
+        "time": 183.831,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.429,
+        "strength": 1.44,
+        "accent": "guitar"
+      },
+      {
+        "time": 184.259,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.554,
+        "strength": 1.36,
+        "accent": "guitar"
+      },
+      {
+        "time": 184.813,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.569,
+        "strength": 1.48,
+        "accent": "guitar"
+      },
+      {
+        "time": 185.382,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.694,
+        "strength": 1.19,
+        "accent": "guitar"
+      },
+      {
+        "time": 186.076,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.688,
+        "strength": 1.45,
+        "accent": "guitar"
+      },
+      {
+        "time": 186.764,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.574,
+        "strength": 1.09,
+        "accent": "guitar"
+      },
+      {
+        "time": 187.337,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.419,
+        "strength": 1.24,
+        "accent": "guitar"
+      },
+      {
+        "time": 187.756,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.559,
+        "strength": 1.65,
+        "accent": "guitar"
+      },
+      {
+        "time": 188.315,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.419,
+        "strength": 1.47,
+        "accent": "guitar"
+      },
+      {
+        "time": 188.734,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.564,
+        "strength": 1.4,
+        "accent": "guitar"
+      },
+      {
+        "time": 189.298,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.704,
+        "strength": 1.22,
+        "accent": "guitar"
+      },
+      {
+        "time": 190.002,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.559,
+        "strength": 1.77,
+        "accent": "guitar"
+      },
+      {
+        "time": 190.561,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.423,
+        "strength": 1.53,
+        "accent": "guitar"
+      },
+      {
+        "time": 190.984,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.404,
+        "strength": 1.16,
+        "accent": "guitar"
+      },
+      {
+        "time": 191.388,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.429,
+        "strength": 0.86,
+        "accent": "guitar"
+      },
+      {
+        "time": 191.817,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.424,
+        "strength": 1.26,
+        "accent": "guitar"
+      },
+      {
+        "time": 192.241,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.569,
+        "strength": 1.34,
+        "accent": "guitar"
+      },
+      {
+        "time": 192.81,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.688,
+        "strength": 1.57,
+        "accent": "guitar"
+      },
+      {
+        "time": 193.498,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.414,
+        "strength": 1.74,
+        "accent": "guitar"
+      },
+      {
+        "time": 193.913,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.718,
+        "strength": 0.86,
+        "accent": "guitar"
+      },
+      {
+        "time": 194.631,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.559,
+        "strength": 0.71,
+        "accent": "guitar"
+      },
+      {
+        "time": 195.19,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.399,
+        "strength": 1.05,
+        "accent": "guitar"
+      },
+      {
+        "time": 195.589,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 0.82,
+        "accent": "guitar"
+      }
+    ],
+    "hard": [
+      {
+        "time": 0.722,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.299,
+        "strength": 0.77,
+        "accent": "guitar"
+      },
+      {
+        "time": 1.021,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.419,
+        "strength": 0.95,
+        "accent": "guitar"
+      },
+      {
+        "time": 1.44,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.274,
+        "strength": 0.99,
+        "accent": "guitar"
+      },
+      {
+        "time": 1.714,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.284,
+        "strength": 1.3,
+        "accent": "guitar"
+      },
+      {
+        "time": 1.999,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.259,
+        "strength": 1.24,
+        "accent": "guitar"
+      },
+      {
+        "time": 2.258,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.289,
+        "strength": 0.98,
+        "accent": "guitar"
+      },
+      {
+        "time": 2.547,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.299,
+        "strength": 1.07,
+        "accent": "guitar"
+      },
+      {
+        "time": 2.847,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.404,
+        "strength": 1.03,
+        "accent": "guitar"
+      },
+      {
+        "time": 3.251,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.304,
+        "strength": 0.84,
+        "accent": "guitar"
+      },
+      {
+        "time": 3.555,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.389,
+        "strength": 0.94,
+        "accent": "guitar"
+      },
+      {
+        "time": 3.944,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.289,
+        "strength": 1.13,
+        "accent": "guitar"
+      },
+      {
+        "time": 4.234,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.274,
+        "strength": 1.31,
+        "accent": "guitar"
+      },
+      {
+        "time": 4.508,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.424,
+        "strength": 1.11,
+        "accent": "guitar"
+      },
+      {
+        "time": 4.932,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.739,
+        "strength": 0.97,
+        "accent": "guitar"
+      },
+      {
+        "time": 5.671,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.483,
+        "strength": 1.43,
+        "accent": "guitar"
+      },
+      {
+        "time": 6.154,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.314,
+        "strength": 0.7,
+        "accent": "guitar"
+      },
+      {
+        "time": 6.468,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.274,
+        "strength": 1.37,
+        "accent": "guitar"
+      },
+      {
+        "time": 6.743,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.414,
+        "strength": 1.27,
+        "accent": "guitar"
+      },
+      {
+        "time": 7.157,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.574,
+        "strength": 0.97,
+        "accent": "guitar"
+      },
+      {
+        "time": 7.731,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.424,
+        "strength": 1.12,
+        "accent": "guitar"
+      },
+      {
+        "time": 8.155,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.279,
+        "strength": 1.33,
+        "accent": "guitar"
+      },
+      {
+        "time": 8.434,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.284,
+        "strength": 1.13,
+        "accent": "guitar"
+      },
+      {
+        "time": 8.718,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.429,
+        "strength": 1.54,
+        "accent": "guitar"
+      },
+      {
+        "time": 9.147,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.414,
+        "strength": 1.61,
+        "accent": "guitar"
+      },
+      {
+        "time": 9.561,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.429,
+        "strength": 1.49,
+        "accent": "guitar"
+      },
+      {
+        "time": 9.99,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.289,
+        "strength": 1.19,
+        "accent": "guitar"
+      },
+      {
+        "time": 10.28,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.28,
+        "strength": 0.95,
+        "accent": "guitar"
+      },
+      {
+        "time": 10.56,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.279,
+        "strength": 1.74,
+        "accent": "guitar"
+      },
+      {
+        "time": 10.839,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.28,
+        "strength": 1.54,
+        "accent": "guitar"
+      },
+      {
+        "time": 11.119,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.289,
+        "strength": 1.6,
+        "accent": "guitar"
+      },
+      {
+        "time": 11.408,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.423,
+        "strength": 1.45,
+        "accent": "guitar"
+      },
+      {
+        "time": 11.831,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.269,
+        "strength": 1.1,
+        "accent": "guitar"
+      },
+      {
+        "time": 12.101,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.285,
+        "strength": 1.17,
+        "accent": "guitar"
+      },
+      {
+        "time": 12.385,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.419,
+        "strength": 1.24,
+        "accent": "guitar"
+      },
+      {
+        "time": 12.804,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.269,
+        "strength": 1.47,
+        "accent": "guitar"
+      },
+      {
+        "time": 13.073,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.289,
+        "strength": 1.44,
+        "accent": "guitar"
+      },
+      {
+        "time": 13.363,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.279,
+        "strength": 1.55,
+        "accent": "guitar"
+      },
+      {
+        "time": 13.642,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.414,
+        "strength": 1.61,
+        "accent": "guitar"
+      },
+      {
+        "time": 14.056,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.284,
+        "strength": 1.19,
+        "accent": "guitar"
+      },
+      {
+        "time": 14.341,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.414,
+        "strength": 1.04,
+        "accent": "guitar"
+      },
+      {
+        "time": 14.755,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.284,
+        "strength": 0.99,
+        "accent": "guitar"
+      },
+      {
+        "time": 15.039,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.285,
+        "strength": 1.46,
+        "accent": "guitar"
+      },
+      {
+        "time": 15.324,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.279,
+        "strength": 1.94,
+        "accent": "guitar"
+      },
+      {
+        "time": 15.603,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.274,
+        "strength": 1.58,
+        "accent": "guitar"
+      },
+      {
+        "time": 15.877,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.444,
+        "strength": 1.65,
+        "accent": "guitar"
+      },
+      {
+        "time": 16.321,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.269,
+        "strength": 0.98,
+        "accent": "guitar"
+      },
+      {
+        "time": 16.59,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.289,
+        "strength": 1.23,
+        "accent": "guitar"
+      },
+      {
+        "time": 16.88,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.42,
+        "strength": 1.18,
+        "accent": "guitar"
+      },
+      {
+        "time": 17.299,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.409,
+        "strength": 1.46,
+        "accent": "guitar"
+      },
+      {
+        "time": 17.708,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.429,
+        "strength": 1.62,
+        "accent": "guitar"
+      },
+      {
+        "time": 18.137,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.409,
+        "strength": 1.17,
+        "accent": "guitar"
+      },
+      {
+        "time": 18.546,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.279,
+        "strength": 1.13,
+        "accent": "guitar"
+      },
+      {
+        "time": 18.825,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.294,
+        "strength": 1.01,
+        "accent": "guitar"
+      },
+      {
+        "time": 19.12,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.416,
+        "strength": 1.21,
+        "accent": "guitar"
+      },
+      {
+        "time": 19.536,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.279,
+        "strength": 1.62,
+        "accent": "guitar"
+      },
+      {
+        "time": 19.814,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.278,
+        "strength": 1.53,
+        "accent": "guitar"
+      },
+      {
+        "time": 20.093,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.285,
+        "strength": 1.89,
+        "accent": "guitar"
+      },
+      {
+        "time": 20.378,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.418,
+        "strength": 1.32,
+        "accent": "guitar"
+      },
+      {
+        "time": 20.796,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.414,
+        "strength": 1.1,
+        "accent": "guitar"
+      },
+      {
+        "time": 21.21,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.299,
+        "strength": 1.35,
+        "accent": "guitar"
+      },
+      {
+        "time": 21.509,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.275,
+        "strength": 0.94,
+        "accent": "guitar"
+      },
+      {
+        "time": 21.784,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.274,
+        "strength": 1.7,
+        "accent": "guitar"
+      },
+      {
+        "time": 22.058,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.28,
+        "strength": 1.53,
+        "accent": "guitar"
+      },
+      {
+        "time": 22.338,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.279,
+        "strength": 1.46,
+        "accent": "guitar"
+      },
+      {
+        "time": 22.617,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.279,
+        "strength": 1.41,
+        "accent": "guitar"
+      },
+      {
+        "time": 22.896,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.424,
+        "strength": 1.04,
+        "accent": "guitar"
+      },
+      {
+        "time": 23.321,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.424,
+        "strength": 1.07,
+        "accent": "guitar"
+      },
+      {
+        "time": 23.744,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.275,
+        "strength": 1.05,
+        "accent": "guitar"
+      },
+      {
+        "time": 24.019,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.284,
+        "strength": 1.57,
+        "accent": "guitar"
+      },
+      {
+        "time": 24.304,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.269,
+        "strength": 1.37,
+        "accent": "guitar"
+      },
+      {
+        "time": 24.573,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.289,
+        "strength": 1.63,
+        "accent": "guitar"
+      },
+      {
+        "time": 24.862,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.414,
+        "strength": 1.13,
+        "accent": "guitar"
+      },
+      {
+        "time": 25.276,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.309,
+        "strength": 0.94,
+        "accent": "guitar"
+      },
+      {
+        "time": 25.585,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.31,
+        "strength": 0.86,
+        "accent": "guitar"
+      },
+      {
+        "time": 25.895,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.279,
+        "strength": 0.73,
+        "accent": "guitar"
+      },
+      {
+        "time": 26.174,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.344,
+        "strength": 0.71,
+        "accent": "guitar"
+      },
+      {
+        "time": 26.518,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.264,
+        "strength": 0.52,
+        "accent": "guitar"
+      },
+      {
+        "time": 26.782,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.464,
+        "strength": 0.46,
+        "accent": "guitar"
+      },
+      {
+        "time": 27.246,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.599,
+        "strength": 0.74,
+        "accent": "guitar"
+      },
+      {
+        "time": 27.845,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.24,
+        "strength": 0.53,
+        "accent": "guitar"
+      },
+      {
+        "time": 28.085,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.414,
+        "strength": 1.2,
+        "accent": "guitar"
+      },
+      {
+        "time": 28.499,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.413,
+        "strength": 1.15,
+        "accent": "guitar"
+      },
+      {
+        "time": 28.912,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 0.94,
+        "accent": "guitar"
+      },
+      {
+        "time": 29.786,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.329,
+        "strength": 0.9,
+        "accent": "guitar"
+      },
+      {
+        "time": 30.115,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 0.48,
+        "accent": "guitar"
+      },
+      {
+        "time": 32.275,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.254,
+        "strength": 1.04,
+        "accent": "guitar"
+      },
+      {
+        "time": 32.529,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.359,
+        "strength": 0.67,
+        "accent": "guitar"
+      },
+      {
+        "time": 32.888,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.385,
+        "strength": 0.64,
+        "accent": "guitar"
+      },
+      {
+        "time": 33.273,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.419,
+        "strength": 0.88,
+        "accent": "guitar"
+      },
+      {
+        "time": 33.692,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.264,
+        "strength": 1.76,
+        "accent": "guitar"
+      },
+      {
+        "time": 33.956,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.284,
+        "strength": 0.97,
+        "accent": "guitar"
+      },
+      {
+        "time": 34.24,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.274,
+        "strength": 0.94,
+        "accent": "guitar"
+      },
+      {
+        "time": 34.515,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.339,
+        "strength": 1.11,
+        "accent": "guitar"
+      },
+      {
+        "time": 34.854,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.304,
+        "strength": 0.76,
+        "accent": "guitar"
+      },
+      {
+        "time": 35.158,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.359,
+        "strength": 0.59,
+        "accent": "guitar"
+      },
+      {
+        "time": 35.518,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 0.91,
+        "accent": "guitar"
+      },
+      {
+        "time": 36.545,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.369,
+        "strength": 0.74,
+        "accent": "guitar"
+      },
+      {
+        "time": 36.914,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 0.85,
+        "accent": "guitar"
+      },
+      {
+        "time": 38.78,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.264,
+        "strength": 0.78,
+        "accent": "guitar"
+      },
+      {
+        "time": 39.045,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 0.74,
+        "accent": "guitar"
+      },
+      {
+        "time": 41.018,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.411,
+        "strength": 0.87,
+        "accent": "guitar"
+      },
+      {
+        "time": 41.429,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.249,
+        "strength": 0.86,
+        "accent": "guitar"
+      },
+      {
+        "time": 41.678,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.469,
+        "strength": 0.66,
+        "accent": "guitar"
+      },
+      {
+        "time": 42.147,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 0.78,
+        "accent": "guitar"
+      },
+      {
+        "time": 43.231,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.274,
+        "strength": 0.72,
+        "accent": "guitar"
+      },
+      {
+        "time": 43.505,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.298,
+        "strength": 1.08,
+        "accent": "guitar"
+      },
+      {
+        "time": 43.804,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.249,
+        "strength": 0.89,
+        "accent": "guitar"
+      },
+      {
+        "time": 44.053,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.434,
+        "strength": 2.37,
+        "accent": "guitar"
+      },
+      {
+        "time": 44.487,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.694,
+        "strength": 0.82,
+        "accent": "guitar"
+      },
+      {
+        "time": 45.181,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.289,
+        "strength": 1.53,
+        "accent": "guitar"
+      },
+      {
+        "time": 45.47,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 2.37,
+        "accent": "guitar"
+      },
+      {
+        "time": 48.234,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.813,
+        "strength": 0.64,
+        "accent": "guitar"
+      },
+      {
+        "time": 49.047,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 0.5,
+        "accent": "guitar"
+      },
+      {
+        "time": 50.374,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.419,
+        "strength": 2.9,
+        "accent": "guitar"
+      },
+      {
+        "time": 50.793,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.419,
+        "strength": 1.95,
+        "accent": "guitar"
+      },
+      {
+        "time": 51.212,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.28,
+        "strength": 2.33,
+        "accent": "guitar"
+      },
+      {
+        "time": 51.491,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.274,
+        "strength": 1.76,
+        "accent": "guitar"
+      },
+      {
+        "time": 51.766,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.279,
+        "strength": 0.72,
+        "accent": "guitar"
+      },
+      {
+        "time": 52.045,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.284,
+        "strength": 1.6,
+        "accent": "guitar"
+      },
+      {
+        "time": 52.329,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.284,
+        "strength": 0.62,
+        "accent": "guitar"
+      },
+      {
+        "time": 52.614,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.279,
+        "strength": 2.12,
+        "accent": "guitar"
+      },
+      {
+        "time": 52.893,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.279,
+        "strength": 1.4,
+        "accent": "guitar"
+      },
+      {
+        "time": 53.172,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.274,
+        "strength": 1.95,
+        "accent": "guitar"
+      },
+      {
+        "time": 53.447,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.289,
+        "strength": 1.85,
+        "accent": "guitar"
+      },
+      {
+        "time": 53.736,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.319,
+        "strength": 1.45,
+        "accent": "guitar"
+      },
+      {
+        "time": 54.055,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.244,
+        "strength": 0.57,
+        "accent": "guitar"
+      },
+      {
+        "time": 54.3,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 1.29,
+        "accent": "guitar"
+      },
+      {
+        "time": 59.563,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.768,
+        "strength": 0.71,
+        "accent": "guitar"
+      },
+      {
+        "time": 60.331,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 0.91,
+        "accent": "guitar"
+      },
+      {
+        "time": 61.184,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.259,
+        "strength": 1.12,
+        "accent": "guitar"
+      },
+      {
+        "time": 61.444,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 1.46,
+        "accent": "guitar"
+      },
+      {
+        "time": 63.411,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.422,
+        "strength": 1.6,
+        "accent": "guitar"
+      },
+      {
+        "time": 63.833,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.419,
+        "strength": 1.27,
+        "accent": "guitar"
+      },
+      {
+        "time": 64.252,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.249,
+        "strength": 0.84,
+        "accent": "guitar"
+      },
+      {
+        "time": 64.502,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.309,
+        "strength": 0.61,
+        "accent": "guitar"
+      },
+      {
+        "time": 64.811,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.275,
+        "strength": 0.75,
+        "accent": "guitar"
+      },
+      {
+        "time": 65.086,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.239,
+        "strength": 1.22,
+        "accent": "guitar"
+      },
+      {
+        "time": 65.325,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.319,
+        "strength": 0.81,
+        "accent": "guitar"
+      },
+      {
+        "time": 65.644,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.295,
+        "strength": 1.19,
+        "accent": "guitar"
+      },
+      {
+        "time": 65.939,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.285,
+        "strength": 0.58,
+        "accent": "guitar"
+      },
+      {
+        "time": 66.223,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.259,
+        "strength": 0.88,
+        "accent": "guitar"
+      },
+      {
+        "time": 66.482,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.259,
+        "strength": 1.35,
+        "accent": "guitar"
+      },
+      {
+        "time": 66.741,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.305,
+        "strength": 0.64,
+        "accent": "guitar"
+      },
+      {
+        "time": 67.046,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.299,
+        "strength": 0.9,
+        "accent": "guitar"
+      },
+      {
+        "time": 67.345,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.239,
+        "strength": 1.26,
+        "accent": "guitar"
+      },
+      {
+        "time": 67.585,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.305,
+        "strength": 0.73,
+        "accent": "guitar"
+      },
+      {
+        "time": 67.889,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.444,
+        "strength": 1.41,
+        "accent": "guitar"
+      },
+      {
+        "time": 68.333,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.409,
+        "strength": 0.91,
+        "accent": "guitar"
+      },
+      {
+        "time": 68.742,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.25,
+        "strength": 1.24,
+        "accent": "guitar"
+      },
+      {
+        "time": 68.991,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.3,
+        "strength": 0.66,
+        "accent": "guitar"
+      },
+      {
+        "time": 69.291,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.279,
+        "strength": 0.85,
+        "accent": "guitar"
+      },
+      {
+        "time": 69.57,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.289,
+        "strength": 1.11,
+        "accent": "guitar"
+      },
+      {
+        "time": 69.859,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.28,
+        "strength": 0.99,
+        "accent": "guitar"
+      },
+      {
+        "time": 70.139,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.289,
+        "strength": 0.96,
+        "accent": "guitar"
+      },
+      {
+        "time": 70.428,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.28,
+        "strength": 1.03,
+        "accent": "guitar"
+      },
+      {
+        "time": 70.708,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.28,
+        "strength": 1.16,
+        "accent": "guitar"
+      },
+      {
+        "time": 70.987,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.284,
+        "strength": 1.25,
+        "accent": "guitar"
+      },
+      {
+        "time": 71.272,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.274,
+        "strength": 0.71,
+        "accent": "guitar"
+      },
+      {
+        "time": 71.546,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.269,
+        "strength": 1.14,
+        "accent": "guitar"
+      },
+      {
+        "time": 71.815,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.289,
+        "strength": 1.2,
+        "accent": "guitar"
+      },
+      {
+        "time": 72.104,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.315,
+        "strength": 0.83,
+        "accent": "guitar"
+      },
+      {
+        "time": 72.419,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.259,
+        "strength": 0.96,
+        "accent": "guitar"
+      },
+      {
+        "time": 72.678,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.259,
+        "strength": 0.81,
+        "accent": "guitar"
+      },
+      {
+        "time": 72.937,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.275,
+        "strength": 1.68,
+        "accent": "guitar"
+      },
+      {
+        "time": 73.212,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 0.84,
+        "accent": "guitar"
+      },
+      {
+        "time": 74.653,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.255,
+        "strength": 1.07,
+        "accent": "guitar"
+      },
+      {
+        "time": 74.908,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.284,
+        "strength": 0.97,
+        "accent": "guitar"
+      },
+      {
+        "time": 75.192,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.279,
+        "strength": 1.32,
+        "accent": "guitar"
+      },
+      {
+        "time": 75.472,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.42,
+        "strength": 1.08,
+        "accent": "guitar"
+      },
+      {
+        "time": 75.892,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.423,
+        "strength": 1.1,
+        "accent": "guitar"
+      },
+      {
+        "time": 76.315,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.3,
+        "strength": 1.1,
+        "accent": "guitar"
+      },
+      {
+        "time": 76.614,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.275,
+        "strength": 0.96,
+        "accent": "guitar"
+      },
+      {
+        "time": 76.889,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.259,
+        "strength": 1.08,
+        "accent": "guitar"
+      },
+      {
+        "time": 77.148,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.279,
+        "strength": 0.94,
+        "accent": "guitar"
+      },
+      {
+        "time": 77.427,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.284,
+        "strength": 1.52,
+        "accent": "guitar"
+      },
+      {
+        "time": 77.712,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.419,
+        "strength": 1.06,
+        "accent": "guitar"
+      },
+      {
+        "time": 78.131,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.434,
+        "strength": 1.11,
+        "accent": "guitar"
+      },
+      {
+        "time": 78.565,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.274,
+        "strength": 1.29,
+        "accent": "guitar"
+      },
+      {
+        "time": 78.839,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.289,
+        "strength": 1.01,
+        "accent": "guitar"
+      },
+      {
+        "time": 79.128,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.28,
+        "strength": 0.97,
+        "accent": "guitar"
+      },
+      {
+        "time": 79.408,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.274,
+        "strength": 1.09,
+        "accent": "guitar"
+      },
+      {
+        "time": 79.682,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.275,
+        "strength": 1.15,
+        "accent": "guitar"
+      },
+      {
+        "time": 79.957,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.43,
+        "strength": 1.1,
+        "accent": "guitar"
+      },
+      {
+        "time": 80.386,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.428,
+        "strength": 1.16,
+        "accent": "guitar"
+      },
+      {
+        "time": 80.815,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.279,
+        "strength": 1.22,
+        "accent": "guitar"
+      },
+      {
+        "time": 81.094,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.27,
+        "strength": 1.09,
+        "accent": "guitar"
+      },
+      {
+        "time": 81.363,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.274,
+        "strength": 1.08,
+        "accent": "guitar"
+      },
+      {
+        "time": 81.638,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.32,
+        "strength": 0.92,
+        "accent": "guitar"
+      },
+      {
+        "time": 81.957,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.239,
+        "strength": 0.78,
+        "accent": "guitar"
+      },
+      {
+        "time": 82.196,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.444,
+        "strength": 1.12,
+        "accent": "guitar"
+      },
+      {
+        "time": 82.64,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.409,
+        "strength": 0.93,
+        "accent": "guitar"
+      },
+      {
+        "time": 83.049,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.284,
+        "strength": 1.17,
+        "accent": "guitar"
+      },
+      {
+        "time": 83.334,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.269,
+        "strength": 0.84,
+        "accent": "guitar"
+      },
+      {
+        "time": 83.603,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.289,
+        "strength": 1.08,
+        "accent": "guitar"
+      },
+      {
+        "time": 83.893,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.29,
+        "strength": 0.92,
+        "accent": "guitar"
+      },
+      {
+        "time": 84.182,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.264,
+        "strength": 0.96,
+        "accent": "guitar"
+      },
+      {
+        "time": 84.446,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.419,
+        "strength": 1.1,
+        "accent": "guitar"
+      },
+      {
+        "time": 84.865,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.414,
+        "strength": 1.13,
+        "accent": "guitar"
+      },
+      {
+        "time": 85.279,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.289,
+        "strength": 1.13,
+        "accent": "guitar"
+      },
+      {
+        "time": 85.569,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.264,
+        "strength": 1.01,
+        "accent": "guitar"
+      },
+      {
+        "time": 85.833,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.294,
+        "strength": 0.99,
+        "accent": "guitar"
+      },
+      {
+        "time": 86.127,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.275,
+        "strength": 0.98,
+        "accent": "guitar"
+      },
+      {
+        "time": 86.402,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.284,
+        "strength": 1.08,
+        "accent": "guitar"
+      },
+      {
+        "time": 86.686,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.439,
+        "strength": 1.04,
+        "accent": "guitar"
+      },
+      {
+        "time": 87.125,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.409,
+        "strength": 1.01,
+        "accent": "guitar"
+      },
+      {
+        "time": 87.534,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.289,
+        "strength": 1.26,
+        "accent": "guitar"
+      },
+      {
+        "time": 87.824,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.275,
+        "strength": 1.04,
+        "accent": "guitar"
+      },
+      {
+        "time": 88.098,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.274,
+        "strength": 0.98,
+        "accent": "guitar"
+      },
+      {
+        "time": 88.372,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.274,
+        "strength": 1.07,
+        "accent": "guitar"
+      },
+      {
+        "time": 88.647,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.289,
+        "strength": 1.21,
+        "accent": "guitar"
+      },
+      {
+        "time": 88.936,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.254,
+        "strength": 0.97,
+        "accent": "guitar"
+      },
+      {
+        "time": 89.191,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.294,
+        "strength": 0.74,
+        "accent": "guitar"
+      },
+      {
+        "time": 89.485,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.559,
+        "strength": 0.97,
+        "accent": "guitar"
+      },
+      {
+        "time": 90.044,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.29,
+        "strength": 0.83,
+        "accent": "guitar"
+      },
+      {
+        "time": 90.334,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.573,
+        "strength": 1.11,
+        "accent": "guitar"
+      },
+      {
+        "time": 90.907,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.254,
+        "strength": 0.66,
+        "accent": "guitar"
+      },
+      {
+        "time": 91.161,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.559,
+        "strength": 0.51,
+        "accent": "guitar"
+      },
+      {
+        "time": 91.72,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 0.55,
+        "accent": "guitar"
+      },
+      {
+        "time": 92.698,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 0.64,
+        "accent": "guitar"
+      },
+      {
+        "time": 94.913,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.294,
+        "strength": 0.65,
+        "accent": "guitar"
+      },
+      {
+        "time": 95.207,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 0.49,
+        "accent": "guitar"
+      },
+      {
+        "time": 97.122,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.449,
+        "strength": 0.71,
+        "accent": "guitar"
+      },
+      {
+        "time": 97.571,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 0.51,
+        "accent": "guitar"
+      },
+      {
+        "time": 101.542,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.289,
+        "strength": 1.02,
+        "accent": "guitar"
+      },
+      {
+        "time": 101.832,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.265,
+        "strength": 0.68,
+        "accent": "guitar"
+      },
+      {
+        "time": 102.096,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.43,
+        "strength": 1.77,
+        "accent": "guitar"
+      },
+      {
+        "time": 102.526,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.278,
+        "strength": 1.16,
+        "accent": "guitar"
+      },
+      {
+        "time": 102.805,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.409,
+        "strength": 1.27,
+        "accent": "guitar"
+      },
+      {
+        "time": 103.214,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.294,
+        "strength": 1.77,
+        "accent": "guitar"
+      },
+      {
+        "time": 103.508,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.275,
+        "strength": 0.88,
+        "accent": "guitar"
+      },
+      {
+        "time": 103.783,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.422,
+        "strength": 1.04,
+        "accent": "guitar"
+      },
+      {
+        "time": 104.204,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.296,
+        "strength": 0.99,
+        "accent": "guitar"
+      },
+      {
+        "time": 104.501,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.269,
+        "strength": 0.6,
+        "accent": "guitar"
+      },
+      {
+        "time": 104.77,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.254,
+        "strength": 1.55,
+        "accent": "guitar"
+      },
+      {
+        "time": 105.024,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.429,
+        "strength": 1.08,
+        "accent": "guitar"
+      },
+      {
+        "time": 105.454,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.289,
+        "strength": 1.79,
+        "accent": "guitar"
+      },
+      {
+        "time": 105.743,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.285,
+        "strength": 0.84,
+        "accent": "guitar"
+      },
+      {
+        "time": 106.027,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.434,
+        "strength": 1.08,
+        "accent": "guitar"
+      },
+      {
+        "time": 106.461,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.245,
+        "strength": 1.16,
+        "accent": "guitar"
+      },
+      {
+        "time": 106.706,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.294,
+        "strength": 0.65,
+        "accent": "guitar"
+      },
+      {
+        "time": 107.0,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.429,
+        "strength": 1.37,
+        "accent": "guitar"
+      },
+      {
+        "time": 107.429,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.264,
+        "strength": 1.01,
+        "accent": "guitar"
+      },
+      {
+        "time": 107.693,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.294,
+        "strength": 1.77,
+        "accent": "guitar"
+      },
+      {
+        "time": 107.988,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.299,
+        "strength": 0.74,
+        "accent": "guitar"
+      },
+      {
+        "time": 108.287,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.254,
+        "strength": 1.24,
+        "accent": "guitar"
+      },
+      {
+        "time": 108.541,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.464,
+        "strength": 0.74,
+        "accent": "guitar"
+      },
+      {
+        "time": 109.005,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.249,
+        "strength": 0.56,
+        "accent": "guitar"
+      },
+      {
+        "time": 109.255,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.27,
+        "strength": 1.13,
+        "accent": "guitar"
+      },
+      {
+        "time": 109.525,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.419,
+        "strength": 1.15,
+        "accent": "guitar"
+      },
+      {
+        "time": 109.944,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.309,
+        "strength": 1.93,
+        "accent": "guitar"
+      },
+      {
+        "time": 110.253,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.255,
+        "strength": 0.79,
+        "accent": "guitar"
+      },
+      {
+        "time": 110.507,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.296,
+        "strength": 1.16,
+        "accent": "guitar"
+      },
+      {
+        "time": 110.803,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.272,
+        "strength": 0.69,
+        "accent": "guitar"
+      },
+      {
+        "time": 111.076,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.274,
+        "strength": 0.98,
+        "accent": "guitar"
+      },
+      {
+        "time": 111.35,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.29,
+        "strength": 1.13,
+        "accent": "guitar"
+      },
+      {
+        "time": 111.64,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.279,
+        "strength": 0.84,
+        "accent": "guitar"
+      },
+      {
+        "time": 111.919,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.29,
+        "strength": 1.06,
+        "accent": "guitar"
+      },
+      {
+        "time": 112.208,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.304,
+        "strength": 0.82,
+        "accent": "guitar"
+      },
+      {
+        "time": 112.512,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.249,
+        "strength": 0.86,
+        "accent": "guitar"
+      },
+      {
+        "time": 112.762,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.32,
+        "strength": 0.98,
+        "accent": "guitar"
+      },
+      {
+        "time": 113.081,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.239,
+        "strength": 0.77,
+        "accent": "guitar"
+      },
+      {
+        "time": 113.321,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.269,
+        "strength": 0.87,
+        "accent": "guitar"
+      },
+      {
+        "time": 113.59,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.254,
+        "strength": 0.84,
+        "accent": "guitar"
+      },
+      {
+        "time": 113.844,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.315,
+        "strength": 0.69,
+        "accent": "guitar"
+      },
+      {
+        "time": 114.159,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.269,
+        "strength": 0.94,
+        "accent": "guitar"
+      },
+      {
+        "time": 114.428,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.289,
+        "strength": 1.12,
+        "accent": "guitar"
+      },
+      {
+        "time": 114.717,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.25,
+        "strength": 0.92,
+        "accent": "guitar"
+      },
+      {
+        "time": 114.968,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.314,
+        "strength": 0.93,
+        "accent": "guitar"
+      },
+      {
+        "time": 115.281,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.284,
+        "strength": 0.98,
+        "accent": "guitar"
+      },
+      {
+        "time": 115.566,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.314,
+        "strength": 0.94,
+        "accent": "guitar"
+      },
+      {
+        "time": 115.88,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.245,
+        "strength": 0.91,
+        "accent": "guitar"
+      },
+      {
+        "time": 116.124,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.279,
+        "strength": 0.79,
+        "accent": "guitar"
+      },
+      {
+        "time": 116.404,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.31,
+        "strength": 0.89,
+        "accent": "guitar"
+      },
+      {
+        "time": 116.713,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.294,
+        "strength": 0.9,
+        "accent": "guitar"
+      },
+      {
+        "time": 117.007,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.25,
+        "strength": 0.88,
+        "accent": "guitar"
+      },
+      {
+        "time": 117.257,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.269,
+        "strength": 0.94,
+        "accent": "guitar"
+      },
+      {
+        "time": 117.526,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.284,
+        "strength": 0.88,
+        "accent": "guitar"
+      },
+      {
+        "time": 117.81,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.28,
+        "strength": 1.0,
+        "accent": "guitar"
+      },
+      {
+        "time": 118.09,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.275,
+        "strength": 1.1,
+        "accent": "guitar"
+      },
+      {
+        "time": 118.365,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.289,
+        "strength": 0.81,
+        "accent": "guitar"
+      },
+      {
+        "time": 118.654,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.289,
+        "strength": 1.08,
+        "accent": "guitar"
+      },
+      {
+        "time": 118.943,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.279,
+        "strength": 0.95,
+        "accent": "guitar"
+      },
+      {
+        "time": 119.222,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.399,
+        "strength": 1.02,
+        "accent": "guitar"
+      },
+      {
+        "time": 119.621,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.294,
+        "strength": 0.89,
+        "accent": "guitar"
+      },
+      {
+        "time": 119.916,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.409,
+        "strength": 1.26,
+        "accent": "guitar"
+      },
+      {
+        "time": 120.325,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 1.06,
+        "accent": "guitar"
+      },
+      {
+        "time": 121.761,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.245,
+        "strength": 0.94,
+        "accent": "guitar"
+      },
+      {
+        "time": 122.006,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.319,
+        "strength": 1.0,
+        "accent": "guitar"
+      },
+      {
+        "time": 122.325,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.394,
+        "strength": 0.99,
+        "accent": "guitar"
+      },
+      {
+        "time": 122.719,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.434,
+        "strength": 1.04,
+        "accent": "guitar"
+      },
+      {
+        "time": 123.153,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.255,
+        "strength": 0.93,
+        "accent": "guitar"
+      },
+      {
+        "time": 123.408,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.289,
+        "strength": 0.98,
+        "accent": "guitar"
+      },
+      {
+        "time": 123.697,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.304,
+        "strength": 1.11,
+        "accent": "guitar"
+      },
+      {
+        "time": 124.001,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.26,
+        "strength": 1.02,
+        "accent": "guitar"
+      },
+      {
+        "time": 124.261,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.3,
+        "strength": 0.87,
+        "accent": "guitar"
+      },
+      {
+        "time": 124.562,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.408,
+        "strength": 0.96,
+        "accent": "guitar"
+      },
+      {
+        "time": 124.969,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.399,
+        "strength": 0.91,
+        "accent": "guitar"
+      },
+      {
+        "time": 125.368,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.315,
+        "strength": 0.97,
+        "accent": "guitar"
+      },
+      {
+        "time": 125.683,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.389,
+        "strength": 0.82,
+        "accent": "guitar"
+      },
+      {
+        "time": 126.072,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.414,
+        "strength": 0.99,
+        "accent": "guitar"
+      },
+      {
+        "time": 126.486,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.289,
+        "strength": 0.96,
+        "accent": "guitar"
+      },
+      {
+        "time": 126.775,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.284,
+        "strength": 1.07,
+        "accent": "guitar"
+      },
+      {
+        "time": 127.06,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.265,
+        "strength": 0.91,
+        "accent": "guitar"
+      },
+      {
+        "time": 127.324,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.289,
+        "strength": 0.92,
+        "accent": "guitar"
+      },
+      {
+        "time": 127.613,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.285,
+        "strength": 0.94,
+        "accent": "guitar"
+      },
+      {
+        "time": 127.898,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.419,
+        "strength": 0.91,
+        "accent": "guitar"
+      },
+      {
+        "time": 128.317,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.419,
+        "strength": 0.92,
+        "accent": "guitar"
+      },
+      {
+        "time": 128.736,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.274,
+        "strength": 0.99,
+        "accent": "guitar"
+      },
+      {
+        "time": 129.01,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.29,
+        "strength": 1.16,
+        "accent": "guitar"
+      },
+      {
+        "time": 129.3,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.349,
+        "strength": 1.05,
+        "accent": "guitar"
+      },
+      {
+        "time": 129.649,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.26,
+        "strength": 0.9,
+        "accent": "guitar"
+      },
+      {
+        "time": 129.908,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.26,
+        "strength": 0.77,
+        "accent": "guitar"
+      },
+      {
+        "time": 130.168,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.394,
+        "strength": 0.93,
+        "accent": "guitar"
+      },
+      {
+        "time": 130.562,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.419,
+        "strength": 0.93,
+        "accent": "guitar"
+      },
+      {
+        "time": 130.98,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.309,
+        "strength": 0.91,
+        "accent": "guitar"
+      },
+      {
+        "time": 131.29,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.25,
+        "strength": 0.95,
+        "accent": "guitar"
+      },
+      {
+        "time": 131.539,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.424,
+        "strength": 1.01,
+        "accent": "guitar"
+      },
+      {
+        "time": 131.963,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.419,
+        "strength": 1.11,
+        "accent": "guitar"
+      },
+      {
+        "time": 132.382,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.29,
+        "strength": 0.95,
+        "accent": "guitar"
+      },
+      {
+        "time": 132.672,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.374,
+        "strength": 0.89,
+        "accent": "guitar"
+      },
+      {
+        "time": 133.046,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.444,
+        "strength": 0.96,
+        "accent": "guitar"
+      },
+      {
+        "time": 133.49,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.429,
+        "strength": 0.87,
+        "accent": "guitar"
+      },
+      {
+        "time": 133.919,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.42,
+        "strength": 0.97,
+        "accent": "guitar"
+      },
+      {
+        "time": 134.339,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.314,
+        "strength": 1.01,
+        "accent": "guitar"
+      },
+      {
+        "time": 134.653,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.249,
+        "strength": 0.96,
+        "accent": "guitar"
+      },
+      {
+        "time": 134.902,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.275,
+        "strength": 0.83,
+        "accent": "guitar"
+      },
+      {
+        "time": 135.177,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.273,
+        "strength": 0.97,
+        "accent": "guitar"
+      },
+      {
+        "time": 135.45,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.284,
+        "strength": 0.87,
+        "accent": "guitar"
+      },
+      {
+        "time": 135.735,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.429,
+        "strength": 1.09,
+        "accent": "guitar"
+      },
+      {
+        "time": 136.164,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.409,
+        "strength": 1.08,
+        "accent": "guitar"
+      },
+      {
+        "time": 136.573,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.324,
+        "strength": 0.97,
+        "accent": "guitar"
+      },
+      {
+        "time": 136.897,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.399,
+        "strength": 1.0,
+        "accent": "guitar"
+      },
+      {
+        "time": 137.296,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.414,
+        "strength": 0.97,
+        "accent": "guitar"
+      },
+      {
+        "time": 137.71,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.389,
+        "strength": 1.15,
+        "accent": "guitar"
+      },
+      {
+        "time": 138.1,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.239,
+        "strength": 1.0,
+        "accent": "guitar"
+      },
+      {
+        "time": 138.339,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.24,
+        "strength": 0.73,
+        "accent": "guitar"
+      },
+      {
+        "time": 138.578,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.259,
+        "strength": 1.11,
+        "accent": "guitar"
+      },
+      {
+        "time": 138.838,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.294,
+        "strength": 0.95,
+        "accent": "guitar"
+      },
+      {
+        "time": 139.132,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.249,
+        "strength": 1.27,
+        "accent": "guitar"
+      },
+      {
+        "time": 139.381,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.319,
+        "strength": 0.89,
+        "accent": "guitar"
+      },
+      {
+        "time": 139.701,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 1.11,
+        "accent": "guitar"
+      },
+      {
+        "time": 148.691,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 0.61,
+        "accent": "guitar"
+      },
+      {
+        "time": 150.96,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 0.55,
+        "accent": "guitar"
+      },
+      {
+        "time": 154.008,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 0.64,
+        "accent": "guitar"
+      },
+      {
+        "time": 160.149,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.275,
+        "strength": 0.82,
+        "accent": "guitar"
+      },
+      {
+        "time": 160.424,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.414,
+        "strength": 0.88,
+        "accent": "guitar"
+      },
+      {
+        "time": 160.838,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.44,
+        "strength": 1.02,
+        "accent": "guitar"
+      },
+      {
+        "time": 161.277,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.294,
+        "strength": 0.91,
+        "accent": "guitar"
+      },
+      {
+        "time": 161.571,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.259,
+        "strength": 1.02,
+        "accent": "guitar"
+      },
+      {
+        "time": 161.83,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.264,
+        "strength": 0.86,
+        "accent": "guitar"
+      },
+      {
+        "time": 162.095,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.269,
+        "strength": 1.1,
+        "accent": "guitar"
+      },
+      {
+        "time": 162.364,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.329,
+        "strength": 0.85,
+        "accent": "guitar"
+      },
+      {
+        "time": 162.693,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.394,
+        "strength": 1.08,
+        "accent": "guitar"
+      },
+      {
+        "time": 163.088,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.409,
+        "strength": 1.04,
+        "accent": "guitar"
+      },
+      {
+        "time": 163.497,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.314,
+        "strength": 0.88,
+        "accent": "guitar"
+      },
+      {
+        "time": 163.811,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.254,
+        "strength": 0.94,
+        "accent": "guitar"
+      },
+      {
+        "time": 164.065,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.28,
+        "strength": 0.82,
+        "accent": "guitar"
+      },
+      {
+        "time": 164.345,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.29,
+        "strength": 1.11,
+        "accent": "guitar"
+      },
+      {
+        "time": 164.635,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.253,
+        "strength": 0.87,
+        "accent": "guitar"
+      },
+      {
+        "time": 164.888,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.449,
+        "strength": 1.03,
+        "accent": "guitar"
+      },
+      {
+        "time": 165.337,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.275,
+        "strength": 1.2,
+        "accent": "guitar"
+      },
+      {
+        "time": 165.612,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.394,
+        "strength": 1.08,
+        "accent": "guitar"
+      },
+      {
+        "time": 166.006,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.309,
+        "strength": 1.01,
+        "accent": "guitar"
+      },
+      {
+        "time": 166.315,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.255,
+        "strength": 0.87,
+        "accent": "guitar"
+      },
+      {
+        "time": 166.57,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.294,
+        "strength": 0.93,
+        "accent": "guitar"
+      },
+      {
+        "time": 166.864,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.305,
+        "strength": 1.02,
+        "accent": "guitar"
+      },
+      {
+        "time": 167.169,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.264,
+        "strength": 1.07,
+        "accent": "guitar"
+      },
+      {
+        "time": 167.433,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.319,
+        "strength": 0.9,
+        "accent": "guitar"
+      },
+      {
+        "time": 167.752,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.246,
+        "strength": 0.9,
+        "accent": "guitar"
+      },
+      {
+        "time": 167.998,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.259,
+        "strength": 1.18,
+        "accent": "guitar"
+      },
+      {
+        "time": 168.256,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.244,
+        "strength": 0.96,
+        "accent": "guitar"
+      },
+      {
+        "time": 168.5,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.321,
+        "strength": 0.86,
+        "accent": "guitar"
+      },
+      {
+        "time": 168.821,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.298,
+        "strength": 1.14,
+        "accent": "guitar"
+      },
+      {
+        "time": 169.119,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.309,
+        "strength": 0.75,
+        "accent": "guitar"
+      },
+      {
+        "time": 169.428,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.399,
+        "strength": 0.97,
+        "accent": "guitar"
+      },
+      {
+        "time": 169.827,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.419,
+        "strength": 1.23,
+        "accent": "guitar"
+      },
+      {
+        "time": 170.246,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.254,
+        "strength": 0.92,
+        "accent": "guitar"
+      },
+      {
+        "time": 170.501,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.329,
+        "strength": 0.96,
+        "accent": "guitar"
+      },
+      {
+        "time": 170.83,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.239,
+        "strength": 0.83,
+        "accent": "guitar"
+      },
+      {
+        "time": 171.069,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.264,
+        "strength": 1.02,
+        "accent": "guitar"
+      },
+      {
+        "time": 171.334,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.324,
+        "strength": 0.81,
+        "accent": "guitar"
+      },
+      {
+        "time": 171.658,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.399,
+        "strength": 1.03,
+        "accent": "guitar"
+      },
+      {
+        "time": 172.057,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.424,
+        "strength": 1.0,
+        "accent": "guitar"
+      },
+      {
+        "time": 172.481,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.31,
+        "strength": 0.96,
+        "accent": "guitar"
+      },
+      {
+        "time": 172.791,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.399,
+        "strength": 0.97,
+        "accent": "guitar"
+      },
+      {
+        "time": 173.19,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.269,
+        "strength": 1.05,
+        "accent": "guitar"
+      },
+      {
+        "time": 173.459,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.439,
+        "strength": 0.86,
+        "accent": "guitar"
+      },
+      {
+        "time": 173.898,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.424,
+        "strength": 0.99,
+        "accent": "guitar"
+      },
+      {
+        "time": 174.322,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.259,
+        "strength": 1.09,
+        "accent": "guitar"
+      },
+      {
+        "time": 174.581,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.404,
+        "strength": 0.96,
+        "accent": "guitar"
+      },
+      {
+        "time": 174.985,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.299,
+        "strength": 1.0,
+        "accent": "guitar"
+      },
+      {
+        "time": 175.285,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.294,
+        "strength": 0.86,
+        "accent": "guitar"
+      },
+      {
+        "time": 175.579,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.255,
+        "strength": 1.11,
+        "accent": "guitar"
+      },
+      {
+        "time": 175.834,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.299,
+        "strength": 0.8,
+        "accent": "guitar"
+      },
+      {
+        "time": 176.133,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.424,
+        "strength": 1.07,
+        "accent": "guitar"
+      },
+      {
+        "time": 176.557,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.404,
+        "strength": 0.94,
+        "accent": "guitar"
+      },
+      {
+        "time": 176.961,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.269,
+        "strength": 0.92,
+        "accent": "guitar"
+      },
+      {
+        "time": 177.23,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.579,
+        "strength": 0.99,
+        "accent": "guitar"
+      },
+      {
+        "time": 177.809,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.24,
+        "strength": 1.77,
+        "accent": "guitar"
+      },
+      {
+        "time": 178.049,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.304,
+        "strength": 0.79,
+        "accent": "guitar"
+      },
+      {
+        "time": 178.353,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.444,
+        "strength": 1.08,
+        "accent": "guitar"
+      },
+      {
+        "time": 178.797,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.27,
+        "strength": 1.12,
+        "accent": "guitar"
+      },
+      {
+        "time": 179.067,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.279,
+        "strength": 1.21,
+        "accent": "guitar"
+      },
+      {
+        "time": 179.346,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.269,
+        "strength": 1.66,
+        "accent": "guitar"
+      },
+      {
+        "time": 179.615,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.419,
+        "strength": 1.22,
+        "accent": "guitar"
+      },
+      {
+        "time": 180.034,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.289,
+        "strength": 1.12,
+        "accent": "guitar"
+      },
+      {
+        "time": 180.323,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.304,
+        "strength": 1.11,
+        "accent": "guitar"
+      },
+      {
+        "time": 180.628,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.4,
+        "strength": 1.04,
+        "accent": "guitar"
+      },
+      {
+        "time": 181.027,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.29,
+        "strength": 1.76,
+        "accent": "guitar"
+      },
+      {
+        "time": 181.317,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.264,
+        "strength": 1.24,
+        "accent": "guitar"
+      },
+      {
+        "time": 181.58,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.28,
+        "strength": 1.44,
+        "accent": "guitar"
+      },
+      {
+        "time": 181.86,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.419,
+        "strength": 1.31,
+        "accent": "guitar"
+      },
+      {
+        "time": 182.279,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.279,
+        "strength": 1.15,
+        "accent": "guitar"
+      },
+      {
+        "time": 182.558,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.279,
+        "strength": 1.26,
+        "accent": "guitar"
+      },
+      {
+        "time": 182.838,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.434,
+        "strength": 0.96,
+        "accent": "guitar"
+      },
+      {
+        "time": 183.272,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.284,
+        "strength": 1.61,
+        "accent": "guitar"
+      },
+      {
+        "time": 183.556,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.275,
+        "strength": 1.35,
+        "accent": "guitar"
+      },
+      {
+        "time": 183.831,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.274,
+        "strength": 1.44,
+        "accent": "guitar"
+      },
+      {
+        "time": 184.105,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.429,
+        "strength": 1.37,
+        "accent": "guitar"
+      },
+      {
+        "time": 184.534,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.279,
+        "strength": 1.05,
+        "accent": "guitar"
+      },
+      {
+        "time": 184.813,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.295,
+        "strength": 1.48,
+        "accent": "guitar"
+      },
+      {
+        "time": 185.108,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.274,
+        "strength": 0.98,
+        "accent": "guitar"
+      },
+      {
+        "time": 185.382,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.424,
+        "strength": 1.19,
+        "accent": "guitar"
+      },
+      {
+        "time": 185.806,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.27,
+        "strength": 1.1,
+        "accent": "guitar"
+      },
+      {
+        "time": 186.076,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.279,
+        "strength": 1.45,
+        "accent": "guitar"
+      },
+      {
+        "time": 186.355,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.409,
+        "strength": 1.29,
+        "accent": "guitar"
+      },
+      {
+        "time": 186.764,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.299,
+        "strength": 1.09,
+        "accent": "guitar"
+      },
+      {
+        "time": 187.063,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.274,
+        "strength": 0.97,
+        "accent": "guitar"
+      },
+      {
+        "time": 187.337,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.419,
+        "strength": 1.24,
+        "accent": "guitar"
+      },
+      {
+        "time": 187.756,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.28,
+        "strength": 1.65,
+        "accent": "guitar"
+      },
+      {
+        "time": 188.037,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.278,
+        "strength": 1.59,
+        "accent": "guitar"
+      },
+      {
+        "time": 188.315,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.284,
+        "strength": 1.47,
+        "accent": "guitar"
+      },
+      {
+        "time": 188.6,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.409,
+        "strength": 1.41,
+        "accent": "guitar"
+      },
+      {
+        "time": 189.009,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.289,
+        "strength": 1.01,
+        "accent": "guitar"
+      },
+      {
+        "time": 189.298,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.414,
+        "strength": 1.22,
+        "accent": "guitar"
+      },
+      {
+        "time": 189.712,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.29,
+        "strength": 1.0,
+        "accent": "guitar"
+      },
+      {
+        "time": 190.002,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.285,
+        "strength": 1.77,
+        "accent": "guitar"
+      },
+      {
+        "time": 190.286,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.274,
+        "strength": 1.54,
+        "accent": "guitar"
+      },
+      {
+        "time": 190.561,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.423,
+        "strength": 1.53,
+        "accent": "guitar"
+      },
+      {
+        "time": 190.984,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.259,
+        "strength": 1.16,
+        "accent": "guitar"
+      },
+      {
+        "time": 191.244,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.305,
+        "strength": 1.14,
+        "accent": "guitar"
+      },
+      {
+        "time": 191.549,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.269,
+        "strength": 1.19,
+        "accent": "guitar"
+      },
+      {
+        "time": 191.817,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.424,
+        "strength": 1.26,
+        "accent": "guitar"
+      },
+      {
+        "time": 192.241,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.294,
+        "strength": 1.34,
+        "accent": "guitar"
+      },
+      {
+        "time": 192.536,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.274,
+        "strength": 1.18,
+        "accent": "guitar"
+      },
+      {
+        "time": 192.81,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.409,
+        "strength": 1.57,
+        "accent": "guitar"
+      },
+      {
+        "time": 193.219,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.279,
+        "strength": 1.42,
+        "accent": "guitar"
+      },
+      {
+        "time": 193.498,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.414,
+        "strength": 1.74,
+        "accent": "guitar"
+      },
+      {
+        "time": 193.913,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.294,
+        "strength": 0.86,
+        "accent": "guitar"
+      },
+      {
+        "time": 194.207,
+        "lane": 3,
+        "part": "guitar",
+        "duration": 0.424,
+        "strength": 0.79,
+        "accent": "guitar"
+      },
+      {
+        "time": 194.631,
+        "lane": 1,
+        "part": "guitar",
+        "duration": 0.244,
+        "strength": 0.71,
+        "accent": "guitar"
+      },
+      {
+        "time": 194.875,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.314,
+        "strength": 0.48,
+        "accent": "guitar"
+      },
+      {
+        "time": 195.19,
+        "lane": 0,
+        "part": "guitar",
+        "duration": 0.399,
+        "strength": 1.05,
+        "accent": "guitar"
+      },
+      {
+        "time": 195.589,
+        "lane": 2,
+        "part": "guitar",
+        "duration": 0.85,
+        "strength": 0.82,
+        "accent": "guitar"
+      }
+    ]
+  }
+}

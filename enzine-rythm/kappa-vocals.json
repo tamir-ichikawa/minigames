@@ -1,0 +1,6320 @@
+{
+  "version": 1,
+  "id": "kappa-vocals",
+  "title": "κの底で — ボーカル演奏",
+  "audio": "assets/bgm/kappa-without-vocals.mp3",
+  "clipStart": 0,
+  "duration": 315.77074829931973,
+  "estimatedBpm": null,
+  "stems": [
+    {
+      "id": "backing",
+      "label": "伴奏",
+      "audio": "assets/bgm/kappa-without-vocals.mp3",
+      "role": "backing"
+    },
+    {
+      "id": "vocals",
+      "label": "ボーカル",
+      "audio": "assets/bgm/kappa-vocals.mp3",
+      "role": "playable"
+    }
+  ],
+  "chartRevision": "vocal-progressive-2",
+  "playback": "input-timed-slices",
+  "analysis": "Progressive vocal segments from RMS valleys: previous hard is now easy; normal and hard split more finely.",
+  "charts": {
+    "easy": [
+      {
+        "time": 2.529,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 1.861,
+        "accent": "phrase"
+      },
+      {
+        "time": 5.672,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 1.752,
+        "accent": "phrase"
+      },
+      {
+        "time": 8.555,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.931,
+        "accent": "phrase"
+      },
+      {
+        "time": 10.75,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 2.031,
+        "accent": "phrase"
+      },
+      {
+        "time": 23.422,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 1.611,
+        "accent": "phrase"
+      },
+      {
+        "time": 25.033,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 1.178,
+        "accent": "phrase"
+      },
+      {
+        "time": 26.545,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 1.911,
+        "accent": "phrase"
+      },
+      {
+        "time": 28.455,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.829,
+        "accent": "phrase"
+      },
+      {
+        "time": 29.528,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 2.051,
+        "accent": "phrase"
+      },
+      {
+        "time": 31.613,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 2.36,
+        "accent": "phrase"
+      },
+      {
+        "time": 33.973,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.659,
+        "accent": "phrase"
+      },
+      {
+        "time": 36.243,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 2.32,
+        "accent": "phrase"
+      },
+      {
+        "time": 38.562,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 2.355,
+        "accent": "phrase"
+      },
+      {
+        "time": 40.917,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 2.056,
+        "accent": "phrase"
+      },
+      {
+        "time": 43.506,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 1.412,
+        "accent": "phrase"
+      },
+      {
+        "time": 44.918,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.507,
+        "accent": "phrase"
+      },
+      {
+        "time": 48.385,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.402,
+        "accent": "phrase"
+      },
+      {
+        "time": 49.787,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 1.527,
+        "accent": "phrase"
+      },
+      {
+        "time": 51.313,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 2.315,
+        "accent": "phrase"
+      },
+      {
+        "time": 53.623,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 1.741,
+        "accent": "phrase"
+      },
+      {
+        "time": 55.364,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.187,
+        "accent": "phrase"
+      },
+      {
+        "time": 56.551,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 1.776,
+        "accent": "phrase"
+      },
+      {
+        "time": 59.39,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 2.15,
+        "accent": "phrase"
+      },
+      {
+        "time": 61.54,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.118,
+        "accent": "phrase"
+      },
+      {
+        "time": 62.862,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 2.18,
+        "accent": "phrase"
+      },
+      {
+        "time": 65.042,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.996,
+        "accent": "phrase"
+      },
+      {
+        "time": 67.033,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 2.26,
+        "accent": "phrase"
+      },
+      {
+        "time": 69.293,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 2.285,
+        "accent": "phrase"
+      },
+      {
+        "time": 71.577,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 2.065,
+        "accent": "phrase"
+      },
+      {
+        "time": 73.643,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 1.507,
+        "accent": "phrase"
+      },
+      {
+        "time": 75.149,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 1.267,
+        "accent": "phrase"
+      },
+      {
+        "time": 76.416,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 2.265,
+        "accent": "phrase"
+      },
+      {
+        "time": 78.681,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 2.075,
+        "accent": "phrase"
+      },
+      {
+        "time": 80.756,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 2.085,
+        "accent": "phrase"
+      },
+      {
+        "time": 82.842,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 1.237,
+        "accent": "phrase"
+      },
+      {
+        "time": 84.079,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.896,
+        "accent": "phrase"
+      },
+      {
+        "time": 86.528,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 1.891,
+        "accent": "phrase"
+      },
+      {
+        "time": 88.419,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 2.215,
+        "accent": "phrase"
+      },
+      {
+        "time": 90.634,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.419,
+        "accent": "phrase"
+      },
+      {
+        "time": 91.088,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.392,
+        "accent": "phrase"
+      },
+      {
+        "time": 92.48,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 1.716,
+        "accent": "phrase"
+      },
+      {
+        "time": 94.196,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.736,
+        "accent": "phrase"
+      },
+      {
+        "time": 95.932,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 1.666,
+        "accent": "phrase"
+      },
+      {
+        "time": 97.598,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 2.095,
+        "accent": "phrase"
+      },
+      {
+        "time": 99.693,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.736,
+        "accent": "phrase"
+      },
+      {
+        "time": 101.429,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 1.477,
+        "accent": "phrase"
+      },
+      {
+        "time": 102.906,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.836,
+        "accent": "phrase"
+      },
+      {
+        "time": 104.742,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 1.706,
+        "accent": "phrase"
+      },
+      {
+        "time": 106.448,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 1.167,
+        "accent": "phrase"
+      },
+      {
+        "time": 107.615,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 1.676,
+        "accent": "phrase"
+      },
+      {
+        "time": 109.292,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 1.437,
+        "accent": "phrase"
+      },
+      {
+        "time": 110.728,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 1.517,
+        "accent": "phrase"
+      },
+      {
+        "time": 112.245,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 1.776,
+        "accent": "phrase"
+      },
+      {
+        "time": 114.021,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.218,
+        "accent": "phrase"
+      },
+      {
+        "time": 117.308,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 1.861,
+        "accent": "phrase"
+      },
+      {
+        "time": 119.169,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.676,
+        "accent": "phrase"
+      },
+      {
+        "time": 120.845,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 1.327,
+        "accent": "phrase"
+      },
+      {
+        "time": 122.172,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 1.886,
+        "accent": "phrase"
+      },
+      {
+        "time": 124.058,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 2.285,
+        "accent": "phrase"
+      },
+      {
+        "time": 126.343,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 1.437,
+        "accent": "phrase"
+      },
+      {
+        "time": 127.78,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 2.305,
+        "accent": "phrase"
+      },
+      {
+        "time": 130.084,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.946,
+        "accent": "phrase"
+      },
+      {
+        "time": 132.03,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 2.005,
+        "accent": "phrase"
+      },
+      {
+        "time": 134.035,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.317,
+        "accent": "phrase"
+      },
+      {
+        "time": 135.352,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 1.237,
+        "accent": "phrase"
+      },
+      {
+        "time": 136.59,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 2.135,
+        "accent": "phrase"
+      },
+      {
+        "time": 138.725,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 1.607,
+        "accent": "phrase"
+      },
+      {
+        "time": 140.496,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 2.1,
+        "accent": "phrase"
+      },
+      {
+        "time": 142.596,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 1.746,
+        "accent": "phrase"
+      },
+      {
+        "time": 144.342,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 1.886,
+        "accent": "phrase"
+      },
+      {
+        "time": 146.228,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 2.175,
+        "accent": "phrase"
+      },
+      {
+        "time": 148.403,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 1.736,
+        "accent": "phrase"
+      },
+      {
+        "time": 150.139,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 1.806,
+        "accent": "phrase"
+      },
+      {
+        "time": 151.945,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 1.796,
+        "accent": "phrase"
+      },
+      {
+        "time": 154.155,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.432,
+        "accent": "phrase"
+      },
+      {
+        "time": 155.586,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 1.187,
+        "accent": "phrase"
+      },
+      {
+        "time": 156.774,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 1.287,
+        "accent": "phrase"
+      },
+      {
+        "time": 158.061,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 2.415,
+        "accent": "phrase"
+      },
+      {
+        "time": 160.475,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 1.846,
+        "accent": "phrase"
+      },
+      {
+        "time": 162.321,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 2.275,
+        "accent": "phrase"
+      },
+      {
+        "time": 164.596,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 1.467,
+        "accent": "phrase"
+      },
+      {
+        "time": 166.063,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 2.265,
+        "accent": "phrase"
+      },
+      {
+        "time": 168.327,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 1.387,
+        "accent": "phrase"
+      },
+      {
+        "time": 169.714,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 2.075,
+        "accent": "phrase"
+      },
+      {
+        "time": 171.79,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 1.666,
+        "accent": "phrase"
+      },
+      {
+        "time": 173.456,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 2.025,
+        "accent": "phrase"
+      },
+      {
+        "time": 175.481,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 1.337,
+        "accent": "phrase"
+      },
+      {
+        "time": 176.818,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 1.976,
+        "accent": "phrase"
+      },
+      {
+        "time": 178.794,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 2.295,
+        "accent": "phrase"
+      },
+      {
+        "time": 181.088,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 2.355,
+        "accent": "phrase"
+      },
+      {
+        "time": 183.443,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.998,
+        "accent": "phrase"
+      },
+      {
+        "time": 195.83,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 1.711,
+        "accent": "phrase"
+      },
+      {
+        "time": 197.541,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.297,
+        "accent": "phrase"
+      },
+      {
+        "time": 198.838,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 2.255,
+        "accent": "phrase"
+      },
+      {
+        "time": 201.093,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.407,
+        "accent": "phrase"
+      },
+      {
+        "time": 202.5,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 1.806,
+        "accent": "phrase"
+      },
+      {
+        "time": 204.306,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 2.395,
+        "accent": "phrase"
+      },
+      {
+        "time": 206.7,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 2.036,
+        "accent": "phrase"
+      },
+      {
+        "time": 209.958,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 1.162,
+        "accent": "phrase"
+      },
+      {
+        "time": 211.12,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 1.596,
+        "accent": "phrase"
+      },
+      {
+        "time": 212.717,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 1.517,
+        "accent": "phrase"
+      },
+      {
+        "time": 214.233,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.916,
+        "accent": "phrase"
+      },
+      {
+        "time": 216.149,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 2.105,
+        "accent": "phrase"
+      },
+      {
+        "time": 218.254,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.35,
+        "accent": "phrase"
+      },
+      {
+        "time": 218.688,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 1.572,
+        "accent": "phrase"
+      },
+      {
+        "time": 220.259,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 1.148,
+        "accent": "phrase"
+      },
+      {
+        "time": 221.581,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 1.492,
+        "accent": "phrase"
+      },
+      {
+        "time": 223.073,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 1.457,
+        "accent": "phrase"
+      },
+      {
+        "time": 224.53,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 1.686,
+        "accent": "phrase"
+      },
+      {
+        "time": 226.216,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.317,
+        "accent": "phrase"
+      },
+      {
+        "time": 227.533,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 1.856,
+        "accent": "phrase"
+      },
+      {
+        "time": 229.389,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.177,
+        "accent": "phrase"
+      },
+      {
+        "time": 230.566,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 1.726,
+        "accent": "phrase"
+      },
+      {
+        "time": 232.292,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.317,
+        "accent": "phrase"
+      },
+      {
+        "time": 233.609,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 1.636,
+        "accent": "phrase"
+      },
+      {
+        "time": 235.245,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 1.018,
+        "accent": "phrase"
+      },
+      {
+        "time": 236.497,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 1.831,
+        "accent": "phrase"
+      },
+      {
+        "time": 238.328,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.776,
+        "accent": "phrase"
+      },
+      {
+        "time": 240.104,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.946,
+        "accent": "phrase"
+      },
+      {
+        "time": 242.05,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 1.946,
+        "accent": "phrase"
+      },
+      {
+        "time": 244.18,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 1.302,
+        "accent": "phrase"
+      },
+      {
+        "time": 245.482,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 1.267,
+        "accent": "phrase"
+      },
+      {
+        "time": 246.749,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.826,
+        "accent": "phrase"
+      },
+      {
+        "time": 248.575,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 1.886,
+        "accent": "phrase"
+      },
+      {
+        "time": 250.461,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.856,
+        "accent": "phrase"
+      },
+      {
+        "time": 252.317,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.167,
+        "accent": "phrase"
+      },
+      {
+        "time": 253.484,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 1.646,
+        "accent": "phrase"
+      },
+      {
+        "time": 255.13,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.437,
+        "accent": "phrase"
+      },
+      {
+        "time": 256.567,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 1.866,
+        "accent": "phrase"
+      },
+      {
+        "time": 258.433,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 2.125,
+        "accent": "phrase"
+      },
+      {
+        "time": 260.558,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 1.517,
+        "accent": "phrase"
+      },
+      {
+        "time": 262.074,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 2.275,
+        "accent": "phrase"
+      },
+      {
+        "time": 264.349,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 1.307,
+        "accent": "phrase"
+      },
+      {
+        "time": 265.656,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.756,
+        "accent": "phrase"
+      },
+      {
+        "time": 267.412,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 1.677,
+        "accent": "phrase"
+      },
+      {
+        "time": 269.512,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 1.392,
+        "accent": "phrase"
+      },
+      {
+        "time": 270.904,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 1.088,
+        "accent": "phrase"
+      },
+      {
+        "time": 272.635,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 1.991,
+        "accent": "phrase"
+      },
+      {
+        "time": 275.359,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 1.492,
+        "accent": "phrase"
+      },
+      {
+        "time": 276.851,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 1.916,
+        "accent": "phrase"
+      },
+      {
+        "time": 278.766,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 1.148,
+        "accent": "phrase"
+      },
+      {
+        "time": 282.034,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.612,
+        "accent": "phrase"
+      },
+      {
+        "time": 284.887,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 1.432,
+        "accent": "phrase"
+      },
+      {
+        "time": 286.604,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.854,
+        "accent": "phrase"
+      },
+      {
+        "time": 287.681,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 1.971,
+        "accent": "phrase"
+      },
+      {
+        "time": 289.876,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 2.24,
+        "accent": "phrase"
+      },
+      {
+        "time": 293.628,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 2.061,
+        "accent": "phrase"
+      },
+      {
+        "time": 296.581,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 1.432,
+        "accent": "phrase"
+      },
+      {
+        "time": 299.614,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.722,
+        "accent": "phrase"
+      },
+      {
+        "time": 302.009,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.602,
+        "accent": "phrase"
+      }
+    ],
+    "normal": [
+      {
+        "time": 2.529,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.783,
+        "accent": "phrase"
+      },
+      {
+        "time": 3.312,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 1.078,
+        "accent": "phrase"
+      },
+      {
+        "time": 5.672,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.003,
+        "accent": "phrase"
+      },
+      {
+        "time": 6.675,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.749,
+        "accent": "phrase"
+      },
+      {
+        "time": 8.555,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.933,
+        "accent": "phrase"
+      },
+      {
+        "time": 9.488,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.998,
+        "accent": "phrase"
+      },
+      {
+        "time": 10.75,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.474,
+        "accent": "phrase"
+      },
+      {
+        "time": 11.189,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 1.212,
+        "accent": "phrase"
+      },
+      {
+        "time": 12.402,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.38,
+        "accent": "phrase"
+      },
+      {
+        "time": 23.422,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.893,
+        "accent": "phrase"
+      },
+      {
+        "time": 24.315,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.718,
+        "accent": "phrase"
+      },
+      {
+        "time": 25.033,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 1.178,
+        "accent": "phrase"
+      },
+      {
+        "time": 26.545,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 1.332,
+        "accent": "phrase"
+      },
+      {
+        "time": 27.877,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.778,
+        "accent": "phrase"
+      },
+      {
+        "time": 28.655,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.629,
+        "accent": "phrase"
+      },
+      {
+        "time": 29.528,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.793,
+        "accent": "phrase"
+      },
+      {
+        "time": 30.321,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 1.258,
+        "accent": "phrase"
+      },
+      {
+        "time": 31.613,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.644,
+        "accent": "phrase"
+      },
+      {
+        "time": 32.257,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.748,
+        "accent": "phrase"
+      },
+      {
+        "time": 33.005,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 1.307,
+        "accent": "phrase"
+      },
+      {
+        "time": 34.312,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.32,
+        "accent": "phrase"
+      },
+      {
+        "time": 36.243,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.833,
+        "accent": "phrase"
+      },
+      {
+        "time": 37.076,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.918,
+        "accent": "phrase"
+      },
+      {
+        "time": 37.994,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.157,
+        "accent": "phrase"
+      },
+      {
+        "time": 39.151,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.649,
+        "accent": "phrase"
+      },
+      {
+        "time": 39.8,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 1.117,
+        "accent": "phrase"
+      },
+      {
+        "time": 40.917,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.968,
+        "accent": "phrase"
+      },
+      {
+        "time": 41.885,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.088,
+        "accent": "phrase"
+      },
+      {
+        "time": 43.506,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 1.013,
+        "accent": "phrase"
+      },
+      {
+        "time": 44.519,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.888,
+        "accent": "phrase"
+      },
+      {
+        "time": 45.407,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 1.018,
+        "accent": "phrase"
+      },
+      {
+        "time": 48.385,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 1.033,
+        "accent": "phrase"
+      },
+      {
+        "time": 49.418,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.968,
+        "accent": "phrase"
+      },
+      {
+        "time": 50.385,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.928,
+        "accent": "phrase"
+      },
+      {
+        "time": 51.313,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.187,
+        "accent": "phrase"
+      },
+      {
+        "time": 52.501,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 1.128,
+        "accent": "phrase"
+      },
+      {
+        "time": 53.623,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.903,
+        "accent": "phrase"
+      },
+      {
+        "time": 54.526,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.838,
+        "accent": "phrase"
+      },
+      {
+        "time": 55.364,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 1.187,
+        "accent": "phrase"
+      },
+      {
+        "time": 56.551,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.998,
+        "accent": "phrase"
+      },
+      {
+        "time": 57.549,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.779,
+        "accent": "phrase"
+      },
+      {
+        "time": 59.39,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.773,
+        "accent": "phrase"
+      },
+      {
+        "time": 60.163,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 1.337,
+        "accent": "phrase"
+      },
+      {
+        "time": 61.5,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 1.158,
+        "accent": "phrase"
+      },
+      {
+        "time": 62.862,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.644,
+        "accent": "phrase"
+      },
+      {
+        "time": 63.506,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.738,
+        "accent": "phrase"
+      },
+      {
+        "time": 64.244,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.798,
+        "accent": "phrase"
+      },
+      {
+        "time": 65.042,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.768,
+        "accent": "phrase"
+      },
+      {
+        "time": 65.81,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 1.228,
+        "accent": "phrase"
+      },
+      {
+        "time": 67.033,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.302,
+        "accent": "phrase"
+      },
+      {
+        "time": 68.335,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.958,
+        "accent": "phrase"
+      },
+      {
+        "time": 69.293,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.928,
+        "accent": "phrase"
+      },
+      {
+        "time": 70.22,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 1.337,
+        "accent": "phrase"
+      },
+      {
+        "time": 71.557,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.728,
+        "accent": "phrase"
+      },
+      {
+        "time": 72.286,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.337,
+        "accent": "phrase"
+      },
+      {
+        "time": 73.623,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.728,
+        "accent": "phrase"
+      },
+      {
+        "time": 74.351,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.798,
+        "accent": "phrase"
+      },
+      {
+        "time": 75.149,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.267,
+        "accent": "phrase"
+      },
+      {
+        "time": 76.416,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.928,
+        "accent": "phrase"
+      },
+      {
+        "time": 77.344,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.838,
+        "accent": "phrase"
+      },
+      {
+        "time": 78.182,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.639,
+        "accent": "phrase"
+      },
+      {
+        "time": 78.766,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.644,
+        "accent": "phrase"
+      },
+      {
+        "time": 79.41,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.337,
+        "accent": "phrase"
+      },
+      {
+        "time": 80.746,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 1.217,
+        "accent": "phrase"
+      },
+      {
+        "time": 81.964,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.878,
+        "accent": "phrase"
+      },
+      {
+        "time": 82.842,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.237,
+        "accent": "phrase"
+      },
+      {
+        "time": 84.079,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.778,
+        "accent": "phrase"
+      },
+      {
+        "time": 84.857,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.118,
+        "accent": "phrase"
+      },
+      {
+        "time": 86.528,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.644,
+        "accent": "phrase"
+      },
+      {
+        "time": 87.172,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 1.247,
+        "accent": "phrase"
+      },
+      {
+        "time": 88.419,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 1.117,
+        "accent": "phrase"
+      },
+      {
+        "time": 89.537,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.098,
+        "accent": "phrase"
+      },
+      {
+        "time": 90.634,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.419,
+        "accent": "phrase"
+      },
+      {
+        "time": 91.088,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.783,
+        "accent": "phrase"
+      },
+      {
+        "time": 91.871,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.688,
+        "accent": "phrase"
+      },
+      {
+        "time": 92.56,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.048,
+        "accent": "phrase"
+      },
+      {
+        "time": 93.607,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.649,
+        "accent": "phrase"
+      },
+      {
+        "time": 94.256,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 1.207,
+        "accent": "phrase"
+      },
+      {
+        "time": 95.463,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 1.267,
+        "accent": "phrase"
+      },
+      {
+        "time": 96.73,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.868,
+        "accent": "phrase"
+      },
+      {
+        "time": 97.598,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 1.157,
+        "accent": "phrase"
+      },
+      {
+        "time": 98.756,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.938,
+        "accent": "phrase"
+      },
+      {
+        "time": 99.693,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.748,
+        "accent": "phrase"
+      },
+      {
+        "time": 100.442,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.988,
+        "accent": "phrase"
+      },
+      {
+        "time": 101.429,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 1.058,
+        "accent": "phrase"
+      },
+      {
+        "time": 102.487,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.167,
+        "accent": "phrase"
+      },
+      {
+        "time": 103.654,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 1.088,
+        "accent": "phrase"
+      },
+      {
+        "time": 104.742,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.768,
+        "accent": "phrase"
+      },
+      {
+        "time": 105.51,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.938,
+        "accent": "phrase"
+      },
+      {
+        "time": 106.448,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.798,
+        "accent": "phrase"
+      },
+      {
+        "time": 107.246,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.698,
+        "accent": "phrase"
+      },
+      {
+        "time": 107.945,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 1.337,
+        "accent": "phrase"
+      },
+      {
+        "time": 109.282,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 1.088,
+        "accent": "phrase"
+      },
+      {
+        "time": 110.369,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 1.257,
+        "accent": "phrase"
+      },
+      {
+        "time": 111.626,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.227,
+        "accent": "phrase"
+      },
+      {
+        "time": 112.854,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 1.167,
+        "accent": "phrase"
+      },
+      {
+        "time": 114.021,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 1.218,
+        "accent": "phrase"
+      },
+      {
+        "time": 117.308,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.133,
+        "accent": "phrase"
+      },
+      {
+        "time": 118.441,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.728,
+        "accent": "phrase"
+      },
+      {
+        "time": 119.169,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 1.167,
+        "accent": "phrase"
+      },
+      {
+        "time": 120.337,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.878,
+        "accent": "phrase"
+      },
+      {
+        "time": 121.215,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.958,
+        "accent": "phrase"
+      },
+      {
+        "time": 122.172,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.267,
+        "accent": "phrase"
+      },
+      {
+        "time": 123.439,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 1.008,
+        "accent": "phrase"
+      },
+      {
+        "time": 124.447,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.649,
+        "accent": "phrase"
+      },
+      {
+        "time": 125.096,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.247,
+        "accent": "phrase"
+      },
+      {
+        "time": 126.343,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.718,
+        "accent": "phrase"
+      },
+      {
+        "time": 127.061,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.718,
+        "accent": "phrase"
+      },
+      {
+        "time": 127.78,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.758,
+        "accent": "phrase"
+      },
+      {
+        "time": 128.538,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.988,
+        "accent": "phrase"
+      },
+      {
+        "time": 129.526,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.307,
+        "accent": "phrase"
+      },
+      {
+        "time": 130.833,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 1.197,
+        "accent": "phrase"
+      },
+      {
+        "time": 132.03,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.678,
+        "accent": "phrase"
+      },
+      {
+        "time": 132.708,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 1.327,
+        "accent": "phrase"
+      },
+      {
+        "time": 134.035,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.728,
+        "accent": "phrase"
+      },
+      {
+        "time": 134.764,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.147,
+        "accent": "phrase"
+      },
+      {
+        "time": 135.911,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.678,
+        "accent": "phrase"
+      },
+      {
+        "time": 136.59,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.778,
+        "accent": "phrase"
+      },
+      {
+        "time": 137.368,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 1.337,
+        "accent": "phrase"
+      },
+      {
+        "time": 138.705,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.778,
+        "accent": "phrase"
+      },
+      {
+        "time": 139.483,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.848,
+        "accent": "phrase"
+      },
+      {
+        "time": 140.496,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.743,
+        "accent": "phrase"
+      },
+      {
+        "time": 141.239,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 1.337,
+        "accent": "phrase"
+      },
+      {
+        "time": 142.576,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.028,
+        "accent": "phrase"
+      },
+      {
+        "time": 143.604,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.738,
+        "accent": "phrase"
+      },
+      {
+        "time": 144.342,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.297,
+        "accent": "phrase"
+      },
+      {
+        "time": 145.639,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.649,
+        "accent": "phrase"
+      },
+      {
+        "time": 146.288,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.768,
+        "accent": "phrase"
+      },
+      {
+        "time": 147.056,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 1.337,
+        "accent": "phrase"
+      },
+      {
+        "time": 148.393,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.649,
+        "accent": "phrase"
+      },
+      {
+        "time": 149.041,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.098,
+        "accent": "phrase"
+      },
+      {
+        "time": 150.139,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 1.117,
+        "accent": "phrase"
+      },
+      {
+        "time": 151.256,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.688,
+        "accent": "phrase"
+      },
+      {
+        "time": 151.945,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.267,
+        "accent": "phrase"
+      },
+      {
+        "time": 153.212,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.529,
+        "accent": "phrase"
+      },
+      {
+        "time": 154.155,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 1.332,
+        "accent": "phrase"
+      },
+      {
+        "time": 155.487,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 1.287,
+        "accent": "phrase"
+      },
+      {
+        "time": 156.774,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.287,
+        "accent": "phrase"
+      },
+      {
+        "time": 158.061,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 1.068,
+        "accent": "phrase"
+      },
+      {
+        "time": 159.128,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 1.197,
+        "accent": "phrase"
+      },
+      {
+        "time": 160.326,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.32,
+        "accent": "phrase"
+      },
+      {
+        "time": 160.58,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.644,
+        "accent": "phrase"
+      },
+      {
+        "time": 161.224,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.098,
+        "accent": "phrase"
+      },
+      {
+        "time": 162.321,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.738,
+        "accent": "phrase"
+      },
+      {
+        "time": 163.059,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.798,
+        "accent": "phrase"
+      },
+      {
+        "time": 163.858,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.918,
+        "accent": "phrase"
+      },
+      {
+        "time": 164.776,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 1.287,
+        "accent": "phrase"
+      },
+      {
+        "time": 166.063,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.928,
+        "accent": "phrase"
+      },
+      {
+        "time": 166.99,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 1.337,
+        "accent": "phrase"
+      },
+      {
+        "time": 168.327,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 1.117,
+        "accent": "phrase"
+      },
+      {
+        "time": 169.445,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.878,
+        "accent": "phrase"
+      },
+      {
+        "time": 170.323,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 1.217,
+        "accent": "phrase"
+      },
+      {
+        "time": 171.54,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.718,
+        "accent": "phrase"
+      },
+      {
+        "time": 172.259,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.197,
+        "accent": "phrase"
+      },
+      {
+        "time": 173.456,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 1.267,
+        "accent": "phrase"
+      },
+      {
+        "time": 174.723,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.758,
+        "accent": "phrase"
+      },
+      {
+        "time": 175.481,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 1.337,
+        "accent": "phrase"
+      },
+      {
+        "time": 176.818,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.649,
+        "accent": "phrase"
+      },
+      {
+        "time": 177.467,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.327,
+        "accent": "phrase"
+      },
+      {
+        "time": 178.794,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 1.247,
+        "accent": "phrase"
+      },
+      {
+        "time": 180.041,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 1.048,
+        "accent": "phrase"
+      },
+      {
+        "time": 181.088,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.978,
+        "accent": "phrase"
+      },
+      {
+        "time": 182.066,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 1.337,
+        "accent": "phrase"
+      },
+      {
+        "time": 183.403,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.589,
+        "accent": "phrase"
+      },
+      {
+        "time": 183.957,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.484,
+        "accent": "phrase"
+      },
+      {
+        "time": 195.83,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.202,
+        "accent": "phrase"
+      },
+      {
+        "time": 197.032,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 1.157,
+        "accent": "phrase"
+      },
+      {
+        "time": 198.19,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.649,
+        "accent": "phrase"
+      },
+      {
+        "time": 198.838,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.798,
+        "accent": "phrase"
+      },
+      {
+        "time": 199.636,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.948,
+        "accent": "phrase"
+      },
+      {
+        "time": 200.584,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.107,
+        "accent": "phrase"
+      },
+      {
+        "time": 201.692,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.808,
+        "accent": "phrase"
+      },
+      {
+        "time": 202.5,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 1.068,
+        "accent": "phrase"
+      },
+      {
+        "time": 203.567,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.738,
+        "accent": "phrase"
+      },
+      {
+        "time": 204.306,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.798,
+        "accent": "phrase"
+      },
+      {
+        "time": 205.104,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.718,
+        "accent": "phrase"
+      },
+      {
+        "time": 205.822,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.958,
+        "accent": "phrase"
+      },
+      {
+        "time": 206.78,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.297,
+        "accent": "phrase"
+      },
+      {
+        "time": 208.077,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.659,
+        "accent": "phrase"
+      },
+      {
+        "time": 209.958,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.883,
+        "accent": "phrase"
+      },
+      {
+        "time": 210.841,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.968,
+        "accent": "phrase"
+      },
+      {
+        "time": 211.809,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.908,
+        "accent": "phrase"
+      },
+      {
+        "time": 212.717,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.058,
+        "accent": "phrase"
+      },
+      {
+        "time": 213.774,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.768,
+        "accent": "phrase"
+      },
+      {
+        "time": 214.542,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.888,
+        "accent": "phrase"
+      },
+      {
+        "time": 215.43,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.317,
+        "accent": "phrase"
+      },
+      {
+        "time": 216.747,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 1.337,
+        "accent": "phrase"
+      },
+      {
+        "time": 218.084,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.519,
+        "accent": "phrase"
+      },
+      {
+        "time": 218.688,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.654,
+        "accent": "phrase"
+      },
+      {
+        "time": 219.341,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.918,
+        "accent": "phrase"
+      },
+      {
+        "time": 220.259,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.148,
+        "accent": "phrase"
+      },
+      {
+        "time": 221.581,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.953,
+        "accent": "phrase"
+      },
+      {
+        "time": 222.534,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 1.147,
+        "accent": "phrase"
+      },
+      {
+        "time": 223.682,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.848,
+        "accent": "phrase"
+      },
+      {
+        "time": 224.53,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 1.297,
+        "accent": "phrase"
+      },
+      {
+        "time": 225.827,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 1.337,
+        "accent": "phrase"
+      },
+      {
+        "time": 227.164,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.858,
+        "accent": "phrase"
+      },
+      {
+        "time": 228.022,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 1.337,
+        "accent": "phrase"
+      },
+      {
+        "time": 229.359,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 1.238,
+        "accent": "phrase"
+      },
+      {
+        "time": 230.561,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.873,
+        "accent": "phrase"
+      },
+      {
+        "time": 231.434,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.858,
+        "accent": "phrase"
+      },
+      {
+        "time": 232.292,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 1.317,
+        "accent": "phrase"
+      },
+      {
+        "time": 233.609,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 1.237,
+        "accent": "phrase"
+      },
+      {
+        "time": 234.846,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.708,
+        "accent": "phrase"
+      },
+      {
+        "time": 235.555,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.709,
+        "accent": "phrase"
+      },
+      {
+        "time": 236.497,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.644,
+        "accent": "phrase"
+      },
+      {
+        "time": 237.141,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 1.187,
+        "accent": "phrase"
+      },
+      {
+        "time": 238.328,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.938,
+        "accent": "phrase"
+      },
+      {
+        "time": 239.266,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.838,
+        "accent": "phrase"
+      },
+      {
+        "time": 240.104,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.858,
+        "accent": "phrase"
+      },
+      {
+        "time": 240.962,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.088,
+        "accent": "phrase"
+      },
+      {
+        "time": 242.05,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.948,
+        "accent": "phrase"
+      },
+      {
+        "time": 242.998,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.998,
+        "accent": "phrase"
+      },
+      {
+        "time": 244.18,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.302,
+        "accent": "phrase"
+      },
+      {
+        "time": 245.482,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 1.267,
+        "accent": "phrase"
+      },
+      {
+        "time": 246.749,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 1.247,
+        "accent": "phrase"
+      },
+      {
+        "time": 247.996,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 1.167,
+        "accent": "phrase"
+      },
+      {
+        "time": 249.164,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 1.297,
+        "accent": "phrase"
+      },
+      {
+        "time": 250.461,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.788,
+        "accent": "phrase"
+      },
+      {
+        "time": 251.249,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 1.068,
+        "accent": "phrase"
+      },
+      {
+        "time": 252.317,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 1.167,
+        "accent": "phrase"
+      },
+      {
+        "time": 253.484,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 1.337,
+        "accent": "phrase"
+      },
+      {
+        "time": 254.821,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.297,
+        "accent": "phrase"
+      },
+      {
+        "time": 256.118,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.848,
+        "accent": "phrase"
+      },
+      {
+        "time": 256.966,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.788,
+        "accent": "phrase"
+      },
+      {
+        "time": 257.754,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.678,
+        "accent": "phrase"
+      },
+      {
+        "time": 258.433,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.778,
+        "accent": "phrase"
+      },
+      {
+        "time": 259.211,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.678,
+        "accent": "phrase"
+      },
+      {
+        "time": 259.889,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.709,
+        "accent": "phrase"
+      },
+      {
+        "time": 260.563,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.803,
+        "accent": "phrase"
+      },
+      {
+        "time": 261.366,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.708,
+        "accent": "phrase"
+      },
+      {
+        "time": 262.074,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.878,
+        "accent": "phrase"
+      },
+      {
+        "time": 262.952,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.659,
+        "accent": "phrase"
+      },
+      {
+        "time": 263.611,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.738,
+        "accent": "phrase"
+      },
+      {
+        "time": 264.349,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 1.307,
+        "accent": "phrase"
+      },
+      {
+        "time": 265.656,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 1.167,
+        "accent": "phrase"
+      },
+      {
+        "time": 266.824,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.948,
+        "accent": "phrase"
+      },
+      {
+        "time": 267.771,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 1.317,
+        "accent": "phrase"
+      },
+      {
+        "time": 269.512,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.172,
+        "accent": "phrase"
+      },
+      {
+        "time": 270.685,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 1.307,
+        "accent": "phrase"
+      },
+      {
+        "time": 272.635,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.933,
+        "accent": "phrase"
+      },
+      {
+        "time": 273.568,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.058,
+        "accent": "phrase"
+      },
+      {
+        "time": 275.359,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.793,
+        "accent": "phrase"
+      },
+      {
+        "time": 276.152,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.698,
+        "accent": "phrase"
+      },
+      {
+        "time": 276.851,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 1.058,
+        "accent": "phrase"
+      },
+      {
+        "time": 277.908,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.858,
+        "accent": "phrase"
+      },
+      {
+        "time": 278.766,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 1.148,
+        "accent": "phrase"
+      },
+      {
+        "time": 282.034,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.292,
+        "accent": "phrase"
+      },
+      {
+        "time": 283.326,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.32,
+        "accent": "phrase"
+      },
+      {
+        "time": 284.887,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 1.043,
+        "accent": "phrase"
+      },
+      {
+        "time": 285.93,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.39,
+        "accent": "phrase"
+      },
+      {
+        "time": 286.604,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.854,
+        "accent": "phrase"
+      },
+      {
+        "time": 287.681,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.803,
+        "accent": "phrase"
+      },
+      {
+        "time": 288.484,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 1.168,
+        "accent": "phrase"
+      },
+      {
+        "time": 289.876,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 1.003,
+        "accent": "phrase"
+      },
+      {
+        "time": 290.879,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 1.238,
+        "accent": "phrase"
+      },
+      {
+        "time": 293.628,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.943,
+        "accent": "phrase"
+      },
+      {
+        "time": 294.571,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 1.118,
+        "accent": "phrase"
+      },
+      {
+        "time": 296.581,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.753,
+        "accent": "phrase"
+      },
+      {
+        "time": 297.334,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.679,
+        "accent": "phrase"
+      },
+      {
+        "time": 299.614,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.723,
+        "accent": "phrase"
+      },
+      {
+        "time": 300.337,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.998,
+        "accent": "phrase"
+      },
+      {
+        "time": 302.009,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.494,
+        "accent": "phrase"
+      },
+      {
+        "time": 302.487,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 1.123,
+        "accent": "phrase"
+      }
+    ],
+    "hard": [
+      {
+        "time": 2.529,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.723,
+        "accent": "phrase"
+      },
+      {
+        "time": 3.253,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.489,
+        "accent": "phrase"
+      },
+      {
+        "time": 3.741,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.649,
+        "accent": "phrase"
+      },
+      {
+        "time": 5.672,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.354,
+        "accent": "phrase"
+      },
+      {
+        "time": 6.026,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.649,
+        "accent": "phrase"
+      },
+      {
+        "time": 6.675,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.429,
+        "accent": "phrase"
+      },
+      {
+        "time": 7.104,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.32,
+        "accent": "phrase"
+      },
+      {
+        "time": 8.555,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.414,
+        "accent": "phrase"
+      },
+      {
+        "time": 8.97,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.519,
+        "accent": "phrase"
+      },
+      {
+        "time": 9.488,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.678,
+        "accent": "phrase"
+      },
+      {
+        "time": 10.167,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.32,
+        "accent": "phrase"
+      },
+      {
+        "time": 10.75,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.474,
+        "accent": "phrase"
+      },
+      {
+        "time": 11.189,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.574,
+        "accent": "phrase"
+      },
+      {
+        "time": 11.763,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.639,
+        "accent": "phrase"
+      },
+      {
+        "time": 12.402,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.38,
+        "accent": "phrase"
+      },
+      {
+        "time": 23.422,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.723,
+        "accent": "phrase"
+      },
+      {
+        "time": 24.145,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.698,
+        "accent": "phrase"
+      },
+      {
+        "time": 24.844,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.32,
+        "accent": "phrase"
+      },
+      {
+        "time": 25.058,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.574,
+        "accent": "phrase"
+      },
+      {
+        "time": 25.632,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.579,
+        "accent": "phrase"
+      },
+      {
+        "time": 26.545,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.374,
+        "accent": "phrase"
+      },
+      {
+        "time": 26.919,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.668,
+        "accent": "phrase"
+      },
+      {
+        "time": 27.587,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.529,
+        "accent": "phrase"
+      },
+      {
+        "time": 28.116,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.349,
+        "accent": "phrase"
+      },
+      {
+        "time": 28.465,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.499,
+        "accent": "phrase"
+      },
+      {
+        "time": 28.964,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.32,
+        "accent": "phrase"
+      },
+      {
+        "time": 29.528,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.414,
+        "accent": "phrase"
+      },
+      {
+        "time": 29.942,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.379,
+        "accent": "phrase"
+      },
+      {
+        "time": 30.321,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.429,
+        "accent": "phrase"
+      },
+      {
+        "time": 30.75,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.509,
+        "accent": "phrase"
+      },
+      {
+        "time": 31.259,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.32,
+        "accent": "phrase"
+      },
+      {
+        "time": 31.613,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.644,
+        "accent": "phrase"
+      },
+      {
+        "time": 32.257,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.728,
+        "accent": "phrase"
+      },
+      {
+        "time": 32.985,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.728,
+        "accent": "phrase"
+      },
+      {
+        "time": 33.713,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.599,
+        "accent": "phrase"
+      },
+      {
+        "time": 34.312,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.32,
+        "accent": "phrase"
+      },
+      {
+        "time": 36.243,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.634,
+        "accent": "phrase"
+      },
+      {
+        "time": 36.876,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.569,
+        "accent": "phrase"
+      },
+      {
+        "time": 37.445,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.549,
+        "accent": "phrase"
+      },
+      {
+        "time": 37.994,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.569,
+        "accent": "phrase"
+      },
+      {
+        "time": 38.562,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.589,
+        "accent": "phrase"
+      },
+      {
+        "time": 39.151,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.379,
+        "accent": "phrase"
+      },
+      {
+        "time": 39.53,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.349,
+        "accent": "phrase"
+      },
+      {
+        "time": 39.879,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.728,
+        "accent": "phrase"
+      },
+      {
+        "time": 40.608,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.349,
+        "accent": "phrase"
+      },
+      {
+        "time": 40.957,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.629,
+        "accent": "phrase"
+      },
+      {
+        "time": 41.585,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.619,
+        "accent": "phrase"
+      },
+      {
+        "time": 42.204,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.419,
+        "accent": "phrase"
+      },
+      {
+        "time": 42.623,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.35,
+        "accent": "phrase"
+      },
+      {
+        "time": 43.506,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.574,
+        "accent": "phrase"
+      },
+      {
+        "time": 44.08,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.439,
+        "accent": "phrase"
+      },
+      {
+        "time": 44.519,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.399,
+        "accent": "phrase"
+      },
+      {
+        "time": 44.918,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.489,
+        "accent": "phrase"
+      },
+      {
+        "time": 45.407,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.698,
+        "accent": "phrase"
+      },
+      {
+        "time": 46.105,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.32,
+        "accent": "phrase"
+      },
+      {
+        "time": 48.385,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.474,
+        "accent": "phrase"
+      },
+      {
+        "time": 48.859,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.559,
+        "accent": "phrase"
+      },
+      {
+        "time": 49.418,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.369,
+        "accent": "phrase"
+      },
+      {
+        "time": 49.787,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.599,
+        "accent": "phrase"
+      },
+      {
+        "time": 50.385,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.668,
+        "accent": "phrase"
+      },
+      {
+        "time": 51.054,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.619,
+        "accent": "phrase"
+      },
+      {
+        "time": 51.673,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.639,
+        "accent": "phrase"
+      },
+      {
+        "time": 52.311,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.609,
+        "accent": "phrase"
+      },
+      {
+        "time": 52.92,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.709,
+        "accent": "phrase"
+      },
+      {
+        "time": 53.623,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.654,
+        "accent": "phrase"
+      },
+      {
+        "time": 54.277,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.639,
+        "accent": "phrase"
+      },
+      {
+        "time": 54.915,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.449,
+        "accent": "phrase"
+      },
+      {
+        "time": 55.364,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.499,
+        "accent": "phrase"
+      },
+      {
+        "time": 55.863,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.688,
+        "accent": "phrase"
+      },
+      {
+        "time": 56.551,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.369,
+        "accent": "phrase"
+      },
+      {
+        "time": 56.921,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.629,
+        "accent": "phrase"
+      },
+      {
+        "time": 57.549,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.349,
+        "accent": "phrase"
+      },
+      {
+        "time": 57.898,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.429,
+        "accent": "phrase"
+      },
+      {
+        "time": 59.39,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.394,
+        "accent": "phrase"
+      },
+      {
+        "time": 59.784,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.379,
+        "accent": "phrase"
+      },
+      {
+        "time": 60.163,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.469,
+        "accent": "phrase"
+      },
+      {
+        "time": 60.632,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.439,
+        "accent": "phrase"
+      },
+      {
+        "time": 61.071,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.469,
+        "accent": "phrase"
+      },
+      {
+        "time": 61.54,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.349,
+        "accent": "phrase"
+      },
+      {
+        "time": 61.889,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.449,
+        "accent": "phrase"
+      },
+      {
+        "time": 62.338,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.32,
+        "accent": "phrase"
+      },
+      {
+        "time": 62.862,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.305,
+        "accent": "phrase"
+      },
+      {
+        "time": 63.082,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.384,
+        "accent": "phrase"
+      },
+      {
+        "time": 63.466,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.668,
+        "accent": "phrase"
+      },
+      {
+        "time": 64.134,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.349,
+        "accent": "phrase"
+      },
+      {
+        "time": 64.483,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.559,
+        "accent": "phrase"
+      },
+      {
+        "time": 65.042,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.728,
+        "accent": "phrase"
+      },
+      {
+        "time": 65.771,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.728,
+        "accent": "phrase"
+      },
+      {
+        "time": 66.499,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.35,
+        "accent": "phrase"
+      },
+      {
+        "time": 66.723,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.315,
+        "accent": "phrase"
+      },
+      {
+        "time": 67.033,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.444,
+        "accent": "phrase"
+      },
+      {
+        "time": 67.477,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.449,
+        "accent": "phrase"
+      },
+      {
+        "time": 67.926,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.728,
+        "accent": "phrase"
+      },
+      {
+        "time": 68.654,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.639,
+        "accent": "phrase"
+      },
+      {
+        "time": 69.293,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.579,
+        "accent": "phrase"
+      },
+      {
+        "time": 69.871,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.349,
+        "accent": "phrase"
+      },
+      {
+        "time": 70.22,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.469,
+        "accent": "phrase"
+      },
+      {
+        "time": 70.689,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.579,
+        "accent": "phrase"
+      },
+      {
+        "time": 71.268,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.349,
+        "accent": "phrase"
+      },
+      {
+        "time": 71.617,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.668,
+        "accent": "phrase"
+      },
+      {
+        "time": 72.286,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.619,
+        "accent": "phrase"
+      },
+      {
+        "time": 72.904,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.728,
+        "accent": "phrase"
+      },
+      {
+        "time": 73.633,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.718,
+        "accent": "phrase"
+      },
+      {
+        "time": 74.351,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.399,
+        "accent": "phrase"
+      },
+      {
+        "time": 74.75,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.399,
+        "accent": "phrase"
+      },
+      {
+        "time": 75.149,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.668,
+        "accent": "phrase"
+      },
+      {
+        "time": 75.818,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.599,
+        "accent": "phrase"
+      },
+      {
+        "time": 76.416,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.419,
+        "accent": "phrase"
+      },
+      {
+        "time": 76.835,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.509,
+        "accent": "phrase"
+      },
+      {
+        "time": 77.344,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.409,
+        "accent": "phrase"
+      },
+      {
+        "time": 77.753,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.429,
+        "accent": "phrase"
+      },
+      {
+        "time": 78.182,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.639,
+        "accent": "phrase"
+      },
+      {
+        "time": 78.766,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.494,
+        "accent": "phrase"
+      },
+      {
+        "time": 79.26,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.349,
+        "accent": "phrase"
+      },
+      {
+        "time": 79.609,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.698,
+        "accent": "phrase"
+      },
+      {
+        "time": 80.307,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.449,
+        "accent": "phrase"
+      },
+      {
+        "time": 80.756,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.609,
+        "accent": "phrase"
+      },
+      {
+        "time": 81.365,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.599,
+        "accent": "phrase"
+      },
+      {
+        "time": 81.964,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.499,
+        "accent": "phrase"
+      },
+      {
+        "time": 82.463,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.379,
+        "accent": "phrase"
+      },
+      {
+        "time": 82.842,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.379,
+        "accent": "phrase"
+      },
+      {
+        "time": 83.221,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.728,
+        "accent": "phrase"
+      },
+      {
+        "time": 83.949,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.639,
+        "accent": "phrase"
+      },
+      {
+        "time": 84.588,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.349,
+        "accent": "phrase"
+      },
+      {
+        "time": 84.937,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.718,
+        "accent": "phrase"
+      },
+      {
+        "time": 85.655,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.32,
+        "accent": "phrase"
+      },
+      {
+        "time": 86.528,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.494,
+        "accent": "phrase"
+      },
+      {
+        "time": 87.022,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.359,
+        "accent": "phrase"
+      },
+      {
+        "time": 87.381,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.698,
+        "accent": "phrase"
+      },
+      {
+        "time": 88.08,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.349,
+        "accent": "phrase"
+      },
+      {
+        "time": 88.429,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.728,
+        "accent": "phrase"
+      },
+      {
+        "time": 89.157,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.379,
+        "accent": "phrase"
+      },
+      {
+        "time": 89.537,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.499,
+        "accent": "phrase"
+      },
+      {
+        "time": 90.035,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.599,
+        "accent": "phrase"
+      },
+      {
+        "time": 90.634,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.419,
+        "accent": "phrase"
+      },
+      {
+        "time": 91.088,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.723,
+        "accent": "phrase"
+      },
+      {
+        "time": 91.811,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.668,
+        "accent": "phrase"
+      },
+      {
+        "time": 92.48,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.439,
+        "accent": "phrase"
+      },
+      {
+        "time": 92.919,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.688,
+        "accent": "phrase"
+      },
+      {
+        "time": 93.607,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.589,
+        "accent": "phrase"
+      },
+      {
+        "time": 94.196,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.688,
+        "accent": "phrase"
+      },
+      {
+        "time": 94.884,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.579,
+        "accent": "phrase"
+      },
+      {
+        "time": 95.463,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.469,
+        "accent": "phrase"
+      },
+      {
+        "time": 95.932,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.529,
+        "accent": "phrase"
+      },
+      {
+        "time": 96.461,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.489,
+        "accent": "phrase"
+      },
+      {
+        "time": 96.95,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.649,
+        "accent": "phrase"
+      },
+      {
+        "time": 97.598,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.589,
+        "accent": "phrase"
+      },
+      {
+        "time": 98.187,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.569,
+        "accent": "phrase"
+      },
+      {
+        "time": 98.756,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.569,
+        "accent": "phrase"
+      },
+      {
+        "time": 99.324,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.369,
+        "accent": "phrase"
+      },
+      {
+        "time": 99.693,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.728,
+        "accent": "phrase"
+      },
+      {
+        "time": 100.422,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.619,
+        "accent": "phrase"
+      },
+      {
+        "time": 101.04,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.389,
+        "accent": "phrase"
+      },
+      {
+        "time": 101.429,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.539,
+        "accent": "phrase"
+      },
+      {
+        "time": 101.968,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.519,
+        "accent": "phrase"
+      },
+      {
+        "time": 102.487,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.419,
+        "accent": "phrase"
+      },
+      {
+        "time": 102.906,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.728,
+        "accent": "phrase"
+      },
+      {
+        "time": 103.634,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.559,
+        "accent": "phrase"
+      },
+      {
+        "time": 104.193,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.549,
+        "accent": "phrase"
+      },
+      {
+        "time": 104.742,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.559,
+        "accent": "phrase"
+      },
+      {
+        "time": 105.301,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.728,
+        "accent": "phrase"
+      },
+      {
+        "time": 106.029,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.419,
+        "accent": "phrase"
+      },
+      {
+        "time": 106.448,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.409,
+        "accent": "phrase"
+      },
+      {
+        "time": 106.857,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.389,
+        "accent": "phrase"
+      },
+      {
+        "time": 107.246,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.359,
+        "accent": "phrase"
+      },
+      {
+        "time": 107.605,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.349,
+        "accent": "phrase"
+      },
+      {
+        "time": 107.955,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.728,
+        "accent": "phrase"
+      },
+      {
+        "time": 108.683,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.609,
+        "accent": "phrase"
+      },
+      {
+        "time": 109.292,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.559,
+        "accent": "phrase"
+      },
+      {
+        "time": 109.85,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.519,
+        "accent": "phrase"
+      },
+      {
+        "time": 110.369,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.359,
+        "accent": "phrase"
+      },
+      {
+        "time": 110.728,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.688,
+        "accent": "phrase"
+      },
+      {
+        "time": 111.417,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.718,
+        "accent": "phrase"
+      },
+      {
+        "time": 112.135,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.718,
+        "accent": "phrase"
+      },
+      {
+        "time": 112.854,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.609,
+        "accent": "phrase"
+      },
+      {
+        "time": 113.462,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.559,
+        "accent": "phrase"
+      },
+      {
+        "time": 114.021,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.389,
+        "accent": "phrase"
+      },
+      {
+        "time": 114.41,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.509,
+        "accent": "phrase"
+      },
+      {
+        "time": 114.919,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.32,
+        "accent": "phrase"
+      },
+      {
+        "time": 117.308,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.354,
+        "accent": "phrase"
+      },
+      {
+        "time": 117.663,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.728,
+        "accent": "phrase"
+      },
+      {
+        "time": 118.391,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.728,
+        "accent": "phrase"
+      },
+      {
+        "time": 119.119,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.728,
+        "accent": "phrase"
+      },
+      {
+        "time": 119.848,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.489,
+        "accent": "phrase"
+      },
+      {
+        "time": 120.337,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.509,
+        "accent": "phrase"
+      },
+      {
+        "time": 120.845,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.369,
+        "accent": "phrase"
+      },
+      {
+        "time": 121.215,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.349,
+        "accent": "phrase"
+      },
+      {
+        "time": 121.564,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.609,
+        "accent": "phrase"
+      },
+      {
+        "time": 122.172,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.509,
+        "accent": "phrase"
+      },
+      {
+        "time": 122.681,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.728,
+        "accent": "phrase"
+      },
+      {
+        "time": 123.41,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.649,
+        "accent": "phrase"
+      },
+      {
+        "time": 124.058,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.389,
+        "accent": "phrase"
+      },
+      {
+        "time": 124.447,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.529,
+        "accent": "phrase"
+      },
+      {
+        "time": 124.976,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.399,
+        "accent": "phrase"
+      },
+      {
+        "time": 125.375,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.728,
+        "accent": "phrase"
+      },
+      {
+        "time": 126.103,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.449,
+        "accent": "phrase"
+      },
+      {
+        "time": 126.552,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.509,
+        "accent": "phrase"
+      },
+      {
+        "time": 127.061,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.718,
+        "accent": "phrase"
+      },
+      {
+        "time": 127.78,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.728,
+        "accent": "phrase"
+      },
+      {
+        "time": 128.508,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.519,
+        "accent": "phrase"
+      },
+      {
+        "time": 129.027,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.499,
+        "accent": "phrase"
+      },
+      {
+        "time": 129.526,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.559,
+        "accent": "phrase"
+      },
+      {
+        "time": 130.084,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.399,
+        "accent": "phrase"
+      },
+      {
+        "time": 130.483,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.728,
+        "accent": "phrase"
+      },
+      {
+        "time": 131.212,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.728,
+        "accent": "phrase"
+      },
+      {
+        "time": 131.94,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.728,
+        "accent": "phrase"
+      },
+      {
+        "time": 132.668,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.599,
+        "accent": "phrase"
+      },
+      {
+        "time": 133.267,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.359,
+        "accent": "phrase"
+      },
+      {
+        "time": 133.626,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.409,
+        "accent": "phrase"
+      },
+      {
+        "time": 134.035,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.539,
+        "accent": "phrase"
+      },
+      {
+        "time": 134.574,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.728,
+        "accent": "phrase"
+      },
+      {
+        "time": 135.302,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.609,
+        "accent": "phrase"
+      },
+      {
+        "time": 135.911,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.678,
+        "accent": "phrase"
+      },
+      {
+        "time": 136.59,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.389,
+        "accent": "phrase"
+      },
+      {
+        "time": 136.979,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.389,
+        "accent": "phrase"
+      },
+      {
+        "time": 137.368,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.389,
+        "accent": "phrase"
+      },
+      {
+        "time": 137.757,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.449,
+        "accent": "phrase"
+      },
+      {
+        "time": 138.206,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.519,
+        "accent": "phrase"
+      },
+      {
+        "time": 138.725,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.728,
+        "accent": "phrase"
+      },
+      {
+        "time": 139.453,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.439,
+        "accent": "phrase"
+      },
+      {
+        "time": 139.892,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.439,
+        "accent": "phrase"
+      },
+      {
+        "time": 140.496,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.504,
+        "accent": "phrase"
+      },
+      {
+        "time": 141.0,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.499,
+        "accent": "phrase"
+      },
+      {
+        "time": 141.498,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.678,
+        "accent": "phrase"
+      },
+      {
+        "time": 142.177,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.419,
+        "accent": "phrase"
+      },
+      {
+        "time": 142.596,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.399,
+        "accent": "phrase"
+      },
+      {
+        "time": 142.995,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.609,
+        "accent": "phrase"
+      },
+      {
+        "time": 143.604,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.728,
+        "accent": "phrase"
+      },
+      {
+        "time": 144.332,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.599,
+        "accent": "phrase"
+      },
+      {
+        "time": 144.931,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.708,
+        "accent": "phrase"
+      },
+      {
+        "time": 145.639,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.589,
+        "accent": "phrase"
+      },
+      {
+        "time": 146.228,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.449,
+        "accent": "phrase"
+      },
+      {
+        "time": 146.677,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.379,
+        "accent": "phrase"
+      },
+      {
+        "time": 147.056,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.449,
+        "accent": "phrase"
+      },
+      {
+        "time": 147.505,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.409,
+        "accent": "phrase"
+      },
+      {
+        "time": 147.914,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.489,
+        "accent": "phrase"
+      },
+      {
+        "time": 148.403,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.449,
+        "accent": "phrase"
+      },
+      {
+        "time": 148.852,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.409,
+        "accent": "phrase"
+      },
+      {
+        "time": 149.261,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.728,
+        "accent": "phrase"
+      },
+      {
+        "time": 149.989,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.509,
+        "accent": "phrase"
+      },
+      {
+        "time": 150.498,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.728,
+        "accent": "phrase"
+      },
+      {
+        "time": 151.226,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.718,
+        "accent": "phrase"
+      },
+      {
+        "time": 151.945,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.678,
+        "accent": "phrase"
+      },
+      {
+        "time": 152.623,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.728,
+        "accent": "phrase"
+      },
+      {
+        "time": 153.351,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.39,
+        "accent": "phrase"
+      },
+      {
+        "time": 154.155,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.354,
+        "accent": "phrase"
+      },
+      {
+        "time": 154.509,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.509,
+        "accent": "phrase"
+      },
+      {
+        "time": 155.018,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.569,
+        "accent": "phrase"
+      },
+      {
+        "time": 155.586,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.349,
+        "accent": "phrase"
+      },
+      {
+        "time": 155.936,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.728,
+        "accent": "phrase"
+      },
+      {
+        "time": 156.664,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.549,
+        "accent": "phrase"
+      },
+      {
+        "time": 157.213,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.728,
+        "accent": "phrase"
+      },
+      {
+        "time": 157.941,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.629,
+        "accent": "phrase"
+      },
+      {
+        "time": 158.57,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.559,
+        "accent": "phrase"
+      },
+      {
+        "time": 159.128,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.359,
+        "accent": "phrase"
+      },
+      {
+        "time": 159.488,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.579,
+        "accent": "phrase"
+      },
+      {
+        "time": 160.066,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.579,
+        "accent": "phrase"
+      },
+      {
+        "time": 160.58,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.594,
+        "accent": "phrase"
+      },
+      {
+        "time": 161.174,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.589,
+        "accent": "phrase"
+      },
+      {
+        "time": 161.762,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.559,
+        "accent": "phrase"
+      },
+      {
+        "time": 162.321,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.728,
+        "accent": "phrase"
+      },
+      {
+        "time": 163.049,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.629,
+        "accent": "phrase"
+      },
+      {
+        "time": 163.678,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.449,
+        "accent": "phrase"
+      },
+      {
+        "time": 164.127,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.649,
+        "accent": "phrase"
+      },
+      {
+        "time": 164.776,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.609,
+        "accent": "phrase"
+      },
+      {
+        "time": 165.384,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.678,
+        "accent": "phrase"
+      },
+      {
+        "time": 166.063,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.409,
+        "accent": "phrase"
+      },
+      {
+        "time": 166.472,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.519,
+        "accent": "phrase"
+      },
+      {
+        "time": 166.99,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.619,
+        "accent": "phrase"
+      },
+      {
+        "time": 167.609,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.718,
+        "accent": "phrase"
+      },
+      {
+        "time": 168.327,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.349,
+        "accent": "phrase"
+      },
+      {
+        "time": 168.677,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.728,
+        "accent": "phrase"
+      },
+      {
+        "time": 169.405,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.459,
+        "accent": "phrase"
+      },
+      {
+        "time": 169.864,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.459,
+        "accent": "phrase"
+      },
+      {
+        "time": 170.323,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.579,
+        "accent": "phrase"
+      },
+      {
+        "time": 170.902,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.639,
+        "accent": "phrase"
+      },
+      {
+        "time": 171.54,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.559,
+        "accent": "phrase"
+      },
+      {
+        "time": 172.099,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.399,
+        "accent": "phrase"
+      },
+      {
+        "time": 172.498,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.579,
+        "accent": "phrase"
+      },
+      {
+        "time": 173.077,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.379,
+        "accent": "phrase"
+      },
+      {
+        "time": 173.456,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.698,
+        "accent": "phrase"
+      },
+      {
+        "time": 174.154,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.569,
+        "accent": "phrase"
+      },
+      {
+        "time": 174.723,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.728,
+        "accent": "phrase"
+      },
+      {
+        "time": 175.451,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.569,
+        "accent": "phrase"
+      },
+      {
+        "time": 176.02,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.419,
+        "accent": "phrase"
+      },
+      {
+        "time": 176.439,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.379,
+        "accent": "phrase"
+      },
+      {
+        "time": 176.818,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.579,
+        "accent": "phrase"
+      },
+      {
+        "time": 177.397,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.728,
+        "accent": "phrase"
+      },
+      {
+        "time": 178.125,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.668,
+        "accent": "phrase"
+      },
+      {
+        "time": 178.794,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.659,
+        "accent": "phrase"
+      },
+      {
+        "time": 179.452,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.589,
+        "accent": "phrase"
+      },
+      {
+        "time": 180.041,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.529,
+        "accent": "phrase"
+      },
+      {
+        "time": 180.57,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.519,
+        "accent": "phrase"
+      },
+      {
+        "time": 181.088,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.599,
+        "accent": "phrase"
+      },
+      {
+        "time": 181.687,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.379,
+        "accent": "phrase"
+      },
+      {
+        "time": 182.066,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.728,
+        "accent": "phrase"
+      },
+      {
+        "time": 182.795,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.649,
+        "accent": "phrase"
+      },
+      {
+        "time": 183.443,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.549,
+        "accent": "phrase"
+      },
+      {
+        "time": 183.957,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.484,
+        "accent": "phrase"
+      },
+      {
+        "time": 195.83,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.434,
+        "accent": "phrase"
+      },
+      {
+        "time": 196.264,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.728,
+        "accent": "phrase"
+      },
+      {
+        "time": 196.992,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.659,
+        "accent": "phrase"
+      },
+      {
+        "time": 197.536,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.654,
+        "accent": "phrase"
+      },
+      {
+        "time": 198.19,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.649,
+        "accent": "phrase"
+      },
+      {
+        "time": 198.838,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.419,
+        "accent": "phrase"
+      },
+      {
+        "time": 199.257,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.379,
+        "accent": "phrase"
+      },
+      {
+        "time": 199.636,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.349,
+        "accent": "phrase"
+      },
+      {
+        "time": 199.985,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.599,
+        "accent": "phrase"
+      },
+      {
+        "time": 200.584,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.509,
+        "accent": "phrase"
+      },
+      {
+        "time": 201.093,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.599,
+        "accent": "phrase"
+      },
+      {
+        "time": 201.692,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.439,
+        "accent": "phrase"
+      },
+      {
+        "time": 202.131,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.369,
+        "accent": "phrase"
+      },
+      {
+        "time": 202.5,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.539,
+        "accent": "phrase"
+      },
+      {
+        "time": 203.039,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.529,
+        "accent": "phrase"
+      },
+      {
+        "time": 203.567,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.728,
+        "accent": "phrase"
+      },
+      {
+        "time": 204.296,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.519,
+        "accent": "phrase"
+      },
+      {
+        "time": 204.815,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.349,
+        "accent": "phrase"
+      },
+      {
+        "time": 205.164,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.659,
+        "accent": "phrase"
+      },
+      {
+        "time": 205.822,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.519,
+        "accent": "phrase"
+      },
+      {
+        "time": 206.341,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.439,
+        "accent": "phrase"
+      },
+      {
+        "time": 206.78,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.609,
+        "accent": "phrase"
+      },
+      {
+        "time": 207.389,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.688,
+        "accent": "phrase"
+      },
+      {
+        "time": 208.077,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.659,
+        "accent": "phrase"
+      },
+      {
+        "time": 209.958,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.384,
+        "accent": "phrase"
+      },
+      {
+        "time": 210.342,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.499,
+        "accent": "phrase"
+      },
+      {
+        "time": 210.841,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.479,
+        "accent": "phrase"
+      },
+      {
+        "time": 211.32,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.489,
+        "accent": "phrase"
+      },
+      {
+        "time": 211.809,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.579,
+        "accent": "phrase"
+      },
+      {
+        "time": 212.387,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.349,
+        "accent": "phrase"
+      },
+      {
+        "time": 212.737,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.349,
+        "accent": "phrase"
+      },
+      {
+        "time": 213.086,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.688,
+        "accent": "phrase"
+      },
+      {
+        "time": 213.774,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.459,
+        "accent": "phrase"
+      },
+      {
+        "time": 214.233,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.619,
+        "accent": "phrase"
+      },
+      {
+        "time": 214.852,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.579,
+        "accent": "phrase"
+      },
+      {
+        "time": 215.43,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.718,
+        "accent": "phrase"
+      },
+      {
+        "time": 216.149,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.599,
+        "accent": "phrase"
+      },
+      {
+        "time": 216.747,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.349,
+        "accent": "phrase"
+      },
+      {
+        "time": 217.097,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.399,
+        "accent": "phrase"
+      },
+      {
+        "time": 217.496,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.728,
+        "accent": "phrase"
+      },
+      {
+        "time": 218.224,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.38,
+        "accent": "phrase"
+      },
+      {
+        "time": 218.688,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.654,
+        "accent": "phrase"
+      },
+      {
+        "time": 219.341,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.489,
+        "accent": "phrase"
+      },
+      {
+        "time": 219.83,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.429,
+        "accent": "phrase"
+      },
+      {
+        "time": 220.259,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.529,
+        "accent": "phrase"
+      },
+      {
+        "time": 220.788,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.619,
+        "accent": "phrase"
+      },
+      {
+        "time": 221.581,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.574,
+        "accent": "phrase"
+      },
+      {
+        "time": 222.155,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.379,
+        "accent": "phrase"
+      },
+      {
+        "time": 222.534,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.539,
+        "accent": "phrase"
+      },
+      {
+        "time": 223.073,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.609,
+        "accent": "phrase"
+      },
+      {
+        "time": 223.682,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.668,
+        "accent": "phrase"
+      },
+      {
+        "time": 224.35,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.32,
+        "accent": "phrase"
+      },
+      {
+        "time": 224.545,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.574,
+        "accent": "phrase"
+      },
+      {
+        "time": 225.118,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.708,
+        "accent": "phrase"
+      },
+      {
+        "time": 225.827,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.389,
+        "accent": "phrase"
+      },
+      {
+        "time": 226.216,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.589,
+        "accent": "phrase"
+      },
+      {
+        "time": 226.805,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.619,
+        "accent": "phrase"
+      },
+      {
+        "time": 227.318,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.703,
+        "accent": "phrase"
+      },
+      {
+        "time": 228.022,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.349,
+        "accent": "phrase"
+      },
+      {
+        "time": 228.371,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.349,
+        "accent": "phrase"
+      },
+      {
+        "time": 228.72,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.668,
+        "accent": "phrase"
+      },
+      {
+        "time": 229.389,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.519,
+        "accent": "phrase"
+      },
+      {
+        "time": 229.907,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.689,
+        "accent": "phrase"
+      },
+      {
+        "time": 230.561,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.454,
+        "accent": "phrase"
+      },
+      {
+        "time": 231.015,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.419,
+        "accent": "phrase"
+      },
+      {
+        "time": 231.434,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.728,
+        "accent": "phrase"
+      },
+      {
+        "time": 232.162,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.609,
+        "accent": "phrase"
+      },
+      {
+        "time": 232.771,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.559,
+        "accent": "phrase"
+      },
+      {
+        "time": 233.33,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.409,
+        "accent": "phrase"
+      },
+      {
+        "time": 233.739,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.449,
+        "accent": "phrase"
+      },
+      {
+        "time": 234.188,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.659,
+        "accent": "phrase"
+      },
+      {
+        "time": 234.846,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.399,
+        "accent": "phrase"
+      },
+      {
+        "time": 235.245,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.449,
+        "accent": "phrase"
+      },
+      {
+        "time": 235.694,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.569,
+        "accent": "phrase"
+      },
+      {
+        "time": 236.497,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.644,
+        "accent": "phrase"
+      },
+      {
+        "time": 237.141,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.728,
+        "accent": "phrase"
+      },
+      {
+        "time": 237.869,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.459,
+        "accent": "phrase"
+      },
+      {
+        "time": 238.328,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.429,
+        "accent": "phrase"
+      },
+      {
+        "time": 238.757,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.509,
+        "accent": "phrase"
+      },
+      {
+        "time": 239.266,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.419,
+        "accent": "phrase"
+      },
+      {
+        "time": 239.685,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.419,
+        "accent": "phrase"
+      },
+      {
+        "time": 240.104,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.459,
+        "accent": "phrase"
+      },
+      {
+        "time": 240.563,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.399,
+        "accent": "phrase"
+      },
+      {
+        "time": 240.962,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.718,
+        "accent": "phrase"
+      },
+      {
+        "time": 241.681,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.369,
+        "accent": "phrase"
+      },
+      {
+        "time": 242.05,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.579,
+        "accent": "phrase"
+      },
+      {
+        "time": 242.629,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.369,
+        "accent": "phrase"
+      },
+      {
+        "time": 242.998,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.479,
+        "accent": "phrase"
+      },
+      {
+        "time": 243.477,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.32,
+        "accent": "phrase"
+      },
+      {
+        "time": 243.671,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.325,
+        "accent": "phrase"
+      },
+      {
+        "time": 244.18,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.684,
+        "accent": "phrase"
+      },
+      {
+        "time": 244.863,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.619,
+        "accent": "phrase"
+      },
+      {
+        "time": 245.482,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.619,
+        "accent": "phrase"
+      },
+      {
+        "time": 246.101,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.649,
+        "accent": "phrase"
+      },
+      {
+        "time": 246.749,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.559,
+        "accent": "phrase"
+      },
+      {
+        "time": 247.308,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.688,
+        "accent": "phrase"
+      },
+      {
+        "time": 247.996,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.579,
+        "accent": "phrase"
+      },
+      {
+        "time": 248.575,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.589,
+        "accent": "phrase"
+      },
+      {
+        "time": 249.164,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.728,
+        "accent": "phrase"
+      },
+      {
+        "time": 249.892,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.569,
+        "accent": "phrase"
+      },
+      {
+        "time": 250.461,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.539,
+        "accent": "phrase"
+      },
+      {
+        "time": 251.0,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.439,
+        "accent": "phrase"
+      },
+      {
+        "time": 251.439,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.499,
+        "accent": "phrase"
+      },
+      {
+        "time": 251.937,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.379,
+        "accent": "phrase"
+      },
+      {
+        "time": 252.317,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.579,
+        "accent": "phrase"
+      },
+      {
+        "time": 252.895,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.589,
+        "accent": "phrase"
+      },
+      {
+        "time": 253.484,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.369,
+        "accent": "phrase"
+      },
+      {
+        "time": 253.853,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.399,
+        "accent": "phrase"
+      },
+      {
+        "time": 254.252,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.698,
+        "accent": "phrase"
+      },
+      {
+        "time": 254.951,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.369,
+        "accent": "phrase"
+      },
+      {
+        "time": 255.32,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.609,
+        "accent": "phrase"
+      },
+      {
+        "time": 255.928,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.349,
+        "accent": "phrase"
+      },
+      {
+        "time": 256.278,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.419,
+        "accent": "phrase"
+      },
+      {
+        "time": 256.592,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.374,
+        "accent": "phrase"
+      },
+      {
+        "time": 256.966,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.349,
+        "accent": "phrase"
+      },
+      {
+        "time": 257.315,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.439,
+        "accent": "phrase"
+      },
+      {
+        "time": 257.754,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.678,
+        "accent": "phrase"
+      },
+      {
+        "time": 258.433,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.479,
+        "accent": "phrase"
+      },
+      {
+        "time": 258.912,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.349,
+        "accent": "phrase"
+      },
+      {
+        "time": 259.261,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.629,
+        "accent": "phrase"
+      },
+      {
+        "time": 259.889,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.709,
+        "accent": "phrase"
+      },
+      {
+        "time": 260.563,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.594,
+        "accent": "phrase"
+      },
+      {
+        "time": 261.156,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.678,
+        "accent": "phrase"
+      },
+      {
+        "time": 261.835,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.469,
+        "accent": "phrase"
+      },
+      {
+        "time": 262.304,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.649,
+        "accent": "phrase"
+      },
+      {
+        "time": 262.952,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.459,
+        "accent": "phrase"
+      },
+      {
+        "time": 263.411,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.549,
+        "accent": "phrase"
+      },
+      {
+        "time": 263.96,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.389,
+        "accent": "phrase"
+      },
+      {
+        "time": 264.349,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.389,
+        "accent": "phrase"
+      },
+      {
+        "time": 264.738,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.389,
+        "accent": "phrase"
+      },
+      {
+        "time": 265.127,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.529,
+        "accent": "phrase"
+      },
+      {
+        "time": 265.656,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.728,
+        "accent": "phrase"
+      },
+      {
+        "time": 266.385,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.439,
+        "accent": "phrase"
+      },
+      {
+        "time": 266.824,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.589,
+        "accent": "phrase"
+      },
+      {
+        "time": 267.412,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.359,
+        "accent": "phrase"
+      },
+      {
+        "time": 267.771,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.529,
+        "accent": "phrase"
+      },
+      {
+        "time": 268.3,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.469,
+        "accent": "phrase"
+      },
+      {
+        "time": 268.769,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.32,
+        "accent": "phrase"
+      },
+      {
+        "time": 269.512,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.544,
+        "accent": "phrase"
+      },
+      {
+        "time": 270.056,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.629,
+        "accent": "phrase"
+      },
+      {
+        "time": 270.685,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.499,
+        "accent": "phrase"
+      },
+      {
+        "time": 271.184,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.489,
+        "accent": "phrase"
+      },
+      {
+        "time": 271.673,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.32,
+        "accent": "phrase"
+      },
+      {
+        "time": 272.635,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.374,
+        "accent": "phrase"
+      },
+      {
+        "time": 273.01,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.559,
+        "accent": "phrase"
+      },
+      {
+        "time": 273.568,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.728,
+        "accent": "phrase"
+      },
+      {
+        "time": 274.297,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.33,
+        "accent": "phrase"
+      },
+      {
+        "time": 275.359,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.723,
+        "accent": "phrase"
+      },
+      {
+        "time": 276.083,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.349,
+        "accent": "phrase"
+      },
+      {
+        "time": 276.432,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.419,
+        "accent": "phrase"
+      },
+      {
+        "time": 276.851,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.479,
+        "accent": "phrase"
+      },
+      {
+        "time": 277.33,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.579,
+        "accent": "phrase"
+      },
+      {
+        "time": 277.908,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.349,
+        "accent": "phrase"
+      },
+      {
+        "time": 278.258,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.509,
+        "accent": "phrase"
+      },
+      {
+        "time": 278.766,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.409,
+        "accent": "phrase"
+      },
+      {
+        "time": 279.176,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.739,
+        "accent": "phrase"
+      },
+      {
+        "time": 282.034,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.534,
+        "accent": "phrase"
+      },
+      {
+        "time": 282.568,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.728,
+        "accent": "phrase"
+      },
+      {
+        "time": 283.296,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.35,
+        "accent": "phrase"
+      },
+      {
+        "time": 284.887,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.694,
+        "accent": "phrase"
+      },
+      {
+        "time": 285.581,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.739,
+        "accent": "phrase"
+      },
+      {
+        "time": 286.604,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.534,
+        "accent": "phrase"
+      },
+      {
+        "time": 287.137,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.32,
+        "accent": "phrase"
+      },
+      {
+        "time": 287.681,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.684,
+        "accent": "phrase"
+      },
+      {
+        "time": 288.365,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.569,
+        "accent": "phrase"
+      },
+      {
+        "time": 288.933,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.719,
+        "accent": "phrase"
+      },
+      {
+        "time": 289.876,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.574,
+        "accent": "phrase"
+      },
+      {
+        "time": 290.45,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.429,
+        "accent": "phrase"
+      },
+      {
+        "time": 290.879,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.459,
+        "accent": "phrase"
+      },
+      {
+        "time": 291.338,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.349,
+        "accent": "phrase"
+      },
+      {
+        "time": 291.687,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.429,
+        "accent": "phrase"
+      },
+      {
+        "time": 293.628,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.664,
+        "accent": "phrase"
+      },
+      {
+        "time": 294.291,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.639,
+        "accent": "phrase"
+      },
+      {
+        "time": 294.93,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.439,
+        "accent": "phrase"
+      },
+      {
+        "time": 295.369,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.32,
+        "accent": "phrase"
+      },
+      {
+        "time": 296.581,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.404,
+        "accent": "phrase"
+      },
+      {
+        "time": 296.985,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.349,
+        "accent": "phrase"
+      },
+      {
+        "time": 297.334,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.679,
+        "accent": "phrase"
+      },
+      {
+        "time": 299.614,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.394,
+        "accent": "phrase"
+      },
+      {
+        "time": 300.008,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.349,
+        "accent": "phrase"
+      },
+      {
+        "time": 300.357,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.619,
+        "accent": "phrase"
+      },
+      {
+        "time": 300.976,
+        "lane": 0,
+        "part": "vocals",
+        "duration": 0.36,
+        "accent": "phrase"
+      },
+      {
+        "time": 302.009,
+        "lane": 3,
+        "part": "vocals",
+        "duration": 0.494,
+        "accent": "phrase"
+      },
+      {
+        "time": 302.487,
+        "lane": 1,
+        "part": "vocals",
+        "duration": 0.604,
+        "accent": "phrase"
+      },
+      {
+        "time": 303.091,
+        "lane": 2,
+        "part": "vocals",
+        "duration": 0.519,
+        "accent": "phrase"
+      }
+    ]
+  }
+}

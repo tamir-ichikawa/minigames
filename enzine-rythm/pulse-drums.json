@@ -1,0 +1,6883 @@
+{
+  "version": 1,
+  "id": "pulse-drums",
+  "title": "PULSE — ドラム演奏",
+  "audio": "assets/bgm/pulse-without-drums.mp3",
+  "clipStart": 0,
+  "duration": 196.4398185941043,
+  "estimatedBpm": null,
+  "stems": [
+    {
+      "id": "backing",
+      "label": "伴奏",
+      "audio": "assets/bgm/pulse-without-drums.mp3",
+      "role": "backing"
+    },
+    {
+      "id": "drums",
+      "label": "ドラム",
+      "audio": "assets/bgm/pulse-drums.mp3",
+      "role": "playable",
+      "gain": 1.12
+    }
+  ],
+  "chartRevision": "impact-input-hard-4",
+  "playback": "input-timed-slices",
+  "analysis": "Low/mid-band drum attacks; high-frequency-only hits excluded. Instrument labels are spectral estimates, not separated stems.",
+  "charts": {
+    "easy": [
+      {
+        "time": 9.042,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.566,
+        "strength": 3.41,
+        "accent": "tom"
+      },
+      {
+        "time": 9.607,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.564,
+        "strength": 4.04,
+        "accent": "kick"
+      },
+      {
+        "time": 10.171,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.571,
+        "strength": 2.86,
+        "accent": "tom"
+      },
+      {
+        "time": 10.742,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.554,
+        "strength": 3.26,
+        "accent": "kick"
+      },
+      {
+        "time": 11.296,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.571,
+        "strength": 2.95,
+        "accent": "tom"
+      },
+      {
+        "time": 11.867,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.548,
+        "strength": 3.83,
+        "accent": "kick"
+      },
+      {
+        "time": 12.415,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.573,
+        "strength": 2.44,
+        "accent": "snare"
+      },
+      {
+        "time": 12.988,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.55,
+        "strength": 3.11,
+        "accent": "kick"
+      },
+      {
+        "time": 13.539,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.571,
+        "strength": 2.51,
+        "accent": "snare"
+      },
+      {
+        "time": 14.11,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.551,
+        "strength": 3.68,
+        "accent": "kick"
+      },
+      {
+        "time": 14.66,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.571,
+        "strength": 2.58,
+        "accent": "snare"
+      },
+      {
+        "time": 15.232,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.552,
+        "strength": 3.91,
+        "accent": "kick"
+      },
+      {
+        "time": 15.784,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.57,
+        "strength": 2.31,
+        "accent": "kick"
+      },
+      {
+        "time": 16.354,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.547,
+        "strength": 3.73,
+        "accent": "kick"
+      },
+      {
+        "time": 16.901,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.574,
+        "strength": 2.79,
+        "accent": "kick"
+      },
+      {
+        "time": 17.474,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.55,
+        "strength": 3.42,
+        "accent": "kick"
+      },
+      {
+        "time": 18.024,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.57,
+        "strength": 2.31,
+        "accent": "tom"
+      },
+      {
+        "time": 18.595,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.556,
+        "strength": 3.95,
+        "accent": "kick"
+      },
+      {
+        "time": 19.151,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.567,
+        "strength": 2.75,
+        "accent": "tom"
+      },
+      {
+        "time": 19.718,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.556,
+        "strength": 3.78,
+        "accent": "kick"
+      },
+      {
+        "time": 20.274,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.565,
+        "strength": 3.06,
+        "accent": "tom"
+      },
+      {
+        "time": 20.839,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.547,
+        "strength": 3.91,
+        "accent": "kick"
+      },
+      {
+        "time": 21.386,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.574,
+        "strength": 2.77,
+        "accent": "snare"
+      },
+      {
+        "time": 21.96,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.55,
+        "strength": 2.99,
+        "accent": "kick"
+      },
+      {
+        "time": 22.51,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.572,
+        "strength": 3.25,
+        "accent": "tom"
+      },
+      {
+        "time": 23.082,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.555,
+        "strength": 3.82,
+        "accent": "kick"
+      },
+      {
+        "time": 23.637,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.567,
+        "strength": 2.94,
+        "accent": "snare"
+      },
+      {
+        "time": 24.204,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.555,
+        "strength": 3.61,
+        "accent": "kick"
+      },
+      {
+        "time": 24.758,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.989,
+        "strength": 2.92,
+        "accent": "snare"
+      },
+      {
+        "time": 25.747,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.978,
+        "strength": 3.46,
+        "accent": "kick"
+      },
+      {
+        "time": 26.725,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.552,
+        "strength": 3.9,
+        "accent": "kick"
+      },
+      {
+        "time": 27.277,
+        "lane": 3,
+        "part": "drums",
+        "duration": 1.2,
+        "strength": 1.25,
+        "accent": "tom"
+      },
+      {
+        "time": 36.959,
+        "lane": 3,
+        "part": "drums",
+        "duration": 1.2,
+        "strength": 3.33,
+        "accent": "kick"
+      },
+      {
+        "time": 38.214,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.568,
+        "strength": 2.94,
+        "accent": "tom"
+      },
+      {
+        "time": 38.781,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.554,
+        "strength": 2.98,
+        "accent": "kick"
+      },
+      {
+        "time": 39.335,
+        "lane": 0,
+        "part": "drums",
+        "duration": 1.121,
+        "strength": 2.17,
+        "accent": "tom"
+      },
+      {
+        "time": 40.456,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.984,
+        "strength": 2.99,
+        "accent": "tom"
+      },
+      {
+        "time": 41.44,
+        "lane": 1,
+        "part": "drums",
+        "duration": 1.2,
+        "strength": 2.63,
+        "accent": "kick"
+      },
+      {
+        "time": 42.7,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.567,
+        "strength": 2.5,
+        "accent": "tom"
+      },
+      {
+        "time": 43.267,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.839,
+        "strength": 2.6,
+        "accent": "kick"
+      },
+      {
+        "time": 44.106,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.559,
+        "strength": 3.02,
+        "accent": "kick"
+      },
+      {
+        "time": 44.665,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.846,
+        "strength": 2.83,
+        "accent": "kick"
+      },
+      {
+        "time": 45.511,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.553,
+        "strength": 3.29,
+        "accent": "kick"
+      },
+      {
+        "time": 46.064,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.844,
+        "strength": 2.17,
+        "accent": "snare"
+      },
+      {
+        "time": 46.908,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.706,
+        "strength": 3.08,
+        "accent": "kick"
+      },
+      {
+        "time": 47.614,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.555,
+        "strength": 1.71,
+        "accent": "kick"
+      },
+      {
+        "time": 48.169,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.982,
+        "strength": 2.93,
+        "accent": "kick"
+      },
+      {
+        "time": 49.151,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.847,
+        "strength": 3.17,
+        "accent": "kick"
+      },
+      {
+        "time": 49.997,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.553,
+        "strength": 2.83,
+        "accent": "kick"
+      },
+      {
+        "time": 50.55,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.844,
+        "strength": 2.45,
+        "accent": "tom"
+      },
+      {
+        "time": 51.394,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.706,
+        "strength": 2.82,
+        "accent": "kick"
+      },
+      {
+        "time": 52.1,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.559,
+        "strength": 1.58,
+        "accent": "kick"
+      },
+      {
+        "time": 52.659,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.98,
+        "strength": 2.86,
+        "accent": "kick"
+      },
+      {
+        "time": 53.639,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.553,
+        "strength": 2.54,
+        "accent": "kick"
+      },
+      {
+        "time": 54.192,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.705,
+        "strength": 2.49,
+        "accent": "tom"
+      },
+      {
+        "time": 54.897,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.981,
+        "strength": 2.91,
+        "accent": "kick"
+      },
+      {
+        "time": 55.879,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.846,
+        "strength": 2.94,
+        "accent": "kick"
+      },
+      {
+        "time": 56.725,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.553,
+        "strength": 3.01,
+        "accent": "kick"
+      },
+      {
+        "time": 57.278,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.844,
+        "strength": 2.26,
+        "accent": "tom"
+      },
+      {
+        "time": 58.122,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.843,
+        "strength": 3.13,
+        "accent": "kick"
+      },
+      {
+        "time": 58.965,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.557,
+        "strength": 2.69,
+        "accent": "kick"
+      },
+      {
+        "time": 59.521,
+        "lane": 3,
+        "part": "drums",
+        "duration": 1.123,
+        "strength": 2.4,
+        "accent": "tom"
+      },
+      {
+        "time": 60.644,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.564,
+        "strength": 2.83,
+        "accent": "tom"
+      },
+      {
+        "time": 61.208,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.556,
+        "strength": 2.87,
+        "accent": "kick"
+      },
+      {
+        "time": 61.764,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.702,
+        "strength": 2.53,
+        "accent": "tom"
+      },
+      {
+        "time": 62.466,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.558,
+        "strength": 2.94,
+        "accent": "kick"
+      },
+      {
+        "time": 63.024,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.986,
+        "strength": 2.69,
+        "accent": "tom"
+      },
+      {
+        "time": 64.01,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.561,
+        "strength": 1.88,
+        "accent": "kick"
+      },
+      {
+        "time": 64.571,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.559,
+        "strength": 2.82,
+        "accent": "kick"
+      },
+      {
+        "time": 65.129,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.561,
+        "strength": 1.82,
+        "accent": "tom"
+      },
+      {
+        "time": 65.691,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.56,
+        "strength": 2.57,
+        "accent": "kick"
+      },
+      {
+        "time": 66.251,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.561,
+        "strength": 3.17,
+        "accent": "kick"
+      },
+      {
+        "time": 66.812,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.56,
+        "strength": 2.29,
+        "accent": "kick"
+      },
+      {
+        "time": 67.372,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.564,
+        "strength": 2.3,
+        "accent": "tom"
+      },
+      {
+        "time": 67.937,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.558,
+        "strength": 2.78,
+        "accent": "kick"
+      },
+      {
+        "time": 68.495,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.562,
+        "strength": 2.38,
+        "accent": "kick"
+      },
+      {
+        "time": 69.056,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.557,
+        "strength": 2.56,
+        "accent": "kick"
+      },
+      {
+        "time": 69.613,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.99,
+        "strength": 2.78,
+        "accent": "tom"
+      },
+      {
+        "time": 70.603,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.556,
+        "strength": 2.96,
+        "accent": "kick"
+      },
+      {
+        "time": 71.159,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.843,
+        "strength": 2.85,
+        "accent": "kick"
+      },
+      {
+        "time": 72.003,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.841,
+        "strength": 2.59,
+        "accent": "kick"
+      },
+      {
+        "time": 72.843,
+        "lane": 2,
+        "part": "drums",
+        "duration": 1.2,
+        "strength": 2.94,
+        "accent": "kick"
+      },
+      {
+        "time": 74.669,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.556,
+        "strength": 2.99,
+        "accent": "kick"
+      },
+      {
+        "time": 75.224,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.559,
+        "strength": 3.3,
+        "accent": "tom"
+      },
+      {
+        "time": 75.784,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.563,
+        "strength": 3.06,
+        "accent": "kick"
+      },
+      {
+        "time": 76.347,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.563,
+        "strength": 2.58,
+        "accent": "kick"
+      },
+      {
+        "time": 76.91,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.558,
+        "strength": 2.7,
+        "accent": "kick"
+      },
+      {
+        "time": 77.468,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.562,
+        "strength": 2.64,
+        "accent": "tom"
+      },
+      {
+        "time": 78.03,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.559,
+        "strength": 2.45,
+        "accent": "kick"
+      },
+      {
+        "time": 78.589,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.562,
+        "strength": 2.46,
+        "accent": "kick"
+      },
+      {
+        "time": 79.152,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.558,
+        "strength": 2.85,
+        "accent": "kick"
+      },
+      {
+        "time": 79.71,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.562,
+        "strength": 2.56,
+        "accent": "tom"
+      },
+      {
+        "time": 80.271,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.558,
+        "strength": 2.7,
+        "accent": "kick"
+      },
+      {
+        "time": 80.83,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.567,
+        "strength": 2.98,
+        "accent": "tom"
+      },
+      {
+        "time": 81.397,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.556,
+        "strength": 2.59,
+        "accent": "kick"
+      },
+      {
+        "time": 81.953,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.565,
+        "strength": 2.55,
+        "accent": "tom"
+      },
+      {
+        "time": 82.518,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.562,
+        "strength": 2.51,
+        "accent": "kick"
+      },
+      {
+        "time": 83.079,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.56,
+        "strength": 2.44,
+        "accent": "kick"
+      },
+      {
+        "time": 83.639,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.555,
+        "strength": 2.71,
+        "accent": "kick"
+      },
+      {
+        "time": 84.194,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.567,
+        "strength": 2.95,
+        "accent": "kick"
+      },
+      {
+        "time": 84.76,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.556,
+        "strength": 2.91,
+        "accent": "kick"
+      },
+      {
+        "time": 85.317,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.563,
+        "strength": 2.63,
+        "accent": "tom"
+      },
+      {
+        "time": 85.879,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.56,
+        "strength": 2.71,
+        "accent": "kick"
+      },
+      {
+        "time": 86.439,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.562,
+        "strength": 3.2,
+        "accent": "tom"
+      },
+      {
+        "time": 87.001,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.559,
+        "strength": 2.48,
+        "accent": "kick"
+      },
+      {
+        "time": 87.56,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.562,
+        "strength": 2.6,
+        "accent": "tom"
+      },
+      {
+        "time": 88.122,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.982,
+        "strength": 2.73,
+        "accent": "kick"
+      },
+      {
+        "time": 89.104,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.699,
+        "strength": 2.39,
+        "accent": "tom"
+      },
+      {
+        "time": 89.803,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.549,
+        "strength": 1.76,
+        "accent": "kick"
+      },
+      {
+        "time": 90.352,
+        "lane": 0,
+        "part": "drums",
+        "duration": 1.2,
+        "strength": 1.77,
+        "accent": "kick"
+      },
+      {
+        "time": 92.042,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.568,
+        "strength": 2.97,
+        "accent": "tom"
+      },
+      {
+        "time": 92.61,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.56,
+        "strength": 3.23,
+        "accent": "kick"
+      },
+      {
+        "time": 93.17,
+        "lane": 3,
+        "part": "drums",
+        "duration": 1.117,
+        "strength": 2.57,
+        "accent": "tom"
+      },
+      {
+        "time": 94.287,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.984,
+        "strength": 3.09,
+        "accent": "tom"
+      },
+      {
+        "time": 95.271,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.981,
+        "strength": 2.95,
+        "accent": "kick"
+      },
+      {
+        "time": 96.253,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.705,
+        "strength": 3.41,
+        "accent": "kick"
+      },
+      {
+        "time": 96.957,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.557,
+        "strength": 1.62,
+        "accent": "kick"
+      },
+      {
+        "time": 97.514,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.983,
+        "strength": 2.72,
+        "accent": "kick"
+      },
+      {
+        "time": 98.497,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.703,
+        "strength": 2.64,
+        "accent": "kick"
+      },
+      {
+        "time": 99.199,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.558,
+        "strength": 2.57,
+        "accent": "kick"
+      },
+      {
+        "time": 99.758,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.981,
+        "strength": 2.9,
+        "accent": "kick"
+      },
+      {
+        "time": 100.739,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.84,
+        "strength": 3.38,
+        "accent": "kick"
+      },
+      {
+        "time": 101.579,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.559,
+        "strength": 2.74,
+        "accent": "kick"
+      },
+      {
+        "time": 102.138,
+        "lane": 3,
+        "part": "drums",
+        "duration": 1.121,
+        "strength": 2.5,
+        "accent": "tom"
+      },
+      {
+        "time": 103.259,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.562,
+        "strength": 2.71,
+        "accent": "tom"
+      },
+      {
+        "time": 103.822,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.559,
+        "strength": 2.39,
+        "accent": "kick"
+      },
+      {
+        "time": 104.381,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.847,
+        "strength": 2.56,
+        "accent": "tom"
+      },
+      {
+        "time": 105.227,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.838,
+        "strength": 2.7,
+        "accent": "kick"
+      },
+      {
+        "time": 106.066,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.558,
+        "strength": 2.32,
+        "accent": "kick"
+      },
+      {
+        "time": 106.624,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.843,
+        "strength": 2.44,
+        "accent": "tom"
+      },
+      {
+        "time": 107.467,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.708,
+        "strength": 2.69,
+        "accent": "kick"
+      },
+      {
+        "time": 108.175,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.554,
+        "strength": 1.24,
+        "accent": "kick"
+      },
+      {
+        "time": 108.729,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.982,
+        "strength": 2.55,
+        "accent": "kick"
+      },
+      {
+        "time": 109.711,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.823,
+        "strength": 2.69,
+        "accent": "kick"
+      },
+      {
+        "time": 110.535,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.577,
+        "strength": 2.22,
+        "accent": "kick"
+      },
+      {
+        "time": 111.112,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.561,
+        "strength": 2.82,
+        "accent": "kick"
+      },
+      {
+        "time": 111.673,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.561,
+        "strength": 2.76,
+        "accent": "kick"
+      },
+      {
+        "time": 112.234,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.561,
+        "strength": 2.75,
+        "accent": "kick"
+      },
+      {
+        "time": 112.795,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.561,
+        "strength": 2.63,
+        "accent": "kick"
+      },
+      {
+        "time": 113.356,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.562,
+        "strength": 2.78,
+        "accent": "kick"
+      },
+      {
+        "time": 113.917,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.559,
+        "strength": 2.74,
+        "accent": "kick"
+      },
+      {
+        "time": 114.477,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.561,
+        "strength": 2.75,
+        "accent": "kick"
+      },
+      {
+        "time": 115.038,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.56,
+        "strength": 2.65,
+        "accent": "kick"
+      },
+      {
+        "time": 115.598,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.561,
+        "strength": 2.74,
+        "accent": "kick"
+      },
+      {
+        "time": 116.159,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.561,
+        "strength": 2.73,
+        "accent": "kick"
+      },
+      {
+        "time": 116.72,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.708,
+        "strength": 2.69,
+        "accent": "kick"
+      },
+      {
+        "time": 117.428,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.556,
+        "strength": 2.43,
+        "accent": "kick"
+      },
+      {
+        "time": 117.984,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.978,
+        "strength": 2.57,
+        "accent": "kick"
+      },
+      {
+        "time": 118.962,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.494,
+        "strength": 2.44,
+        "accent": "snare"
+      },
+      {
+        "time": 119.456,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.489,
+        "strength": 1.19,
+        "accent": "kick"
+      },
+      {
+        "time": 119.945,
+        "lane": 3,
+        "part": "drums",
+        "duration": 1.2,
+        "strength": 2.47,
+        "accent": "kick"
+      },
+      {
+        "time": 121.765,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.564,
+        "strength": 2.98,
+        "accent": "kick"
+      },
+      {
+        "time": 122.328,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.561,
+        "strength": 2.48,
+        "accent": "tom"
+      },
+      {
+        "time": 122.889,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.56,
+        "strength": 2.62,
+        "accent": "kick"
+      },
+      {
+        "time": 123.449,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.562,
+        "strength": 2.69,
+        "accent": "tom"
+      },
+      {
+        "time": 124.011,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.559,
+        "strength": 1.95,
+        "accent": "kick"
+      },
+      {
+        "time": 124.571,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.56,
+        "strength": 2.88,
+        "accent": "tom"
+      },
+      {
+        "time": 125.13,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.559,
+        "strength": 2.45,
+        "accent": "kick"
+      },
+      {
+        "time": 125.689,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.562,
+        "strength": 2.33,
+        "accent": "snare"
+      },
+      {
+        "time": 126.251,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.559,
+        "strength": 2.5,
+        "accent": "kick"
+      },
+      {
+        "time": 126.81,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.563,
+        "strength": 2.43,
+        "accent": "snare"
+      },
+      {
+        "time": 127.373,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.561,
+        "strength": 2.28,
+        "accent": "kick"
+      },
+      {
+        "time": 127.933,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.559,
+        "strength": 2.53,
+        "accent": "tom"
+      },
+      {
+        "time": 128.492,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.56,
+        "strength": 2.25,
+        "accent": "kick"
+      },
+      {
+        "time": 129.053,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.705,
+        "strength": 2.85,
+        "accent": "tom"
+      },
+      {
+        "time": 129.757,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.979,
+        "strength": 2.81,
+        "accent": "tom"
+      },
+      {
+        "time": 130.737,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.562,
+        "strength": 2.53,
+        "accent": "kick"
+      },
+      {
+        "time": 131.299,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.56,
+        "strength": 3.23,
+        "accent": "tom"
+      },
+      {
+        "time": 131.859,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.56,
+        "strength": 2.48,
+        "accent": "kick"
+      },
+      {
+        "time": 132.419,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.561,
+        "strength": 2.5,
+        "accent": "tom"
+      },
+      {
+        "time": 132.981,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.559,
+        "strength": 2.32,
+        "accent": "kick"
+      },
+      {
+        "time": 133.54,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.562,
+        "strength": 2.57,
+        "accent": "tom"
+      },
+      {
+        "time": 134.103,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.558,
+        "strength": 2.47,
+        "accent": "kick"
+      },
+      {
+        "time": 134.661,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.562,
+        "strength": 2.49,
+        "accent": "snare"
+      },
+      {
+        "time": 135.223,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.558,
+        "strength": 2.33,
+        "accent": "kick"
+      },
+      {
+        "time": 135.781,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.565,
+        "strength": 2.75,
+        "accent": "tom"
+      },
+      {
+        "time": 136.346,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.559,
+        "strength": 2.48,
+        "accent": "kick"
+      },
+      {
+        "time": 136.906,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.563,
+        "strength": 2.82,
+        "accent": "tom"
+      },
+      {
+        "time": 137.468,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.552,
+        "strength": 2.37,
+        "accent": "kick"
+      },
+      {
+        "time": 138.02,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.707,
+        "strength": 3.43,
+        "accent": "tom"
+      },
+      {
+        "time": 138.727,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.981,
+        "strength": 2.97,
+        "accent": "tom"
+      },
+      {
+        "time": 139.708,
+        "lane": 1,
+        "part": "drums",
+        "duration": 1.2,
+        "strength": 2.42,
+        "accent": "kick"
+      },
+      {
+        "time": 149.105,
+        "lane": 2,
+        "part": "drums",
+        "duration": 1.2,
+        "strength": 2.81,
+        "accent": "kick"
+      },
+      {
+        "time": 150.362,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.565,
+        "strength": 3.31,
+        "accent": "tom"
+      },
+      {
+        "time": 150.927,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.843,
+        "strength": 2.64,
+        "accent": "kick"
+      },
+      {
+        "time": 151.77,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.837,
+        "strength": 2.8,
+        "accent": "kick"
+      },
+      {
+        "time": 152.607,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.565,
+        "strength": 3.4,
+        "accent": "tom"
+      },
+      {
+        "time": 153.172,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.559,
+        "strength": 2.73,
+        "accent": "kick"
+      },
+      {
+        "time": 153.731,
+        "lane": 0,
+        "part": "drums",
+        "duration": 1.12,
+        "strength": 3.35,
+        "accent": "tom"
+      },
+      {
+        "time": 154.851,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.529,
+        "strength": 3.56,
+        "accent": "tom"
+      },
+      {
+        "time": 155.38,
+        "lane": 2,
+        "part": "drums",
+        "duration": 1.2,
+        "strength": 1.97,
+        "accent": "snare"
+      },
+      {
+        "time": 159.903,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.558,
+        "strength": 2.99,
+        "accent": "kick"
+      },
+      {
+        "time": 160.461,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.562,
+        "strength": 2.68,
+        "accent": "snare"
+      },
+      {
+        "time": 161.023,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.558,
+        "strength": 3.01,
+        "accent": "kick"
+      },
+      {
+        "time": 161.581,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.562,
+        "strength": 2.59,
+        "accent": "tom"
+      },
+      {
+        "time": 162.143,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.554,
+        "strength": 2.84,
+        "accent": "kick"
+      },
+      {
+        "time": 162.697,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.57,
+        "strength": 3.49,
+        "accent": "tom"
+      },
+      {
+        "time": 163.267,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.556,
+        "strength": 2.86,
+        "accent": "kick"
+      },
+      {
+        "time": 163.822,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.563,
+        "strength": 3.57,
+        "accent": "tom"
+      },
+      {
+        "time": 164.385,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.556,
+        "strength": 3.07,
+        "accent": "kick"
+      },
+      {
+        "time": 164.941,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.565,
+        "strength": 3.75,
+        "accent": "tom"
+      },
+      {
+        "time": 165.506,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.557,
+        "strength": 2.3,
+        "accent": "kick"
+      },
+      {
+        "time": 166.063,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.564,
+        "strength": 3.51,
+        "accent": "tom"
+      },
+      {
+        "time": 166.627,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.561,
+        "strength": 2.57,
+        "accent": "kick"
+      },
+      {
+        "time": 167.188,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.701,
+        "strength": 2.98,
+        "accent": "tom"
+      },
+      {
+        "time": 167.889,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.837,
+        "strength": 3.2,
+        "accent": "tom"
+      },
+      {
+        "time": 168.726,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.703,
+        "strength": 3.26,
+        "accent": "tom"
+      },
+      {
+        "time": 169.429,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.564,
+        "strength": 3.15,
+        "accent": "tom"
+      },
+      {
+        "time": 169.993,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.563,
+        "strength": 2.98,
+        "accent": "kick"
+      },
+      {
+        "time": 170.555,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.559,
+        "strength": 2.73,
+        "accent": "tom"
+      },
+      {
+        "time": 171.115,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.558,
+        "strength": 2.75,
+        "accent": "kick"
+      },
+      {
+        "time": 171.673,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.564,
+        "strength": 3.7,
+        "accent": "tom"
+      },
+      {
+        "time": 172.237,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.556,
+        "strength": 3.14,
+        "accent": "kick"
+      },
+      {
+        "time": 172.793,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.563,
+        "strength": 3.06,
+        "accent": "tom"
+      },
+      {
+        "time": 173.356,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.556,
+        "strength": 2.73,
+        "accent": "kick"
+      },
+      {
+        "time": 173.911,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.566,
+        "strength": 3.52,
+        "accent": "tom"
+      },
+      {
+        "time": 174.478,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.555,
+        "strength": 2.81,
+        "accent": "kick"
+      },
+      {
+        "time": 175.033,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.987,
+        "strength": 3.58,
+        "accent": "tom"
+      },
+      {
+        "time": 176.02,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.56,
+        "strength": 2.92,
+        "accent": "kick"
+      },
+      {
+        "time": 176.58,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.671,
+        "strength": 2.97,
+        "accent": "kick"
+      },
+      {
+        "time": 177.251,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.59,
+        "strength": 2.51,
+        "accent": "tom"
+      },
+      {
+        "time": 177.842,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.556,
+        "strength": 2.23,
+        "accent": "kick"
+      },
+      {
+        "time": 178.398,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.565,
+        "strength": 2.75,
+        "accent": "tom"
+      },
+      {
+        "time": 178.962,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.564,
+        "strength": 2.56,
+        "accent": "kick"
+      },
+      {
+        "time": 179.526,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.559,
+        "strength": 2.71,
+        "accent": "tom"
+      },
+      {
+        "time": 180.085,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.562,
+        "strength": 2.28,
+        "accent": "kick"
+      },
+      {
+        "time": 180.647,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.56,
+        "strength": 3.06,
+        "accent": "snare"
+      },
+      {
+        "time": 181.207,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.557,
+        "strength": 2.77,
+        "accent": "kick"
+      },
+      {
+        "time": 181.765,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.564,
+        "strength": 3.06,
+        "accent": "tom"
+      },
+      {
+        "time": 182.329,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.559,
+        "strength": 2.68,
+        "accent": "kick"
+      },
+      {
+        "time": 182.888,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.56,
+        "strength": 2.29,
+        "accent": "tom"
+      },
+      {
+        "time": 183.448,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.563,
+        "strength": 2.56,
+        "accent": "snare"
+      },
+      {
+        "time": 184.011,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.56,
+        "strength": 2.16,
+        "accent": "snare"
+      },
+      {
+        "time": 184.571,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.563,
+        "strength": 2.23,
+        "accent": "kick"
+      },
+      {
+        "time": 185.134,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.695,
+        "strength": 2.94,
+        "accent": "tom"
+      },
+      {
+        "time": 185.829,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.702,
+        "strength": 2.66,
+        "accent": "tom"
+      },
+      {
+        "time": 186.531,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.841,
+        "strength": 3.08,
+        "accent": "tom"
+      },
+      {
+        "time": 187.372,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.564,
+        "strength": 2.99,
+        "accent": "tom"
+      },
+      {
+        "time": 187.936,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.559,
+        "strength": 2.67,
+        "accent": "kick"
+      },
+      {
+        "time": 188.495,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.563,
+        "strength": 2.96,
+        "accent": "tom"
+      },
+      {
+        "time": 189.057,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.56,
+        "strength": 2.13,
+        "accent": "kick"
+      },
+      {
+        "time": 189.617,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.565,
+        "strength": 3.07,
+        "accent": "tom"
+      },
+      {
+        "time": 190.182,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.56,
+        "strength": 2.76,
+        "accent": "kick"
+      },
+      {
+        "time": 190.742,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.562,
+        "strength": 3.08,
+        "accent": "snare"
+      },
+      {
+        "time": 191.304,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.697,
+        "strength": 2.75,
+        "accent": "kick"
+      },
+      {
+        "time": 192.002,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.664,
+        "strength": 3.14,
+        "accent": "kick"
+      },
+      {
+        "time": 192.665,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.859,
+        "strength": 3.07,
+        "accent": "snare"
+      },
+      {
+        "time": 193.524,
+        "lane": 2,
+        "part": "drums",
+        "duration": 1.2,
+        "strength": 2.41,
+        "accent": "kick"
+      }
+    ],
+    "normal": [
+      {
+        "time": 9.042,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.566,
+        "strength": 3.41,
+        "accent": "tom"
+      },
+      {
+        "time": 9.607,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.564,
+        "strength": 4.04,
+        "accent": "kick"
+      },
+      {
+        "time": 10.171,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.571,
+        "strength": 2.86,
+        "accent": "tom"
+      },
+      {
+        "time": 10.742,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.554,
+        "strength": 3.26,
+        "accent": "kick"
+      },
+      {
+        "time": 11.296,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.571,
+        "strength": 2.95,
+        "accent": "tom"
+      },
+      {
+        "time": 11.867,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.548,
+        "strength": 3.83,
+        "accent": "kick"
+      },
+      {
+        "time": 12.415,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.573,
+        "strength": 2.44,
+        "accent": "snare"
+      },
+      {
+        "time": 12.988,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.55,
+        "strength": 3.11,
+        "accent": "kick"
+      },
+      {
+        "time": 13.539,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.571,
+        "strength": 2.51,
+        "accent": "snare"
+      },
+      {
+        "time": 14.11,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.551,
+        "strength": 3.68,
+        "accent": "kick"
+      },
+      {
+        "time": 14.66,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.571,
+        "strength": 2.58,
+        "accent": "snare"
+      },
+      {
+        "time": 15.232,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.552,
+        "strength": 3.91,
+        "accent": "kick"
+      },
+      {
+        "time": 15.784,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.57,
+        "strength": 2.31,
+        "accent": "kick"
+      },
+      {
+        "time": 16.354,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.547,
+        "strength": 3.73,
+        "accent": "kick"
+      },
+      {
+        "time": 16.901,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.574,
+        "strength": 2.79,
+        "accent": "kick"
+      },
+      {
+        "time": 17.474,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.55,
+        "strength": 3.42,
+        "accent": "kick"
+      },
+      {
+        "time": 18.024,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.57,
+        "strength": 2.31,
+        "accent": "tom"
+      },
+      {
+        "time": 18.595,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.556,
+        "strength": 3.95,
+        "accent": "kick"
+      },
+      {
+        "time": 19.151,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.567,
+        "strength": 2.75,
+        "accent": "tom"
+      },
+      {
+        "time": 19.718,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.556,
+        "strength": 3.78,
+        "accent": "kick"
+      },
+      {
+        "time": 20.274,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.565,
+        "strength": 3.06,
+        "accent": "tom"
+      },
+      {
+        "time": 20.839,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.547,
+        "strength": 3.91,
+        "accent": "kick"
+      },
+      {
+        "time": 21.386,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.574,
+        "strength": 2.77,
+        "accent": "snare"
+      },
+      {
+        "time": 21.96,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.55,
+        "strength": 2.99,
+        "accent": "kick"
+      },
+      {
+        "time": 22.51,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.572,
+        "strength": 3.25,
+        "accent": "tom"
+      },
+      {
+        "time": 23.082,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.555,
+        "strength": 3.82,
+        "accent": "kick"
+      },
+      {
+        "time": 23.637,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.567,
+        "strength": 2.94,
+        "accent": "snare"
+      },
+      {
+        "time": 24.204,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.555,
+        "strength": 3.61,
+        "accent": "kick"
+      },
+      {
+        "time": 24.758,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.565,
+        "strength": 2.92,
+        "accent": "snare"
+      },
+      {
+        "time": 25.323,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.424,
+        "strength": 2.95,
+        "accent": "kick"
+      },
+      {
+        "time": 25.747,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.55,
+        "strength": 3.46,
+        "accent": "kick"
+      },
+      {
+        "time": 26.297,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.428,
+        "strength": 0.92,
+        "accent": "tom"
+      },
+      {
+        "time": 26.725,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.552,
+        "strength": 3.9,
+        "accent": "kick"
+      },
+      {
+        "time": 27.277,
+        "lane": 1,
+        "part": "drums",
+        "duration": 1.2,
+        "strength": 1.25,
+        "accent": "tom"
+      },
+      {
+        "time": 36.533,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.426,
+        "strength": 2.89,
+        "accent": "kick"
+      },
+      {
+        "time": 36.959,
+        "lane": 0,
+        "part": "drums",
+        "duration": 1.2,
+        "strength": 3.33,
+        "accent": "kick"
+      },
+      {
+        "time": 38.214,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.568,
+        "strength": 2.94,
+        "accent": "tom"
+      },
+      {
+        "time": 38.781,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.415,
+        "strength": 2.98,
+        "accent": "kick"
+      },
+      {
+        "time": 39.197,
+        "lane": 2,
+        "part": "drums",
+        "duration": 1.2,
+        "strength": 2.82,
+        "accent": "kick"
+      },
+      {
+        "time": 40.456,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.568,
+        "strength": 2.99,
+        "accent": "tom"
+      },
+      {
+        "time": 41.025,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.415,
+        "strength": 2.49,
+        "accent": "kick"
+      },
+      {
+        "time": 41.44,
+        "lane": 2,
+        "part": "drums",
+        "duration": 1.2,
+        "strength": 2.63,
+        "accent": "kick"
+      },
+      {
+        "time": 42.7,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.567,
+        "strength": 2.5,
+        "accent": "tom"
+      },
+      {
+        "time": 43.267,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.416,
+        "strength": 2.6,
+        "accent": "kick"
+      },
+      {
+        "time": 43.683,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.423,
+        "strength": 2.96,
+        "accent": "kick"
+      },
+      {
+        "time": 44.106,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.559,
+        "strength": 3.02,
+        "accent": "kick"
+      },
+      {
+        "time": 44.665,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.846,
+        "strength": 2.83,
+        "accent": "kick"
+      },
+      {
+        "time": 45.511,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.42,
+        "strength": 3.29,
+        "accent": "kick"
+      },
+      {
+        "time": 45.931,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.977,
+        "strength": 3.08,
+        "accent": "kick"
+      },
+      {
+        "time": 46.908,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.841,
+        "strength": 3.08,
+        "accent": "kick"
+      },
+      {
+        "time": 47.749,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.42,
+        "strength": 2.82,
+        "accent": "kick"
+      },
+      {
+        "time": 48.169,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.982,
+        "strength": 2.93,
+        "accent": "kick"
+      },
+      {
+        "time": 49.151,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.847,
+        "strength": 3.17,
+        "accent": "kick"
+      },
+      {
+        "time": 49.997,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.415,
+        "strength": 2.83,
+        "accent": "kick"
+      },
+      {
+        "time": 50.412,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.982,
+        "strength": 2.78,
+        "accent": "kick"
+      },
+      {
+        "time": 51.394,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.841,
+        "strength": 2.82,
+        "accent": "kick"
+      },
+      {
+        "time": 52.235,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.424,
+        "strength": 2.56,
+        "accent": "kick"
+      },
+      {
+        "time": 52.659,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.98,
+        "strength": 2.86,
+        "accent": "kick"
+      },
+      {
+        "time": 53.639,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.842,
+        "strength": 2.54,
+        "accent": "kick"
+      },
+      {
+        "time": 54.481,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.416,
+        "strength": 2.87,
+        "accent": "kick"
+      },
+      {
+        "time": 54.897,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.981,
+        "strength": 2.91,
+        "accent": "kick"
+      },
+      {
+        "time": 55.879,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.846,
+        "strength": 2.94,
+        "accent": "kick"
+      },
+      {
+        "time": 56.725,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.42,
+        "strength": 3.01,
+        "accent": "kick"
+      },
+      {
+        "time": 57.145,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.977,
+        "strength": 2.72,
+        "accent": "kick"
+      },
+      {
+        "time": 58.122,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.843,
+        "strength": 3.13,
+        "accent": "kick"
+      },
+      {
+        "time": 58.965,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.557,
+        "strength": 2.69,
+        "accent": "kick"
+      },
+      {
+        "time": 59.521,
+        "lane": 1,
+        "part": "drums",
+        "duration": 1.123,
+        "strength": 2.4,
+        "accent": "tom"
+      },
+      {
+        "time": 60.644,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.564,
+        "strength": 2.83,
+        "accent": "tom"
+      },
+      {
+        "time": 61.208,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.418,
+        "strength": 2.87,
+        "accent": "kick"
+      },
+      {
+        "time": 61.626,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.42,
+        "strength": 2.37,
+        "accent": "kick"
+      },
+      {
+        "time": 62.045,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.421,
+        "strength": 2.64,
+        "accent": "kick"
+      },
+      {
+        "time": 62.466,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.558,
+        "strength": 2.94,
+        "accent": "kick"
+      },
+      {
+        "time": 63.024,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.423,
+        "strength": 2.69,
+        "accent": "tom"
+      },
+      {
+        "time": 63.447,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.563,
+        "strength": 2.69,
+        "accent": "kick"
+      },
+      {
+        "time": 64.01,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.561,
+        "strength": 1.88,
+        "accent": "kick"
+      },
+      {
+        "time": 64.571,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.559,
+        "strength": 2.82,
+        "accent": "kick"
+      },
+      {
+        "time": 65.129,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.561,
+        "strength": 1.82,
+        "accent": "tom"
+      },
+      {
+        "time": 65.691,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.56,
+        "strength": 2.57,
+        "accent": "kick"
+      },
+      {
+        "time": 66.251,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.561,
+        "strength": 3.17,
+        "accent": "kick"
+      },
+      {
+        "time": 66.812,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.56,
+        "strength": 2.29,
+        "accent": "kick"
+      },
+      {
+        "time": 67.372,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.564,
+        "strength": 2.3,
+        "accent": "tom"
+      },
+      {
+        "time": 67.937,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.558,
+        "strength": 2.78,
+        "accent": "kick"
+      },
+      {
+        "time": 68.495,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.562,
+        "strength": 2.38,
+        "accent": "kick"
+      },
+      {
+        "time": 69.056,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.557,
+        "strength": 2.56,
+        "accent": "kick"
+      },
+      {
+        "time": 69.613,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.564,
+        "strength": 2.78,
+        "accent": "tom"
+      },
+      {
+        "time": 70.178,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.425,
+        "strength": 2.8,
+        "accent": "kick"
+      },
+      {
+        "time": 70.603,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.556,
+        "strength": 2.96,
+        "accent": "kick"
+      },
+      {
+        "time": 71.159,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.843,
+        "strength": 2.85,
+        "accent": "kick"
+      },
+      {
+        "time": 72.003,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.402,
+        "strength": 2.59,
+        "accent": "kick"
+      },
+      {
+        "time": 72.405,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.439,
+        "strength": 2.76,
+        "accent": "tom"
+      },
+      {
+        "time": 72.843,
+        "lane": 3,
+        "part": "drums",
+        "duration": 1.2,
+        "strength": 2.94,
+        "accent": "kick"
+      },
+      {
+        "time": 74.669,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.556,
+        "strength": 2.99,
+        "accent": "kick"
+      },
+      {
+        "time": 75.224,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.559,
+        "strength": 3.3,
+        "accent": "tom"
+      },
+      {
+        "time": 75.784,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.563,
+        "strength": 3.06,
+        "accent": "kick"
+      },
+      {
+        "time": 76.347,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.563,
+        "strength": 2.58,
+        "accent": "kick"
+      },
+      {
+        "time": 76.91,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.558,
+        "strength": 2.7,
+        "accent": "kick"
+      },
+      {
+        "time": 77.468,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.562,
+        "strength": 2.64,
+        "accent": "tom"
+      },
+      {
+        "time": 78.03,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.559,
+        "strength": 2.45,
+        "accent": "kick"
+      },
+      {
+        "time": 78.589,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.562,
+        "strength": 2.46,
+        "accent": "kick"
+      },
+      {
+        "time": 79.152,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.558,
+        "strength": 2.85,
+        "accent": "kick"
+      },
+      {
+        "time": 79.71,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.562,
+        "strength": 2.56,
+        "accent": "tom"
+      },
+      {
+        "time": 80.271,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.558,
+        "strength": 2.7,
+        "accent": "kick"
+      },
+      {
+        "time": 80.83,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.567,
+        "strength": 2.98,
+        "accent": "tom"
+      },
+      {
+        "time": 81.397,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.556,
+        "strength": 2.59,
+        "accent": "kick"
+      },
+      {
+        "time": 81.953,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.565,
+        "strength": 2.55,
+        "accent": "tom"
+      },
+      {
+        "time": 82.518,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.562,
+        "strength": 2.51,
+        "accent": "kick"
+      },
+      {
+        "time": 83.079,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.56,
+        "strength": 2.44,
+        "accent": "kick"
+      },
+      {
+        "time": 83.639,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.555,
+        "strength": 2.71,
+        "accent": "kick"
+      },
+      {
+        "time": 84.194,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.567,
+        "strength": 2.95,
+        "accent": "kick"
+      },
+      {
+        "time": 84.76,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.556,
+        "strength": 2.91,
+        "accent": "kick"
+      },
+      {
+        "time": 85.317,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.563,
+        "strength": 2.63,
+        "accent": "tom"
+      },
+      {
+        "time": 85.879,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.56,
+        "strength": 2.71,
+        "accent": "kick"
+      },
+      {
+        "time": 86.439,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.562,
+        "strength": 3.2,
+        "accent": "tom"
+      },
+      {
+        "time": 87.001,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.559,
+        "strength": 2.48,
+        "accent": "kick"
+      },
+      {
+        "time": 87.56,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.562,
+        "strength": 2.6,
+        "accent": "tom"
+      },
+      {
+        "time": 88.122,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.564,
+        "strength": 2.73,
+        "accent": "kick"
+      },
+      {
+        "time": 88.687,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.417,
+        "strength": 2.32,
+        "accent": "kick"
+      },
+      {
+        "time": 89.104,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.417,
+        "strength": 2.39,
+        "accent": "tom"
+      },
+      {
+        "time": 89.521,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.413,
+        "strength": 1.93,
+        "accent": "tom"
+      },
+      {
+        "time": 89.935,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.417,
+        "strength": 1.06,
+        "accent": "kick"
+      },
+      {
+        "time": 90.352,
+        "lane": 3,
+        "part": "drums",
+        "duration": 1.2,
+        "strength": 1.77,
+        "accent": "kick"
+      },
+      {
+        "time": 92.042,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.568,
+        "strength": 2.97,
+        "accent": "tom"
+      },
+      {
+        "time": 92.61,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.425,
+        "strength": 3.23,
+        "accent": "kick"
+      },
+      {
+        "time": 93.034,
+        "lane": 0,
+        "part": "drums",
+        "duration": 1.2,
+        "strength": 2.81,
+        "accent": "kick"
+      },
+      {
+        "time": 94.287,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.561,
+        "strength": 3.09,
+        "accent": "tom"
+      },
+      {
+        "time": 94.848,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.423,
+        "strength": 2.5,
+        "accent": "kick"
+      },
+      {
+        "time": 95.271,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.981,
+        "strength": 2.95,
+        "accent": "kick"
+      },
+      {
+        "time": 96.253,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.839,
+        "strength": 3.41,
+        "accent": "kick"
+      },
+      {
+        "time": 97.092,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.422,
+        "strength": 2.3,
+        "accent": "kick"
+      },
+      {
+        "time": 97.514,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.983,
+        "strength": 2.72,
+        "accent": "kick"
+      },
+      {
+        "time": 98.497,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.703,
+        "strength": 2.64,
+        "accent": "kick"
+      },
+      {
+        "time": 99.199,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.558,
+        "strength": 2.57,
+        "accent": "kick"
+      },
+      {
+        "time": 99.758,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.981,
+        "strength": 2.9,
+        "accent": "kick"
+      },
+      {
+        "time": 100.739,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.84,
+        "strength": 3.38,
+        "accent": "kick"
+      },
+      {
+        "time": 101.579,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.559,
+        "strength": 2.74,
+        "accent": "kick"
+      },
+      {
+        "time": 102.138,
+        "lane": 2,
+        "part": "drums",
+        "duration": 1.121,
+        "strength": 2.5,
+        "accent": "tom"
+      },
+      {
+        "time": 103.259,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.562,
+        "strength": 2.71,
+        "accent": "tom"
+      },
+      {
+        "time": 103.822,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.559,
+        "strength": 2.39,
+        "accent": "kick"
+      },
+      {
+        "time": 104.381,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.847,
+        "strength": 2.56,
+        "accent": "tom"
+      },
+      {
+        "time": 105.227,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.838,
+        "strength": 2.7,
+        "accent": "kick"
+      },
+      {
+        "time": 106.066,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.558,
+        "strength": 2.32,
+        "accent": "kick"
+      },
+      {
+        "time": 106.624,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.843,
+        "strength": 2.44,
+        "accent": "tom"
+      },
+      {
+        "time": 107.467,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.844,
+        "strength": 2.69,
+        "accent": "kick"
+      },
+      {
+        "time": 108.311,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.418,
+        "strength": 2.4,
+        "accent": "kick"
+      },
+      {
+        "time": 108.729,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.42,
+        "strength": 2.55,
+        "accent": "kick"
+      },
+      {
+        "time": 109.149,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.562,
+        "strength": 2.3,
+        "accent": "kick"
+      },
+      {
+        "time": 109.711,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.402,
+        "strength": 2.69,
+        "accent": "kick"
+      },
+      {
+        "time": 110.114,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.421,
+        "strength": 1.44,
+        "accent": "tom"
+      },
+      {
+        "time": 110.535,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.577,
+        "strength": 2.22,
+        "accent": "kick"
+      },
+      {
+        "time": 111.112,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.561,
+        "strength": 2.82,
+        "accent": "kick"
+      },
+      {
+        "time": 111.673,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.561,
+        "strength": 2.76,
+        "accent": "kick"
+      },
+      {
+        "time": 112.234,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.561,
+        "strength": 2.75,
+        "accent": "kick"
+      },
+      {
+        "time": 112.795,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.561,
+        "strength": 2.63,
+        "accent": "kick"
+      },
+      {
+        "time": 113.356,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.562,
+        "strength": 2.78,
+        "accent": "kick"
+      },
+      {
+        "time": 113.917,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.559,
+        "strength": 2.74,
+        "accent": "kick"
+      },
+      {
+        "time": 114.477,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.561,
+        "strength": 2.75,
+        "accent": "kick"
+      },
+      {
+        "time": 115.038,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.56,
+        "strength": 2.65,
+        "accent": "kick"
+      },
+      {
+        "time": 115.598,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.561,
+        "strength": 2.74,
+        "accent": "kick"
+      },
+      {
+        "time": 116.159,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.561,
+        "strength": 2.73,
+        "accent": "kick"
+      },
+      {
+        "time": 116.72,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.425,
+        "strength": 2.69,
+        "accent": "kick"
+      },
+      {
+        "time": 117.145,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.839,
+        "strength": 2.44,
+        "accent": "kick"
+      },
+      {
+        "time": 117.984,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.417,
+        "strength": 2.57,
+        "accent": "kick"
+      },
+      {
+        "time": 118.401,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.56,
+        "strength": 2.22,
+        "accent": "tom"
+      },
+      {
+        "time": 118.962,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.537,
+        "strength": 2.44,
+        "accent": "snare"
+      },
+      {
+        "time": 119.499,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.446,
+        "strength": 2.13,
+        "accent": "tom"
+      },
+      {
+        "time": 119.945,
+        "lane": 1,
+        "part": "drums",
+        "duration": 1.2,
+        "strength": 2.47,
+        "accent": "kick"
+      },
+      {
+        "time": 121.765,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.564,
+        "strength": 2.98,
+        "accent": "kick"
+      },
+      {
+        "time": 122.328,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.561,
+        "strength": 2.48,
+        "accent": "tom"
+      },
+      {
+        "time": 122.889,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.56,
+        "strength": 2.62,
+        "accent": "kick"
+      },
+      {
+        "time": 123.449,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.562,
+        "strength": 2.69,
+        "accent": "tom"
+      },
+      {
+        "time": 124.011,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.559,
+        "strength": 1.95,
+        "accent": "kick"
+      },
+      {
+        "time": 124.571,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.56,
+        "strength": 2.88,
+        "accent": "tom"
+      },
+      {
+        "time": 125.13,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.559,
+        "strength": 2.45,
+        "accent": "kick"
+      },
+      {
+        "time": 125.689,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.562,
+        "strength": 2.33,
+        "accent": "snare"
+      },
+      {
+        "time": 126.251,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.559,
+        "strength": 2.5,
+        "accent": "kick"
+      },
+      {
+        "time": 126.81,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.563,
+        "strength": 2.43,
+        "accent": "snare"
+      },
+      {
+        "time": 127.373,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.561,
+        "strength": 2.28,
+        "accent": "kick"
+      },
+      {
+        "time": 127.933,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.559,
+        "strength": 2.53,
+        "accent": "tom"
+      },
+      {
+        "time": 128.492,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.56,
+        "strength": 2.25,
+        "accent": "kick"
+      },
+      {
+        "time": 129.053,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.705,
+        "strength": 2.85,
+        "accent": "tom"
+      },
+      {
+        "time": 129.757,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.42,
+        "strength": 2.81,
+        "accent": "tom"
+      },
+      {
+        "time": 130.178,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.559,
+        "strength": 2.61,
+        "accent": "tom"
+      },
+      {
+        "time": 130.737,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.562,
+        "strength": 2.53,
+        "accent": "kick"
+      },
+      {
+        "time": 131.299,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.56,
+        "strength": 3.23,
+        "accent": "tom"
+      },
+      {
+        "time": 131.859,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.56,
+        "strength": 2.48,
+        "accent": "kick"
+      },
+      {
+        "time": 132.419,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.561,
+        "strength": 2.5,
+        "accent": "tom"
+      },
+      {
+        "time": 132.981,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.559,
+        "strength": 2.32,
+        "accent": "kick"
+      },
+      {
+        "time": 133.54,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.562,
+        "strength": 2.57,
+        "accent": "tom"
+      },
+      {
+        "time": 134.103,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.558,
+        "strength": 2.47,
+        "accent": "kick"
+      },
+      {
+        "time": 134.661,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.562,
+        "strength": 2.49,
+        "accent": "snare"
+      },
+      {
+        "time": 135.223,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.558,
+        "strength": 2.33,
+        "accent": "kick"
+      },
+      {
+        "time": 135.781,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.424,
+        "strength": 2.75,
+        "accent": "tom"
+      },
+      {
+        "time": 136.205,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.7,
+        "strength": 2.55,
+        "accent": "tom"
+      },
+      {
+        "time": 136.906,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.563,
+        "strength": 2.82,
+        "accent": "tom"
+      },
+      {
+        "time": 137.468,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.552,
+        "strength": 2.37,
+        "accent": "kick"
+      },
+      {
+        "time": 138.02,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.707,
+        "strength": 3.43,
+        "accent": "tom"
+      },
+      {
+        "time": 138.727,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.422,
+        "strength": 2.97,
+        "accent": "tom"
+      },
+      {
+        "time": 139.149,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.558,
+        "strength": 2.55,
+        "accent": "kick"
+      },
+      {
+        "time": 139.708,
+        "lane": 2,
+        "part": "drums",
+        "duration": 1.2,
+        "strength": 2.42,
+        "accent": "kick"
+      },
+      {
+        "time": 148.68,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.425,
+        "strength": 2.45,
+        "accent": "kick"
+      },
+      {
+        "time": 149.105,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.421,
+        "strength": 2.81,
+        "accent": "kick"
+      },
+      {
+        "time": 149.526,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.424,
+        "strength": 2.75,
+        "accent": "kick"
+      },
+      {
+        "time": 149.95,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.412,
+        "strength": 2.13,
+        "accent": "kick"
+      },
+      {
+        "time": 150.362,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.565,
+        "strength": 3.31,
+        "accent": "tom"
+      },
+      {
+        "time": 150.927,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.421,
+        "strength": 2.64,
+        "accent": "kick"
+      },
+      {
+        "time": 151.348,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.422,
+        "strength": 2.44,
+        "accent": "kick"
+      },
+      {
+        "time": 151.77,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.427,
+        "strength": 2.8,
+        "accent": "kick"
+      },
+      {
+        "time": 152.196,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.411,
+        "strength": 2.23,
+        "accent": "kick"
+      },
+      {
+        "time": 152.607,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.565,
+        "strength": 3.4,
+        "accent": "tom"
+      },
+      {
+        "time": 153.172,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.559,
+        "strength": 2.73,
+        "accent": "kick"
+      },
+      {
+        "time": 153.731,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.71,
+        "strength": 3.35,
+        "accent": "tom"
+      },
+      {
+        "time": 154.441,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.41,
+        "strength": 2.24,
+        "accent": "kick"
+      },
+      {
+        "time": 154.851,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.529,
+        "strength": 3.56,
+        "accent": "tom"
+      },
+      {
+        "time": 155.38,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.29,
+        "strength": 1.97,
+        "accent": "snare"
+      },
+      {
+        "time": 155.67,
+        "lane": 2,
+        "part": "drums",
+        "duration": 1.2,
+        "strength": 0.67,
+        "accent": "kick"
+      },
+      {
+        "time": 159.903,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.558,
+        "strength": 2.99,
+        "accent": "kick"
+      },
+      {
+        "time": 160.461,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.562,
+        "strength": 2.68,
+        "accent": "snare"
+      },
+      {
+        "time": 161.023,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.558,
+        "strength": 3.01,
+        "accent": "kick"
+      },
+      {
+        "time": 161.581,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.562,
+        "strength": 2.59,
+        "accent": "tom"
+      },
+      {
+        "time": 162.143,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.554,
+        "strength": 2.84,
+        "accent": "kick"
+      },
+      {
+        "time": 162.697,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.57,
+        "strength": 3.49,
+        "accent": "tom"
+      },
+      {
+        "time": 163.267,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.556,
+        "strength": 2.86,
+        "accent": "kick"
+      },
+      {
+        "time": 163.822,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.563,
+        "strength": 3.57,
+        "accent": "tom"
+      },
+      {
+        "time": 164.385,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.556,
+        "strength": 3.07,
+        "accent": "kick"
+      },
+      {
+        "time": 164.941,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.565,
+        "strength": 3.75,
+        "accent": "tom"
+      },
+      {
+        "time": 165.506,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.557,
+        "strength": 2.3,
+        "accent": "kick"
+      },
+      {
+        "time": 166.063,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.564,
+        "strength": 3.51,
+        "accent": "tom"
+      },
+      {
+        "time": 166.627,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.561,
+        "strength": 2.57,
+        "accent": "kick"
+      },
+      {
+        "time": 167.188,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.701,
+        "strength": 2.98,
+        "accent": "tom"
+      },
+      {
+        "time": 167.889,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.414,
+        "strength": 3.2,
+        "accent": "tom"
+      },
+      {
+        "time": 168.304,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.422,
+        "strength": 3.17,
+        "accent": "tom"
+      },
+      {
+        "time": 168.726,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.703,
+        "strength": 3.26,
+        "accent": "tom"
+      },
+      {
+        "time": 169.429,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.564,
+        "strength": 3.15,
+        "accent": "tom"
+      },
+      {
+        "time": 169.993,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.563,
+        "strength": 2.98,
+        "accent": "kick"
+      },
+      {
+        "time": 170.555,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.559,
+        "strength": 2.73,
+        "accent": "tom"
+      },
+      {
+        "time": 171.115,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.558,
+        "strength": 2.75,
+        "accent": "kick"
+      },
+      {
+        "time": 171.673,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.564,
+        "strength": 3.7,
+        "accent": "tom"
+      },
+      {
+        "time": 172.237,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.556,
+        "strength": 3.14,
+        "accent": "kick"
+      },
+      {
+        "time": 172.793,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.563,
+        "strength": 3.06,
+        "accent": "tom"
+      },
+      {
+        "time": 173.356,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.556,
+        "strength": 2.73,
+        "accent": "kick"
+      },
+      {
+        "time": 173.911,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.422,
+        "strength": 3.52,
+        "accent": "tom"
+      },
+      {
+        "time": 174.333,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.7,
+        "strength": 3.28,
+        "accent": "tom"
+      },
+      {
+        "time": 175.033,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.564,
+        "strength": 3.58,
+        "accent": "tom"
+      },
+      {
+        "time": 175.597,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.423,
+        "strength": 2.86,
+        "accent": "kick"
+      },
+      {
+        "time": 176.02,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.56,
+        "strength": 2.92,
+        "accent": "kick"
+      },
+      {
+        "time": 176.58,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.671,
+        "strength": 2.97,
+        "accent": "kick"
+      },
+      {
+        "time": 177.251,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.59,
+        "strength": 2.51,
+        "accent": "tom"
+      },
+      {
+        "time": 177.842,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.556,
+        "strength": 2.23,
+        "accent": "kick"
+      },
+      {
+        "time": 178.398,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.565,
+        "strength": 2.75,
+        "accent": "tom"
+      },
+      {
+        "time": 178.962,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.564,
+        "strength": 2.56,
+        "accent": "kick"
+      },
+      {
+        "time": 179.526,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.559,
+        "strength": 2.71,
+        "accent": "tom"
+      },
+      {
+        "time": 180.085,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.562,
+        "strength": 2.28,
+        "accent": "kick"
+      },
+      {
+        "time": 180.647,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.56,
+        "strength": 3.06,
+        "accent": "snare"
+      },
+      {
+        "time": 181.207,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.557,
+        "strength": 2.77,
+        "accent": "kick"
+      },
+      {
+        "time": 181.765,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.564,
+        "strength": 3.06,
+        "accent": "tom"
+      },
+      {
+        "time": 182.329,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.559,
+        "strength": 2.68,
+        "accent": "kick"
+      },
+      {
+        "time": 182.888,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.56,
+        "strength": 2.29,
+        "accent": "tom"
+      },
+      {
+        "time": 183.448,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.563,
+        "strength": 2.56,
+        "accent": "snare"
+      },
+      {
+        "time": 184.011,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.56,
+        "strength": 2.16,
+        "accent": "snare"
+      },
+      {
+        "time": 184.571,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.563,
+        "strength": 2.23,
+        "accent": "kick"
+      },
+      {
+        "time": 185.134,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.695,
+        "strength": 2.94,
+        "accent": "tom"
+      },
+      {
+        "time": 185.829,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.702,
+        "strength": 2.66,
+        "accent": "tom"
+      },
+      {
+        "time": 186.531,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.841,
+        "strength": 3.08,
+        "accent": "tom"
+      },
+      {
+        "time": 187.372,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.564,
+        "strength": 2.99,
+        "accent": "tom"
+      },
+      {
+        "time": 187.936,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.559,
+        "strength": 2.67,
+        "accent": "kick"
+      },
+      {
+        "time": 188.495,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.563,
+        "strength": 2.96,
+        "accent": "tom"
+      },
+      {
+        "time": 189.057,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.56,
+        "strength": 2.13,
+        "accent": "kick"
+      },
+      {
+        "time": 189.617,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.565,
+        "strength": 3.07,
+        "accent": "tom"
+      },
+      {
+        "time": 190.182,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.56,
+        "strength": 2.76,
+        "accent": "kick"
+      },
+      {
+        "time": 190.742,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.562,
+        "strength": 3.08,
+        "accent": "snare"
+      },
+      {
+        "time": 191.304,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.697,
+        "strength": 2.75,
+        "accent": "kick"
+      },
+      {
+        "time": 192.002,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.664,
+        "strength": 3.14,
+        "accent": "kick"
+      },
+      {
+        "time": 192.665,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.316,
+        "strength": 3.07,
+        "accent": "snare"
+      },
+      {
+        "time": 192.981,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.543,
+        "strength": 2.75,
+        "accent": "snare"
+      },
+      {
+        "time": 193.524,
+        "lane": 0,
+        "part": "drums",
+        "duration": 1.2,
+        "strength": 2.41,
+        "accent": "kick"
+      }
+    ],
+    "hard": [
+      {
+        "time": 9.042,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.566,
+        "strength": 3.41,
+        "accent": "tom"
+      },
+      {
+        "time": 9.607,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.564,
+        "strength": 4.04,
+        "accent": "kick"
+      },
+      {
+        "time": 10.171,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.571,
+        "strength": 2.86,
+        "accent": "tom"
+      },
+      {
+        "time": 10.742,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.554,
+        "strength": 3.26,
+        "accent": "kick"
+      },
+      {
+        "time": 11.296,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.571,
+        "strength": 2.95,
+        "accent": "tom"
+      },
+      {
+        "time": 11.867,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.548,
+        "strength": 3.83,
+        "accent": "kick"
+      },
+      {
+        "time": 12.415,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.573,
+        "strength": 2.44,
+        "accent": "snare"
+      },
+      {
+        "time": 12.988,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.55,
+        "strength": 3.11,
+        "accent": "kick"
+      },
+      {
+        "time": 13.539,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.571,
+        "strength": 2.51,
+        "accent": "snare"
+      },
+      {
+        "time": 14.11,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.551,
+        "strength": 3.68,
+        "accent": "kick"
+      },
+      {
+        "time": 14.66,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.571,
+        "strength": 2.58,
+        "accent": "snare"
+      },
+      {
+        "time": 15.232,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.552,
+        "strength": 3.91,
+        "accent": "kick"
+      },
+      {
+        "time": 15.784,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.57,
+        "strength": 2.31,
+        "accent": "kick"
+      },
+      {
+        "time": 16.354,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.547,
+        "strength": 3.73,
+        "accent": "kick"
+      },
+      {
+        "time": 16.901,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.574,
+        "strength": 2.79,
+        "accent": "kick"
+      },
+      {
+        "time": 17.474,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.55,
+        "strength": 3.42,
+        "accent": "kick"
+      },
+      {
+        "time": 18.024,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.284,
+        "strength": 2.31,
+        "accent": "tom"
+      },
+      {
+        "time": 18.309,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.286,
+        "strength": 2.28,
+        "accent": "snare"
+      },
+      {
+        "time": 18.595,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.556,
+        "strength": 3.95,
+        "accent": "kick"
+      },
+      {
+        "time": 19.151,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.567,
+        "strength": 2.75,
+        "accent": "tom"
+      },
+      {
+        "time": 19.718,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.556,
+        "strength": 3.78,
+        "accent": "kick"
+      },
+      {
+        "time": 20.274,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.565,
+        "strength": 3.06,
+        "accent": "tom"
+      },
+      {
+        "time": 20.839,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.547,
+        "strength": 3.91,
+        "accent": "kick"
+      },
+      {
+        "time": 21.386,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.574,
+        "strength": 2.77,
+        "accent": "snare"
+      },
+      {
+        "time": 21.96,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.55,
+        "strength": 2.99,
+        "accent": "kick"
+      },
+      {
+        "time": 22.51,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.572,
+        "strength": 3.25,
+        "accent": "tom"
+      },
+      {
+        "time": 23.082,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.555,
+        "strength": 3.82,
+        "accent": "kick"
+      },
+      {
+        "time": 23.637,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.567,
+        "strength": 2.94,
+        "accent": "snare"
+      },
+      {
+        "time": 24.204,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.275,
+        "strength": 3.61,
+        "accent": "kick"
+      },
+      {
+        "time": 24.479,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.279,
+        "strength": 1.96,
+        "accent": "snare"
+      },
+      {
+        "time": 24.758,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.278,
+        "strength": 2.92,
+        "accent": "snare"
+      },
+      {
+        "time": 25.037,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.286,
+        "strength": 1.39,
+        "accent": "snare"
+      },
+      {
+        "time": 25.323,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.424,
+        "strength": 2.95,
+        "accent": "kick"
+      },
+      {
+        "time": 25.747,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.55,
+        "strength": 3.46,
+        "accent": "kick"
+      },
+      {
+        "time": 26.297,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.428,
+        "strength": 0.92,
+        "accent": "tom"
+      },
+      {
+        "time": 26.725,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.273,
+        "strength": 3.9,
+        "accent": "kick"
+      },
+      {
+        "time": 26.999,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.278,
+        "strength": 2.64,
+        "accent": "tom"
+      },
+      {
+        "time": 27.277,
+        "lane": 1,
+        "part": "drums",
+        "duration": 1.2,
+        "strength": 1.25,
+        "accent": "tom"
+      },
+      {
+        "time": 36.533,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.426,
+        "strength": 2.89,
+        "accent": "kick"
+      },
+      {
+        "time": 36.959,
+        "lane": 0,
+        "part": "drums",
+        "duration": 1.2,
+        "strength": 3.33,
+        "accent": "kick"
+      },
+      {
+        "time": 38.214,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.568,
+        "strength": 2.94,
+        "accent": "tom"
+      },
+      {
+        "time": 38.781,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.415,
+        "strength": 2.98,
+        "accent": "kick"
+      },
+      {
+        "time": 39.197,
+        "lane": 1,
+        "part": "drums",
+        "duration": 1.2,
+        "strength": 2.82,
+        "accent": "kick"
+      },
+      {
+        "time": 40.456,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.568,
+        "strength": 2.99,
+        "accent": "tom"
+      },
+      {
+        "time": 41.025,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.415,
+        "strength": 2.49,
+        "accent": "kick"
+      },
+      {
+        "time": 41.44,
+        "lane": 1,
+        "part": "drums",
+        "duration": 1.2,
+        "strength": 2.63,
+        "accent": "kick"
+      },
+      {
+        "time": 42.7,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.567,
+        "strength": 2.5,
+        "accent": "tom"
+      },
+      {
+        "time": 43.267,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.416,
+        "strength": 2.6,
+        "accent": "kick"
+      },
+      {
+        "time": 43.683,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.423,
+        "strength": 2.96,
+        "accent": "kick"
+      },
+      {
+        "time": 44.106,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.559,
+        "strength": 3.02,
+        "accent": "kick"
+      },
+      {
+        "time": 44.665,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.277,
+        "strength": 2.83,
+        "accent": "kick"
+      },
+      {
+        "time": 44.942,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.569,
+        "strength": 2.7,
+        "accent": "tom"
+      },
+      {
+        "time": 45.511,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.42,
+        "strength": 3.29,
+        "accent": "kick"
+      },
+      {
+        "time": 45.931,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.977,
+        "strength": 3.08,
+        "accent": "kick"
+      },
+      {
+        "time": 46.908,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.277,
+        "strength": 3.08,
+        "accent": "kick"
+      },
+      {
+        "time": 47.185,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.564,
+        "strength": 2.6,
+        "accent": "tom"
+      },
+      {
+        "time": 47.749,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.42,
+        "strength": 2.82,
+        "accent": "kick"
+      },
+      {
+        "time": 48.169,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.982,
+        "strength": 2.93,
+        "accent": "kick"
+      },
+      {
+        "time": 49.151,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.277,
+        "strength": 3.17,
+        "accent": "kick"
+      },
+      {
+        "time": 49.427,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.57,
+        "strength": 2.46,
+        "accent": "tom"
+      },
+      {
+        "time": 49.997,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.415,
+        "strength": 2.83,
+        "accent": "kick"
+      },
+      {
+        "time": 50.412,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.982,
+        "strength": 2.78,
+        "accent": "kick"
+      },
+      {
+        "time": 51.394,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.276,
+        "strength": 2.82,
+        "accent": "kick"
+      },
+      {
+        "time": 51.67,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.565,
+        "strength": 2.45,
+        "accent": "tom"
+      },
+      {
+        "time": 52.235,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.424,
+        "strength": 2.56,
+        "accent": "kick"
+      },
+      {
+        "time": 52.659,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.98,
+        "strength": 2.86,
+        "accent": "kick"
+      },
+      {
+        "time": 53.639,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.274,
+        "strength": 2.54,
+        "accent": "kick"
+      },
+      {
+        "time": 53.913,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.279,
+        "strength": 2.25,
+        "accent": "tom"
+      },
+      {
+        "time": 54.192,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.289,
+        "strength": 2.49,
+        "accent": "tom"
+      },
+      {
+        "time": 54.481,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.416,
+        "strength": 2.87,
+        "accent": "kick"
+      },
+      {
+        "time": 54.897,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.981,
+        "strength": 2.91,
+        "accent": "kick"
+      },
+      {
+        "time": 55.879,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.277,
+        "strength": 2.94,
+        "accent": "kick"
+      },
+      {
+        "time": 56.156,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.569,
+        "strength": 2.45,
+        "accent": "tom"
+      },
+      {
+        "time": 56.725,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.42,
+        "strength": 3.01,
+        "accent": "kick"
+      },
+      {
+        "time": 57.145,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.977,
+        "strength": 2.72,
+        "accent": "kick"
+      },
+      {
+        "time": 58.122,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.277,
+        "strength": 3.13,
+        "accent": "kick"
+      },
+      {
+        "time": 58.399,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.566,
+        "strength": 2.37,
+        "accent": "tom"
+      },
+      {
+        "time": 58.965,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.557,
+        "strength": 2.69,
+        "accent": "kick"
+      },
+      {
+        "time": 59.521,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.845,
+        "strength": 2.4,
+        "accent": "tom"
+      },
+      {
+        "time": 60.366,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.278,
+        "strength": 2.54,
+        "accent": "kick"
+      },
+      {
+        "time": 60.644,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.564,
+        "strength": 2.83,
+        "accent": "tom"
+      },
+      {
+        "time": 61.208,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.556,
+        "strength": 2.87,
+        "accent": "kick"
+      },
+      {
+        "time": 61.764,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.282,
+        "strength": 2.53,
+        "accent": "tom"
+      },
+      {
+        "time": 62.045,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.421,
+        "strength": 2.64,
+        "accent": "kick"
+      },
+      {
+        "time": 62.466,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.558,
+        "strength": 2.94,
+        "accent": "kick"
+      },
+      {
+        "time": 63.024,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.423,
+        "strength": 2.69,
+        "accent": "tom"
+      },
+      {
+        "time": 63.447,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.563,
+        "strength": 2.69,
+        "accent": "kick"
+      },
+      {
+        "time": 64.01,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.278,
+        "strength": 1.88,
+        "accent": "kick"
+      },
+      {
+        "time": 64.287,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.283,
+        "strength": 1.41,
+        "accent": "snare"
+      },
+      {
+        "time": 64.571,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.265,
+        "strength": 2.82,
+        "accent": "kick"
+      },
+      {
+        "time": 64.836,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.293,
+        "strength": 0.66,
+        "accent": "kick"
+      },
+      {
+        "time": 65.129,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.279,
+        "strength": 1.82,
+        "accent": "tom"
+      },
+      {
+        "time": 65.408,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.282,
+        "strength": 1.01,
+        "accent": "tom"
+      },
+      {
+        "time": 65.691,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.56,
+        "strength": 2.57,
+        "accent": "kick"
+      },
+      {
+        "time": 66.251,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.267,
+        "strength": 3.17,
+        "accent": "kick"
+      },
+      {
+        "time": 66.519,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.294,
+        "strength": 1.04,
+        "accent": "snare"
+      },
+      {
+        "time": 66.812,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.249,
+        "strength": 2.29,
+        "accent": "kick"
+      },
+      {
+        "time": 67.062,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.31,
+        "strength": 0.74,
+        "accent": "tom"
+      },
+      {
+        "time": 67.372,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.277,
+        "strength": 2.3,
+        "accent": "tom"
+      },
+      {
+        "time": 67.65,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.287,
+        "strength": 2.34,
+        "accent": "tom"
+      },
+      {
+        "time": 67.937,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.558,
+        "strength": 2.78,
+        "accent": "kick"
+      },
+      {
+        "time": 68.495,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.276,
+        "strength": 2.38,
+        "accent": "kick"
+      },
+      {
+        "time": 68.771,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.286,
+        "strength": 1.54,
+        "accent": "tom"
+      },
+      {
+        "time": 69.056,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.25,
+        "strength": 2.56,
+        "accent": "kick"
+      },
+      {
+        "time": 69.306,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.307,
+        "strength": 0.95,
+        "accent": "snare"
+      },
+      {
+        "time": 69.613,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.281,
+        "strength": 2.78,
+        "accent": "tom"
+      },
+      {
+        "time": 69.894,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.284,
+        "strength": 2.67,
+        "accent": "tom"
+      },
+      {
+        "time": 70.178,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.425,
+        "strength": 2.8,
+        "accent": "kick"
+      },
+      {
+        "time": 70.603,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.28,
+        "strength": 2.96,
+        "accent": "kick"
+      },
+      {
+        "time": 70.883,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.276,
+        "strength": 2.96,
+        "accent": "kick"
+      },
+      {
+        "time": 71.159,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.278,
+        "strength": 2.85,
+        "accent": "kick"
+      },
+      {
+        "time": 71.437,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.354,
+        "strength": 2.24,
+        "accent": "tom"
+      },
+      {
+        "time": 71.791,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.211,
+        "strength": 2.57,
+        "accent": "kick"
+      },
+      {
+        "time": 72.003,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.402,
+        "strength": 2.59,
+        "accent": "kick"
+      },
+      {
+        "time": 72.405,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.439,
+        "strength": 2.76,
+        "accent": "tom"
+      },
+      {
+        "time": 72.843,
+        "lane": 2,
+        "part": "drums",
+        "duration": 1.2,
+        "strength": 2.94,
+        "accent": "kick"
+      },
+      {
+        "time": 74.669,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.556,
+        "strength": 2.99,
+        "accent": "kick"
+      },
+      {
+        "time": 75.224,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.559,
+        "strength": 3.3,
+        "accent": "tom"
+      },
+      {
+        "time": 75.784,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.563,
+        "strength": 3.06,
+        "accent": "kick"
+      },
+      {
+        "time": 76.347,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.563,
+        "strength": 2.58,
+        "accent": "kick"
+      },
+      {
+        "time": 76.91,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.558,
+        "strength": 2.7,
+        "accent": "kick"
+      },
+      {
+        "time": 77.468,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.562,
+        "strength": 2.64,
+        "accent": "tom"
+      },
+      {
+        "time": 78.03,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.559,
+        "strength": 2.45,
+        "accent": "kick"
+      },
+      {
+        "time": 78.589,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.562,
+        "strength": 2.46,
+        "accent": "kick"
+      },
+      {
+        "time": 79.152,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.558,
+        "strength": 2.85,
+        "accent": "kick"
+      },
+      {
+        "time": 79.71,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.562,
+        "strength": 2.56,
+        "accent": "tom"
+      },
+      {
+        "time": 80.271,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.558,
+        "strength": 2.7,
+        "accent": "kick"
+      },
+      {
+        "time": 80.83,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.567,
+        "strength": 2.98,
+        "accent": "tom"
+      },
+      {
+        "time": 81.397,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.556,
+        "strength": 2.59,
+        "accent": "kick"
+      },
+      {
+        "time": 81.953,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.565,
+        "strength": 2.55,
+        "accent": "tom"
+      },
+      {
+        "time": 82.518,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.562,
+        "strength": 2.51,
+        "accent": "kick"
+      },
+      {
+        "time": 83.079,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.273,
+        "strength": 2.44,
+        "accent": "kick"
+      },
+      {
+        "time": 83.353,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.287,
+        "strength": 2.28,
+        "accent": "tom"
+      },
+      {
+        "time": 83.639,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.555,
+        "strength": 2.71,
+        "accent": "kick"
+      },
+      {
+        "time": 84.194,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.567,
+        "strength": 2.95,
+        "accent": "kick"
+      },
+      {
+        "time": 84.76,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.556,
+        "strength": 2.91,
+        "accent": "kick"
+      },
+      {
+        "time": 85.317,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.563,
+        "strength": 2.63,
+        "accent": "tom"
+      },
+      {
+        "time": 85.879,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.56,
+        "strength": 2.71,
+        "accent": "kick"
+      },
+      {
+        "time": 86.439,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.562,
+        "strength": 3.2,
+        "accent": "tom"
+      },
+      {
+        "time": 87.001,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.559,
+        "strength": 2.48,
+        "accent": "kick"
+      },
+      {
+        "time": 87.56,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.562,
+        "strength": 2.6,
+        "accent": "tom"
+      },
+      {
+        "time": 88.122,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.564,
+        "strength": 2.73,
+        "accent": "kick"
+      },
+      {
+        "time": 88.687,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.417,
+        "strength": 2.32,
+        "accent": "kick"
+      },
+      {
+        "time": 89.104,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.417,
+        "strength": 2.39,
+        "accent": "tom"
+      },
+      {
+        "time": 89.521,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.282,
+        "strength": 1.93,
+        "accent": "tom"
+      },
+      {
+        "time": 89.803,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.24,
+        "strength": 1.76,
+        "accent": "kick"
+      },
+      {
+        "time": 90.044,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.308,
+        "strength": 1.03,
+        "accent": "snare"
+      },
+      {
+        "time": 90.352,
+        "lane": 0,
+        "part": "drums",
+        "duration": 1.2,
+        "strength": 1.77,
+        "accent": "kick"
+      },
+      {
+        "time": 92.042,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.568,
+        "strength": 2.97,
+        "accent": "tom"
+      },
+      {
+        "time": 92.61,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.425,
+        "strength": 3.23,
+        "accent": "kick"
+      },
+      {
+        "time": 93.034,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.973,
+        "strength": 2.81,
+        "accent": "kick"
+      },
+      {
+        "time": 94.008,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.279,
+        "strength": 2.57,
+        "accent": "kick"
+      },
+      {
+        "time": 94.287,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.561,
+        "strength": 3.09,
+        "accent": "tom"
+      },
+      {
+        "time": 94.848,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.423,
+        "strength": 2.5,
+        "accent": "kick"
+      },
+      {
+        "time": 95.271,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.981,
+        "strength": 2.95,
+        "accent": "kick"
+      },
+      {
+        "time": 96.253,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.277,
+        "strength": 3.41,
+        "accent": "kick"
+      },
+      {
+        "time": 96.529,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.563,
+        "strength": 3.18,
+        "accent": "tom"
+      },
+      {
+        "time": 97.092,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.422,
+        "strength": 2.3,
+        "accent": "kick"
+      },
+      {
+        "time": 97.514,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.983,
+        "strength": 2.72,
+        "accent": "kick"
+      },
+      {
+        "time": 98.497,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.276,
+        "strength": 2.64,
+        "accent": "kick"
+      },
+      {
+        "time": 98.773,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.427,
+        "strength": 2.47,
+        "accent": "tom"
+      },
+      {
+        "time": 99.199,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.558,
+        "strength": 2.57,
+        "accent": "kick"
+      },
+      {
+        "time": 99.758,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.981,
+        "strength": 2.9,
+        "accent": "kick"
+      },
+      {
+        "time": 100.739,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.275,
+        "strength": 3.38,
+        "accent": "kick"
+      },
+      {
+        "time": 101.014,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.282,
+        "strength": 2.8,
+        "accent": "tom"
+      },
+      {
+        "time": 101.296,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.284,
+        "strength": 2.58,
+        "accent": "tom"
+      },
+      {
+        "time": 101.579,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.559,
+        "strength": 2.74,
+        "accent": "kick"
+      },
+      {
+        "time": 102.138,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.842,
+        "strength": 2.5,
+        "accent": "tom"
+      },
+      {
+        "time": 102.98,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.28,
+        "strength": 2.64,
+        "accent": "kick"
+      },
+      {
+        "time": 103.259,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.562,
+        "strength": 2.71,
+        "accent": "tom"
+      },
+      {
+        "time": 103.822,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.559,
+        "strength": 2.39,
+        "accent": "kick"
+      },
+      {
+        "time": 104.381,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.847,
+        "strength": 2.56,
+        "accent": "tom"
+      },
+      {
+        "time": 105.227,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.276,
+        "strength": 2.7,
+        "accent": "kick"
+      },
+      {
+        "time": 105.503,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.563,
+        "strength": 2.25,
+        "accent": "tom"
+      },
+      {
+        "time": 106.066,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.558,
+        "strength": 2.32,
+        "accent": "kick"
+      },
+      {
+        "time": 106.624,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.843,
+        "strength": 2.44,
+        "accent": "tom"
+      },
+      {
+        "time": 107.467,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.278,
+        "strength": 2.69,
+        "accent": "kick"
+      },
+      {
+        "time": 107.745,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.565,
+        "strength": 2.29,
+        "accent": "tom"
+      },
+      {
+        "time": 108.311,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.418,
+        "strength": 2.4,
+        "accent": "kick"
+      },
+      {
+        "time": 108.729,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.42,
+        "strength": 2.55,
+        "accent": "kick"
+      },
+      {
+        "time": 109.149,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.562,
+        "strength": 2.3,
+        "accent": "kick"
+      },
+      {
+        "time": 109.711,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.277,
+        "strength": 2.69,
+        "accent": "kick"
+      },
+      {
+        "time": 109.988,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.289,
+        "strength": 2.33,
+        "accent": "tom"
+      },
+      {
+        "time": 110.278,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.257,
+        "strength": 1.25,
+        "accent": "kick"
+      },
+      {
+        "time": 110.535,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.577,
+        "strength": 2.22,
+        "accent": "kick"
+      },
+      {
+        "time": 111.112,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.561,
+        "strength": 2.82,
+        "accent": "kick"
+      },
+      {
+        "time": 111.673,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.561,
+        "strength": 2.76,
+        "accent": "kick"
+      },
+      {
+        "time": 112.234,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.561,
+        "strength": 2.75,
+        "accent": "kick"
+      },
+      {
+        "time": 112.795,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.561,
+        "strength": 2.63,
+        "accent": "kick"
+      },
+      {
+        "time": 113.356,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.562,
+        "strength": 2.78,
+        "accent": "kick"
+      },
+      {
+        "time": 113.917,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.559,
+        "strength": 2.74,
+        "accent": "kick"
+      },
+      {
+        "time": 114.477,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.561,
+        "strength": 2.75,
+        "accent": "kick"
+      },
+      {
+        "time": 115.038,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.56,
+        "strength": 2.65,
+        "accent": "kick"
+      },
+      {
+        "time": 115.598,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.561,
+        "strength": 2.74,
+        "accent": "kick"
+      },
+      {
+        "time": 116.159,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.561,
+        "strength": 2.73,
+        "accent": "kick"
+      },
+      {
+        "time": 116.72,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.425,
+        "strength": 2.69,
+        "accent": "kick"
+      },
+      {
+        "time": 117.145,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.283,
+        "strength": 2.44,
+        "accent": "kick"
+      },
+      {
+        "time": 117.428,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.277,
+        "strength": 2.43,
+        "accent": "kick"
+      },
+      {
+        "time": 117.705,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.28,
+        "strength": 2.36,
+        "accent": "kick"
+      },
+      {
+        "time": 117.984,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.417,
+        "strength": 2.57,
+        "accent": "kick"
+      },
+      {
+        "time": 118.401,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.56,
+        "strength": 2.22,
+        "accent": "tom"
+      },
+      {
+        "time": 118.962,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.537,
+        "strength": 2.44,
+        "accent": "snare"
+      },
+      {
+        "time": 119.499,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.446,
+        "strength": 2.13,
+        "accent": "tom"
+      },
+      {
+        "time": 119.945,
+        "lane": 2,
+        "part": "drums",
+        "duration": 1.2,
+        "strength": 2.47,
+        "accent": "kick"
+      },
+      {
+        "time": 121.765,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.564,
+        "strength": 2.98,
+        "accent": "kick"
+      },
+      {
+        "time": 122.328,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.561,
+        "strength": 2.48,
+        "accent": "tom"
+      },
+      {
+        "time": 122.889,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.56,
+        "strength": 2.62,
+        "accent": "kick"
+      },
+      {
+        "time": 123.449,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.562,
+        "strength": 2.69,
+        "accent": "tom"
+      },
+      {
+        "time": 124.011,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.559,
+        "strength": 1.95,
+        "accent": "kick"
+      },
+      {
+        "time": 124.571,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.56,
+        "strength": 2.88,
+        "accent": "tom"
+      },
+      {
+        "time": 125.13,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.559,
+        "strength": 2.45,
+        "accent": "kick"
+      },
+      {
+        "time": 125.689,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.562,
+        "strength": 2.33,
+        "accent": "snare"
+      },
+      {
+        "time": 126.251,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.559,
+        "strength": 2.5,
+        "accent": "kick"
+      },
+      {
+        "time": 126.81,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.563,
+        "strength": 2.43,
+        "accent": "snare"
+      },
+      {
+        "time": 127.373,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.561,
+        "strength": 2.28,
+        "accent": "kick"
+      },
+      {
+        "time": 127.933,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.559,
+        "strength": 2.53,
+        "accent": "tom"
+      },
+      {
+        "time": 128.492,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.56,
+        "strength": 2.25,
+        "accent": "kick"
+      },
+      {
+        "time": 129.053,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.424,
+        "strength": 2.85,
+        "accent": "tom"
+      },
+      {
+        "time": 129.477,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.28,
+        "strength": 2.81,
+        "accent": "tom"
+      },
+      {
+        "time": 129.757,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.42,
+        "strength": 2.81,
+        "accent": "tom"
+      },
+      {
+        "time": 130.178,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.277,
+        "strength": 2.61,
+        "accent": "tom"
+      },
+      {
+        "time": 130.455,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.282,
+        "strength": 2.31,
+        "accent": "tom"
+      },
+      {
+        "time": 130.737,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.562,
+        "strength": 2.53,
+        "accent": "kick"
+      },
+      {
+        "time": 131.299,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.56,
+        "strength": 3.23,
+        "accent": "tom"
+      },
+      {
+        "time": 131.859,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.56,
+        "strength": 2.48,
+        "accent": "kick"
+      },
+      {
+        "time": 132.419,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.561,
+        "strength": 2.5,
+        "accent": "tom"
+      },
+      {
+        "time": 132.981,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.559,
+        "strength": 2.32,
+        "accent": "kick"
+      },
+      {
+        "time": 133.54,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.562,
+        "strength": 2.57,
+        "accent": "tom"
+      },
+      {
+        "time": 134.103,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.558,
+        "strength": 2.47,
+        "accent": "kick"
+      },
+      {
+        "time": 134.661,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.562,
+        "strength": 2.49,
+        "accent": "snare"
+      },
+      {
+        "time": 135.223,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.558,
+        "strength": 2.33,
+        "accent": "kick"
+      },
+      {
+        "time": 135.781,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.424,
+        "strength": 2.75,
+        "accent": "tom"
+      },
+      {
+        "time": 136.205,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.281,
+        "strength": 2.55,
+        "accent": "tom"
+      },
+      {
+        "time": 136.486,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.42,
+        "strength": 2.43,
+        "accent": "tom"
+      },
+      {
+        "time": 136.906,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.277,
+        "strength": 2.82,
+        "accent": "tom"
+      },
+      {
+        "time": 137.183,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.285,
+        "strength": 2.41,
+        "accent": "tom"
+      },
+      {
+        "time": 137.468,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.552,
+        "strength": 2.37,
+        "accent": "kick"
+      },
+      {
+        "time": 138.02,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.426,
+        "strength": 3.43,
+        "accent": "tom"
+      },
+      {
+        "time": 138.446,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.281,
+        "strength": 2.72,
+        "accent": "tom"
+      },
+      {
+        "time": 138.727,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.422,
+        "strength": 2.97,
+        "accent": "tom"
+      },
+      {
+        "time": 139.149,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.274,
+        "strength": 2.55,
+        "accent": "kick"
+      },
+      {
+        "time": 139.424,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.284,
+        "strength": 1.54,
+        "accent": "kick"
+      },
+      {
+        "time": 139.708,
+        "lane": 1,
+        "part": "drums",
+        "duration": 1.2,
+        "strength": 2.42,
+        "accent": "kick"
+      },
+      {
+        "time": 148.68,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.425,
+        "strength": 2.45,
+        "accent": "kick"
+      },
+      {
+        "time": 149.105,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.421,
+        "strength": 2.81,
+        "accent": "kick"
+      },
+      {
+        "time": 149.526,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.56,
+        "strength": 2.75,
+        "accent": "kick"
+      },
+      {
+        "time": 150.086,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.276,
+        "strength": 2.62,
+        "accent": "kick"
+      },
+      {
+        "time": 150.362,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.565,
+        "strength": 3.31,
+        "accent": "tom"
+      },
+      {
+        "time": 150.927,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.558,
+        "strength": 2.64,
+        "accent": "kick"
+      },
+      {
+        "time": 151.485,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.285,
+        "strength": 2.64,
+        "accent": "tom"
+      },
+      {
+        "time": 151.77,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.561,
+        "strength": 2.8,
+        "accent": "kick"
+      },
+      {
+        "time": 152.331,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.276,
+        "strength": 2.47,
+        "accent": "kick"
+      },
+      {
+        "time": 152.607,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.565,
+        "strength": 3.4,
+        "accent": "tom"
+      },
+      {
+        "time": 153.172,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.559,
+        "strength": 2.73,
+        "accent": "kick"
+      },
+      {
+        "time": 153.731,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.283,
+        "strength": 3.35,
+        "accent": "tom"
+      },
+      {
+        "time": 154.013,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.56,
+        "strength": 2.57,
+        "accent": "kick"
+      },
+      {
+        "time": 154.573,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.277,
+        "strength": 2.68,
+        "accent": "kick"
+      },
+      {
+        "time": 154.851,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.283,
+        "strength": 3.56,
+        "accent": "tom"
+      },
+      {
+        "time": 155.134,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.246,
+        "strength": 2.05,
+        "accent": "kick"
+      },
+      {
+        "time": 155.38,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.29,
+        "strength": 1.97,
+        "accent": "snare"
+      },
+      {
+        "time": 155.67,
+        "lane": 0,
+        "part": "drums",
+        "duration": 1.2,
+        "strength": 0.67,
+        "accent": "kick"
+      },
+      {
+        "time": 159.903,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.558,
+        "strength": 2.99,
+        "accent": "kick"
+      },
+      {
+        "time": 160.461,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.562,
+        "strength": 2.68,
+        "accent": "snare"
+      },
+      {
+        "time": 161.023,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.558,
+        "strength": 3.01,
+        "accent": "kick"
+      },
+      {
+        "time": 161.581,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.562,
+        "strength": 2.59,
+        "accent": "tom"
+      },
+      {
+        "time": 162.143,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.554,
+        "strength": 2.84,
+        "accent": "kick"
+      },
+      {
+        "time": 162.697,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.57,
+        "strength": 3.49,
+        "accent": "tom"
+      },
+      {
+        "time": 163.267,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.556,
+        "strength": 2.86,
+        "accent": "kick"
+      },
+      {
+        "time": 163.822,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.563,
+        "strength": 3.57,
+        "accent": "tom"
+      },
+      {
+        "time": 164.385,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.556,
+        "strength": 3.07,
+        "accent": "kick"
+      },
+      {
+        "time": 164.941,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.565,
+        "strength": 3.75,
+        "accent": "tom"
+      },
+      {
+        "time": 165.506,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.557,
+        "strength": 2.3,
+        "accent": "kick"
+      },
+      {
+        "time": 166.063,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.564,
+        "strength": 3.51,
+        "accent": "tom"
+      },
+      {
+        "time": 166.627,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.561,
+        "strength": 2.57,
+        "accent": "kick"
+      },
+      {
+        "time": 167.188,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.417,
+        "strength": 2.98,
+        "accent": "tom"
+      },
+      {
+        "time": 167.605,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.284,
+        "strength": 2.75,
+        "accent": "tom"
+      },
+      {
+        "time": 167.889,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.414,
+        "strength": 3.2,
+        "accent": "tom"
+      },
+      {
+        "time": 168.304,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.422,
+        "strength": 3.17,
+        "accent": "tom"
+      },
+      {
+        "time": 168.726,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.703,
+        "strength": 3.26,
+        "accent": "tom"
+      },
+      {
+        "time": 169.429,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.564,
+        "strength": 3.15,
+        "accent": "tom"
+      },
+      {
+        "time": 169.993,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.563,
+        "strength": 2.98,
+        "accent": "kick"
+      },
+      {
+        "time": 170.555,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.559,
+        "strength": 2.73,
+        "accent": "tom"
+      },
+      {
+        "time": 171.115,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.558,
+        "strength": 2.75,
+        "accent": "kick"
+      },
+      {
+        "time": 171.673,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.564,
+        "strength": 3.7,
+        "accent": "tom"
+      },
+      {
+        "time": 172.237,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.556,
+        "strength": 3.14,
+        "accent": "kick"
+      },
+      {
+        "time": 172.793,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.563,
+        "strength": 3.06,
+        "accent": "tom"
+      },
+      {
+        "time": 173.356,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.556,
+        "strength": 2.73,
+        "accent": "kick"
+      },
+      {
+        "time": 173.911,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.422,
+        "strength": 3.52,
+        "accent": "tom"
+      },
+      {
+        "time": 174.333,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.282,
+        "strength": 3.28,
+        "accent": "tom"
+      },
+      {
+        "time": 174.616,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.417,
+        "strength": 2.08,
+        "accent": "tom"
+      },
+      {
+        "time": 175.033,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.285,
+        "strength": 3.58,
+        "accent": "tom"
+      },
+      {
+        "time": 175.318,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.28,
+        "strength": 2.75,
+        "accent": "tom"
+      },
+      {
+        "time": 175.597,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.423,
+        "strength": 2.86,
+        "accent": "kick"
+      },
+      {
+        "time": 176.02,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.282,
+        "strength": 2.92,
+        "accent": "kick"
+      },
+      {
+        "time": 176.302,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.278,
+        "strength": 1.91,
+        "accent": "kick"
+      },
+      {
+        "time": 176.58,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.276,
+        "strength": 2.97,
+        "accent": "kick"
+      },
+      {
+        "time": 176.856,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.395,
+        "strength": 2.76,
+        "accent": "snare"
+      },
+      {
+        "time": 177.251,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.59,
+        "strength": 2.51,
+        "accent": "tom"
+      },
+      {
+        "time": 177.842,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.556,
+        "strength": 2.23,
+        "accent": "kick"
+      },
+      {
+        "time": 178.398,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.565,
+        "strength": 2.75,
+        "accent": "tom"
+      },
+      {
+        "time": 178.962,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.564,
+        "strength": 2.56,
+        "accent": "kick"
+      },
+      {
+        "time": 179.526,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.559,
+        "strength": 2.71,
+        "accent": "tom"
+      },
+      {
+        "time": 180.085,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.562,
+        "strength": 2.28,
+        "accent": "kick"
+      },
+      {
+        "time": 180.647,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.56,
+        "strength": 3.06,
+        "accent": "snare"
+      },
+      {
+        "time": 181.207,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.557,
+        "strength": 2.77,
+        "accent": "kick"
+      },
+      {
+        "time": 181.765,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.564,
+        "strength": 3.06,
+        "accent": "tom"
+      },
+      {
+        "time": 182.329,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.559,
+        "strength": 2.68,
+        "accent": "kick"
+      },
+      {
+        "time": 182.888,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.56,
+        "strength": 2.29,
+        "accent": "tom"
+      },
+      {
+        "time": 183.448,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.563,
+        "strength": 2.56,
+        "accent": "snare"
+      },
+      {
+        "time": 184.011,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.56,
+        "strength": 2.16,
+        "accent": "snare"
+      },
+      {
+        "time": 184.571,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.563,
+        "strength": 2.23,
+        "accent": "kick"
+      },
+      {
+        "time": 185.134,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.413,
+        "strength": 2.94,
+        "accent": "tom"
+      },
+      {
+        "time": 185.548,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.281,
+        "strength": 2.44,
+        "accent": "tom"
+      },
+      {
+        "time": 185.829,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.422,
+        "strength": 2.66,
+        "accent": "tom"
+      },
+      {
+        "time": 186.251,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.28,
+        "strength": 2.95,
+        "accent": "snare"
+      },
+      {
+        "time": 186.531,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.284,
+        "strength": 3.08,
+        "accent": "tom"
+      },
+      {
+        "time": 186.815,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.28,
+        "strength": 2.37,
+        "accent": "kick"
+      },
+      {
+        "time": 187.096,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.276,
+        "strength": 1.74,
+        "accent": "kick"
+      },
+      {
+        "time": 187.372,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.564,
+        "strength": 2.99,
+        "accent": "tom"
+      },
+      {
+        "time": 187.936,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.559,
+        "strength": 2.67,
+        "accent": "kick"
+      },
+      {
+        "time": 188.495,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.563,
+        "strength": 2.96,
+        "accent": "tom"
+      },
+      {
+        "time": 189.057,
+        "lane": 1,
+        "part": "drums",
+        "duration": 0.56,
+        "strength": 2.13,
+        "accent": "kick"
+      },
+      {
+        "time": 189.617,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.565,
+        "strength": 3.07,
+        "accent": "tom"
+      },
+      {
+        "time": 190.182,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.56,
+        "strength": 2.76,
+        "accent": "kick"
+      },
+      {
+        "time": 190.742,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.562,
+        "strength": 3.08,
+        "accent": "snare"
+      },
+      {
+        "time": 191.304,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.418,
+        "strength": 2.75,
+        "accent": "kick"
+      },
+      {
+        "time": 191.722,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.279,
+        "strength": 2.45,
+        "accent": "kick"
+      },
+      {
+        "time": 192.002,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.281,
+        "strength": 3.14,
+        "accent": "kick"
+      },
+      {
+        "time": 192.283,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.382,
+        "strength": 3.08,
+        "accent": "kick"
+      },
+      {
+        "time": 192.665,
+        "lane": 2,
+        "part": "drums",
+        "duration": 0.316,
+        "strength": 3.07,
+        "accent": "snare"
+      },
+      {
+        "time": 192.981,
+        "lane": 0,
+        "part": "drums",
+        "duration": 0.259,
+        "strength": 2.75,
+        "accent": "snare"
+      },
+      {
+        "time": 193.24,
+        "lane": 3,
+        "part": "drums",
+        "duration": 0.285,
+        "strength": 1.39,
+        "accent": "snare"
+      },
+      {
+        "time": 193.524,
+        "lane": 1,
+        "part": "drums",
+        "duration": 1.2,
+        "strength": 2.41,
+        "accent": "kick"
+      }
+    ]
+  }
+}

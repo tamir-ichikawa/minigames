@@ -1,7 +1,7 @@
 // Backing stays on the song clock. Accepted drum slices start at the input time.
 export class StemPlayer {
   constructor(context,destination){this.context=context;this.destination=destination;this.parts=new Map();this.voices=new Set();this.drumVolume=1.35;}
-  setDrumVolume(value){this.drumVolume=Math.max(0,Math.min(2,Number(value)||0));for(const p of this.parts.values())if(p.role==='playable'&&p.level)p.level.gain.setTargetAtTime(this.drumVolume,this.context.currentTime,.01);}
+  setDrumVolume(value){this.drumVolume=Math.max(0,Math.min(4,Number(value)||0));for(const p of this.parts.values())if(p.role==='playable'&&p.level)p.level.gain.setTargetAtTime(this.drumVolume*(p.gain||1),this.context.currentTime,.01);}
   async load(chart){
     this.stop();this.parts.clear();
     for(const spec of chart.stems||[{id:'mix',audio:chart.audio,role:'backing'}]){
@@ -16,7 +16,7 @@ export class StemPlayer {
   start(chart,when){
     this.stop();this.startAt=when;this.clipStart=chart.clipStart;this.endAt=when+chart.duration;
     for(const p of this.parts.values()){
-      p.level=this.context.createGain();p.level.gain.value=p.role==='playable'?this.drumVolume:1;p.level.connect(this.destination);
+      p.level=this.context.createGain();p.level.gain.value=p.role==='playable'?this.drumVolume*(p.gain||1):1;p.level.connect(this.destination);
       if(p.role==='backing'){p.source=this.context.createBufferSource();p.source.buffer=p.buffer;p.source.connect(p.level);p.source.start(when,chart.clipStart,chart.duration);}
     }
   }
