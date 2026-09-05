@@ -237,6 +237,23 @@ h1 {
 .marimo-monster.one { right: 13px; bottom: 23px; }
 .marimo-monster.two { right: 59px; top: 8px; background: #8b77ee; transform: scale(.78); }
 .marimo-speed { position: absolute; left: 0; top: 27px; color: rgba(255,255,255,.85); font-size: 26px; letter-spacing: -7px; }
+.rhythm-art {
+  display: grid;
+  place-items: center;
+  background: radial-gradient(circle at 50% 50%, rgba(216,236,121,.18), transparent 40%), linear-gradient(145deg,#15261e,#0d1814);
+}
+.rhythm-disc {
+  display: grid;
+  place-items: center;
+  width: 126px;
+  height: 126px;
+  border: 1px solid rgba(216,236,121,.5);
+  border-radius: 50%;
+  color: #d8ec79;
+  background: repeating-radial-gradient(#263c2e 0 4px,#14271c 5px 9px);
+  box-shadow: 0 0 38px rgba(216,236,121,.18);
+  font-size: 43px;
+}
 .card-body { padding: 22px; }
 .card-kicker { color: #fbbf24; font-size: 12px; font-weight: 900; letter-spacing: 0.12em; }
 .card-title { margin-top: 7px; font-size: 27px; }
@@ -347,6 +364,18 @@ h1 {
             <p class="card-kicker">ONE CLICK RUN</p>
             <h3 class="card-title">ぱくぱく！まりもラン</h3>
             <p class="card-description">迫るモンスターをタイミングよく食べて、ハイスコアを目指そう。</p>
+            <span class="card-cta">プレイする →</span>
+          </div>
+        </a>
+
+        <a class="game-card" href="enzine-rythm/" aria-label="Enzine Rythmをプレイ">
+          <div class="card-art rhythm-art" aria-hidden="true">
+            <span class="rhythm-disc">♪</span>
+          </div>
+          <div class="card-body">
+            <p class="card-kicker">PLAY THE DRUMS</p>
+            <h3 class="card-title">Enzine Rythm</h3>
+            <p class="card-description">タップした瞬間にドラムが鳴る、フル尺のリズムゲーム。1タップと4レーン、3難度で遊べます。</p>
             <span class="card-cta">プレイする →</span>
           </div>
         </a>
