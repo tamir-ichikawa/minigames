@@ -7,7 +7,7 @@ window.MarimoControls = {
     music.loop = true; music.volume = .22;
     const bar = document.createElement('nav');
     bar.className = 'runner-tools';
-    bar.innerHTML = '<a href="../../">← 一覧</a><button id="runner-pause">一時停止</button><button id="runner-bgm">BGM OFF</button><button id="runner-settings">操作設定</button>';
+    bar.innerHTML = '<a href="../../../#selection">← 一覧</a><button id="runner-pause">一時停止</button><button id="runner-bgm">BGM OFF</button><button id="runner-settings">操作設定</button>';
     document.body.append(bar);
     const pad = document.createElement('button'); pad.className = 'runner-bite'; document.body.append(pad);
     const dialog = document.createElement('dialog');

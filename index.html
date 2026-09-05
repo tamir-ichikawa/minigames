@@ -288,6 +288,8 @@ h1 {
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
 }
+.collection-art{display:grid;place-items:center;background:var(--game-color)}
+.collection-art img{width:104px;height:104px;object-fit:contain}
 </style>
 </head>
 <body>
@@ -307,11 +309,11 @@ h1 {
       <header class="selection-header">
         <p class="eyebrow">SELECT A GAME</p>
         <h2 id="selection-title">どのゲームで遊ぶ？</h2>
-        <p class="selection-copy">好きなゲームを選んでスタートしよう。</p>
+        <p class="selection-copy">全26ゲーム。好きなゲームを選んでスタートしよう。</p>
       </header>
 
       <div class="game-grid">
-        <a class="game-card" href="collection/" aria-label="新しい20本のゲーム Collection 04"><div class="card-art rhythm-art" aria-hidden="true"><span class="rhythm-disc">20</span></div><div class="card-body"><p class="card-kicker">NEW / COLLECTION 04</p><h3 class="card-title">新しい20本のゲーム</h3><p class="card-description">配達、宇宙艇、カード対戦、パズル、おえかき。新しい遊び場へ。</p><span class="card-cta">ゲームを選ぶ →</span></div></a>
+        
         <a class="game-card" href="sky-jump.html" aria-label="スカイジャンプをプレイ">
           <div class="card-art" aria-hidden="true">
             <span class="moon"></span>
@@ -403,6 +405,26 @@ h1 {
             <span class="card-cta">プレイする →</span>
           </div>
         </a>
+        <a class="game-card" href="collection/games/dash/" aria-label="コハク便ダッシュをプレイ"><div class="card-art collection-art" style="--game-color:#fae5c8" aria-hidden="true"><img src="collection/assets/characters/dash.svg" alt="" width="104" height="104" loading="lazy"></div><div class="card-body"><p class="card-kicker">ACTION</p><h3 class="card-title">コハク便ダッシュ</h3><p class="card-description">安全な配達列か、金星への寄り道か。ルートを選ぼう。</p><span class="card-cta">プレイする →</span></div></a>
+        <a class="game-card" href="collection/games/shooting/" aria-label="アストラ・パトロールをプレイ"><div class="card-art collection-art" style="--game-color:#dce8f2" aria-hidden="true"><img src="collection/assets/characters/shooting.svg" alt="" width="104" height="104" loading="lazy"></div><div class="card-body"><p class="card-kicker">ACTION</p><h3 class="card-title">アストラ・パトロール</h3><p class="card-description">編隊を迎撃し、60秒で中ボス。予告を見て回避・反撃。</p><span class="card-cta">プレイする →</span></div></a>
+        <a class="game-card" href="collection/games/jump/" aria-label="ケロの空中遺跡をプレイ"><div class="card-art collection-art" style="--game-color:#deedcf" aria-hidden="true"><img src="collection/assets/characters/jump.svg" alt="" width="104" height="104" loading="lazy"></div><div class="card-body"><p class="card-kicker">ACTION</p><h3 class="card-title">ケロの空中遺跡</h3><p class="card-description">左右移動、動く足場、壊れる足場を順に学ぶ空中遺跡。</p><span class="card-cta">プレイする →</span></div></a>
+        <a class="game-card" href="collection/games/flappy/" aria-label="ルナの夜間飛行をプレイ"><div class="card-art collection-art" style="--game-color:#e5def4" aria-hidden="true"><img src="collection/assets/characters/flappy.svg" alt="" width="104" height="104" loading="lazy"></div><div class="card-body"><p class="card-kicker">ACTION</p><h3 class="card-title">ルナの夜間飛行</h3><p class="card-description">最初の3門は練習コース。10門・20門を目指そう。</p><span class="card-cta">プレイする →</span></div></a>
+        <a class="game-card" href="collection/games/flick/" aria-label="ポストン仕分け局をプレイ"><div class="card-art collection-art" style="--game-color:#f2e6c7" aria-hidden="true"><img src="collection/assets/characters/flick.svg" alt="" width="104" height="104" loading="lazy"></div><div class="card-body"><p class="card-kicker">ACTION</p><h3 class="card-title">ポストン仕分け局</h3><p class="card-description">次の荷物を見て仕分け。30個配送とエンドレス。</p><span class="card-cta">プレイする →</span></div></a>
+        <a class="game-card" href="collection/games/tsumiki/" aria-label="星灯りタワーをプレイ"><div class="card-art collection-art" style="--game-color:#e3ddf2" aria-hidden="true"><img src="collection/assets/characters/tsumiki.svg" alt="" width="104" height="104" loading="lazy"></div><div class="card-body"><p class="card-kicker">ACTION</p><h3 class="card-title">星灯りタワー</h3><p class="card-description">切れ端が落ち、10段ごとに空が変わる灯りのタワー。</p><span class="card-cta">プレイする →</span></div></a>
+        <a class="game-card" href="collection/games/tetris/" aria-label="プリズム・ラインをプレイ"><div class="card-art collection-art" style="--game-color:#d5eeeb" aria-hidden="true"><img src="collection/assets/characters/tetris.svg" alt="" width="104" height="104" loading="lazy"></div><div class="card-body"><p class="card-kicker">PUZZLE</p><h3 class="card-title">プリズム・ライン</h3><p class="card-description">壁際回転と接地猶予で、最後の一手を整えよう。</p><span class="card-cta">プレイする →</span></div></a>
+        <a class="game-card" href="collection/games/maze/" aria-label="こもれび迷宮をプレイ"><div class="card-art collection-art" style="--game-color:#e3edd4" aria-hidden="true"><img src="collection/assets/characters/maze.svg" alt="" width="104" height="104" loading="lazy"></div><div class="card-body"><p class="card-kicker">PUZZLE</p><h3 class="card-title">こもれび迷宮</h3><p class="card-description">最短で出口へ、または寄り道して木の実を集めよう。</p><span class="card-cta">プレイする →</span></div></a>
+        <a class="game-card" href="collection/games/matching/" aria-label="珊瑚のペア図鑑をプレイ"><div class="card-art collection-art" style="--game-color:#d7edf0" aria-hidden="true"><img src="collection/assets/characters/matching.svg" alt="" width="104" height="104" loading="lazy"></div><div class="card-body"><p class="card-kicker">PUZZLE</p><h3 class="card-title">珊瑚のペア図鑑</h3><p class="card-description">海の専用イラストをペアに。全札プレビュー練習も。</p><span class="card-cta">プレイする →</span></div></a>
+        <a class="game-card" href="collection/games/sudoku/" aria-label="ロジの数字研究所をプレイ"><div class="card-art collection-art" style="--game-color:#dfe7ef" aria-hidden="true"><img src="collection/assets/characters/sudoku.svg" alt="" width="104" height="104" loading="lazy"></div><div class="card-body"><p class="card-kicker">PUZZLE</p><h3 class="card-title">ロジの数字研究所</h3><p class="card-description">候補メモと理由ヒント。行・列・四角で考える数字パズル。</p><span class="card-cta">プレイする →</span></div></a>
+        <a class="game-card" href="collection/games/marubatsu/" aria-label="ノヴァと三目勝負をプレイ"><div class="card-art collection-art" style="--game-color:#e8e0ef" aria-hidden="true"><img src="collection/assets/characters/marubatsu.svg" alt="" width="104" height="104" loading="lazy"></div><div class="card-body"><p class="card-kicker">PUZZLE</p><h3 class="card-title">ノヴァと三目勝負</h3><p class="card-description">通常対戦と、一手で勝つ・リーチを止める詰め問題。</p><span class="card-cta">プレイする →</span></div></a>
+        <a class="game-card" href="collection/games/machigai/" aria-label="ミッケの鑑定室をプレイ"><div class="card-art collection-art" style="--game-color:#d8ebed" aria-hidden="true"><img src="collection/assets/characters/machigai.svg" alt="" width="104" height="104" loading="lazy"></div><div class="card-body"><p class="card-kicker">BRAIN & WORDS</p><h3 class="card-title">ミッケの鑑定室</h3><p class="card-description">色だけでなく形も見比べる、二列の模様鑑定。</p><span class="card-cta">プレイする →</span></div></a>
+        <a class="game-card" href="collection/games/anzan/" aria-label="ひらめき発電所をプレイ"><div class="card-art collection-art" style="--game-color:#f3eac6" aria-hidden="true"><img src="collection/assets/characters/anzan.svg" alt="" width="104" height="104" loading="lazy"></div><div class="card-body"><p class="card-kicker">BRAIN & WORDS</p><h3 class="card-title">ひらめき発電所</h3><p class="card-description">計算の種類を選び、間違えた問題をゆっくり復習。</p><span class="card-cta">プレイする →</span></div></a>
+        <a class="game-card" href="collection/games/karuta/" aria-label="季節の絵札帖をプレイ"><div class="card-art collection-art" style="--game-color:#f0e4cf" aria-hidden="true"><img src="collection/assets/characters/karuta.svg" alt="" width="104" height="104" loading="lazy"></div><div class="card-body"><p class="card-kicker">BRAIN & WORDS</p><h3 class="card-title">季節の絵札帖</h3><p class="card-description">季節ごとの絵札と文章。任意の読み上げにも対応。</p><span class="card-cta">プレイする →</span></div></a>
+        <a class="game-card" href="collection/games/shiritori/" aria-label="ことばの小径をプレイ"><div class="card-art collection-art" style="--game-color:#dfeddb" aria-hidden="true"><img src="collection/assets/characters/shiritori.svg" alt="" width="104" height="104" loading="lazy"></div><div class="card-body"><p class="card-kicker">BRAIN & WORDS</p><h3 class="card-title">ことばの小径</h3><p class="card-description">複数の正しい言葉から選んで、10回つなごう。</p><span class="card-cta">プレイする →</span></div></a>
+        <a class="game-card" href="collection/games/typing/" aria-label="ことば通信局をプレイ"><div class="card-art collection-art" style="--game-color:#dce7ef" aria-hidden="true"><img src="collection/assets/characters/typing.svg" alt="" width="104" height="104" loading="lazy"></div><div class="card-body"><p class="card-kicker">BRAIN & WORDS</p><h3 class="card-title">ことば通信局</h3><p class="card-description">文字数・正確さ・入力時間を分けて練習。</p><span class="card-cta">プレイする →</span></div></a>
+        <a class="game-card" href="collection/games/card_battle/" aria-label="小さな騎士の五連戦をプレイ"><div class="card-art collection-art" style="--game-color:#e8deeb" aria-hidden="true"><img src="collection/assets/characters/card_battle.svg" alt="" width="104" height="104" loading="lazy"></div><div class="card-body"><p class="card-kicker">CREATIVE</p><h3 class="card-title">小さな騎士の五連戦</h3><p class="card-description">敵の予告を読んでカードを選び、戦闘後に成長。</p><span class="card-cta">プレイする →</span></div></a>
+        <a class="game-card" href="collection/games/janken/" aria-label="ポン太の三手勝負をプレイ"><div class="card-art collection-art" style="--game-color:#eee0cc" aria-hidden="true"><img src="collection/assets/characters/janken.svg" alt="" width="104" height="104" loading="lazy"></div><div class="card-body"><p class="card-kicker">CREATIVE</p><h3 class="card-title">ポン太の三手勝負</h3><p class="card-description">気分の予告、くり返し派、均等確率から相手を選ぶ。</p><span class="card-cta">プレイする →</span></div></a>
+        <a class="game-card" href="collection/games/oekaki/" aria-label="いろのアトリエをプレイ"><div class="card-art collection-art" style="--game-color:#eee5d7" aria-hidden="true"><img src="collection/assets/characters/oekaki.svg" alt="" width="104" height="104" loading="lazy"></div><div class="card-body"><p class="card-kicker">CREATIVE</p><h3 class="card-title">いろのアトリエ</h3><p class="card-description">ペン・直線・丸・下絵。UndoとRedoで自由に描こう。</p><span class="card-cta">プレイする →</span></div></a>
+        <a class="game-card" href="collection/games/marimo-run/" aria-label="モグモグ・ポムをプレイ"><div class="card-art collection-art" style="--game-color:#f3e5cf" aria-hidden="true"><img src="collection/assets/characters/marimo-run.svg" alt="" width="104" height="104" loading="lazy"></div><div class="card-body"><p class="card-kicker">ACTION</p><h3 class="card-title">モグモグ・ポム</h3><p class="card-description">最初の敵で食べるタイミングを練習。3段階の変身へ。</p><span class="card-cta">プレイする →</span></div></a>
       </div>
 
       <p class="footer-note">MINI GAME SERIES · MORE GAMES COMING SOON</p>
@@ -415,10 +437,12 @@ const opening = document.getElementById('opening');
 const selection = document.getElementById('selection');
 const showGamesButton = document.getElementById('show-games');
 
-showGamesButton.addEventListener('click', () => {
+function showGames() {
   opening.classList.add('is-hidden');
   selection.classList.add('is-visible');
-});
+}
+showGamesButton.addEventListener('click', () => { showGames(); history.replaceState(null, '', '#selection'); });
+if (location.hash === '#selection') showGames();
 </script>
 </body>
 </html>
