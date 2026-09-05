@@ -19,7 +19,7 @@
       "audio": "assets/bgm/pulse-bass.mp3",
       "role": "playable",
       "gain": 1,
-      "defaultVolume": 2
+      "defaultVolume": 4
     }
   ],
   "chartRevision": "bass-impact-1",

@@ -17,7 +17,8 @@
       "id": "drums",
       "label": "ドラム",
       "audio": "assets/bgm/kappa-drums.mp3",
-      "role": "playable"
+      "role": "playable",
+      "defaultVolume": 1.755
     }
   ],
   "chartRevision": "impact-input-hard-4",

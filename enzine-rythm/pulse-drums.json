@@ -18,7 +18,8 @@
       "label": "ドラム",
       "audio": "assets/bgm/pulse-drums.mp3",
       "role": "playable",
-      "gain": 1.12
+      "gain": 1.12,
+      "defaultVolume": 1.755
     }
   ],
   "chartRevision": "impact-input-hard-4",

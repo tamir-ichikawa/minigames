@@ -1,7 +1,7 @@
 // Backing stays on the song clock. Accepted drum slices start at the input time.
 export class StemPlayer {
   constructor(context,destination){this.context=context;this.destination=destination;this.parts=new Map();this.voices=new Set();this.drumVolume=1.35;}
-  setDrumVolume(value){this.drumVolume=Math.max(0,Math.min(4,Number(value)||0));for(const p of this.parts.values())if(p.role==='playable'&&p.level)p.level.gain.setTargetAtTime(this.drumVolume*(p.gain||1),this.context.currentTime,.01);}
+  setDrumVolume(value){this.drumVolume=Math.max(0,Math.min(6,Number(value)||0));for(const p of this.parts.values())if(p.role==='playable'&&p.level)p.level.gain.setTargetAtTime(this.drumVolume*(p.gain||1),this.context.currentTime,.01);}
   async load(chart){
     this.stop();this.parts.clear();
     for(const spec of chart.stems||[{id:'mix',audio:chart.audio,role:'backing'}]){

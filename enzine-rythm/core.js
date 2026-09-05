@@ -5,7 +5,7 @@ export function validateChart(c){
   if(typeof c.audio!=='string'||! /^(?:\.\.\/)?assets\/bgm\/[\w.-]+\.mp3$/.test(c.audio))throw Error('音源は assets/bgm 内のMP3を指定してください');
   if(c.stems){
     if(!Array.isArray(c.stems)||c.stems.length<2||c.stems.length>8||new Set(c.stems.map(p=>p.id)).size!==c.stems.length)throw Error('パート構成が不正です');
-    for(const p of c.stems)if(!/^[a-z][a-z0-9-]*$/.test(p.id)||(p.label!==undefined&&typeof p.label!=='string')||(p.gain!==undefined&&(!Number.isFinite(p.gain)||p.gain<.5||p.gain>2))||(p.defaultVolume!==undefined&&(!Number.isFinite(p.defaultVolume)||p.defaultVolume<0||p.defaultVolume>4))||!['backing','playable'].includes(p.role)||! /^(?:\.\.\/)?assets\/bgm\/[\w.-]+\.mp3$/.test(p.audio))throw Error('パート音源を確認してください');
+    for(const p of c.stems)if(!/^[a-z][a-z0-9-]*$/.test(p.id)||(p.label!==undefined&&typeof p.label!=='string')||(p.gain!==undefined&&(!Number.isFinite(p.gain)||p.gain<.5||p.gain>2))||(p.defaultVolume!==undefined&&(!Number.isFinite(p.defaultVolume)||p.defaultVolume<0||p.defaultVolume>6))||!['backing','playable'].includes(p.role)||! /^(?:\.\.\/)?assets\/bgm\/[\w.-]+\.mp3$/.test(p.audio))throw Error('パート音源を確認してください');
     if(!c.stems.some(p=>p.role==='backing')||!c.stems.some(p=>p.role==='playable'))throw Error('伴奏と演奏パートが必要です');
     for(const ns of Object.values(c.charts||{}))for(const n of ns)if(!c.stems.some(p=>p.id===n.part&&p.role==='playable')||!Number.isFinite(n.duration)||n.duration<=0||n.time+n.duration>c.duration+.002)throw Error('ノーツのパート・発音時間を確認してください');
   }

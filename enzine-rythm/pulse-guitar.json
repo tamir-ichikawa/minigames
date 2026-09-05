@@ -18,7 +18,8 @@
       "label": "ギター",
       "audio": "assets/bgm/pulse-guitar.mp3",
       "role": "playable",
-      "gain": 1.18
+      "gain": 1.18,
+      "defaultVolume": 1.755
     }
   ],
   "chartRevision": "guitar-impact-1",
