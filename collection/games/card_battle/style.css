@@ -53,3 +53,9 @@ body{background:#1a1a2e;display:flex;justify-content:center;align-items:center;h
 #intent{color:#ffdb8c!important}
 
 .hand button.card{color:#ffe3a5;font:inherit;min-height:100px}#title-screen h1{font-size:clamp(22px,6vw,28px)}
+
+/* v2 feedback, keeping the existing intent and growth layout. */
+.round-bar{display:flex;justify-content:center;gap:6px;padding:4px}.round-dot{width:22px;height:22px;border-radius:50%;display:grid;place-items:center;font-size:13px;background:#ffffff16}.round-dot.done{background:#66bb6a}.round-dot.current{background:#ffd740;box-shadow:0 0 8px #ffd74080}.round-dot.future{opacity:.45}
+.hp-bar.player.danger{background:linear-gradient(90deg,#ff9800,#ffb74d)}.hp-bar.player.critical{background:linear-gradient(90deg,#ef5350,#ff8a80)}.char.shield-active{filter:drop-shadow(0 0 10px #64b5f6)}
+.card.atk{border-color:#ef5350}.card.heal-card{border-color:#66bb6a}.card.shield-card{border-color:#42a5f5}.card.special-card{border-color:#ffd740}
+@media(max-height:700px){#g{height:auto;overflow:visible}.screen{position:relative;inset:auto;min-height:calc(100dvh - 130px);padding:6px 0}.screen.hidden{display:none}.arena{flex:0;min-height:76px}.hp-area{padding:5px}.round-info{padding:2px}.round-bar{padding:2px}.hand .card{padding:7px 5px}.card .icon{font-size:26px}#intent{margin:4px 0}.msg-bar{min-height:32px;padding:5px}#result-screen p{text-align:center;padding:0 10px}}

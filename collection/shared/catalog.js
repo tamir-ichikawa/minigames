@@ -198,5 +198,165 @@ const GAME_CATALOG=[
     "description": "最初の敵で食べるタイミングを練習。3段階の変身へ。",
     "tag": "",
     "art": "assets/characters/marimo-run.svg"
+  },
+  {
+    "id": "beat_tap",
+    "title": "ビートタップ",
+    "category": "other",
+    "icon": "🥁",
+    "color": "#eddef1",
+    "description": "拍に合わせてタップ。速さを選んでタイミングを磨こう。",
+    "tag": "",
+    "art": "assets/characters/beat_tap.svg"
+  },
+  {
+    "id": "breakout",
+    "title": "ブロック崩し",
+    "category": "action",
+    "icon": "🧱",
+    "color": "#e2ecdb",
+    "description": "パドルでボールを返し、ブロックを消して次のレベルへ。",
+    "tag": "",
+    "art": "assets/characters/breakout.svg"
+  },
+  {
+    "id": "bubble",
+    "title": "バブルポップ",
+    "category": "action",
+    "icon": "🫧",
+    "color": "#e2ecdb",
+    "description": "泡をタップして連鎖。60秒でハイスコアを目指そう。",
+    "tag": "",
+    "art": "assets/characters/bubble.svg"
+  },
+  {
+    "id": "coin",
+    "title": "コインキャッチ",
+    "category": "action",
+    "icon": "🪙",
+    "color": "#e2ecdb",
+    "description": "かごを動かしてコインを集め、危険な落下物をよけよう。",
+    "tag": "",
+    "art": "assets/characters/coin.svg"
+  },
+  {
+    "id": "colormatch",
+    "title": "カラーマッチ",
+    "category": "brain",
+    "icon": "🎨",
+    "color": "#e3e8f3",
+    "description": "文字に惑わされず、お題と同じ色を選ぼう。",
+    "tag": "",
+    "art": "assets/characters/colormatch.svg"
+  },
+  {
+    "id": "crane",
+    "title": "クレーンゲーム",
+    "category": "action",
+    "icon": "🏗️",
+    "color": "#e2ecdb",
+    "description": "クレーンを止めるタイミングを狙って景品を集めよう。",
+    "tag": "",
+    "art": "assets/characters/crane.svg"
+  },
+  {
+    "id": "fruitcut",
+    "title": "フルーツカット",
+    "category": "action",
+    "icon": "🍎",
+    "color": "#e2ecdb",
+    "description": "指でフルーツを切ろう。爆弾に注意！",
+    "tag": "",
+    "art": "assets/characters/fruitcut.svg"
+  },
+  {
+    "id": "hanoi",
+    "title": "ハノイの塔",
+    "category": "puzzle",
+    "icon": "🗼",
+    "color": "#f2e8d4",
+    "description": "円盤を一枚ずつ動かして、右の棒へ積み直そう。",
+    "tag": "",
+    "art": "assets/characters/hanoi.svg"
+  },
+  {
+    "id": "numorder",
+    "title": "数字順タップ",
+    "category": "brain",
+    "icon": "🔢",
+    "color": "#e3e8f3",
+    "description": "散らばった数字を1から順番に探してタップ。",
+    "tag": "",
+    "art": "assets/characters/numorder.svg"
+  },
+  {
+    "id": "pattern",
+    "title": "パターン記憶",
+    "category": "brain",
+    "icon": "🧠",
+    "color": "#e3e8f3",
+    "description": "光る順番を覚えて再現。3回のチャンスでどこまで進める？",
+    "tag": "",
+    "art": "assets/characters/pattern.svg"
+  },
+  {
+    "id": "pong",
+    "title": "ピンポン",
+    "category": "action",
+    "icon": "🏓",
+    "color": "#e2ecdb",
+    "description": "パドルを動かして相手のコートへ打ち返そう。",
+    "tag": "",
+    "art": "assets/characters/pong.svg"
+  },
+  {
+    "id": "reflex",
+    "title": "反射神経テスト",
+    "category": "brain",
+    "icon": "⚡",
+    "color": "#e3e8f3",
+    "description": "緑に変わった瞬間をタップ。5回の反応時間を比べよう。",
+    "tag": "",
+    "art": "assets/characters/reflex.svg"
+  },
+  {
+    "id": "renda",
+    "title": "連打チャレンジ",
+    "category": "action",
+    "icon": "💥",
+    "color": "#e2ecdb",
+    "description": "時間内に何回タップできる？モードを選んで挑戦。",
+    "tag": "",
+    "art": "assets/characters/renda.svg"
+  },
+  {
+    "id": "slot",
+    "title": "絵柄スロット",
+    "category": "other",
+    "icon": "🎰",
+    "color": "#eddef1",
+    "description": "リールを止めて絵柄を揃えよう。ゲーム内コインで遊べます。",
+    "tag": "",
+    "art": "assets/characters/slot.svg"
+  },
+  {
+    "id": "speed_tap",
+    "title": "早押しタップ",
+    "category": "action",
+    "icon": "🎯",
+    "color": "#e2ecdb",
+    "description": "ターゲットを狙って連続タップ。ボムを避けてコンボを伸ばそう。",
+    "tag": "",
+    "art": "assets/characters/speed_tap.svg"
+  },
+  {
+    "id": "which_more",
+    "title": "どっちが多い？",
+    "category": "brain",
+    "icon": "🤔",
+    "color": "#e3e8f3",
+    "description": "ふたつの箱を見比べて、数が多い方を選ぼう。",
+    "tag": "",
+    "art": "assets/characters/which_more.svg"
   }
 ];

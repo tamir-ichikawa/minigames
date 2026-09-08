@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>どっちが多い？</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../../shared/shell.css"><script>window.GAME_CONFIG={"id":"which_more","title":"どっちが多い？","controls":[],"fixed60":false}</script><script src="../../shared/shell.js"></script><link rel="icon" href="../../shared/favicon.svg"></head>
+<body>
+<div id="g">
+  <div id="titleScreen" class="screen active">
+    <h1>どっちが多い？🤔</h1>
+    <div style="font-size:50px;margin:12px 0">🤔🤔</div>
+    <p style="font-size:14px;color:#888;margin:8px 20px;line-height:1.6">2つの箱を見くらべて<br>えもじが多い方をタップ！<br>同じならどちらを選んでもOK！</p>
+    <button class="btn" id="startBtn">スタート！</button>
+  </div>
+
+  <div id="playScreen" class="screen">
+    <div class="info">
+      <div>ラウンド: <span id="rnd">1</span>/15</div>
+      <div>スコア: <span id="sc">0</span></div>
+    </div>
+    <div class="timer-bar"><div class="timer-fill" id="timerFill" style="width:100%"></div></div>
+    <div class="streak" id="streak"></div>
+    <p style="font-size:14px;color:#888;margin:4px 0">どっちが多い？タップ！</p>
+    <div class="boxes">
+      <div class="box" id="boxL"></div>
+      <div class="vs">VS</div>
+      <div class="box" id="boxR"></div>
+    </div>
+    <div class="feedback" id="feedback"></div>
+  </div>
+
+  <div id="resultScreen" class="screen">
+    <div class="result">
+      <h2 id="rTitle"></h2>
+      <div style="font-size:50px;margin:10px 0" id="rEmoji"></div>
+      <p id="rScore" style="font-weight:bold;color:#FF6F00;font-size:22px"></p>
+      <p id="rStats" style="color:#888"></p>
+      <button class="btn" id="retryBtn">もういっかい！</button>
+    </div>
+  </div>
+</div>
+<script src="game.js"></script>
+</body>
+</html>

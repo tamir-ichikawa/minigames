@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>数字順タップ</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../../shared/shell.css"><script>window.GAME_CONFIG={"id":"numorder","title":"数字順タップ","controls":[],"fixed60":false}</script><script src="../../shared/shell.js"></script><link rel="icon" href="../../shared/favicon.svg"></head>
+<body>
+<div id="g">
+  <div id="titleScreen" class="screen active">
+    <h1>数字順タップ🔢</h1>
+    <div style="font-size:55px;margin:12px 0">🔢🔢</div>
+    <p style="font-size:14px;color:#888;margin:8px 20px">1→2→3…の順番に<br>数字をタップしよう！</p>
+    <div class="diff-btns">
+      <button class="diff-btn active" id="d9">9コ</button>
+      <button class="diff-btn" id="d16">16コ</button>
+      <button class="diff-btn" id="d25">25コ</button>
+    </div>
+    <button class="btn" id="startBtn">スタート！</button>
+  </div>
+
+  <div id="playScreen" class="screen">
+    <div class="info">
+      <div>つぎ: <span id="nextNum">1</span></div>
+      <div>タイム: <span id="timer">0.0</span>秒</div>
+    </div>
+    <div class="grid" id="grid"></div>
+    <div class="speech" id="speech">1から順番にタップ！🔢</div>
+  </div>
+
+  <div id="resultScreen" class="screen">
+    <div class="result">
+      <h2 id="rTitle"></h2>
+      <div style="font-size:55px;margin:10px 0" id="rEmoji"></div>
+      <p id="rTime" style="font-weight:bold;color:#1565C0;font-size:24px"></p>
+      <p id="rBest" style="font-size:14px;color:#999"></p>
+      <button class="btn" id="retryBtn">もういっかい！</button>
+      <button class="btn" id="backBtn" style="background:#999">タイトルへ</button>
+    </div>
+  </div>
+</div>
+<script src="game.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+{
+  "date": "2026-09-09",
+  "newGames": [
+    {
+      "id": "beat_tap",
+      "source": "beat_tap_mitan_v2.html",
+      "version": 2,
+      "sha256": "317e5206f6d7f006818cd36657eb098d99fb63cd0153fecf0fd43b78c2b232db"
+    },
+    {
+      "id": "breakout",
+      "source": "breakout_mitan.html",
+      "version": 1,
+      "sha256": "4074d1f797f6c1ae5eb017a8841263032e97093d25491a42b9a31299404e03c3"
+    },
+    {
+      "id": "bubble",
+      "source": "bubble_mitan_v2.html",
+      "version": 2,
+      "sha256": "62adc8f729345f9e0a13f220a162a34b2fbc73154eea6b9a0ae9d41ffe54db8d"
+    },
+    {
+      "id": "coin",
+      "source": "coin_mitan.html",
+      "version": 1,
+      "sha256": "9b327d20085a8e02913c7f3a510d41cc0a1a1618346d5aa00f30e58df6d22825"
+    },
+    {
+      "id": "colormatch",
+      "source": "colormatch_mitan.html",
+      "version": 1,
+      "sha256": "b2678e6fa546a529cdb29ddc49ee90824c0287126ad93be774ba0b521f4c4e2a"
+    },
+    {
+      "id": "crane",
+      "source": "crane_mitan.html",
+      "version": 1,
+      "sha256": "0c1cdf48f7b48fd40e9c9dc409151b8472182f1572ace682907deb779993001f"
+    },
+    {
+      "id": "fruitcut",
+      "source": "fruitcut_mitan_v2.html",
+      "version": 2,
+      "sha256": "a29c56bf569f8aa056479c02ea5a7cfa4b8087a30afe2f366a405f3e66905f9f"
+    },
+    {
+      "id": "hanoi",
+      "source": "hanoi_mitan.html",
+      "version": 1,
+      "sha256": "d0c8508bb516ff4396b415983f393130054f5eb4ec14e28d2715d3e26d4f75d4"
+    },
+    {
+      "id": "numorder",
+      "source": "numorder_mitan_v2.html",
+      "version": 2,
+      "sha256": "8f1b555102689332048239cb00176c6a57e275923a5b2a6410d696abf19099ce"
+    },
+    {
+      "id": "pattern",
+      "source": "pattern_mitan_v4.html",
+      "version": 4,
+      "sha256": "905776d110b719cbceb10dbcd1996f948295f88c8cac0988d75cea08e6cf71e9"
+    },
+    {
+      "id": "pong",
+      "source": "pong_mitan.html",
+      "version": 1,
+      "sha256": "a9cff35f2bebf9e2becdcbdd442d19b7df47427156bd580f70d49522f847646a"
+    },
+    {
+      "id": "reflex",
+      "source": "reflex_mitan_v2.html",
+      "version": 2,
+      "sha256": "2c7a605614155d3f67c24d082290cfb4d3328c823c1d2c6ba02a81a199398125"
+    },
+    {
+      "id": "renda",
+      "source": "renda_mitan_v2.html",
+      "version": 2,
+      "sha256": "345ddc53392e43a881fb1f048b44c642e10ab7aa366ce8c7eaeebb157ff601c6"
+    },
+    {
+      "id": "slot",
+      "source": "slot_mitan.html",
+      "version": 1,
+      "sha256": "b792ca4e36a965c4a1c9677b4419c5d38f47634eff7aa97df6116971814dcd12"
+    },
+    {
+      "id": "speed_tap",
+      "source": "speed_tap_mitan_v2.html",
+      "version": 2,
+      "sha256": "dba4a3d32767ee2c58b7b3391edce3525f3629ffaa52e4970b0fb5863c76cc6d"
+    },
+    {
+      "id": "which_more",
+      "source": "which_more_mitan.html",
+      "version": 1,
+      "sha256": "613c845b381134843bd82550277d77b9559570fcc3ef5711045608302dafc112"
+    }
+  ]
+}

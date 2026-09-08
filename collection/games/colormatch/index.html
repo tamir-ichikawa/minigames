@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>カラーマッチ</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../../shared/shell.css"><script>window.GAME_CONFIG={"id":"colormatch","title":"カラーマッチ","controls":[],"fixed60":false}</script><script src="../../shared/shell.js"></script><link rel="icon" href="../../shared/favicon.svg"></head>
+<body>
+<div id="g">
+  <div id="titleScreen" class="screen active">
+    <h1>カラーマッチ🎨</h1>
+    <div style="font-size:50px;margin:12px 0">🎨🎨</div>
+    <p style="font-size:14px;color:#888;margin:8px 20px;line-height:1.6">表示された色と同じボタンを<br>素早くタップ！<br>⚠️ 文字に惑わされないでね！</p>
+    <button class="btn" id="startBtn">スタート！</button>
+  </div>
+
+  <div id="playScreen" class="screen">
+    <div class="info">
+      <div>ラウンド: <span id="rnd">1</span>/20</div>
+      <div>スコア: <span id="sc">0</span></div>
+    </div>
+    <div class="timer-bar"><div class="timer-fill" id="timerFill" style="width:100%"></div></div>
+    <div class="streak" id="streak"></div>
+    <div class="target-color" id="targetColor">この色！</div>
+    <div class="feedback" id="feedback"></div>
+    <div class="color-btns" id="colorBtns"></div>
+  </div>
+
+  <div id="resultScreen" class="screen">
+    <div class="result">
+      <h2 id="rTitle"></h2>
+      <div style="font-size:50px;margin:10px 0" id="rEmoji"></div>
+      <p id="rScore" style="font-weight:bold;color:#7B1FA2;font-size:22px"></p>
+      <p id="rStats" style="color:#888"></p>
+      <p id="rBest" style="font-size:13px;color:#999"></p>
+      <button class="btn" id="retryBtn">もういっかい！</button>
+    </div>
+  </div>
+</div>
+<script src="game.js"></script>
+</body>
+</html>

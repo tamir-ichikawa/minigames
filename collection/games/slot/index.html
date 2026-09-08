@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>絵柄スロット</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../../shared/shell.css"><script>window.GAME_CONFIG={"id":"slot","title":"絵柄スロット","controls":[],"fixed60":false}</script><script src="../../shared/shell.js"></script><link rel="icon" href="../../shared/favicon.svg"></head>
+<body>
+<div id="g">
+  <div id="titleScreen" class="screen active">
+    <h1>スロット🎰</h1>
+    <div style="font-size:55px;margin:12px 0">🎰🎰</div>
+    <p style="font-size:14px;color:#aaa;margin:8px 20px;line-height:1.6">リールを回して絵柄を揃えよう！<br>3つ揃ったら大当たり！🎉</p>
+    <div class="paytable">
+      <strong>配当表</strong><br>
+      🎰🎰🎰 = 100コイン 🎉<br>
+      💎💎💎 = 50コイン<br>
+      ⭐⭐⭐ = 30コイン<br>
+      🌸🌸🌸 = 20コイン<br>
+      2つ揃い = 5コイン
+    </div>
+    <button class="spin-btn" id="startBtn">スタート！</button>
+  </div>
+
+  <div id="playScreen" class="screen">
+    <div class="coins">🪙 <span id="coins">100</span> コイン</div>
+    <div class="machine" id="machine">
+      <div class="payline"></div>
+      <div class="reels">
+        <div class="reel" id="r0">🎰</div>
+        <div class="reel" id="r1">⭐</div>
+        <div class="reel" id="r2">🌸</div>
+      </div>
+      <div class="payline"></div>
+    </div>
+    <div class="msg" id="msg">スピンしてね〜！🎰</div>
+    <div class="btn-area">
+      <button class="spin-btn" id="spinBtn">🎰 スピン！</button>
+    </div>
+    <div class="stop-btns">
+      <button class="stop-btn" id="s0" disabled>止める</button>
+      <button class="stop-btn" id="s1" disabled>止める</button>
+      <button class="stop-btn" id="s2" disabled>止める</button>
+    </div>
+    <div style="font-size:12px;color:#888;margin-top:6px">1スピン = 10コイン</div>
+  </div>
+
+  <div id="resultScreen" class="screen">
+    <div class="result">
+      <h1 id="rTitle"></h1>
+      <div style="font-size:55px;margin:10px 0" id="rEmoji"></div>
+      <p id="rMsg"></p>
+      <p id="rCoins" style="font-weight:bold;color:#FFD740;font-size:20px"></p>
+      <button class="spin-btn" id="retryBtn" style="margin-top:16px">もういっかい！</button>
+    </div>
+  </div>
+</div>
+<script src="game.js"></script>
+</body>
+</html>

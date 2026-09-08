@@ -16,7 +16,7 @@
   </div>
 
   <div id="battle-screen" class="screen hidden">
-    <div class="round-info" id="roundInfo"></div>
+    <div class="round-info" id="roundInfo"></div><div class="round-bar" id="roundBar" aria-label="対戦の進み具合"></div>
     <div class="hp-area">
       <span id="eName">???</span>
       <div class="hp-bar-bg"><div class="hp-bar enemy" id="eBar" style="width:100%"></div></div>
@@ -39,7 +39,7 @@
   <div id="result-screen" class="screen hidden">
     <h2 id="resultTitle"></h2>
     <p id="resultMsg"></p>
-    <button class="btn" onclick="backToTitle()">タイトルへ</button>
+    <button class="btn" onclick="startGame()">もういっかい！</button><button class="btn" onclick="backToTitle()">タイトルへ</button>
   </div>
 </div>
 

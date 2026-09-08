@@ -75,7 +75,7 @@ function renderHand(hand){
   let h=$('hand');h.innerHTML='';
   hand.forEach(c=>{
     let div=document.createElement('div');
-    div.className='card';
+    div.className='card '+({attack:'atk',heal:'heal-card',shield:'shield-card',special:'special-card'}[c.type]||'');
     div.innerHTML=`<div class="icon">${c.icon}</div><div class="name">${c.name}</div><div class="desc">${c.desc}</div><div class="pwr">${c.type==='attack'||c.type==='special'?'ダメージ: '+(c.power+attackBonus+charge):c.type==='heal'?'回復: '+(c.power+healBonus):'防御 75%'}</div>`;
     div.onclick=()=>{if(playing)playCard(c)};
     h.appendChild(div);
@@ -152,6 +152,10 @@ function showDmg(val,isHeal,isPlayer){
 }
 
 function updateBars(){
+  $('roundBar').innerHTML=ENEMIES.map((e,i)=>'<span class="round-dot '+(i<enemyIdx?'done':i===enemyIdx?'current':'future')+'" aria-label="'+(i+1)+'戦目 '+(i<enemyIdx?'突破':i===enemyIdx?'対戦中':'未対戦')+'">'+e.emoji+'</span>').join('');
+  $('pBar').classList.toggle('danger',playerHP/playerMaxHP<=.5&&playerHP/playerMaxHP>.25);
+  $('pBar').classList.toggle('critical',playerHP/playerMaxHP<=.25);
+  $('pChar').classList.toggle('shield-active',shielded);
   $('pBar').style.width=(playerHP/playerMaxHP*100)+'%';
   $('eBar').style.width=(enemyHP/enemyMaxHP*100)+'%';
   $('pHP').textContent=playerHP+'/'+playerMaxHP;

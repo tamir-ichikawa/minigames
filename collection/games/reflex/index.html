@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>反射神経テスト</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../../shared/shell.css"><script>window.GAME_CONFIG={"id":"reflex","title":"反射神経テスト","controls":[],"fixed60":false}</script><script src="../../shared/shell.js"></script><link rel="icon" href="../../shared/favicon.svg"></head>
+<body>
+<div id="g">
+  <div id="titleScreen" class="screen active" style="background:#1a1a2e">
+    <h1>反射神経テスト⚡</h1>
+    <div class="emoji-big">⚡⚡</div>
+    <p class="sub">赤い画面が緑に変わったら</p>
+    <p class="sub">できるだけ早くタップ！</p>
+    <p class="sub" style="margin-top:10px;color:#FF8A80">⚠️ 緑になる前にタップしたらアウト！</p>
+    <button class="btn" id="startBtn">スタート！（5回勝負）</button>
+  </div>
+
+  <div id="playScreen" class="screen play-bg">
+    <div class="round-info" id="roundInfo">1 / 5</div>
+    <div class="msg" id="msg">まってね…</div>
+    <div class="msg-sub" id="msgSub">緑になったらタップ！</div>
+    <div class="time-display" id="timeDisplay"></div>
+    <div class="history" id="history"></div>
+  </div>
+
+  <div id="resultScreen" class="screen" style="background:#1a1a2e">
+    <div class="result">
+      <h2 id="rTitle"></h2>
+      <div class="emoji-big" id="rEmoji"></div>
+      <p id="rAvg" style="font-weight:bold;color:#FFD740;font-size:24px"></p>
+      <p id="rBest" style="color:#4CAF50"></p>
+      <p id="rWorst" style="color:#FF9800"></p>
+      <div class="history" id="historyResult"></div>
+      <p id="rRecord" style="font-size:13px;color:#666;margin-top:8px"></p>
+      <button class="btn" id="retryBtn">もういっかい！</button>
+    </div>
+  </div>
+</div>
+<script src="game.js"></script>
+</body>
+</html>

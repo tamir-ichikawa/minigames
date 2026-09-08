@@ -33,8 +33,9 @@ function addPlatform(y){
 
 function jump(){
   player.vy=-8.5-Math.min(score/800,2);
-  for(var i=0;i<4;i++){
-    particles.push({x:player.x,y:player.y+12,vx:(Math.random()-0.5)*3,vy:Math.random()*2,life:12,r:2+Math.random()*2,color:'#FFB6C1'});
+  GameShell.feedback(true);
+  for(var i=0;i<6;i++){
+    particles.push({x:player.x,y:player.y+12,vx:(Math.random()-0.5)*3,vy:Math.random()*2,life:14,r:2+Math.random()*3,color:'#c8ed89'});
   }
 }
 
@@ -56,12 +57,10 @@ document.addEventListener('keyup',function(e){
 });
 
 function drawBg(){
-  var g=X.createLinearGradient(0,0,0,H);
-  g.addColorStop(0,'#6EC6FF');g.addColorStop(0.7,'#B3E5FC');g.addColorStop(1,'#C8E6C9');
-  X.fillStyle=g;X.fillRect(0,0,W,H);
-  X.save();X.fillStyle='rgba(67,113,123,.14)';
-  for(var i=0;i<7;i++){var y=((i*113-(scrollY||0)*.15)%750+750)%750-100;X.fillRect(i%2?330:22,y,30,120);X.fillRect(i%2?320:12,y,50,12);}
-  X.restore();
+  var phase=Math.min((score||0)/500,1),g=X.createLinearGradient(0,0,0,H);
+  g.addColorStop(0,'rgb('+Math.floor(110-phase*60)+','+Math.floor(198-phase*40)+',255)');
+  g.addColorStop(.7,'rgb('+Math.floor(179-phase*80)+','+Math.floor(229-phase*60)+',252)');
+  g.addColorStop(1,'#C8E6C9');X.fillStyle=g;X.fillRect(0,0,W,H);
 }
 
 function drawPlatform(p){
@@ -91,7 +90,7 @@ function drawParticles(){
     var p=particles[i];
     p.x+=p.vx;p.y+=p.vy;p.life--;
     if(p.life<=0){particles.splice(i,1);continue;}
-    X.globalAlpha=p.life/12;
+    X.globalAlpha=Math.min(1,p.life/14);
     X.fillStyle=p.color;
     X.beginPath();X.arc(p.x,p.y-scrollY,p.r,0,Math.PI*2);X.fill();
     X.globalAlpha=1;
@@ -104,6 +103,7 @@ function drawHUD(){
   X.strokeStyle='rgba(0,0,0,0.2)';X.lineWidth=3;
   X.strokeText('スコア: '+score,12,30);
   X.fillText('スコア: '+score,12,30);X.font='14px sans-serif';X.fillText(lesson,12,54);
+  if(score>=100&&score%100<5){X.textAlign='center';X.font='bold 18px sans-serif';X.fillStyle='#ffe875';X.fillText(Math.floor(score/100)*100+'点 到達！',W/2,80);}
   X.restore();
 }
 

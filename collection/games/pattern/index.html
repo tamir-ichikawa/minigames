@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>パターン記憶</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../../shared/shell.css"><script>window.GAME_CONFIG={"id":"pattern","title":"パターン記憶","controls":[],"fixed60":false}</script><script src="../../shared/shell.js"></script><link rel="icon" href="../../shared/favicon.svg"></head>
+<body>
+<div id="g">
+  <div id="titleScreen" class="screen active">
+    <h1>パターン記憶🧠</h1>
+    <div style="font-size:55px;margin:12px 0">🧠🧠</div>
+    <p style="font-size:14px;color:#888;margin:8px 20px;line-height:1.6">光った順番をおぼえて<br>同じ順番でタップしてね〜！<br>まちがえても3回までOK！</p>
+    <button class="btn" id="startBtn">スタート！</button>
+  </div>
+
+  <div id="playScreen" class="screen">
+    <div class="info">
+      <div>レベル: <span id="lv">1</span></div>
+      <div>スコア: <span id="sc">0</span></div>
+    </div>
+    <div class="lives" id="lives">💖💖💖</div>
+    <div class="status" id="status">みてね〜！👀</div>
+    <div class="grid" id="grid"></div>
+    <div class="speech" id="speech">光った順番をおぼえてね〜！🧠</div>
+  </div>
+
+  <div id="resultScreen" class="screen">
+    <div class="result">
+      <h2 id="rTitle"></h2>
+      <div style="font-size:55px;margin:10px 0" id="rEmoji"></div>
+      <p id="rScore" style="font-weight:bold;color:#5C6BC0;font-size:20px"></p>
+      <p id="rLevel" style="color:#888"></p>
+      <p id="rBest" style="font-size:13px;color:#999"></p>
+      <button class="btn" id="retryBtn">もういっかい！</button>
+    </div>
+  </div>
+</div>
+<script src="game.js"></script>
+</body>
+</html>
