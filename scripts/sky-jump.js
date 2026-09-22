@@ -16,13 +16,14 @@
     bestCombo: document.querySelector('#best-combo-value')
   };
 
-  const STATES = Object.freeze({ MENU: 'menu', READY: 'ready', PLAYING: 'playing', WON: 'won', LOST: 'lost' });
+  const STATES = Object.freeze({ MENU: 'menu', READY: 'ready', PLAYING: 'playing', RESCUED: 'rescued', WON: 'won', LOST: 'lost' });
   const SPRITE = Object.freeze({ width: 384, height: 342, columns: 4 });
   const FRAME = Object.freeze({ IDLE: 0, IDLE_BLINK: 1, ANTICIPATION: 2, TAKEOFF: 3, RISE_TUCK: 4, RISE_STRETCH: 5, APEX: 6, FALL_EARLY: 7, FALL_FAST: 8, LAND: 9, RECOVER: 10, HURT: 11 });
   const COLORS = ['#78b94c', '#efb342', '#e26f3d', '#5aa9a4', '#9b6b4b'];
   const TAU = Math.PI * 2;
   const sprite = new Image();
   sprite.src = 'assets/sky-jump/goat-sprite-sheet-v1.png';
+  const kid = new GoatKidSprite();
 
   let width = 0, height = 0, dpr = 1;
   let state = STATES.MENU, stage = 1, mission = null, player = null;
@@ -31,6 +32,8 @@
   let remaining = 30, climbed = 0, combo = 0, bestCombo = 0, shake = 0;
   let readyUntil = 0, toastTimer = 0, lastTimestamp = performance.now(), audioContext = null;
   let nextAction = 'retry';
+  let lastProgressAt = 0, rescueStartedAt = 0, goalPlatform = null;
+  let halfwayAnnounced = false;
   const storedBest = Number(localStorage.getItem('goatSkyJumpBest') || 0);
   let allTimeBest = Number.isFinite(storedBest) ? storedBest : 0;
 
@@ -83,7 +86,9 @@
       this.previousX = x; this.previousY = y;
       this.width = platformWidth; this.height = 18; this.index = index;
       this.color = COLORS[index % COLORS.length];
-      this.visited = isStart; this.isStart = isStart;
+      this.visited = isStart; this.isStart = isStart; this.landed = isStart;
+      this.isGoal = !isStart && index === mission.goal;
+      if (this.isGoal) this.color = '#f6ce62';
       this.phase = Math.random() * TAU;
       this.axis = isStart ? 'none' : (index % 3 === 0 ? 'x' : 'y');
       this.amplitude = isStart ? 0 : (this.axis === 'x' ? 22 + Math.random() * 26 : 18 + Math.random() * 34);
@@ -116,6 +121,13 @@
         ctx.fillStyle = 'rgba(65,39,28,.58)'; ctx.font = '900 9px sans-serif'; ctx.textAlign = 'center';
         ctx.fillText(`${this.axis === 'x' ? '↔' : '↕'}${'›'.repeat(this.speedTier + 1)}`, this.width / 2, 15);
       }
+      ctx.font = '900 12px sans-serif'; ctx.textAlign = 'center';
+      ctx.fillStyle = '#59362a';
+      if (this.isGoal) {
+        roundRect(ctx, this.width / 2 - 47, 25, 94, 25, 12);
+        ctx.fillStyle = '#fff5cf'; ctx.fill(); ctx.fillStyle = '#59362a';
+        ctx.fillText(`GOAL ${this.index}`, this.width / 2, 42);
+      } else if (!this.isStart) ctx.fillText(String(this.index), this.width / 2, 36);
       ctx.restore();
     }
   }
@@ -140,15 +152,17 @@
     stage = nextStage; mission = stageMission(stage); remaining = mission.seconds;
     climbed = 0; combo = 0; bestCombo = 0; cameraX = 0; shake = 0;
     particles = []; platforms = [];
+    ui.combo.hidden = true; lastProgressAt = 0; rescueStartedAt = 0; halfwayAnnounced = false;
     const floorY = Math.min(height - 96, Math.max(330, height * 0.76));
     const start = new Platform(70, floorY, 150, 0, true);
     platforms.push(start); lastPlatformX = start.x; lastPlatformY = start.y;
-    for (let index = 1; index <= mission.goal + 8; index += 1) generatePlatform(index, floorY);
+    for (let index = 1; index <= mission.goal; index += 1) generatePlatform(index, floorY);
+    goalPlatform = platforms[platforms.length - 1];
     player = {
       x: start.x + 55, y: start.y - 36, width: 92, height: 72,
       vx: 125, vy: 0, grounded: true, platform: start, airJumps: 1,
       coyote: 0.1, jumpBuffer: 0, landingTime: 0, takeoffTime: 0,
-      hurtTime: 0, lastLandingAt: performance.now()
+      hurtTime: 0
     };
     state = STATES.READY; readyUntil = performance.now() + 1900;
     ui.startScreen.hidden = true; ui.resultScreen.hidden = true; ui.hud.hidden = false;
@@ -163,7 +177,7 @@
     const wave = Math.sin(index * 1.35) * Math.min(86, height * 0.12);
     const jitter = (Math.random() - 0.5) * 66;
     lastPlatformY = clamp(floorY - 34 + wave + jitter, Math.max(150, height * 0.27), floorY + 34);
-    const platformWidth = Math.max(92, 142 - stage * 4 - Math.random() * 30);
+    const platformWidth = index === mission.goal ? 200 : Math.max(92, 142 - stage * 4 - Math.random() * 30);
     platforms.push(new Platform(lastPlatformX, lastPlatformY, platformWidth, index));
   }
 
@@ -184,6 +198,18 @@
 
   function updateGame(dt, timestamp) {
     const time = timestamp / 1000;
+    if (state === STATES.RESCUED || state === STATES.WON) {
+      player.x += (goalPlatform.x + 57 - player.x) * Math.min(1, dt * 7);
+      player.y = goalPlatform.y - player.height / 2;
+      player.landingTime = Math.max(0, player.landingTime - dt);
+      updateCamera(dt);
+      particles.forEach(particle => particle.update(dt));
+      particles = particles.filter(particle => particle.life > 0);
+      shake = Math.max(0, shake - dt * 28);
+      if (state === STATES.RESCUED && timestamp - rescueStartedAt >= 2400) endStage(true, 'goal');
+      return;
+    }
+    if (state !== STATES.READY && state !== STATES.PLAYING) return;
     platforms.forEach(platform => platform.update(time));
     if (state === STATES.READY) {
       if (player.platform) { player.x += player.platform.dx; player.y += player.platform.dy; }
@@ -205,42 +231,86 @@
       else if (player.airJumps > 0) performJump(true);
     }
     const previousBottom = player.y + player.height / 2;
+    const previousX = player.x;
     player.vy += 1320 * dt;
     player.vx += (205 - player.vx) * Math.min(1, dt * 1.65);
     player.x += player.vx * dt; player.y += player.vy * dt;
+    const wasGrounded = player.grounded;
     player.grounded = false; player.platform = null;
     const currentBottom = player.y + player.height / 2;
+    // Progress follows the furthest bar reached, including bars cleared in the air.
+    // Relative positions also handle bars that move horizontally during a frame.
+    for (const platform of platforms) {
+      if (platform.index <= climbed || platform.isStart) continue;
+      const before = previousX - (platform.previousX + platform.width / 2);
+      const after = player.x - (platform.x + platform.width / 2);
+      if (before >= 0 || after < 0) continue;
+      const fraction = -before / (after - before);
+      const crossingBottom = previousBottom + (currentBottom - previousBottom) * fraction;
+      const crossingTop = platform.previousY + (platform.y - platform.previousY) * fraction;
+      if (crossingBottom <= crossingTop + 8) registerProgress(platform, timestamp);
+    }
     if (player.vy >= 0) {
       for (const platform of platforms) {
         const overlapsX = player.x + player.width * 0.27 > platform.x && player.x - player.width * 0.27 < platform.x + platform.width;
-        const crossedTop = previousBottom <= platform.y + 8 && currentBottom >= platform.y && currentBottom <= platform.y + platform.height + 18;
+        const crossedTop = previousBottom <= platform.previousY + 8 && currentBottom >= platform.y;
         if (!overlapsX || !crossedTop) continue;
         player.y = platform.y - player.height / 2; player.vy = 0; player.grounded = true;
-        player.platform = platform; player.airJumps = 1; player.landingTime = 0.18;
-        const quickLanding = timestamp - player.lastLandingAt < 2300;
-        player.lastLandingAt = timestamp;
-        if (!platform.visited) registerLanding(platform, quickLanding);
+        player.platform = platform; player.airJumps = 1; player.takeoffTime = 0;
+        if (!wasGrounded) player.landingTime = 0.18;
+        registerProgress(platform, timestamp);
+        showLandingFeedback(platform);
+        if (platform.isGoal) rescueKid(timestamp);
         break;
       }
     }
     if (!player.grounded && player.y > height + 130) { player.hurtTime = 1; endStage(false, 'fall'); }
-    const targetCamera = Math.max(0, player.x - width * 0.28);
-    cameraX += (targetCamera - cameraX) * Math.min(1, dt * 4.6);
+    updateCamera(dt);
     platforms = platforms.filter(platform => platform.x + platform.width > cameraX - 260);
     particles.forEach(particle => particle.update(dt));
     particles = particles.filter(particle => particle.life > 0);
     shake = Math.max(0, shake - dt * 28); updateHud();
   }
 
-  function registerLanding(platform, quickLanding) {
-    platform.visited = true; climbed += 1; combo = quickLanding ? combo + 1 : 1;
-    bestCombo = Math.max(bestCombo, combo); shake = 6;
+  function updateCamera(dt) {
+    const celebrating = state === STATES.RESCUED || state === STATES.WON;
+    const targetCamera = Math.max(0, celebrating ? goalPlatform.x + goalPlatform.width / 2 - width / 2 : player.x - width * 0.28);
+    cameraX += (targetCamera - cameraX) * Math.min(1, dt * 4.6);
+  }
+
+  function registerProgress(platform, timestamp) {
+    if (platform.index <= climbed) return;
+    const previousProgress = climbed;
+    climbed = Math.min(mission.goal, platform.index);
+    const gained = climbed - previousProgress;
+    const quickProgress = lastProgressAt > 0 && timestamp - lastProgressAt < 2300;
+    combo = quickProgress ? combo + gained : gained;
+    lastProgressAt = timestamp;
+    platforms.forEach(bar => { if (bar.index <= climbed) bar.visited = true; });
+    bestCombo = Math.max(bestCombo, combo);
+  }
+
+  function showLandingFeedback(platform) {
+    if (platform.landed) return;
+    platform.landed = true;
+    shake = 6;
     burst(player.x, platform.y, platform.color, 14, true);
     sound(180 + Math.min(360, climbed * 22), 0.09, 'triangle', 0.055);
     if (combo >= 3) { ui.combo.textContent = `COMBO ×${combo}`; ui.combo.hidden = false; }
     else ui.combo.hidden = true;
-    if (climbed === Math.ceil(mission.goal / 2)) showToast('HALFWAY!');
-    if (climbed >= mission.goal) endStage(true, 'goal');
+    if (!halfwayAnnounced && climbed >= Math.ceil(mission.goal / 2) && !platform.isGoal) {
+      halfwayAnnounced = true; showToast('HALFWAY!');
+    }
+  }
+
+  function rescueKid(timestamp) {
+    if (state !== STATES.PLAYING) return;
+    state = STATES.RESCUED; rescueStartedAt = timestamp;
+    player.vx = 0; player.vy = 0; player.takeoffTime = 0; player.jumpBuffer = 0;
+    ui.combo.hidden = true;
+    showToast('会えたね！');
+    burst(goalPlatform.x + goalPlatform.width / 2, goalPlatform.y - 45, '#fff4b6', 26, true);
+    sound(740, 0.15, 'sine', 0.055);
   }
 
   function burst(x, y, color, amount, powerful) {
@@ -248,19 +318,19 @@
   }
 
   function endStage(won, reason) {
-    if (state !== STATES.PLAYING) return;
+    if (won ? state !== STATES.RESCUED : state !== STATES.PLAYING) return;
     state = won ? STATES.WON : STATES.LOST; ui.hud.hidden = true; ui.combo.hidden = true;
     allTimeBest = Math.max(allTimeBest, climbed); localStorage.setItem('goatSkyJumpBest', String(allTimeBest));
     ui.resultValue.textContent = String(climbed); ui.best.textContent = String(allTimeBest); ui.bestCombo.textContent = String(bestCombo);
     if (won) {
-      ui.resultKicker.textContent = 'STAGE CLEAR!'; ui.resultTitle.textContent = `ステージ ${stage} クリア`;
-      ui.resultMessage.textContent = `残り ${remaining.toFixed(1)}秒！ 次は足場がさらに速くなる。`;
+      ui.resultKicker.textContent = 'RESCUED!'; ui.resultTitle.textContent = '子ヤギを救出！';
+      ui.resultMessage.textContent = `ステージ ${stage} クリア・残り ${remaining.toFixed(1)}秒。会えてうれしいね！`;
       ui.nextButton.textContent = `ステージ ${stage + 1} へ`; nextAction = 'next';
       sound(660, 0.12, 'sine', 0.06); setTimeout(() => sound(880, 0.18, 'sine', 0.06), 120);
     } else {
       ui.resultKicker.textContent = reason === 'time' ? 'TIME UP' : 'KEEP CLIMBING';
       ui.resultTitle.textContent = reason === 'time' ? 'タイムアップ！' : '落ちちゃった！';
-      ui.resultMessage.textContent = `あと ${Math.max(0, mission.goal - climbed)}本。動きの遅い足場から狙おう。`;
+      ui.resultMessage.textContent = climbed >= mission.goal ? 'ゴールのバーに着地して、子ヤギを迎えに行こう。' : `あと ${mission.goal - climbed}本。子ヤギがゴールで待っているよ。`;
       ui.nextButton.textContent = 'もう一度'; nextAction = 'retry'; sound(150, 0.2, 'sawtooth', 0.045);
     }
     const finishedState = state;
@@ -303,7 +373,11 @@
     const drawWidth = Math.min(128, Math.max(94, width * 0.105));
     const drawHeight = drawWidth * SPRITE.height / SPRITE.width;
     const rotation = state === STATES.LOST ? Math.min(0.55, player.vy / 900) : clamp(player.vy / 3200, -0.12, 0.16);
-    ctx.save(); ctx.translate(player.x - cameraX, player.y - 5); ctx.rotate(rotation);
+    const footBaseline = ({ [FRAME.IDLE]: 305, [FRAME.IDLE_BLINK]: 306, [FRAME.LAND]: 267, [FRAME.RECOVER]: 268 })[frame] ?? SPRITE.height;
+    const centerY = player.grounded
+      ? player.y + player.height / 2 - 3 - footBaseline * drawWidth / SPRITE.width + drawHeight / 2
+      : player.y - 5;
+    ctx.save(); ctx.translate(player.x - cameraX, centerY); ctx.rotate(rotation);
     ctx.imageSmoothingEnabled = true; ctx.imageSmoothingQuality = 'high';
     ctx.drawImage(sprite, sx, sy, SPRITE.width, SPRITE.height, -drawWidth / 2, -drawHeight / 2, drawWidth, drawHeight);
     ctx.restore();
@@ -365,6 +439,11 @@
     ctx.save();
     if (shake > 0) ctx.translate((Math.random() - 0.5) * shake, (Math.random() - 0.5) * shake);
     platforms.forEach(platform => platform.draw()); particles.forEach(particle => particle.draw());
+    if (goalPlatform) {
+      const joyful = state === STATES.RESCUED || state === STATES.WON;
+      kid.draw(ctx, goalPlatform.x + goalPlatform.width - 47 - cameraX, goalPlatform.y - 3,
+        Math.min(72, Math.max(58, width * 0.059)), joyful ? timestamp - rescueStartedAt : timestamp, joyful);
+    }
     drawTargetHint(); drawSprite(timestamp); ctx.restore();
   }
 

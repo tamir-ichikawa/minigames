@@ -22,6 +22,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .toast { position: fixed; z-index: 22; top: 25%; left: 50%; color: #fff8d2; text-align: center; text-shadow: 0 4px 0 rgba(92,43,24,.3),0 8px 28px rgba(92,43,24,.28); transform: translate(-50%,-50%); font-size: clamp(44px,9vw,86px); font-weight: 1000; pointer-events: none; animation: toast-pop 520ms cubic-bezier(.2,.9,.25,1.2) both; }
 .panel { position: fixed; z-index: 25; inset: 0; display: grid; place-items: center; padding: 74px 20px 26px; background: rgba(98,45,24,.12); backdrop-filter: blur(5px); }
 .panel-card { width: min(520px,100%); padding: clamp(25px,5vw,46px); border: 3px solid rgba(84,47,29,.13); border-radius: 34px; background: rgba(255,250,223,.94); box-shadow: 0 26px 70px rgba(105,49,23,.23),inset 0 2px rgba(255,255,255,.8); text-align: center; }
+.panel-card { min-width: 0; }
 .eyebrow { margin-bottom: 12px; color: #c95e30; font-size: 11px; font-weight: 1000; letter-spacing: .2em; }
 h1 { color: #4c2b20; font-size: clamp(48px,9vw,72px); line-height: 1.02; letter-spacing: -.055em; white-space: nowrap; }
 h1 span { color: #df6533; }
@@ -46,4 +47,6 @@ h1 span { color: #df6533; }
 @keyframes danger-pulse { to { transform: scale(1.05); } }
 @media (max-width: 700px) { .back-link { top: auto; bottom: max(12px,env(safe-area-inset-bottom)); } .hud { width: calc(100% - 20px); grid-template-columns: 62px minmax(120px,1fr) 72px; gap: 6px; } .hud-card { min-height: 52px; padding: 7px 10px; border-radius: 15px; } .hud-card > strong { font-size: 19px; } .panel-card { border-radius: 26px; } }
 @media (max-height: 620px) and (orientation: landscape) { .panel { padding: 18px; } .panel-card { width: min(660px,90%); padding: 20px 34px; } h1 { font-size: 40px; } .lead { margin: 10px auto; } .mission-preview { margin-bottom: 14px; } .controls { margin-top: 15px; } }
+@media (max-width: 400px) { .panel { padding: 64px 14px 54px; } .panel-card { padding: 25px 18px; } h1 { font-size: 40px; } .mission-preview { flex-wrap: wrap; gap: 7px; padding: 10px 8px; } .controls { line-height: 1.8; } .primary-button { min-width: min(210px,100%); padding-inline: 22px; } }
+@media (max-height: 450px) and (orientation: landscape) { .panel { padding: 12px; } .panel-card { padding: 15px 26px; } .eyebrow { margin-bottom: 7px; } .lead { font-size: 13px; line-height: 1.5; margin: 8px auto; } .mission-preview { padding: 7px 12px; margin-bottom: 10px; } .controls { margin-top: 13px; } .result-card h2 { font-size: 32px; } .result-score { margin: 8px 0 5px; } .result-score strong { font-size: 48px; } .result-meta { margin: 10px 0 15px; } }
 @media (prefers-reduced-motion: reduce) { *,*::before,*::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; } }
