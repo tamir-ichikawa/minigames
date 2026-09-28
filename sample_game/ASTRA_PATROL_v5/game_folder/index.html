@@ -36,7 +36,6 @@ canvas {
 </div>
 <canvas id="game"></canvas>
 
-<script src="player-geometry.js"></script>
 <script>
 // ============================================================
 // ASTRA PATROL - HTML5 Shooting Game
@@ -62,18 +61,10 @@ resizeCanvas();
 // Asset Loading
 // ============================================================
 const images = {};
-const damagedPlayers = {};
-// Normalized nozzle centers measured on the tightly cropped hull, not the PNG canvas.
-const PLAYER_SPRITES = {
-  player: { nozzles: [[0.16, 0.848], [0.84, 0.848]] },
-  player_speed: { nozzles: [[0.25, 0.876], [0.75, 0.876]] },
-  player_power: { nozzles: [[0.12, 0.850], [0.88, 0.850]] },
-};
-const PLAYER_WEAPONS = ['player', 'player', 'player_speed', 'player_power'];
 const assetList = [
-  ['player', 'sprites/01_player_standard_clean.png'],
-  ['player_speed', 'sprites/02_player_speed_clean.png'],
-  ['player_power', 'sprites/03_player_power_clean.png'],
+  ['player', 'sprites/01_player_standard.png'],
+  ['player_speed', 'sprites/02_player_speed.png'],
+  ['player_power', 'sprites/03_player_power.png'],
   ['enemy_core', 'sprites/04_enemy_core_fighter.png'],
   ['enemy_scout', 'sprites/05_enemy_scout_drone.png'],
   ['enemy_laser', 'sprites/06_enemy_laser_ship.png'],
@@ -116,10 +107,7 @@ function loadAssets() {
     assetList.forEach(([name, src]) => {
       const img = new Image();
       img.onload = () => {
-        images[name] = PLAYER_SPRITES[name] ? PlayerGeometry.trim(img) : img;
-        if (PLAYER_SPRITES[name]) {
-          damagedPlayers[name] = PlayerGeometry.tint(images[name], 'rgba(255, 60, 0, 0.35)');
-        }
+        images[name] = img;
         loaded++;
         document.getElementById('loadbar').style.width = (loaded / total * 100) + '%';
         if (loaded === total) {
@@ -144,11 +132,7 @@ const keys = {};
 const touch = { active: false, x: 0, y: 0, prevX: 0, prevY: 0, shoot: false };
 let clickedThisFrame = false;
 
-document.addEventListener('keydown', e => {
-  if (e.target.matches('input, button, select, textarea')) return;
-  keys[e.code] = true;
-  if (['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown', 'KeyW', 'KeyA', 'KeyS', 'KeyD', 'Space', 'KeyZ'].includes(e.code)) e.preventDefault();
-});
+document.addEventListener('keydown', e => { keys[e.code] = true; e.preventDefault(); });
 document.addEventListener('keyup', e => { keys[e.code] = false; });
 
 canvas.addEventListener('touchstart', e => {
@@ -363,16 +347,6 @@ let deathAnimTimer = 0; // Death explosion animation
 // ============================================================
 const player = { x: CANVAS_W / 2, y: CANVAS_H - 100, w: 48, h: 55, shootCD: 0 };
 
-function playerFrame() {
-  return PlayerGeometry.frame(images[PLAYER_WEAPONS[weaponType]], player.x, player.y, player.h);
-}
-
-function clampPlayer() {
-  player.w = playerFrame().w;
-  player.x = Math.max(player.w / 2, Math.min(CANVAS_W - player.w / 2, player.x));
-  player.y = Math.max(player.h / 2, Math.min(CANVAS_H - player.h / 2, player.y));
-}
-
 function updatePlayer(dt) {
   const speed = 5;
 
@@ -392,8 +366,9 @@ function updatePlayer(dt) {
     touch.prevY = touch.y;
   }
 
-  // The cropped hull keeps its aspect ratio, including after a weapon change.
-  clampPlayer();
+  // Bounds
+  player.x = Math.max(player.w / 2, Math.min(CANVAS_W - player.w / 2, player.x));
+  player.y = Math.max(player.h / 2, Math.min(CANVAS_H - player.h / 2, player.y));
 
   // Shooting
   player.shootCD--;
@@ -409,19 +384,31 @@ function updatePlayer(dt) {
 }
 
 function drawPlayer() {
-  if (lives <= 0) return;
   if (invincibleTimer > 0 && Math.floor(invincibleTimer / 3) % 2 === 0) return;
 
-  const name = PLAYER_WEAPONS[weaponType];
-  const body = playerFrame();
-  PlayerGeometry.drawExhaust(ctx, body, PLAYER_SPRITES[name].nozzles, gameTime);
-  const img = body.image;
+  // Thruster
+  const thrW = 20, thrH = 25;
+  const thrY = player.y + player.h / 2 - 5;
+  const flicker = Math.sin(gameTime * 0.5) * 3;
+  if (images.thruster) {
+    ctx.globalAlpha = 0.7 + Math.sin(gameTime * 0.3) * 0.3;
+    drawSprite(images.thruster, player.x - player.w / 4, thrY + flicker, thrW, thrH + flicker);
+    drawSprite(images.thruster, player.x + player.w / 4, thrY + flicker, thrW, thrH + flicker);
+    ctx.globalAlpha = 1;
+  }
+
+  const sprites = [images.player, images.player, images.player_speed, images.player_power];
+  const img = sprites[weaponType] || images.player;
 
   // Damage tint based on lives
   if (lives <= 1) {
     // Heavy damage: red tint + smoke particles
     ctx.globalAlpha = 0.9;
-    drawSprite(damagedPlayers[name], body.x, body.y, body.w, body.h);
+    drawSprite(img, player.x, player.y, player.w, player.h);
+    ctx.globalCompositeOperation = 'source-atop';
+    ctx.fillStyle = 'rgba(255, 60, 0, 0.35)';
+    ctx.fillRect(player.x - player.w / 2, player.y - player.h / 2, player.w, player.h);
+    ctx.globalCompositeOperation = 'source-over';
     ctx.globalAlpha = 1;
     // Smoke trail
     if (gameTime % 3 === 0) {
@@ -430,13 +417,13 @@ function drawPlayer() {
     }
   } else if (lives <= 2) {
     // Light damage: slight tint + occasional sparks
-    drawSprite(img, body.x, body.y, body.w, body.h);
+    drawSprite(img, player.x, player.y, player.w, player.h);
     if (gameTime % 8 === 0) {
       spawnParticles(player.x + (Math.random() - 0.5) * 20, player.y + 10, '#888', 1, 1, 15);
     }
   } else {
     // Full health: normal
-    drawSprite(img, body.x, body.y, body.w, body.h);
+    drawSprite(img, player.x, player.y, player.w, player.h);
   }
 }
 
@@ -775,7 +762,6 @@ function updatePowerups() {
     if (Math.abs(p.x - player.x) < 25 && Math.abs(p.y - player.y) < 25) {
       if (p.type === 'weapon') {
         weaponType = p.weaponType;
-        clampPlayer();
         weaponLevel = 1;
       } else {
         weaponLevel = Math.min(3, weaponLevel + 1);
@@ -874,23 +860,22 @@ function checkCollisions() {
   }
 
   // Enemy bullets vs player
-  if (invincibleTimer <= 0 && lives > 0) {
-    const body = playerFrame();
+  if (invincibleTimer <= 0) {
     for (let i = enemyBullets.length - 1; i >= 0; i--) {
       const b = enemyBullets[i];
-      if (PlayerGeometry.overlaps(body, { ...b, image: images[b.img] })) {
+      if (Math.abs(b.x - player.x) < (b.w + player.w * 0.3) / 2 &&
+          Math.abs(b.y - player.y) < (b.h + player.h * 0.3) / 2) {
         playerHit();
         enemyBullets.splice(i, 1);
         break;
       }
     }
 
-    // Do not apply a second hit in the same frame after a bullet hit.
-    if (invincibleTimer > 0) return;
-    // Enemy sprites are drawn facing down, so rotate their collision masks too.
+    // Enemies vs player
     for (let i = enemies.length - 1; i >= 0; i--) {
       const e = enemies[i];
-      if (PlayerGeometry.overlaps(body, { ...e, image: images[e.img], flipped: true })) {
+      if (Math.abs(e.x - player.x) < (e.w + player.w) * 0.4 &&
+          Math.abs(e.y - player.y) < (e.h + player.h) * 0.4) {
         playerHit();
         e.hp -= 5;
         if (e.hp <= 0) {
@@ -904,7 +889,6 @@ function checkCollisions() {
 }
 
 function playerHit() {
-  if (lives <= 0 || invincibleTimer > 0) return;
   lives--;
   playSound('death');
   spawnParticles(player.x, player.y, '#f84', 25, 5, 30);
@@ -1069,9 +1053,8 @@ function drawHUD() {
   // Lives — ship icons + HP bar
   ctx.textAlign = 'right';
   for (let i = 0; i < lives; i++) {
-    if (images.player) {
-      const icon = PlayerGeometry.frame(images.player, CANVAS_W - 30 - i * 28, 35, 25);
-      drawSprite(icon.image, icon.x, icon.y, icon.w, icon.h);
+    if (images.player_small) {
+      drawSprite(images.player_small, CANVAS_W - 30 - i * 28, 35, 22, 25);
     }
   }
   // Player HP bar under lives
@@ -1149,8 +1132,7 @@ function drawTitle() {
 
   // Player ship preview
   if (images.player) {
-    const preview = PlayerGeometry.frame(images.player, CANVAS_W / 2, 380, 92);
-    drawSprite(preview.image, preview.x, preview.y, preview.w, preview.h);
+    drawSprite(images.player, CANVAS_W / 2, 380, 80, 92);
   }
 
   // Instructions
@@ -1345,13 +1327,6 @@ function gameLoop() {
 
 // Start
 loadAssets().then(() => {
-  // Opt-in visual/regression checks use the actual game drawing and hit tests.
-  if (new URLSearchParams(location.search).has('inspect-player')) {
-    const script = document.createElement('script');
-    script.src = 'checks/player.js';
-    document.body.append(script);
-    return;
-  }
   gameLoop();
 });
 </script>

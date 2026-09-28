@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<title>コハク便ダッシュ</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+  *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;user-select:none}
+  body{
+    background:#1a1a2e;
+    display:flex;justify-content:center;align-items:center;
+    min-height:100vh;min-height:100dvh;
+    font-family:'DotGothic16','Hiragino Kaku Gothic ProN','Meiryo',sans-serif;
+    overflow:hidden;
+  }
+  #wrapper{
+    position:relative;width:400px;height:650px;
+    border-radius:16px;overflow:hidden;
+    box-shadow:0 0 40px rgba(218,165,32,0.3);
+  }
+  canvas{display:block;width:400px;height:650px;touch-action:none}
+  #touch-left,#touch-right{
+    position:absolute;bottom:0;width:50%;height:45%;
+    opacity:0;z-index:10;cursor:pointer;
+  }
+  #touch-left{left:0}
+  #touch-right{right:0}
+  @media(max-width:420px){
+    #wrapper{width:100vw;height:calc(100vw*1.625);border-radius:0}
+    canvas{width:100vw;height:calc(100vw*1.625)}
+  }
+</style>
+</head>
+<body>
+<div id="wrapper">
+  <canvas id="game" width="400" height="650"></canvas>
+  <div id="touch-left"></div>
+  <div id="touch-right"></div>
+</div>
+
+<script>
+/*  ============================================================
+ *  コハク便ダッシュ — スプライトシート版
+ *  Sprite sheet: kohaku_sprites-v2.png
+ *    5 cols × 2 rows, each frame 128 × 128 px
+ *    Row 0 (actions) : idle | run | jump | item_get | (empty)
+ *    Row 1 (faces)   : normal | happy | surprised | angry | sleeping
+ *  ============================================================ */
+
+const canvas = document.getElementById('game');
+const ctx    = canvas.getContext('2d');
+const W = 400, H = 650;
+
+/* ---------- sprite sheet ---------- */
+const SP_COLS  = 5;
+const SP_SIZE  = 128;          // frame pixels in the PNG
+const spriteImg = new Image();
+let spriteReady = false;
+spriteImg.onload = () => { spriteReady = true; };
+spriteImg.src = 'kohaku_sprites-v2.png';   // 外部ファイル読み込み
+
+/* ---------- palette ---------- */
+const C = {
+  white:'#FAFAF5', gray:'#C8C8C0',
+  amber:'#E8A830', dkAmber:'#D49020',
+  navy:'#2A3A5C',  dkNavy:'#1E2A44',
+  road:'#2A4A3A',  star:'#FFD700',
+  starGlow:'#FFEC80',
+  boxBrn:'#8B5E3C', boxDk:'#6B3E1C',
+};
+
+/* ---------- state ---------- */
+let state = 'title';           // title | playing | gameover
+let score=0, best=0, combo=0, comboTier=0, maxCombo=0;
+let speed=3;
+let targetLane=1, playerX=W/2;
+let frame=0, shake=0, itemFlash=0, spawnCD=0;
+let stars=[], boxes=[], particles=[], bgDots=[];
+
+const LANE = [W*.22, W*.5, W*.78];
+const PY   = H*.78;
+
+try{ best=parseInt(localStorage.getItem('kohaku_best')||'0'); }catch(e){}
+
+// bg stars
+for(let i=0;i<35;i++) bgDots.push({
+  x:Math.random()*W, y:Math.random()*H,
+  s:Math.random()*2+.5, t:Math.random()*6.28, v:Math.random()*.3+.1
+});
+
+/* ======== drawing helpers ======== */
+
+function drawSprite(col,row,cx,cy,sz){
+  if(!spriteReady) return;
+  ctx.drawImage(spriteImg,
+    col*SP_SIZE, row*SP_SIZE, SP_SIZE, SP_SIZE,
+    cx-sz/2, cy-sz/2, sz, sz);
+}
+
+/* Kohaku character */
+function drawKohaku(cx,cy,pose,running){
+  const bob = running ? Math.sin(frame*.3)*3 : 0;
+  let col=0, row=0, sz=80;
+
+  switch(pose){
+    case 'idle':      col=0;row=0;break;
+    case 'run':       col=1;row=0;break;
+    case 'jump':      col=2;row=0;break;
+    case 'item':      col=3;row=0;break;
+    case 'happy':     col=1;row=1;sz=72;break;
+    case 'surprised': col=2;row=1;sz=72;break;
+    case 'angry':     col=3;row=1;sz=72;break;
+    case 'sleep':     col=4;row=1;sz=72;break;
+    default:          col=0;row=1;sz=72;
+  }
+
+  // running anim cycle: idle → run → jump → run
+  if(running && pose!=='item'){
+    const f = Math.floor(frame/8)%4;
+    col = [0,1,2,1][f];
+    row = 0; sz = 80;
+  }
+
+  drawSprite(col,row,cx,cy+bob,sz);
+}
+
+/* 5-point star */
+function star5(cx,cy,oR,iR){
+  ctx.moveTo(cx,cy-oR);
+  for(let i=0;i<10;i++){
+    const r = i%2?iR:oR;
+    const a = Math.PI*i/5 - Math.PI/2;
+    ctx.lineTo(cx+Math.cos(a)*r, cy+Math.sin(a)*r);
+  }
+  ctx.closePath();
+}
+function drawCollectStar(cx,cy,r,gold){
+  const glow = Math.sin(frame*.1+cx)*.3+.7;
+  ctx.save(); ctx.translate(cx,cy); ctx.rotate(frame*.02);
+  ctx.globalAlpha = glow*.4;
+  ctx.fillStyle = gold?C.starGlow:'#FFE080';
+  ctx.beginPath(); star5(0,0,r*1.5,r*.7); ctx.fill();
+  ctx.globalAlpha = 1;
+  ctx.fillStyle = gold?C.star:C.amber;
+  ctx.beginPath(); star5(0,0,r,r*.45); ctx.fill();
+  ctx.fillStyle='#FFF'; ctx.globalAlpha=.6;
+  ctx.fillRect(-2,-r*.5,3,3);
+  ctx.restore();
+}
+
+/* delivery box */
+function drawBox(cx,cy){
+  const p=4,w=7,h=5;
+  const ox=cx-w*p/2, oy=cy-h*p/2;
+  ctx.fillStyle=C.boxBrn; ctx.fillRect(ox,oy,w*p,h*p);
+  ctx.fillStyle=C.boxDk;
+  ctx.fillRect(ox,oy,w*p,p);
+  ctx.fillRect(ox,oy+(h-1)*p,w*p,p);
+  ctx.fillRect(ox,oy,p,h*p);
+  ctx.fillRect(ox+(w-1)*p,oy,p,h*p);
+  ctx.fillStyle='#C4A060';
+  ctx.fillRect(ox+3*p,oy,p,h*p);
+  ctx.fillRect(ox,oy+2*p,w*p,p);
+  ctx.fillStyle='rgba(255,255,255,.2)';
+  ctx.fillRect(ox+p,oy+p,2*p,p);
+}
+
+/* particles */
+function spawnP(x,y,col,n){
+  for(let i=0;i<n;i++) particles.push({
+    x,y,vx:(Math.random()-.5)*6,vy:(Math.random()-.5)*6-2,
+    life:30+Math.random()*20,max:50,s:Math.random()*4+2,c:col
+  });
+}
+function tickP(){
+  for(let i=particles.length-1;i>=0;i--){
+    const p=particles[i];
+    p.x+=p.vx; p.y+=p.vy; p.vy+=.15; p.life--;
+    if(p.life<=0) particles.splice(i,1);
+  }
+}
+function drawP(){
+  for(const p of particles){
+    ctx.globalAlpha=p.life/p.max;
+    ctx.fillStyle=p.c;
+    ctx.fillRect(p.x-p.s/2,p.y-p.s/2,p.s,p.s);
+  }
+  ctx.globalAlpha=1;
+}
+
+/* ======== background ======== */
+function drawBG(){
+  const g=ctx.createLinearGradient(0,0,0,H);
+  g.addColorStop(0,'#0A1628'); g.addColorStop(.4,'#152238'); g.addColorStop(1,'#1B3040');
+  ctx.fillStyle=g; ctx.fillRect(0,0,W,H);
+
+  // twinkle dots
+  for(const d of bgDots){
+    d.t+=.03;
+    if(state==='playing') d.y+=d.v*speed*.3;
+    if(d.y>H){d.y=-5;d.x=Math.random()*W;}
+    ctx.globalAlpha=(Math.sin(d.t)*.3+.7)*.6;
+    ctx.fillStyle='#FFF';
+    ctx.fillRect(d.x,d.y,d.s,d.s);
+  }
+  ctx.globalAlpha=1;
+
+  // road
+  const rw=240, rx=(W-rw)/2;
+  ctx.fillStyle=C.road; ctx.fillRect(rx,0,rw,H);
+  ctx.fillStyle=C.amber;
+  ctx.fillRect(rx-2,0,3,H); ctx.fillRect(rx+rw-1,0,3,H);
+
+  // lane dashes
+  const dL=30, gL=20;
+  const off = state==='playing'?(frame*speed*.8)%(dL+gL):0;
+  ctx.fillStyle='rgba(255,255,200,.15)';
+  for(let d=1;d<=2;d++){
+    const lx=rx+d*rw/3-1;
+    for(let y=-dL+off;y<H;y+=dL+gL) ctx.fillRect(lx,y,2,dL);
+  }
+  ctx.fillStyle='rgba(232,168,48,.03)';
+  ctx.fillRect(rx,0,rw,H);
+}
+
+/* ======== HUD ======== */
+function drawHUD(){
+  ctx.save();
+  const g=ctx.createLinearGradient(0,0,0,75);
+  g.addColorStop(0,'rgba(0,0,0,.6)'); g.addColorStop(1,'rgba(0,0,0,0)');
+  ctx.fillStyle=g; ctx.fillRect(0,0,W,75);
+
+  ctx.font='16px "DotGothic16",monospace';
+  ctx.textBaseline='top';
+
+  ctx.fillStyle=C.star; ctx.textAlign='left';
+  ctx.fillText('スコア：'+score,15,12);
+  ctx.fillStyle=C.gray; ctx.textAlign='right';
+  ctx.fillText('スピード：'+speed.toFixed(1),W-15,12);
+
+  if(combo>0){
+    ctx.textAlign='left';
+    ctx.fillStyle=comboTier>0?C.star:C.amber;
+    ctx.fillText('配達コンボ '+combo+' / 5個ごとに報酬UP',15,35);
+    if(comboTier>0){
+      ctx.fillStyle=C.star;
+      ctx.fillText('★'.repeat(Math.min(comboTier,5))+' +'+(10+comboTier*5),15,55);
+    }
+  }
+  ctx.restore();
+}
+
+/* ======== screens ======== */
+
+function drawTitle(){
+  drawBG();
+  ctx.save();
+  ctx.textAlign='center'; ctx.textBaseline='middle';
+
+  // title
+  ctx.font='bold 36px "DotGothic16",sans-serif';
+  ctx.fillStyle='rgba(0,0,0,.5)';
+  ctx.fillText('コハク便ダッシュ',W/2+2,155+2);
+  ctx.fillStyle=C.star;
+  ctx.fillText('コハク便ダッシュ',W/2,155);
+
+  ctx.font='14px "DotGothic16",sans-serif';
+  ctx.fillStyle=C.gray;
+  ctx.fillText('— 小さなキミに、大きなワクワクを。—',W/2,195);
+
+  // character
+  drawKohaku(W/2,320,'idle',false);
+
+  // prompt
+  ctx.font='16px "DotGothic16",sans-serif';
+  ctx.fillStyle=C.white;
+  if(Math.sin(frame*.08)>0) ctx.fillText('スペースキーで開始',W/2,440);
+
+  ctx.font='13px "DotGothic16",sans-serif';
+  ctx.fillStyle=C.gray;
+  ctx.fillText('← → キーでレーン移動',W/2,470);
+  ctx.fillText('画面タップでも操作可能',W/2,490);
+  if(best>0){ ctx.fillStyle=C.amber; ctx.fillText('ベスト: '+best,W/2,530); }
+
+  // deco stars
+  const t=frame*.02;
+  drawCollectStar(80,120+Math.sin(t)*10,12,false);
+  drawCollectStar(320,140+Math.cos(t)*8,10,true);
+  drawCollectStar(60,400+Math.sin(t+1)*6,8,false);
+  drawCollectStar(340,380+Math.cos(t+2)*7,9,true);
+  ctx.restore();
+}
+
+function drawGameOver(){
+  ctx.fillStyle='rgba(0,0,0,.6)'; ctx.fillRect(0,0,W,H);
+  ctx.save();
+  ctx.textAlign='center'; ctx.textBaseline='middle';
+
+  ctx.font='bold 32px "DotGothic16",sans-serif';
+  ctx.fillStyle='#FF6060';
+  ctx.fillText('配達終了！',W/2,180);
+
+  ctx.font='20px "DotGothic16",sans-serif';
+  ctx.fillStyle=C.star;
+  ctx.fillText('スコア: '+score,W/2,240);
+
+  ctx.font='16px "DotGothic16",sans-serif';
+  ctx.fillStyle=C.amber;
+  if(score>=best&&score>0) ctx.fillText('★ ニューレコード！ ★',W/2,280);
+  else ctx.fillText('ベスト: '+best,W/2,280);
+
+  ctx.fillStyle=C.gray;
+  ctx.fillText('最大コンボ: '+maxCombo,W/2,310);
+
+  drawKohaku(W/2,410,'surprised',false);
+
+  if(Math.sin(frame*.08)>0){
+    ctx.font='16px "DotGothic16",sans-serif';
+    ctx.fillStyle=C.white;
+    ctx.fillText('スペースキーでリトライ',W/2,520);
+  }
+  ctx.restore();
+}
+
+/* ======== game logic ======== */
+
+function startGame(){
+  state='playing';
+  score=0; combo=0; comboTier=0; maxCombo=0;
+  speed=3; targetLane=1; playerX=LANE[1];
+  stars=[]; boxes=[]; particles=[];
+  spawnCD=0; itemFlash=0; frame=0;
+}
+
+function spawn(){
+  spawnCD++;
+  const iv = Math.max(25, 60 - score*.05);
+  if(spawnCD<iv) return;
+  spawnCD=0;
+  const r=Math.random();
+  if(r<.55){
+    stars.push({x:LANE[Math.floor(Math.random()*3)], y:-20, gold:Math.random()<.12});
+  }else if(r<.82){
+    boxes.push({x:LANE[Math.floor(Math.random()*3)], y:-20});
+  }else{
+    const bL=Math.floor(Math.random()*3);
+    let sL; do{sL=Math.floor(Math.random()*3);}while(sL===bL);
+    boxes.push({x:LANE[bL],y:-20});
+    stars.push({x:LANE[sL],y:-20,gold:Math.random()<.15});
+  }
+}
+
+function update(){
+  frame++;
+  // smooth move
+  const tx=LANE[targetLane];
+  playerX+=(tx-playerX)*.2;
+  if(Math.abs(playerX-tx)<1) playerX=tx;
+
+  speed=Math.min(6, 3+score*.006);
+  spawn();
+  if(itemFlash>0) itemFlash--;
+
+  // stars
+  for(let i=stars.length-1;i>=0;i--){
+    const s=stars[i]; s.y+=speed*1.8;
+    if(Math.abs(s.x-playerX)<30&&Math.abs(s.y-PY)<28){
+      combo++; if(combo>maxCombo) maxCombo=combo;
+      comboTier=Math.floor(combo/5);
+      const b=10+comboTier*5;
+      score += s.gold ? b*2+15 : b;
+      itemFlash=15;
+      spawnP(s.x,s.y, s.gold?C.star:C.amber, s.gold?12:8);
+      stars.splice(i,1); continue;
+    }
+    if(s.y>H+30){ combo=0; comboTier=0; stars.splice(i,1); }
+  }
+
+  // boxes
+  for(let i=boxes.length-1;i>=0;i--){
+    const b=boxes[i]; b.y+=speed*1.8;
+    if(Math.abs(b.x-playerX)<28&&Math.abs(b.y-PY)<24){
+      spawnP(playerX,PY,'#FF4040',20);
+      spawnP(playerX,PY,C.boxBrn,10);
+      shake=15;
+      if(score>best){ best=score; try{localStorage.setItem('kohaku_best',''+best);}catch(e){} }
+      state='gameover'; return;
+    }
+    if(b.y>H+30) boxes.splice(i,1);
+  }
+  tickP();
+  if(shake>0) shake--;
+}
+
+function drawPlay(){
+  ctx.save();
+  if(shake>0) ctx.translate((Math.random()-.5)*shake*.8,(Math.random()-.5)*shake*.8);
+
+  drawBG();
+  for(const s of stars) drawCollectStar(s.x,s.y,s.gold?16:12,s.gold);
+  for(const b of boxes) drawBox(b.x,b.y);
+
+  const pose = itemFlash>0 ? 'item' : 'run';
+  drawKohaku(playerX,PY,pose,true);
+
+  drawP();
+  drawHUD();
+  ctx.restore();
+}
+
+/* ======== loop ======== */
+function loop(){
+  ctx.clearRect(0,0,W,H);
+  if(state==='title')    { frame++; drawTitle(); }
+  else if(state==='playing'){ update(); drawPlay(); }
+  else                    { frame++; drawPlay(); drawGameOver(); tickP(); }
+  requestAnimationFrame(loop);
+}
+
+/* ======== input ======== */
+document.addEventListener('keydown',e=>{
+  if(e.code==='ArrowLeft'||e.code==='KeyA'){ if(state==='playing'&&targetLane>0) targetLane--; e.preventDefault(); }
+  if(e.code==='ArrowRight'||e.code==='KeyD'){ if(state==='playing'&&targetLane<2) targetLane++; e.preventDefault(); }
+  if(e.code==='Space'){
+    if(state==='title') startGame();
+    else if(state==='gameover') state='title';
+    e.preventDefault();
+  }
+});
+document.getElementById('touch-left').addEventListener('touchstart',e=>{
+  e.preventDefault();
+  if(state==='playing'&&targetLane>0) targetLane--;
+  else if(state==='title') startGame();
+  else if(state==='gameover') state='title';
+});
+document.getElementById('touch-right').addEventListener('touchstart',e=>{
+  e.preventDefault();
+  if(state==='playing'&&targetLane<2) targetLane++;
+  else if(state==='title') startGame();
+  else if(state==='gameover') state='title';
+});
+canvas.addEventListener('click',e=>{
+  const r=canvas.getBoundingClientRect();
+  const x=(e.clientX-r.left)/r.width*W;
+  if(state==='title'){startGame();return;}
+  if(state==='gameover'){state='title';return;}
+  if(x<W/2&&targetLane>0) targetLane--;
+  else if(x>=W/2&&targetLane<2) targetLane++;
+});
+
+loop();
+</script>
+</body>
+</html>

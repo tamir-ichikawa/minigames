@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<title>コハク便ダッシュ 横スクロール</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+*{box-sizing:border-box;margin:0;padding:0;user-select:none;-webkit-tap-highlight-color:transparent}
+body{min-height:100vh;display:grid;place-items:center;background:#091525;font-family:'DotGothic16','Hiragino Kaku Gothic ProN',sans-serif;overflow:hidden}
+#wrap{position:relative;width:min(960px,100vw);aspect-ratio:16/9;overflow:hidden;border:3px solid #e8a830;border-radius:18px;box-shadow:0 0 42px #e8a83044}
+canvas{display:block;width:100%;height:100%;touch-action:none}
+#jump{position:absolute;right:4%;bottom:5%;width:18%;height:22%;border:2px solid #ffe080;border-radius:50%;background:#e8a83055;color:#fff;font:18px inherit;opacity:.9}
+@media(max-width:600px){#wrap{border:0;border-radius:0}#jump{font-size:13px}}
+</style>
+</head>
+<body>
+<div id="wrap"><canvas id="game" width="960" height="540"></canvas><button id="jump">JUMP</button></div>
+<script>
+const canvas=document.getElementById('game'),ctx=canvas.getContext('2d');
+const W=960,H=540,G=430,FRAME=128;
+const C={navy:'#183554',deep:'#091525',blue:'#315e7d',ice:'#bde2ef',white:'#fafaf5',amber:'#e8a830',gold:'#ffd700',box:'#9b633c',boxDark:'#613c25'};
+const img=new Image();let ready=false;img.onload=()=>ready=true;img.src='kohaku_sprites-v2.png';
+let state='title',score=0,best=0,combo=0,maxCombo=0,frame=0,speed=5,scroll=0;
+let player={x:170,y:G-52,vy:0,onGround:true};let stars=[],boxes=[],particles=[],spawnTimer=0;
+try{best=+(localStorage.getItem('kohaku_horizontal_best')||0)}catch(e){}
+const dots=Array.from({length:70},()=>({x:Math.random()*W,y:Math.random()*300,s:Math.random()*2+1,p:Math.random()*6.28}));
+
+function sprite(col,row,x,y,size=96){if(!ready)return;ctx.drawImage(img,col*FRAME,row*FRAME,FRAME,FRAME,x-size/2,y-size/2,size,size)}
+function star5(x,y,r){ctx.beginPath();for(let i=0;i<10;i++){let a=-Math.PI/2+i*Math.PI/5,rr=i%2?r:r*.45;ctx.lineTo(x+Math.cos(a)*rr,y+Math.sin(a)*rr)}ctx.closePath()}
+function drawStar(x,y,gold=false){ctx.save();ctx.translate(x,y);ctx.rotate(frame*.03);ctx.globalAlpha=.24;ctx.fillStyle=gold?'#fff4a0':C.amber;ctx.beginPath();star5(0,0,24);ctx.fill();ctx.globalAlpha=1;ctx.fillStyle=gold?C.gold:'#ffc24b';ctx.beginPath();star5(0,0,15);ctx.fill();ctx.restore()}
+function drawBox(x,y){ctx.save();ctx.translate(x,y);ctx.fillStyle=C.box;ctx.fillRect(-25,-22,50,44);ctx.fillStyle=C.boxDark;ctx.fillRect(-25,-22,50,6);ctx.fillRect(-25,16,50,6);ctx.fillRect(-25,-22,6,44);ctx.fillRect(19,-22,6,44);ctx.fillStyle='#d6a65d';ctx.fillRect(-4,-22,8,44);ctx.fillRect(-25,-4,50,8);ctx.fillStyle='#fff4c4';ctx.globalAlpha=.4;ctx.fillRect(-15,-14,10,5);ctx.restore()}
+function burst(x,y,color,n=10){for(let i=0;i<n;i++)particles.push({x,y,vx:(Math.random()-.5)*7,vy:-Math.random()*5-1,life:35+Math.random()*20,color,size:Math.random()*5+2})}
+function tickParticles(){for(let i=particles.length-1;i>=0;i--){let p=particles[i];p.x+=p.vx;p.y+=p.vy;p.vy+=.18;p.life--;if(p.life<1)particles.splice(i,1)}}
+function drawParticles(){for(const p of particles){ctx.globalAlpha=p.life/55;ctx.fillStyle=p.color;ctx.fillRect(p.x,p.y,p.size,p.size)}ctx.globalAlpha=1}
+function drawWorld(){
+  const sky=ctx.createLinearGradient(0,0,0,H);sky.addColorStop(0,'#0b1c35');sky.addColorStop(1,'#4f88a0');ctx.fillStyle=sky;ctx.fillRect(0,0,W,H);
+  for(const d of dots){d.p+=.02;let x=(d.x-scroll*(.08+d.s*.02))%(W+20);if(x<0)x+=W+20;ctx.globalAlpha=.35+Math.sin(d.p)*.2;ctx.fillStyle='#fff';ctx.fillRect(x,d.y,d.s,d.s)}ctx.globalAlpha=1;
+  // distant snow hills
+  ctx.fillStyle='#d7edf0';ctx.beginPath();ctx.moveTo(0,350);for(let x=0;x<=W;x+=80)ctx.quadraticCurveTo(x+40,300+(x%120),x+80,350);ctx.lineTo(W,G);ctx.lineTo(0,G);ctx.fill();
+  // parallax trees and lamps
+  for(let x=-((scroll*.25)%150)-40;x<W+150;x+=150){ctx.fillStyle='#1d4050';ctx.beginPath();ctx.moveTo(x,350);ctx.lineTo(x+28,245);ctx.lineTo(x+56,350);ctx.fill();ctx.fillStyle='#245466';ctx.beginPath();ctx.moveTo(x+18,350);ctx.lineTo(x+48,215);ctx.lineTo(x+78,350);ctx.fill()}
+  ctx.fillStyle='#244c57';ctx.fillRect(0,G,W,H-G);ctx.fillStyle='#e8a830';ctx.fillRect(0,G,W,5);ctx.fillStyle='#8bc0b0';
+  for(let x=-((scroll*.9)%100);x<W;x+=100){ctx.fillRect(x,G+42,56,5);ctx.fillRect(x+18,G+78,70,4)}
+}
+function hud(){ctx.fillStyle='#0008';ctx.fillRect(0,0,W,70);ctx.font='20px DotGothic16,monospace';ctx.fillStyle=C.gold;ctx.textAlign='left';ctx.fillText('スコア：'+score,24,30);ctx.fillStyle=C.white;ctx.fillText('距離：'+Math.floor(scroll/10)+'m',24,57);ctx.textAlign='right';ctx.fillStyle=C.ice;ctx.fillText('スピード：'+speed.toFixed(1),W-24,30);if(combo){ctx.textAlign='center';ctx.fillStyle=C.gold;ctx.fillText('配達コンボ '+combo,W/2,38)}ctx.textAlign='left'}
+function title(){drawWorld();ctx.textAlign='center';ctx.fillStyle='#0009';ctx.fillRect(180,90,600,330);ctx.font='bold 48px DotGothic16';ctx.fillStyle=C.gold;ctx.fillText('コハク便ダッシュ',W/2,170);ctx.font='26px DotGothic16';ctx.fillStyle=C.ice;ctx.fillText('横スクロール便配達',W/2,215);sprite(0,0,W/2,305,130);if(Math.sin(frame*.08)>0){ctx.font='21px DotGothic16';ctx.fillStyle=C.white;ctx.fillText('スペースキー / タップで開始',W/2,400)}ctx.font='16px DotGothic16';ctx.fillStyle='#d5e9ef';ctx.fillText('ジャンプで箱を避け、星を集めよう',W/2,445);ctx.textAlign='left';if(best)ctx.fillText('ベスト：'+best,24,38);ctx.textAlign='left'}
+function gameover(){ctx.fillStyle='#07111ddd';ctx.fillRect(200,105,560,315);ctx.textAlign='center';ctx.font='bold 42px DotGothic16';ctx.fillStyle='#ff7070';ctx.fillText('配達終了！',W/2,180);ctx.font='24px DotGothic16';ctx.fillStyle=C.gold;ctx.fillText('スコア：'+score,W/2,240);ctx.font='18px DotGothic16';ctx.fillStyle=C.ice;ctx.fillText(score>=best&&score?'★ ニューレコード！ ★':'ベスト：'+best,W/2,280);ctx.fillText('最大コンボ：'+maxCombo,W/2,315);sprite(2,1,W/2,365,100);if(Math.sin(frame*.08)>0){ctx.fillStyle=C.white;ctx.fillText('スペースキー / タップでリトライ',W/2,450)}ctx.textAlign='left'}
+function start(){state='play';score=0;combo=0;maxCombo=0;speed=5;scroll=0;frame=0;stars=[];boxes=[];particles=[];spawnTimer=20;player={x:170,y:G-52,vy:0,onGround:true}}
+function jump(){if(state==='title'||state==='over'){start();return}if(player.onGround){player.vy=-13;player.onGround=false;burst(player.x,player.y+42,C.ice,5)}}
+function spawn(){spawnTimer--;if(spawnTimer>0)return;spawnTimer=Math.max(35,74-score*.08)+Math.random()*24;const x=W+60;const r=Math.random();if(r<.56)stars.push({x,y:G-55-Math.random()*105,gold:Math.random()<.15});else if(r<.82)boxes.push({x,y:G-25});else{boxes.push({x,y:G-25});stars.push({x:x+95,y:G-110,gold:Math.random()<.2})}}
+function update(){frame++;scroll+=speed;speed=Math.min(10,5+score*.006);player.vy+=.62;player.y+=player.vy;if(player.y>=G-52){player.y=G-52;player.vy=0;player.onGround=true}spawn();for(let i=stars.length-1;i>=0;i--){const s=stars[i];s.x-=speed;if(Math.abs(s.x-player.x)<43&&Math.abs(s.y-player.y)<45){combo++;maxCombo=Math.max(maxCombo,combo);score+=(s.gold?25:10)+Math.floor(combo/5)*5;burst(s.x,s.y,s.gold?C.gold:C.amber,s.gold?14:8);stars.splice(i,1);continue}if(s.x<-40){combo=0;stars.splice(i,1)}}for(let i=boxes.length-1;i>=0;i--){const b=boxes[i];b.x-=speed;if(Math.abs(b.x-player.x)<42&&Math.abs(b.y-player.y)<52){burst(player.x,player.y,'#ff5050',22);if(score>best){best=score;try{localStorage.setItem('kohaku_horizontal_best',''+best)}catch(e){}}state='over';return}if(b.x<-60)boxes.splice(i,1)}tickParticles()}
+function play(){drawWorld();for(const s of stars)drawStar(s.x,s.y,s.gold);for(const b of boxes)drawBox(b.x,b.y);sprite(player.onGround?1:2,0,player.x,player.y,96);drawParticles();hud()}
+function loop(){ctx.clearRect(0,0,W,H);if(state==='title'){frame++;title()}else if(state==='play'){update();play()}else{frame++;play();gameover()}requestAnimationFrame(loop)}
+document.addEventListener('keydown',e=>{if(['Space','ArrowUp','KeyW'].includes(e.code)){e.preventDefault();jump()}});canvas.addEventListener('pointerdown',e=>{e.preventDefault();jump()});document.getElementById('jump').addEventListener('pointerdown',e=>{e.preventDefault();jump()});loop();
+</script>
+</body>
+</html>
