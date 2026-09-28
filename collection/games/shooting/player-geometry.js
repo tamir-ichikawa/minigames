@@ -79,6 +79,7 @@
     const u = (x - body.x) / body.w + 0.5;
     const v = (y - body.y) / body.h + 0.5;
     if (u < 0 || u >= 1 || v < 0 || v >= 1) return false;
+    if (body.radius) return Math.hypot(x-body.x,y-body.y)<=body.radius;
     if (!body.image) return true;
     const pixels = mask(body);
     return !!pixels.alpha[Math.floor(v * pixels.height) * pixels.width + Math.floor(u * pixels.width)];

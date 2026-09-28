@@ -13,15 +13,17 @@
   document.head.append(style);
   const root = document.createElement('main');
   root.innerHTML = `<h1>ASTRA PATROL · 自機の位置確認</h1>
-    <p>実際のゲーム描画を拡大表示。赤い領域は当たり判定、黄色の点は噴射口です。</p>
+    <p>実際のゲーム描画を拡大表示。赤い円が自機の当たり判定、黄色の点は噴射口です。赤：半径5px ／ 青：8px ／ 黄：10px。</p>
     <label><input id="mask" type="checkbox">当たり判定を表示</label>
     <label><input id="anchors" type="checkbox">噴射口を表示</label>
     <label>炎のフレーム<input id="phase" type="range" min="0" max="120" value="0"></label>
+    <label>機体の傾き<input id="bank" type="range" min="-1" max="1" step="0.5" value="0"></label>
+    <p><a href="./">ゲームへ</a> ／ <a href="?inspect-fleet">全機体・攻撃・爆発の図鑑へ</a></p>
     <div class="ships"></div><pre id="results">検証中…</pre>`;
   document.body.append(root);
-  const cards = [0, 2, 3].map(type => {
+  const cards = [0, 1, 2].map(type => {
     const article = document.createElement('article');
-    article.innerHTML = `<h2>${['STANDARD', 'WIDE', 'SPEED / LASER', 'POWER / MISSILE'][type]}</h2><canvas width="360" height="360"></canvas><p></p>`;
+    article.innerHTML = `<h2>${AstraFleet.players[type].name}</h2><canvas width="360" height="360"></canvas><p></p>`;
     root.querySelector('.ships').append(article);
     return { type, canvas: article.querySelector('canvas'), label: article.querySelector('p') };
   });
@@ -29,22 +31,18 @@
 
   function render() {
     gameTime = Number(root.querySelector('#phase').value);
+    player.lean=Number(root.querySelector('#bank').value);
     for (const card of cards) {
-      weaponType = card.type;
+      selectedShip = card.type;
       const body = playerFrame();
       ctx.clearRect(0, 0, CANVAS_W, CANVAS_H);
       drawPlayer();
       if (root.querySelector('#mask').checked) {
-        ctx.fillStyle = 'rgba(255,70,100,.60)';
-        for (let y = body.y - body.h / 2; y < body.y + body.h / 2; y += 0.5) {
-          for (let x = body.x - body.w / 2; x < body.x + body.w / 2; x += 0.5) {
-            if (PlayerGeometry.solidAt(body, x + 0.25, y + 0.25)) ctx.fillRect(x, y, 0.5, 0.5);
-          }
-        }
+        drawPlayerHitbox(ctx,true);
       }
       if (root.querySelector('#anchors').checked) {
         ctx.fillStyle = '#ffff55';
-        for (const nozzle of PLAYER_SPRITES[PLAYER_WEAPONS[weaponType]].nozzles) {
+        for (const nozzle of body.nozzles) {
           const point = PlayerGeometry.attachment(body, nozzle);
           ctx.beginPath(); ctx.arc(point.x, point.y, 0.8, 0, Math.PI * 2); ctx.fill();
         }
@@ -52,7 +50,7 @@
       const target = card.canvas.getContext('2d');
       target.clearRect(0, 0, 360, 360);
       target.drawImage(canvas, 195, 142, 90, 90, 0, 0, 360, 360);
-      card.label.textContent = `機体 ${body.w.toFixed(1)} × ${body.h}px ／ 透明部分・炎は判定なし`;
+      card.label.textContent = `表示 ${body.w.toFixed(1)} × ${body.h.toFixed(1)}px ／ 判定は半径${shipDefinition().hitRadius}pxの円。翼・炎は無傷。`;
     }
   }
   for (const input of root.querySelectorAll('input')) input.addEventListener('input', render);
@@ -61,24 +59,25 @@
   function check(label, value) { results.push(`${value ? 'PASS' : 'FAIL'} ${label}`); }
   const probe = (x, y) => ({ x, y, w: 0.4, h: 0.4 });
   for (const card of cards) {
-    weaponType = card.type; player.x = 240; player.y = 180;
+    selectedShip = card.type; player.x = 240; player.y = 180;
     const body = playerFrame();
-    const name = PLAYER_WEAPONS[weaponType];
-    check(`${name}: 中央の機体に接触`, PlayerGeometry.overlaps(body, probe(body.x, body.y)));
-    check(`${name}: 矩形内の透明な隅を通過`, !PlayerGeometry.overlaps(body,
+    const hitbox = playerHitbox();
+    const name = shipDefinition().id;
+    check(`${name}: 中心円に接触`, PlayerGeometry.overlaps(hitbox, probe(hitbox.x, hitbox.y)));
+    check(`${name}: 機体の隅を通過`, !PlayerGeometry.overlaps(hitbox,
       probe(body.x - body.w * .46, body.y - body.h * .46)));
-    for (const [i, nozzle] of PLAYER_SPRITES[name].nozzles.entries()) {
+    for (const [i, nozzle] of body.nozzles.entries()) {
       const point = PlayerGeometry.attachment(body, nozzle);
       check(`${name}: 噴射口 ${i + 1} が機体上にある`, PlayerGeometry.solidAt(body, point.x, point.y));
-      check(`${name}: 噴射炎のみへの接触は無傷`, !PlayerGeometry.overlaps(body, probe(point.x, point.y + 10)));
+      check(`${name}: 噴射炎のみへの接触は無傷`, !PlayerGeometry.overlaps(hitbox, probe(point.x, point.y + 10)));
     }
     // Translate to fractional positions to detect coordinate-origin mismatches.
-    const shifted = { ...body, x: body.x + 87.3, y: body.y - 41.7 };
+    const shifted = { ...hitbox, x: hitbox.x + 87.3, y: hitbox.y - 41.7 };
     check(`${name}: 移動後も判定が機体と一致`, PlayerGeometry.overlaps(shifted, probe(shifted.x, shifted.y)) &&
-      !PlayerGeometry.overlaps(shifted, probe(body.x, body.y)));
+      !PlayerGeometry.overlaps(shifted, probe(hitbox.x, hitbox.y)));
     player.x = -10; player.y = 800; clampPlayer();
     const clamped = playerFrame();
-    check(`${name}: 画面端でも機体が画面内`, clamped.x - clamped.w / 2 >= 0 && clamped.y + clamped.h / 2 <= CANVAS_H);
+    check(`${name}: 画面端でも機体が画面内`, clamped.x - clamped.w / 2 >= -1e-6 && clamped.y + clamped.h / 2 <= CANVAS_H + 1e-6);
     player.x = 240; player.y = 180;
   }
   // Real collision processing must not remove two lives for simultaneous hits.
