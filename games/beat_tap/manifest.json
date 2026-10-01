@@ -1,0 +1,13 @@
+{
+  "id": "beat_tap",
+  "title": "ビートタップ",
+  "category": "other",
+  "icon": "🥁",
+  "color": "#eddef1",
+  "description": "拍に合わせてタップ。速さを選んでタイミングを磨こう。",
+  "thumbnail": "collection/assets/characters/beat_tap.svg",
+  "enabled": true,
+  "engine": "legacy",
+  "order": 25,
+  "module": "collection/games/beat_tap/index.html"
+}

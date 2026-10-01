@@ -1,0 +1,13 @@
+{
+  "id": "pattern",
+  "title": "パターン記憶",
+  "category": "brain",
+  "icon": "🧠",
+  "color": "#e3e8f3",
+  "description": "光る順番を覚えて再現。3回のチャンスでどこまで進める？",
+  "thumbnail": "collection/assets/characters/pattern.svg",
+  "enabled": true,
+  "engine": "legacy",
+  "order": 34,
+  "module": "collection/games/pattern/index.html"
+}

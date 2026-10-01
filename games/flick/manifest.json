@@ -1,0 +1,13 @@
+{
+  "id": "flick",
+  "title": "ポストン仕分け局",
+  "category": "action",
+  "icon": "📦",
+  "color": "#f2e6c7",
+  "description": "次の荷物を見て仕分け。30個配送とエンドレス。",
+  "thumbnail": "collection/assets/characters/flick.svg",
+  "enabled": true,
+  "engine": "legacy",
+  "order": 9,
+  "module": "collection/games/flick/index.html"
+}

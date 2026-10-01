@@ -1,0 +1,13 @@
+{
+  "id": "bubble",
+  "title": "バブルポップ",
+  "category": "action",
+  "icon": "🫧",
+  "color": "#e2ecdb",
+  "description": "泡をタップして連鎖。60秒でハイスコアを目指そう。",
+  "thumbnail": "collection/assets/characters/bubble.svg",
+  "enabled": true,
+  "engine": "legacy",
+  "order": 27,
+  "module": "collection/games/bubble/index.html"
+}

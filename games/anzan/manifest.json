@@ -1,0 +1,13 @@
+{
+  "id": "anzan",
+  "title": "ひらめき発電所",
+  "category": "brain",
+  "icon": "⚡",
+  "color": "#f3eac6",
+  "description": "計算の種類を選び、間違えた問題をゆっくり復習。",
+  "thumbnail": "collection/assets/characters/anzan.svg",
+  "enabled": true,
+  "engine": "legacy",
+  "order": 17,
+  "module": "collection/games/anzan/index.html"
+}

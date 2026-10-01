@@ -1,0 +1,13 @@
+{
+  "id": "whack-a-mole",
+  "title": "モグラたたき",
+  "description": "30秒で飛び出すモグラをすばやくタップ。",
+  "category": "action",
+  "icon": "🐹",
+  "module": "sample_game/whack-a-mole.html",
+  "thumbnail": "collection/assets/characters/reflex.svg",
+  "enabled": true,
+  "engine": "legacy",
+  "order": 3,
+  "color": "#e5e8f1"
+}

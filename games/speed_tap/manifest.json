@@ -1,0 +1,19 @@
+{
+  "id": "speed_tap",
+  "title": "早押しタップ",
+  "category": "action",
+  "icon": "🎯",
+  "color": "#e2ecdb",
+  "description": "速度・サイズ・鬼モードを選んで、コンボとハイスコアに挑戦。",
+  "thumbnail": "collection/assets/characters/speed_tap.svg",
+  "enabled": true,
+  "engine": "legacy",
+  "order": 39,
+  "module": "games/speed_tap/index.html",
+  "legacyUrl": "collection/games/speed_tap/index.html",
+  "score": {
+    "selector": "#score",
+    "unit": "点",
+    "direction": "higher"
+  }
+}

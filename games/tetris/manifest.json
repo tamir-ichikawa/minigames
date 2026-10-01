@@ -1,0 +1,13 @@
+{
+  "id": "tetris",
+  "title": "プリズム・ライン",
+  "category": "puzzle",
+  "icon": "💎",
+  "color": "#d5eeeb",
+  "description": "壁際回転と接地猶予で、最後の一手を整えよう。",
+  "thumbnail": "collection/assets/characters/tetris.svg",
+  "enabled": true,
+  "engine": "legacy",
+  "order": 11,
+  "module": "collection/games/tetris/index.html"
+}

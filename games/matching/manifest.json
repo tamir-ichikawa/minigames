@@ -1,0 +1,13 @@
+{
+  "id": "matching",
+  "title": "珊瑚のペア図鑑",
+  "category": "puzzle",
+  "icon": "🐠",
+  "color": "#d7edf0",
+  "description": "海の専用イラストをペアに。全札プレビュー練習も。",
+  "thumbnail": "collection/assets/characters/matching.svg",
+  "enabled": true,
+  "engine": "legacy",
+  "order": 13,
+  "module": "collection/games/matching/index.html"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "jump",
+  "title": "ケロの空中遺跡",
+  "category": "action",
+  "icon": "🐸",
+  "color": "#deedcf",
+  "description": "左右移動、動く足場、壊れる足場を順に学ぶ空中遺跡。",
+  "thumbnail": "collection/assets/characters/jump.svg",
+  "enabled": true,
+  "engine": "legacy",
+  "order": 7,
+  "module": "collection/games/jump/index.html"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "crane",
+  "title": "クレーンゲーム",
+  "category": "action",
+  "icon": "🏗️",
+  "color": "#e2ecdb",
+  "description": "クレーンを止めるタイミングを狙って景品を集めよう。",
+  "thumbnail": "collection/assets/characters/crane.svg",
+  "enabled": true,
+  "engine": "legacy",
+  "order": 30,
+  "module": "collection/games/crane/index.html"
+}

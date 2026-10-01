@@ -1,0 +1,13 @@
+{
+  "id": "slot",
+  "title": "絵柄スロット",
+  "category": "other",
+  "icon": "🎰",
+  "color": "#eddef1",
+  "description": "リールを止めて絵柄を揃えよう。ゲーム内コインで遊べます。",
+  "thumbnail": "collection/assets/characters/slot.svg",
+  "enabled": true,
+  "engine": "legacy",
+  "order": 38,
+  "module": "collection/games/slot/index.html"
+}

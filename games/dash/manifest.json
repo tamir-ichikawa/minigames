@@ -1,0 +1,13 @@
+{
+  "id": "dash",
+  "title": "コハク便ダッシュ",
+  "category": "action",
+  "icon": "🦊",
+  "color": "#fae5c8",
+  "description": "安全な配達列か、金星への寄り道か。ルートを選ぼう。",
+  "thumbnail": "collection/assets/characters/dash.svg",
+  "enabled": true,
+  "engine": "legacy",
+  "order": 5,
+  "module": "collection/games/dash/index.html"
+}

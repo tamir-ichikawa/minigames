@@ -1,0 +1,14 @@
+{
+  "id": "15-puzzle",
+  "title": "15パズル",
+  "description": "絵柄を選んで、数字と絵をそろえよう。",
+  "category": "puzzle",
+  "icon": "🔢",
+  "module": "games/15-puzzle/index.html",
+  "thumbnail": "collection/assets/characters/numorder.svg",
+  "enabled": true,
+  "engine": "legacy",
+  "order": 2,
+  "color": "#e5e8f1",
+  "legacyUrl": "sample_game/15-puzzle.html"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "karuta",
+  "title": "季節の絵札帖",
+  "category": "brain",
+  "icon": "🎴",
+  "color": "#f0e4cf",
+  "description": "季節ごとの絵札と文章。任意の読み上げにも対応。",
+  "thumbnail": "collection/assets/characters/karuta.svg",
+  "enabled": true,
+  "engine": "legacy",
+  "order": 18,
+  "module": "collection/games/karuta/index.html"
+}

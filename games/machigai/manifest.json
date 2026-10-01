@@ -1,0 +1,13 @@
+{
+  "id": "machigai",
+  "title": "ミッケの鑑定室",
+  "category": "brain",
+  "icon": "🔎",
+  "color": "#d8ebed",
+  "description": "色だけでなく形も見比べる、二列の模様鑑定。",
+  "thumbnail": "collection/assets/characters/machigai.svg",
+  "enabled": true,
+  "engine": "legacy",
+  "order": 16,
+  "module": "collection/games/machigai/index.html"
+}

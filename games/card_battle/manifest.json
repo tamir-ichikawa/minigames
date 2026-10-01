@@ -1,0 +1,13 @@
+{
+  "id": "card_battle",
+  "title": "小さな騎士の五連戦",
+  "category": "other",
+  "icon": "🛡️",
+  "color": "#e8deeb",
+  "description": "敵の予告を読んでカードを選び、戦闘後に成長。",
+  "thumbnail": "collection/assets/characters/card_battle.svg",
+  "enabled": true,
+  "engine": "legacy",
+  "order": 21,
+  "module": "collection/games/card_battle/index.html"
+}

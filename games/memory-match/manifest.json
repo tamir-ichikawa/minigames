@@ -1,0 +1,13 @@
+{
+  "id": "memory-match",
+  "title": "神経衰弱",
+  "description": "絵柄を覚えて同じペアを見つけよう。",
+  "category": "puzzle",
+  "icon": "🃏",
+  "module": "sample_game/memory-match.html",
+  "thumbnail": "collection/assets/characters/matching.svg",
+  "enabled": true,
+  "engine": "legacy",
+  "order": 4,
+  "color": "#e5e8f1"
+}

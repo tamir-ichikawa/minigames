@@ -1,0 +1,13 @@
+{
+  "id": "which_more",
+  "title": "どっちが多い？",
+  "category": "brain",
+  "icon": "🤔",
+  "color": "#e3e8f3",
+  "description": "ふたつの箱を見比べて、数が多い方を選ぼう。",
+  "thumbnail": "collection/assets/characters/which_more.svg",
+  "enabled": true,
+  "engine": "legacy",
+  "order": 40,
+  "module": "collection/games/which_more/index.html"
+}

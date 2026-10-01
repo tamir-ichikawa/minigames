@@ -1,0 +1,13 @@
+{
+  "id": "flappy",
+  "title": "ルナの夜間飛行",
+  "category": "action",
+  "icon": "🦉",
+  "color": "#e5def4",
+  "description": "最初の3門は練習コース。10門・20門を目指そう。",
+  "thumbnail": "collection/assets/characters/flappy.svg",
+  "enabled": true,
+  "engine": "legacy",
+  "order": 8,
+  "module": "collection/games/flappy/index.html"
+}

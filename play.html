@@ -1,0 +1,7 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>ミニゲームシリーズ</title><link rel="icon" href="collection/shared/favicon.svg"><link rel="stylesheet" href="src/launcher/player.css"></head>
+<body data-state="idle">
+<header><button id="exit">← 一覧</button><h1 id="game-title">ゲーム</h1><div class="actions"><button id="pause" disabled>一時停止</button><button id="reset" disabled>最初から</button><label class="sound"><input type="checkbox" id="mute">ミュート</label></div></header>
+<main><div id="stage"></div><div class="overlay" id="loading" hidden role="status">読み込み中…</div><div class="overlay" id="paused" hidden><p>ひとやすみ。</p><button id="resume">ゲームに戻る</button></div><div class="overlay" id="error" hidden role="alert"><p id="error-message"></p><a href="index.html#selection">一覧に戻る</a><button onclick="location.reload()">再読み込み</button></div></main>
+<footer><span id="score">記録はゲーム画面で確認</span><span id="notice" role="status"></span><a id="legacy" hidden>従来版を開く</a></footer>
+<script type="module" src="app/player.js"></script></body></html>

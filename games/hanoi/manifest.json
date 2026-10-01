@@ -1,0 +1,13 @@
+{
+  "id": "hanoi",
+  "title": "ハノイの塔",
+  "category": "puzzle",
+  "icon": "🗼",
+  "color": "#f2e8d4",
+  "description": "円盤を一枚ずつ動かして、右の棒へ積み直そう。",
+  "thumbnail": "collection/assets/characters/hanoi.svg",
+  "enabled": true,
+  "engine": "legacy",
+  "order": 32,
+  "module": "collection/games/hanoi/index.html"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "marimo-run",
+  "title": "モグモグ・ポム",
+  "category": "action",
+  "icon": "🍊",
+  "color": "#f3e5cf",
+  "description": "最初の敵で食べるタイミングを練習。3段階の変身へ。",
+  "thumbnail": "collection/assets/characters/marimo-run.svg",
+  "enabled": true,
+  "engine": "legacy",
+  "order": 24,
+  "module": "collection/games/marimo-run/index.html"
+}

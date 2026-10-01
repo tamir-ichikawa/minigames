@@ -1,0 +1,13 @@
+{
+  "id": "breakout",
+  "title": "ブロック崩し",
+  "category": "action",
+  "icon": "🧱",
+  "color": "#e2ecdb",
+  "description": "パドルでボールを返し、ブロックを消して次のレベルへ。",
+  "thumbnail": "collection/assets/characters/breakout.svg",
+  "enabled": true,
+  "engine": "legacy",
+  "order": 26,
+  "module": "collection/games/breakout/index.html"
+}

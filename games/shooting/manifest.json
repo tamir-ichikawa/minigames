@@ -1,0 +1,13 @@
+{
+  "id": "shooting",
+  "title": "アストラ・パトロール",
+  "category": "action",
+  "icon": "🚀",
+  "color": "#dce8f2",
+  "description": "編隊を迎撃し、60秒で中ボス。予告を見て回避・反撃。",
+  "thumbnail": "collection/assets/characters/shooting.svg",
+  "enabled": true,
+  "engine": "legacy",
+  "order": 6,
+  "module": "collection/games/shooting/index.html"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "enzine-rythm",
+  "title": "Enzine Rythm",
+  "description": "曲と演奏パートを選び、タップで音を奏でよう。",
+  "category": "other",
+  "icon": "🥁",
+  "module": "enzine-rythm/index.html",
+  "thumbnail": "collection/assets/characters/beat_tap.svg",
+  "enabled": true,
+  "engine": "legacy",
+  "order": 1,
+  "color": "#e5e8f1"
+}

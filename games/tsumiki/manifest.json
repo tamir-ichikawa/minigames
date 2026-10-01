@@ -1,0 +1,14 @@
+{
+  "id": "tsumiki",
+  "title": "星灯りタワー",
+  "category": "action",
+  "icon": "🏙️",
+  "color": "#e3ddf2",
+  "description": "切れ端が落ち、10段ごとに空が変わる灯りのタワー。",
+  "thumbnail": "collection/assets/characters/tsumiki.svg",
+  "enabled": true,
+  "engine": "legacy",
+  "order": 10,
+  "module": "games/tsumiki/index.html",
+  "legacyUrl": "collection/games/tsumiki/index.html"
+}

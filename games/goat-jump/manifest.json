@@ -1,0 +1,13 @@
+{
+  "id": "goat-jump",
+  "title": "GOAT JUMP",
+  "description": "30秒で最後のバーへ。待っている子ヤギを救出しよう。",
+  "category": "action",
+  "icon": "🐐",
+  "module": "sky-jump.html",
+  "thumbnail": "assets/sky-jump/kid-idle-v1.png",
+  "enabled": true,
+  "engine": "legacy",
+  "order": 0,
+  "color": "#e5e8f1"
+}

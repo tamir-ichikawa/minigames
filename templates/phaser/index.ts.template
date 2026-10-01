@@ -1,0 +1,33 @@
+import Phaser from 'phaser';
+import { createPhaserModule } from '../../src/adapters/phaser';
+import type { Score } from '../../src/core/types';
+
+export function createGame() {
+  let score: Score | null = null;
+  return createPhaserModule({
+    createScene(context, ready) {
+      return new class extends Phaser.Scene {
+        constructor() { super('__ID__'); }
+        create() {
+          score = { value: 0, unit: '点', direction: 'higher' };
+          context.reportScore(score);
+          this.add.text(240, 180, '__TITLE__', { fontSize: '28px', fontFamily: 'sans-serif' }).setOrigin(.5);
+          const count = this.add.text(240, 300, '0 点', { fontSize: '42px' }).setOrigin(.5);
+          const button = document.createElement('button');
+          button.textContent = 'タップして加点';
+          const controls = document.createElement('div'); controls.className = 'native-controls'; controls.append(button);
+          context.container.append(controls);
+          const add = () => {
+            if (!score) return;
+            score = { ...score, value: score.value + 1 }; count.setText(`${score.value} 点`); context.reportScore(score);
+          };
+          button.onclick = add; this.input.on('pointerdown', add);
+          this.events.once(Phaser.Scenes.Events.SHUTDOWN, () => controls.remove());
+      this.events.once(Phaser.Scenes.Events.DESTROY, () => controls.remove());
+          ready();
+        }
+      }();
+    },
+    getScore: () => score
+  });
+}

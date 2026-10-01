@@ -1,0 +1,13 @@
+{
+  "id": "maze",
+  "title": "こもれび迷宮",
+  "category": "puzzle",
+  "icon": "🧭",
+  "color": "#e3edd4",
+  "description": "最短で出口へ、または寄り道して木の実を集めよう。",
+  "thumbnail": "collection/assets/characters/maze.svg",
+  "enabled": true,
+  "engine": "legacy",
+  "order": 12,
+  "module": "collection/games/maze/index.html"
+}

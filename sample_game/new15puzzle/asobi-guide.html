@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🧩 15パズル 遊び方ガイド</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{
+    background:linear-gradient(135deg,#fce4ec 0%,#f3e5f5 50%,#e8eaf6 100%);
+    min-height:100vh;font-family:'Segoe UI','Hiragino Sans','Meiryo',sans-serif;
+    color:#333;padding:20px;
+  }
+  .container{
+    max-width:700px;margin:0 auto;background:rgba(255,255,255,0.92);
+    border-radius:24px;padding:36px 32px;box-shadow:0 8px 32px rgba(106,27,154,0.15);
+  }
+  h1{text-align:center;font-size:2rem;color:#6a1b9a;margin-bottom:8px}
+  .subtitle{text-align:center;color:#ab47bc;font-size:1.1rem;margin-bottom:28px}
+  h2{color:#7b1fa2;font-size:1.3rem;margin:24px 0 12px;padding-left:10px;border-left:4px solid #ce93d8}
+  p,li{font-size:1.05rem;line-height:1.8}
+  ul,ol{padding-left:24px;margin:8px 0 16px}
+  li{margin-bottom:6px}
+  .emoji-box{
+    background:linear-gradient(135deg,#fff9c4,#fff176);border-radius:16px;
+    padding:20px 24px;margin:20px 0;text-align:center;font-size:1.15rem;
+    box-shadow:0 2px 12px rgba(255,193,7,0.2);
+  }
+  .step-card{
+    background:#f3e5f5;border-radius:14px;padding:16px 20px;margin:12px 0;
+    display:flex;align-items:flex-start;gap:14px;
+  }
+  .step-num{
+    background:#7b1fa2;color:#fff;width:36px;height:36px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;font-weight:800;
+    font-size:1.1rem;flex-shrink:0;
+  }
+  .step-text{flex:1}
+  .tip-box{
+    background:#e8f5e9;border-radius:14px;padding:16px 20px;margin:12px 0;
+    border-left:4px solid #66bb6a;
+  }
+  .tip-box .label{font-weight:700;color:#2e7d32;margin-bottom:4px}
+  .highlight-box{
+    background:#e3f2fd;border-radius:14px;padding:16px 20px;margin:12px 0;
+    border-left:4px solid #42a5f5;
+  }
+  .highlight-box .label{font-weight:700;color:#1565c0;margin-bottom:4px}
+  .button-guide{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0}
+  .btn-sample{
+    padding:8px 18px;border-radius:24px;font-weight:700;font-size:.95rem;
+    border:none;color:#fff;display:inline-block;
+  }
+  .btn-s1{background:linear-gradient(135deg,#e91e63,#f06292)}
+  .btn-s2{background:linear-gradient(135deg,#7e57c2,#b39ddb)}
+  .btn-s3{background:linear-gradient(135deg,#26a69a,#80cbc4)}
+  .footer{text-align:center;margin-top:30px;color:#999;font-size:.9rem}
+  @media print{body{background:#fff;padding:10px}.container{box-shadow:none;border:1px solid #ddd}}
+</style>
+</head>
+<body>
+<div class="container">
+
+  <h1>🧩 15パズル</h1>
+  <p class="subtitle">～えらべる絵バージョン～ 遊び方ガイド</p>
+
+  <div class="emoji-box">
+    🐰🎨🌀🖼️🌻<br>
+    5種類の絵から好きなのを選んでパズルに挑戦！<br>
+    完成すると隠れた16枚目のピースが現れるよ✨
+  </div>
+
+  <h2>🎯 ゲームの目標</h2>
+  <p>バラバラになった絵のピース（タイル）をスライドさせて、
+    元のきれいな1枚の絵に戻すパズルです。
+    15枚のタイルと1つの空きマスがあり、
+    <b>完成すると最後の16枚目のピースが出現して絵が完成</b>します！</p>
+
+  <h2>🖼️ えらべる絵（5種類）</h2>
+  <ol>
+    <li>🐾 <b>動物いっぱい</b> — かわいい動物たちの絵</li>
+    <li>🎨 <b>名画パロディ①</b> — 有名な絵画のパロディ</li>
+    <li>🎨 <b>名画パロディ②</b> — もう一つの名画パロディ</li>
+    <li>🌀 <b>変わったアート</b> — 不思議で個性的なアート</li>
+    <li>🖼️ <b>名画パロディ③</b> — さらなる名画パロディ</li>
+  </ol>
+  <p>上のボタンをタップすると絵が切り替わります。</p>
+
+  <h2>📱 遊び方（かんたん3ステップ）</h2>
+
+  <div class="step-card">
+    <div class="step-num">1</div>
+    <div class="step-text">
+      <b>ファイルを開いて絵を選ぶ</b><br>
+      「どうぶつ15パズル.html」をブラウザ（Chrome、Safari など）で開きます。
+      上のボタンから好きな絵を選んでね。スマホでもパソコンでもOK！
+    </div>
+  </div>
+
+  <div class="step-card">
+    <div class="step-num">2</div>
+    <div class="step-text">
+      <b>タイルをタップ（クリック）</b><br>
+      動かしたいタイルをタップすると、空きマスに向かってスルッとスライドします。
+      同じ行・列なら一度に何枚も動かせます！
+    </div>
+  </div>
+
+  <div class="step-card">
+    <div class="step-num">3</div>
+    <div class="step-text">
+      <b>絵を完成させる！</b><br>
+      全てのタイルが正しい位置に揃うと、
+      <b>隠れていた16枚目のピースがフワッと出現</b>して
+      絵が完全に完成します！🎉
+    </div>
+  </div>
+
+  <div class="highlight-box">
+    <div class="label">✨ 16枚目の秘密</div>
+    <p>パズル中、右下の1マスは空いています。
+    でもこれは本当は16枚目のピース！
+    パズルを完成させた瞬間に姿を現して、
+    絵が1枚につながります。この瞬間が気持ちいい！</p>
+  </div>
+
+  <h2>🔘 ボタンの説明</h2>
+  <div class="button-guide">
+    <span class="btn-sample btn-s1">🔀 シャッフル</span>
+    <span class="btn-sample btn-s2">👀 完成図</span>
+    <span class="btn-sample btn-s3">🔢 番号ON/OFF</span>
+  </div>
+  <ul>
+    <li><b>🔀 シャッフル</b>：タイルをバラバラにして、新しいゲームを始めます</li>
+    <li><b>👀 完成図</b>：元の絵がどんな絵か確認できます。迷ったときに見てね！</li>
+    <li><b>🔢 番号ON/OFF</b>：各タイルの番号を表示/非表示にします。
+      番号を消すと難しくなるよ！</li>
+  </ul>
+
+  <h2>💡 コツ・ヒント</h2>
+
+  <div class="tip-box">
+    <div class="label">💡 初心者のコツ</div>
+    <p>まず上の1行目を左から順番に揃えましょう。
+      次に2行目、3行目と進めると完成しやすいです。</p>
+  </div>
+
+  <div class="tip-box">
+    <div class="label">💡 番号を活用しよう</div>
+    <p>最初は番号をONにして、1番から順番に並べてみよう。
+      慣れてきたら番号OFFにして、絵だけで挑戦！</p>
+  </div>
+
+  <div class="tip-box">
+    <div class="label">💡 完成図をチェック</div>
+    <p>どこに何が来るかわからなくなったら、
+      「👀 完成図」ボタンでいつでも確認できるよ！</p>
+  </div>
+
+  <div class="tip-box">
+    <div class="label">💡 一列まとめてスライド</div>
+    <p>空きマスと同じ行・列のタイルをタップすると、
+      間のタイルも一緒に動きます。これを使うと効率アップ！</p>
+  </div>
+
+  <div class="tip-box">
+    <div class="label">💡 いろんな絵で挑戦</div>
+    <p>絵によって難しさが違うよ！
+      色の境目がはっきりした絵は簡単、
+      似た色が多い絵は番号なしだと超ムズ！</p>
+  </div>
+
+  <h2>🏆 チャレンジ目標</h2>
+  <ol>
+    <li>⭐ まずはクリアしてみよう！（時間は気にしないで）</li>
+    <li>⭐⭐ 100手以内でクリア</li>
+    <li>⭐⭐⭐ 3分以内にクリア</li>
+    <li>🌟 番号OFFで5分以内にクリア → パズルマスター！</li>
+    <li>👑 全5種類の絵をコンプリート → グランドマスター！</li>
+  </ol>
+
+  <h2>📋 対応環境</h2>
+  <ul>
+    <li>スマートフォン（iPhone / Android）のブラウザ</li>
+    <li>パソコン（Windows / Mac）のブラウザ</li>
+    <li>タブレット（iPad など）のブラウザ</li>
+    <li>インターネット接続は不要です（オフラインでも遊べます）</li>
+  </ul>
+
+  <div class="emoji-box">
+    16枚目のピースが現れる瞬間を楽しんでね！🎉🧩💗
+  </div>
+
+  <p class="footer">15パズル ～えらべる絵～ © 2026</p>
+</div>
+</body>
+</html>

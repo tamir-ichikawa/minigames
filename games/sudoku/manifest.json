@@ -1,0 +1,13 @@
+{
+  "id": "sudoku",
+  "title": "ロジの数字研究所",
+  "category": "puzzle",
+  "icon": "🤖",
+  "color": "#dfe7ef",
+  "description": "候補メモと理由ヒント。行・列・四角で考える数字パズル。",
+  "thumbnail": "collection/assets/characters/sudoku.svg",
+  "enabled": true,
+  "engine": "legacy",
+  "order": 14,
+  "module": "collection/games/sudoku/index.html"
+}

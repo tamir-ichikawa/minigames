@@ -1,0 +1,13 @@
+{
+  "id": "numorder",
+  "title": "数字順タップ",
+  "category": "brain",
+  "icon": "🔢",
+  "color": "#e3e8f3",
+  "description": "散らばった数字を1から順番に探してタップ。",
+  "thumbnail": "collection/assets/characters/numorder.svg",
+  "enabled": true,
+  "engine": "legacy",
+  "order": 33,
+  "module": "collection/games/numorder/index.html"
+}

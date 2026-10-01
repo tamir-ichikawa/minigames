@@ -1,0 +1,13 @@
+{
+  "id": "typing",
+  "title": "ことば通信局",
+  "category": "brain",
+  "icon": "⌨️",
+  "color": "#dce7ef",
+  "description": "文字数・正確さ・入力時間を分けて練習。",
+  "thumbnail": "collection/assets/characters/typing.svg",
+  "enabled": true,
+  "engine": "legacy",
+  "order": 20,
+  "module": "collection/games/typing/index.html"
+}

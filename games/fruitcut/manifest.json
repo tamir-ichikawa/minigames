@@ -1,0 +1,13 @@
+{
+  "id": "fruitcut",
+  "title": "フルーツカット",
+  "category": "action",
+  "icon": "🍎",
+  "color": "#e2ecdb",
+  "description": "指でフルーツを切ろう。爆弾に注意！",
+  "thumbnail": "collection/assets/characters/fruitcut.svg",
+  "enabled": true,
+  "engine": "legacy",
+  "order": 31,
+  "module": "collection/games/fruitcut/index.html"
+}

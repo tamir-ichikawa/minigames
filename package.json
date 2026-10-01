@@ -1,0 +1,26 @@
+{
+  "name": "minigame-platform",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "node scripts/build.mjs --serve",
+    "build": "tsc --noEmit && node scripts/build.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test tests/*.test.mjs",
+    "test:browser": "node tests/browser.mjs",
+    "preview": "node scripts/serve.mjs",
+    "new-game": "node scripts/new-game.mjs"
+  },
+  "dependencies": {
+    "phaser": "3.90.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.12",
+    "typescript": "5.9.3",
+    "@playwright/test": "1.56.1"
+  }
+}

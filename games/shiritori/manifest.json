@@ -1,0 +1,13 @@
+{
+  "id": "shiritori",
+  "title": "ことばの小径",
+  "category": "brain",
+  "icon": "🐍",
+  "color": "#dfeddb",
+  "description": "複数の正しい言葉から選んで、10回つなごう。",
+  "thumbnail": "collection/assets/characters/shiritori.svg",
+  "enabled": true,
+  "engine": "legacy",
+  "order": 19,
+  "module": "collection/games/shiritori/index.html"
+}

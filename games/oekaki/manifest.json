@@ -1,0 +1,13 @@
+{
+  "id": "oekaki",
+  "title": "いろのアトリエ",
+  "category": "other",
+  "icon": "🎨",
+  "color": "#eee5d7",
+  "description": "ペン・直線・丸・下絵。UndoとRedoで自由に描こう。",
+  "thumbnail": "collection/assets/characters/oekaki.svg",
+  "enabled": true,
+  "engine": "legacy",
+  "order": 23,
+  "module": "collection/games/oekaki/index.html"
+}

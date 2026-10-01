@@ -1,0 +1,13 @@
+{
+  "id": "colormatch",
+  "title": "カラーマッチ",
+  "category": "brain",
+  "icon": "🎨",
+  "color": "#e3e8f3",
+  "description": "文字に惑わされず、お題と同じ色を選ぼう。",
+  "thumbnail": "collection/assets/characters/colormatch.svg",
+  "enabled": true,
+  "engine": "legacy",
+  "order": 29,
+  "module": "collection/games/colormatch/index.html"
+}

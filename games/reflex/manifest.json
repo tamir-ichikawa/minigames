@@ -1,0 +1,14 @@
+{
+  "id": "reflex",
+  "title": "反射神経テスト",
+  "category": "brain",
+  "icon": "⚡",
+  "color": "#e3e8f3",
+  "description": "緑に変わった瞬間をタップ。5回の反応時間を比べよう。",
+  "thumbnail": "collection/assets/characters/reflex.svg",
+  "enabled": true,
+  "engine": "phaser",
+  "order": 36,
+  "module": "games/reflex/index.ts",
+  "legacyUrl": "collection/games/reflex/index.html"
+}

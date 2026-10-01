@@ -1,0 +1,13 @@
+{
+  "id": "pong",
+  "title": "ピンポン",
+  "category": "action",
+  "icon": "🏓",
+  "color": "#e2ecdb",
+  "description": "パドルを動かして相手のコートへ打ち返そう。",
+  "thumbnail": "collection/assets/characters/pong.svg",
+  "enabled": true,
+  "engine": "legacy",
+  "order": 35,
+  "module": "collection/games/pong/index.html"
+}

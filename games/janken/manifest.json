@@ -1,0 +1,13 @@
+{
+  "id": "janken",
+  "title": "ポン太の三手勝負",
+  "category": "other",
+  "icon": "🐻",
+  "color": "#eee0cc",
+  "description": "気分の予告、くり返し派、均等確率から相手を選ぶ。",
+  "thumbnail": "collection/assets/characters/janken.svg",
+  "enabled": true,
+  "engine": "legacy",
+  "order": 22,
+  "module": "collection/games/janken/index.html"
+}

@@ -1,0 +1,13 @@
+{
+  "id": "coin",
+  "title": "コインキャッチ",
+  "category": "action",
+  "icon": "🪙",
+  "color": "#e2ecdb",
+  "description": "かごを動かしてコインを集め、危険な落下物をよけよう。",
+  "thumbnail": "collection/assets/characters/coin.svg",
+  "enabled": true,
+  "engine": "legacy",
+  "order": 28,
+  "module": "collection/games/coin/index.html"
+}

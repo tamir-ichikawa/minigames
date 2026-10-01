@@ -1,0 +1,13 @@
+{
+  "id": "marubatsu",
+  "title": "ノヴァと三目勝負",
+  "category": "puzzle",
+  "icon": "🤖",
+  "color": "#e8e0ef",
+  "description": "通常対戦と、一手で勝つ・リーチを止める詰め問題。",
+  "thumbnail": "collection/assets/characters/marubatsu.svg",
+  "enabled": true,
+  "engine": "legacy",
+  "order": 15,
+  "module": "collection/games/marubatsu/index.html"
+}
