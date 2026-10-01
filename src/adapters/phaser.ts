@@ -3,6 +3,8 @@ import type { GameContext, GameModule, Score, Settings } from '../core/types';
 export interface PhaserModuleOptions {
   width?: number;
   height?: number;
+  /** Asset-heavy games can allow more time on slow connections. */
+  loadTimeoutMs?: number;
   createScene(context: GameContext, ready: () => void): Phaser.Scene;
   getScore(): Score | null;
 }
@@ -13,7 +15,7 @@ export function createPhaserModule(options: PhaserModuleOptions): GameModule {
     context.container.replaceChildren();
     const stage = document.createElement('div'); stage.className = 'phaser-stage'; context.container.append(stage);
     await new Promise<void>((resolve, reject) => {
-      const timeout = window.setTimeout(() => reject(new Error('Phaser の初期化がタイムアウトしました。')), 12000);
+      const timeout = window.setTimeout(() => reject(new Error('Phaser の初期化がタイムアウトしました。')), options.loadTimeoutMs ?? 12000);
       const scene = options.createScene(context, () => { clearTimeout(timeout); resolve(); });
       game = new Phaser.Game({
         type: Phaser.AUTO, parent: stage, width: options.width ?? 480, height: options.height ?? 640,

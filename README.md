@@ -38,10 +38,12 @@ npm run new-game -- my-game # Phaser + TypeScriptの新規ひな形
 
 - 41本の一覧を `games/*/manifest.json` から自動生成。追加・無効化・削除でランチャーを編集する必要はありません。
 - 追加サンプルの15パズル・早押しタップ・星灯りタワーの改良版を採用。原本と従来版を保持。
-- 反射神経テストをPhaser + TypeScriptへ試験移行。その他は互換アダプターで動作。
+- 反射神経テストとSTAR BOUNCE（旧ピンポン）をPhaser + TypeScriptで実装。その他は互換アダプターで動作。
 - 共通の起動・停止・再開・再起動・終了・ミュートと、将来のプラットフォーム用境界を追加。
 
 [調査・設計・移行記録](docs/architecture.md) / [ゲーム追加手順](docs/adding-games.md) / [検証記録](docs/verification.md)
+
+[STAR BOUNCEの仕様・共同開発するファイル・アセット記録](docs/star-bounce.md)
 
 ### GOAT JUMP のファイル構成
 

@@ -1,0 +1,15 @@
+{
+  "tool": "image_gen.imagegen",
+  "assets": [
+    {
+      "name": "ufo",
+      "prompt": "Use case: stylized-concept. Production animation sprite sheet for a cute cosmic arcade game. Exactly FOUR distinct frames in a perfectly aligned 2 by 2 equal square-cell grid, reading left to right then top to bottom. Square PNG, genuine transparent alpha background. No painted background, no labels, text, lines, grid, watermark, stars outside the subject, or floor shadows. Soft glossy toy-like 3D illustration, clear silhouette that reads at small game scale, colorful and polished. Fixed camera and consistent subject scale. All subject parts and glow must fit comfortably inside each cell, no overlap across cells. Subject: one adorable lavender flying saucer with a mint cyan glass dome, warm yellow porthole lights around its rim, and a small soft turquoise thruster glow beneath. No pilot character, no logos, no weapons. Frame geometry using a conceptual 512x512 cell: saucer center (256,256), body width380, body height180 including dome, all art within x55..457 and y115..400. Four looping flight frames with clearly different bank angles and traveling rim lights: frame1 level and left rim lights lit; frame2 slight bank clockwise 8 degrees with center lights lit, thruster extended; frame3 level and right rim lights lit; frame4 slight bank counterclockwise 8 degrees with center lights lit, thruster shortened. Same object, gentle hovering loop; no separate decorative objects. Transparent empty margin all around.",
+      "savedPath": "games/pong/assets/ufo-flight-sheet.png"
+    },
+    {
+      "name": "comet",
+      "prompt": "Use case: stylized-concept. Production animation sprite sheet for a cute cosmic arcade game. Exactly FOUR distinct frames in a perfectly aligned 2 by 2 equal square-cell grid, reading left to right then top to bottom. Square PNG, genuine transparent alpha background. No painted background, no labels, text, lines, grid, watermark, stars outside the subject, or floor shadows. Soft glossy toy-like 3D illustration, clear silhouette that reads at small game scale, colorful and polished. Fixed camera and consistent subject scale. All subject parts and glow must fit comfortably inside each cell, no overlap across cells. Subject: one plump bright golden five-point shooting star traveling to the RIGHT, with a magical flowing peach/pink/turquoise sparkling tail stretching LEFT. No face. Frame geometry using a conceptual512x512cell: star HEAD center fixed exactly (340,256) in every frame, golden head diameter170, tail reaches leftward to x45, entire subject and soft glow within x30..455 and y120..385. Four seamless motion frames: tail curls slightly up in1, straightens in2, curls slightly down in3, returns in4; little spark particles within the tail change position, star specular highlight twinkles across its surface. Preserve head center and star scale in every cell. The star head must be solid and readable, tail light and translucent. No extra detached stars elsewhere, no motion across the sheet; each cell is one animation frame.",
+      "savedPath": "games/pong/assets/comet-flight-sheet.png"
+    }
+  ]
+}

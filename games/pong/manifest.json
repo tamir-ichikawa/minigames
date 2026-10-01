@@ -1,13 +1,14 @@
 {
   "id": "pong",
-  "title": "ピンポン",
+  "title": "STAR BOUNCE",
   "category": "action",
-  "icon": "🏓",
-  "color": "#e2ecdb",
-  "description": "パドルを動かして相手のコートへ打ち返そう。",
-  "thumbnail": "collection/assets/characters/pong.svg",
+  "icon": "✦",
+  "color": "#d3f4dd",
+  "description": "5色の星を守って宇宙ラリー！ルミと遊んで、UFOや流れ星を狙おう。",
+  "thumbnail": "games/pong/assets/thumbnail.png",
   "enabled": true,
-  "engine": "legacy",
+  "engine": "phaser",
   "order": 35,
-  "module": "collection/games/pong/index.html"
+  "module": "games/pong/index.ts",
+  "legacyUrl": "collection/games/pong/index.html"
 }

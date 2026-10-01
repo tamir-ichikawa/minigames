@@ -5,6 +5,7 @@ import path from 'node:path';
 import { existsSync } from 'node:fs';
 import { serve } from '../scripts/serve.mjs';
 import { discoverGames } from '../scripts/registry.mjs';
+import { testStarBounce } from './star-bounce-browser.mjs';
 const output = path.resolve('.test-output'); await mkdir(output, { recursive:true });
 const app = await serve({ root:path.resolve('dist'), port:0, base:'/minigames' });
 const original = await serve({ root:process.cwd(), port:0 });
@@ -162,6 +163,8 @@ try {
     report.checks.push(`Existing shooting ${mode}: ${await page.locator('#results').evaluate(el=>el.textContent.split('\n').length)} checks passed`);
   }
   console.log('PASS interactions, saves, errors, mobile layout, existing shooting checks');
+  await testStarBounce(browser, base, output);
+  report.checks.push('STAR BOUNCE: gameplay, reactions, HP, scores, saves, lifecycle, mobile and Canvas fallback');
 } catch(error) { report.errors.push(error.stack); console.error(error); process.exitCode=1; }
 finally {
   await writeFile(path.join(output,'browser-report.json'),JSON.stringify(report,null,2));
