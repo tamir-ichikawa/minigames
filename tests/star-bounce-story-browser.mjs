@@ -211,9 +211,16 @@ try{
     assert.equal(await p.locator('[data-action=left],[data-action=right],.sb-control-buttons').count(),0);
     const dock=await p.locator('.sb-skill-dock').boundingBox(),meter=await p.locator('.sb-skill-meter').boundingBox();
     assert.ok(dock.x>=canvas.x&&dock.x+dock.width<=canvas.x+canvas.width+1);assert.ok(meter.height>meter.width*3);
-    await p.evaluate(()=>{window.__scene.match.charge=100;window.__touchLog=[];for(const type of ['pointerdown','pointerup','pointercancel','click','touchstart','touchend'])document.addEventListener(type,e=>window.__touchLog.push({type,target:e.target.tagName,action:e.target.dataset?.action,prevented:e.defaultPrevented}),true);});await p.locator('[data-action=skill]:not(:disabled)').waitFor();await p.locator('[data-action=skill]').tap();
-    console.log('Skill tap',size,await p.evaluate(()=>({phase:document.querySelector('.sb-shell').dataset.phase,skill:window.__scene.match.skill,charge:window.__scene.match.charge,paused:window.__scene.game.isPaused,events:window.__touchLog,button:document.querySelector('[data-action=skill]').getBoundingClientRect().toJSON()})));
-    await p.locator('[data-skill=wide]').waitFor();
+    await p.evaluate(()=>{window.__scene.match.charge=100;window.__touchLog=[];for(const type of ['pointerdown','pointerup','pointercancel','click','touchstart','touchend'])document.addEventListener(type,e=>window.__touchLog.push({type,target:e.target.tagName,action:e.target.dataset?.action,prevented:e.defaultPrevented}),true);});await p.locator('[data-action=skill]:not(:disabled)').waitFor();
+    const skillBox=await p.locator('[data-action=skill]').boundingBox(),skillPoint={x:skillBox.x+skillBox.width/2,y:skillBox.y+skillBox.height/2,id:4};
+    await touch('touchStart',[skillPoint]);await touch('touchCancel',[]);assert.equal(await p.evaluate(()=>window.__scene.match.skill),null,'cancel must not activate');
+    await touch('touchStart',[skillPoint]);await touch('touchMove',[{...skillPoint,x:skillBox.x-30}]);await touch('touchEnd',[]);assert.equal(await p.evaluate(()=>window.__scene.match.skill),null,'release outside must not activate');
+    // Reproduce browsers that deliver touch pointerup without a compatibility click.
+    await p.evaluate(()=>{window.__blockSkillClick=e=>{if(e.target.closest('[data-action=skill]')){e.preventDefault();e.stopImmediatePropagation();}};document.addEventListener('click',window.__blockSkillClick,true);const match=window.__scene.match,activate=match.activate.bind(match);window.__skillActivations=0;match.activate=()=>{const activated=activate();if(activated)window.__skillActivations++;return activated;};});
+    await p.locator('[data-action=skill]').tap();
+    await p.evaluate(()=>document.removeEventListener('click',window.__blockSkillClick,true));
+    assert.equal(await p.evaluate(()=>window.__skillActivations),1,'touch release must activate exactly once without a click');
+    await p.locator('[data-skill=wide]').waitFor();console.log('PASS mobile skill release/cancel/outside without compatibility click',size);
     assert.equal(await p.locator('.sb-skill-meter').getAttribute('aria-valuenow'),'0');
     await p.screenshot({path:path.join(out,`mobile-play-${size.width}.png`)});
     await p.locator('[data-action=pause]').tap();await p.waitForTimeout(50);await checkFit(p,size);

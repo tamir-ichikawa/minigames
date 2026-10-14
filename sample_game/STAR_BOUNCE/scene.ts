@@ -63,7 +63,15 @@ export class StoryScene extends Phaser.Scene {
     pad.onpointermove=e=>{if(!this.drag||e.pointerId!==this.drag.id||!this.match||this.game.isPaused)return;e.preventDefault();const width=pad.getBoundingClientRect().width;this.match.move(this.drag.bar+(e.clientX-this.drag.x)*480/width);};
     const releaseDrag=(e:PointerEvent)=>{if(this.drag?.id===e.pointerId)this.drag=undefined;};
     pad.onpointerup=releaseDrag;pad.onpointercancel=releaseDrag;pad.onlostpointercapture=releaseDrag;
-    this.button('skill').onclick=()=>this.activate();
+    const skill=this.button('skill');
+    skill.onclick=()=>this.activate();
+    // Some touch browsers omit the compatibility click after a drag gesture.
+    // Accept a release inside the button directly; canceled/outside releases do nothing.
+    skill.onpointerup=event=>{
+      if(event.pointerType!=='touch'||skill.disabled)return;
+      const bounds=skill.getBoundingClientRect();
+      if(event.clientX>=bounds.left&&event.clientX<=bounds.right&&event.clientY>=bounds.top&&event.clientY<=bounds.bottom)this.activate();
+    };
     this.scale.on(Phaser.Scale.Events.RESIZE,this.layout,this);
     this.game.events.on(Phaser.Core.Events.BLUR,this.clearInput,this);
     this.events.once(Phaser.Scenes.Events.SHUTDOWN,()=>{this.scale.off(Phaser.Scale.Events.RESIZE,this.layout,this);this.game.events.off(Phaser.Core.Events.BLUR,this.clearInput,this);});
@@ -184,7 +192,7 @@ export class StoryScene extends Phaser.Scene {
   private updateHUD(){const m=this.match;if(!m)return;this.wrapper.dataset.difficulty=this.difficulty;this.wrapper.dataset.hp=String(m.hp);this.wrapper.dataset.score=String(m.score);this.wrapper.dataset.side=this.side;this.wrapper.dataset.chapter=String(m.chapterIndex+1);this.wrapper.dataset.skill=m.skill??'';
     this.hud?.setText(m.score.toLocaleString());this.goalHud?.setText(m.endless?`GOAL ${m.goals}`:`GOAL ${m.goals} / 3`);this.stars.forEach((s,i)=>s.setVisible(i<m.hp));
     this.paceHud?.setText(`${DIFFICULTIES[this.difficulty].label} · RALLY ${m.rallyHits} · ×${(m.ballSpeed/Math.hypot(80,m.pace.serve+m.chapterIndex*24)).toFixed(1)}`);
-    const b=this.button('skill');b.disabled=m.phase!=='playing'||m.charge<100||m.skill!==null;b.title=this.selected.skillName;b.setAttribute('aria-label',`${this.selected.skillName}を発動`);b.textContent=m.skill?'✧':'✦';
+    const b=this.button('skill');b.disabled=m.phase!=='playing'||m.charge<100||m.skill!==null;b.title=this.selected.skillName;b.setAttribute('aria-label',`${this.selected.skillName}を発動`);const symbol=m.skill?'✧':'✦';if(b.textContent!==symbol)b.textContent=symbol;
     const dock=this.wrapper.querySelector<HTMLElement>('.sb-skill-dock')!,meter=dock.querySelector<HTMLElement>('.sb-skill-meter')!;
     dock.style.setProperty('--charge',`${m.charge}%`);dock.dataset.ready=String(!b.disabled);meter.setAttribute('aria-valuenow',String(m.charge));dock.querySelector('.sb-charge-label')!.textContent=m.skill?`${Math.ceil(m.skillTime)}s`:`${m.charge}%`;
 
