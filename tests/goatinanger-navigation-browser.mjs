@@ -64,31 +64,33 @@ try{
  const cdp=await page.context().newCDPSession(page);
  const point=async(selector,id)=>{const r=await page.locator(selector).boundingBox();return {x:r.x+r.width/2,y:r.y+r.height/2,id};};
  const right=await point('[data-move="right"]',1),fire=await point('#touch-fire',2);
+ // Rendering on CI can advance less game time than the same wall-clock delay.
+ const advance=async milliseconds=>{const start=await page.evaluate(()=>clover.game.scene.getScene('Field').clock);await page.waitForFunction(({start,milliseconds})=>clover.game.scene.getScene('Field').clock>=start+milliseconds,{start,milliseconds},{timeout:10000});};
  const state=()=>page.evaluate(()=>{const s=clover.game.scene.getScene('Field');return {x:s.player.x,y:s.player.y,v:s.player.body.velocity.length(),facing:s.facing,lastShot:s.lastShot};});
  assert.equal(await page.locator('[data-move]').count(),4);
  assert.ok(await page.locator('#touch-fire').isVisible());
  const before=await state();
- await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[right]});await page.waitForTimeout(180);
+ await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[right]});await advance(180);
  const moveOnly=await state();assert.ok(moveOnly.x>before.x);assert.equal(moveOnly.lastShot,before.lastShot,'movement fired a bullet');
- await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[right,fire]});await page.waitForTimeout(220);
+ await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[right,fire]});await advance(220);
  const both=await state();assert.ok(both.x>moveOnly.x);assert.ok(both.lastShot>moveOnly.lastShot);
  await page.screenshot({path:'.test-output/goatinanger/two-touch-controls.png'});
  // Chrome's partial touchEnd lists the finger being lifted.
- await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[right]});await page.waitForTimeout(80);
- const fireOnly=await state();await page.waitForTimeout(650);const standing=await state();
+ await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[right]});await advance(80);
+ const fireOnly=await state();await advance(650);const standing=await state();
  assert.equal(standing.v,0);assert.equal(standing.x,fireOnly.x);assert.equal(standing.y,fireOnly.y);assert.ok(standing.lastShot>fireOnly.lastShot);
- await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});await page.waitForTimeout(80);
- const released=await state();await page.waitForTimeout(250);assert.equal((await state()).lastShot,released.lastShot);
+ await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});await advance(80);
+ const released=await state();await advance(250);assert.equal((await state()).lastShot,released.lastShot);
  // Cancelling both fingers and pausing while held cannot leave stuck inputs.
- await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[right,fire]});await page.waitForTimeout(60);
- await cdp.send('Input.dispatchTouchEvent',{type:'touchCancel',touchPoints:[]});await page.waitForTimeout(80);
- const cancelled=await state();await page.waitForTimeout(250);assert.equal((await state()).v,0);assert.equal((await state()).lastShot,cancelled.lastShot);
- await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[right,fire]});await page.waitForTimeout(60);
+ await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[right,fire]});await advance(60);
+ await cdp.send('Input.dispatchTouchEvent',{type:'touchCancel',touchPoints:[]});await advance(80);
+ const cancelled=await state();await advance(250);assert.equal((await state()).v,0);assert.equal((await state()).lastShot,cancelled.lastShot);
+ await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[right,fire]});await advance(60);
  await page.evaluate(()=>clover.game.scene.getScene('Field').togglePause());
  await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});
- await page.evaluate(()=>clover.game.scene.getScene('Field').resume());await page.waitForTimeout(80);
- const resumed=await state();await page.waitForTimeout(250);assert.equal((await state()).v,0);assert.equal((await state()).lastShot,resumed.lastShot);
+ await page.evaluate(()=>clover.game.scene.getScene('Field').resume());await advance(80);
+ const resumed=await state();await advance(250);assert.equal((await state()).v,0);assert.equal((await state()).lastShot,resumed.lastShot);
  // A single tap fires while standing, with no held movement required.
- await page.locator('#touch-fire').tap();await page.waitForTimeout(80);assert.ok((await state()).lastShot>resumed.lastShot);assert.equal((await state()).v,0);
+ await page.locator('#touch-fire').tap();await advance(80);assert.ok((await state()).lastShot>resumed.lastShot);assert.equal((await state()).v,0);
  assert.deepEqual(errors,[]);console.log('PASS: mobile four-way pad, two-finger move/fire, independent release, tap, cancellation and pause');
 }finally{await browser.close();server.close();}
