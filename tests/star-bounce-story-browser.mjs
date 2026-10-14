@@ -161,7 +161,8 @@ try{
 
   await page.locator('canvas').focus();const oldX=await page.evaluate(()=>window.__scene.match.playerX);await page.keyboard.down('ArrowLeft');await page.waitForTimeout(200);await page.keyboard.up('ArrowLeft');assert.ok(await page.evaluate(()=>window.__scene.match.playerX)<oldX);
   await page.evaluate(()=>{window.__scene.match.charge=100;});await page.locator('canvas').press('Space');await page.locator('[data-skill=fever]').waitFor();
-  const before=await page.evaluate(()=>window.__scene.match.elapsed);await page.locator('[data-action=pause]').click();await page.waitForTimeout(200);assert.ok(Math.abs(await page.evaluate(()=>window.__scene.match.elapsed)-before)<.1);await page.getByRole('button',{name:'ラリーに戻る'}).click();
+  await page.locator('[data-action=pause]').click();await page.locator('[data-phase=paused]').waitFor();
+  const before=await page.evaluate(()=>window.__scene.match.elapsed);await page.waitForTimeout(200);assert.equal(await page.evaluate(()=>window.__scene.match.elapsed),before);await page.getByRole('button',{name:'ラリーに戻る'}).click();
   // GameModule container resize and browser fullscreen, separate from viewport resize.
   await page.evaluate(()=>{window.__game.pause();window.__scene.match.score=321;window.__scene.match.hp=4;});
   for(const [width,height] of [[320,568],[560,320],[600,800]]){
