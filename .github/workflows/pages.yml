@@ -36,6 +36,15 @@ jobs:
         run: npx playwright install --with-deps chromium
       - name: Test games in the browser
         run: npm run test:browser
+      - name: Save browser failure details
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: browser-failure
+          path: |
+            .test-output/star-bounce-story/report.json
+            .test-output/star-bounce-story/failure.png
+          if-no-files-found: ignore
       - name: Upload Pages artifact
         if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v4

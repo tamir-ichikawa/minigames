@@ -11,6 +11,7 @@ const base=`http://127.0.0.1:${server.address().port}/sample_game/STAR_BOUNCE`;
 const mac='/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
 const browser=await chromium.launch({executablePath:process.env.CHROME_PATH||(existsSync(mac)?mac:undefined),headless:true});
 const report={checks:[],errors:[]};
+let diagnosticPage;
 try{
   const ctx=await browser.newContext({viewport:{width:1000,height:920}}),page=await ctx.newPage();
   page.on('pageerror',e=>report.errors.push(e.message));page.on('console',m=>{if(m.type()==='error')report.errors.push(m.text());});page.on('response',r=>{if(r.status()>=400)report.errors.push(`${r.status()} ${r.url()}`);});
@@ -185,8 +186,9 @@ try{
     for(const b of await p.locator('button:visible').all()) {const box=await b.boundingBox();assert.ok(box.x>=-1&&box.y>=-1&&box.x+box.width<=size.width+1&&box.y+box.height<=size.height+1,'all buttons stay within viewport');}
   };
   for(const size of [{width:390,height:844},{width:375,height:667},{width:320,height:568},{width:844,height:390},{width:568,height:320},{width:1000,height:920}]){
+    console.log('Checking mobile viewport',size);
     const mobile=await browser.newContext({viewport:size,isMobile:true,hasTouch:true,deviceScaleFactor:2}),p=await mobile.newPage();p.on('pageerror',e=>report.errors.push(e.message));
-    await harness(p);await p.goto(`${base}/__story.html`);await p.locator('[data-phase=select]').waitFor();await p.waitForTimeout(100);await checkFit(p,size);
+    diagnosticPage=p;await harness(p);await p.goto(`${base}/__story.html`);await p.locator('[data-phase=select]').waitFor();await p.waitForTimeout(100);await checkFit(p,size);
     assert.equal(await p.locator('[data-character=lumi]').count(),0);
     await p.screenshot({path:path.join(out,`mobile-select-${size.width}.png`)});
     await p.getByRole('button',{name:'ポポと出発する'}).tap();await p.waitForTimeout(100);await checkFit(p,size);
@@ -209,7 +211,9 @@ try{
     assert.equal(await p.locator('[data-action=left],[data-action=right],.sb-control-buttons').count(),0);
     const dock=await p.locator('.sb-skill-dock').boundingBox(),meter=await p.locator('.sb-skill-meter').boundingBox();
     assert.ok(dock.x>=canvas.x&&dock.x+dock.width<=canvas.x+canvas.width+1);assert.ok(meter.height>meter.width*3);
-    await p.evaluate(()=>{window.__scene.match.charge=100;});await p.locator('[data-action=skill]:not(:disabled)').waitFor();await p.locator('[data-action=skill]').tap();await p.locator('[data-skill=wide]').waitFor();
+    await p.evaluate(()=>{window.__scene.match.charge=100;window.__touchLog=[];for(const type of ['pointerdown','pointerup','pointercancel','click','touchstart','touchend'])document.addEventListener(type,e=>window.__touchLog.push({type,target:e.target.tagName,action:e.target.dataset?.action,prevented:e.defaultPrevented}),true);});await p.locator('[data-action=skill]:not(:disabled)').waitFor();await p.locator('[data-action=skill]').tap();
+    console.log('Skill tap',size,await p.evaluate(()=>({phase:document.querySelector('.sb-shell').dataset.phase,skill:window.__scene.match.skill,charge:window.__scene.match.charge,paused:window.__scene.game.isPaused,events:window.__touchLog,button:document.querySelector('[data-action=skill]').getBoundingClientRect().toJSON()})));
+    await p.locator('[data-skill=wide]').waitFor();
     assert.equal(await p.locator('.sb-skill-meter').getAttribute('aria-valuenow'),'0');
     await p.screenshot({path:path.join(out,`mobile-play-${size.width}.png`)});
     await p.locator('[data-action=pause]').tap();await p.waitForTimeout(50);await checkFit(p,size);
@@ -227,5 +231,5 @@ try{
   assert.equal(await saved.locator('.sb-shell').getAttribute('data-background'),'still');await saved.close();report.checks.push('Background preference survives reload');
   const fallback=await browser.newContext();await fallback.addInitScript(()=>{const original=HTMLCanvasElement.prototype.getContext;HTMLCanvasElement.prototype.getContext=function(type,...args){return type.includes('webgl')?null:original.call(this,type,...args);};});const f=await fallback.newPage();await f.goto(`${base}/`);await f.locator('[data-phase=select]').waitFor();await f.locator('button[data-side=DARK]').click();await f.getByRole('button',{name:'クロと出発する'}).click();await f.getByRole('button',{name:'ラリーをはじめる'}).click();assert.equal(await f.locator('canvas').evaluate(c=>!!c.getContext('2d')),true);await fallback.close();report.checks.push('Canvas fallback');
   assert.deepEqual(report.errors,[]);console.log('PASS',report.checks.join('\nPASS '));
-}catch(error){report.errors.push(error.stack);console.error(error);process.exitCode=1;}
+}catch(error){if(diagnosticPage&&!diagnosticPage.isClosed()){report.input=await diagnosticPage.evaluate(()=>({viewport:{width:innerWidth,height:innerHeight},phase:document.querySelector('.sb-shell')?.dataset.phase,skill:window.__scene?.match?.skill,charge:window.__scene?.match?.charge,paused:window.__scene?.game.isPaused,events:window.__touchLog})).catch(()=>null);await diagnosticPage.screenshot({path:path.join(out,'failure.png')}).catch(()=>{});console.error('Input state:',report.input);}report.errors.push(error.stack);console.error(error);process.exitCode=1;}
 finally{await writeFile(path.join(out,'report.json'),JSON.stringify(report,null,2));await browser.close();server.close();}
