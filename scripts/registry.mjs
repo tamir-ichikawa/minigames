@@ -18,6 +18,13 @@ export async function discoverGames(root) {
     if (!['action', 'puzzle', 'brain', 'other'].includes(game.category)) throw new Error(`${filename}: invalid category`);
     if (!['legacy', 'phaser', 'canvas', 'webgl'].includes(game.engine)) throw new Error(`${filename}: invalid engine`);
     if (!Number.isFinite(game.order)) throw new Error(`${filename}: invalid order`);
+    if (game.recommendation !== undefined) {
+      const recommendation = game.recommendation;
+      if (!recommendation || !Number.isInteger(recommendation.order) || recommendation.order < 0 ||
+          typeof recommendation.reason !== 'string' || !recommendation.reason.trim()) {
+        throw new Error(`${filename}: recommendation needs a non-negative integer order and a reason`);
+      }
+    }
     for (const key of ['module', 'thumbnail', 'legacyUrl']) {
       if (!game[key]) continue;
       const file = game[key];

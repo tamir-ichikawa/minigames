@@ -10,5 +10,9 @@
   "engine": "phaser",
   "order": 36,
   "module": "games/reflex/index.ts",
-  "legacyUrl": "collection/games/reflex/index.html"
+  "legacyUrl": "collection/games/reflex/index.html",
+  "recommendation": {
+    "order": 8,
+    "reason": "5回のチャレンジで、反応速度を測ろう。"
+  }
 }

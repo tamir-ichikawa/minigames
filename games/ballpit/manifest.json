@@ -9,5 +9,9 @@
   "module": "games/ballpit/index.ts",
   "order": 2,
   "color": "#cde3d9",
-  "icon": "🐷"
+  "icon": "🐷",
+  "recommendation": {
+    "order": 0,
+    "reason": "反射するボールと強化で、3ウェーブ＋ボス戦。"
+  }
 }

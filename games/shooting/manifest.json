@@ -9,5 +9,9 @@
   "enabled": true,
   "engine": "legacy",
   "order": 6,
-  "module": "collection/games/shooting/index.html"
+  "module": "collection/games/shooting/index.html",
+  "recommendation": {
+    "order": 2,
+    "reason": "個性のある敵編隊と、中ボスへの挑戦。"
+  }
 }

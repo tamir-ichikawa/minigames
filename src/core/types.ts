@@ -43,6 +43,7 @@ export interface GameDefinition {
   engine: 'legacy' | 'phaser' | 'canvas' | 'webgl';
   module: string;
   order: number;
+  recommendation?: { order: number; reason: string };
   color: string;
   icon: string;
   legacyUrl?: string;

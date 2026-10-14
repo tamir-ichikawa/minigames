@@ -9,5 +9,9 @@
   "enabled": true,
   "engine": "legacy",
   "order": 1,
-  "color": "#e5e8f1"
+  "color": "#e5e8f1",
+  "recommendation": {
+    "order": 4,
+    "reason": "曲と演奏パートを選んで、音を奏でよう。"
+  }
 }

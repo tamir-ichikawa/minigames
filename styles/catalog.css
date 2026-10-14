@@ -1,0 +1,25 @@
+/* Shared recommendation presentation for the main launcher and Collection. */
+:root{--pick-accent:#ffe3a0;--pick-border:#b99a58;--pick-muted:#c4bfda;--pick-note:#e6dbbc}
+body[data-launcher="collection"]{--pick-accent:#315c48;--pick-border:#7c9e84;--pick-muted:#66746a;--pick-note:#476352}
+#recommended[hidden],.other-games-heading[hidden],.game-grid[hidden],.grid[hidden]{display:none}
+#recommended{width:100%;margin:0 0 32px}
+.catalog-heading{font-size:24px;line-height:1.4;letter-spacing:.02em;margin:0 0 8px;color:inherit}
+.catalog-copy{font-size:13px;line-height:1.7;color:var(--pick-muted);margin:0 0 18px}
+.other-games-heading{margin-bottom:16px}
+.recommended-card{border-color:var(--pick-border)}
+.recommended-card .recommended-badge{position:absolute;top:9px;left:9px;z-index:1;font:700 10px/1.4 system-ui,sans-serif;letter-spacing:.02em;border-radius:999px;padding:5px 9px;background:#fff0c4;color:#4b3d1e;box-shadow:0 2px 8px #0002}
+.recommended-card .recommendation-note{color:var(--pick-note);font-size:12px;line-height:1.65;margin:7px 0 0}
+.recommended-card .card-description{display:none}
+.game-card:focus-visible,#filters button:focus-visible{outline:3px solid var(--pick-accent);outline-offset:3px}
+body[data-launcher="collection"] main>section:first-child{margin-bottom:48px}
+@media(max-width:700px){
+  #recommended{margin-bottom:26px}
+  .catalog-heading{font-size:21px}
+  .catalog-copy{font-size:12px;margin-bottom:13px}
+  .recommended-grid.game-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .recommended-grid .card-art{height:88px}
+  .recommended-grid .card-title{font-size:14px;line-height:1.4}
+  .recommended-card .recommendation-note{font-size:11px;line-height:1.6}
+  .recommended-card .recommended-badge{top:6px;left:6px;font-size:9px;padding:4px 7px}
+  .section-heading{align-items:flex-start;gap:10px;flex-wrap:wrap}
+}

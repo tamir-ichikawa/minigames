@@ -10,5 +10,9 @@
   "engine": "phaser",
   "order": 35,
   "module": "games/pong/index.ts",
-  "legacyUrl": "collection/games/pong/index.html"
+  "legacyUrl": "collection/games/pong/index.html",
+  "recommendation": {
+    "order": 1,
+    "reason": "星を守る宇宙ラリー。UFOや流れ星も登場。"
+  }
 }

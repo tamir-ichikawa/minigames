@@ -15,5 +15,9 @@
     "selector": "#score",
     "unit": "点",
     "direction": "higher"
+  },
+  "recommendation": {
+    "order": 7,
+    "reason": "速さ・サイズ・鬼モードで遊び方を選べる。"
   }
 }

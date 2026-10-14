@@ -10,5 +10,9 @@
   "engine": "legacy",
   "order": 2,
   "color": "#e5e8f1",
-  "legacyUrl": "sample_game/15-puzzle.html"
+  "legacyUrl": "sample_game/15-puzzle.html",
+  "recommendation": {
+    "order": 5,
+    "reason": "好きな絵柄で挑戦。プレビューも使える。"
+  }
 }
