@@ -1,0 +1,13 @@
+{
+  "id": "ballpit",
+  "title": "BALL＆PIT",
+  "description": "小さな鼻で、大きな一撃。反射するボールと強化を駆使して、城塞の守護ゴーレムを倒そう。",
+  "thumbnail": "games/ballpit/thumbnail.svg",
+  "category": "action",
+  "enabled": true,
+  "engine": "phaser",
+  "module": "games/ballpit/index.ts",
+  "order": 2,
+  "color": "#cde3d9",
+  "icon": "🐷"
+}

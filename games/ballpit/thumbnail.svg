@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360">
+<defs><radialGradient id="bg"><stop stop-color="#324e53"/><stop offset="1" stop-color="#10232c"/></radialGradient></defs>
+<rect width="600" height="360" rx="20" fill="url(#bg)"/>
+<g fill="#536770" stroke="#263d48" stroke-width="3"><path d="M36 300V50h36v20h34V50h36v250zM458 300V50h36v20h34V50h36v250z"/><path d="M142 75h316v48H142z"/></g>
+<path d="M260 123V94a40 40 0 0 1 80 0v29" fill="#0c1b26" stroke="#d5bd89" stroke-width="4"/>
+<g fill="none" stroke="#b2ead8" stroke-width="3" stroke-dasharray="7 9"><path d="m300 276 140-105-90-51"/><path d="m285 278-95-75 45-56"/></g>
+<g fill="#79cbf5" stroke="#d7f5ff" stroke-width="3"><circle cx="394" cy="203" r="9"/><circle cx="219" cy="180" r="7"/></g>
+<g fill="#8dbf96"><path d="M174 153q0-28 28-28t28 28q-28 15-56 0"/><path d="M362 151q0-25 25-25t25 25q-25 14-50 0"/></g>
+<g fill="#132c36"><circle cx="194" cy="140" r="3"/><circle cx="209" cy="140" r="3"/><circle cx="380" cy="139" r="3"/><circle cx="394" cy="139" r="3"/></g>
+<g stroke="#784f60" stroke-width="3"><path d="m275 266-10-24 26 13m17 0 27-13-10 24" fill="#e7a8ae"/><ellipse cx="300" cy="282" rx="34" ry="27" fill="#efbdbe"/><ellipse cx="300" cy="283" rx="16" ry="11" fill="#d58e9e"/></g>
+<g fill="#413342"><circle cx="285" cy="273" r="3"/><circle cx="315" cy="273" r="3"/><circle cx="294" cy="283" r="2"/><circle cx="306" cy="283" r="2"/></g>
+<text x="300" y="52" text-anchor="middle" fill="#f2e5c7" font-family="Georgia,serif" font-size="31" font-weight="bold" letter-spacing="5">BALL &amp; PIT</text>
+<text x="300" y="338" text-anchor="middle" fill="#c6dcd2" font-family="sans-serif" font-size="14" letter-spacing="3">小さな鼻で、大きな一撃。</text></svg>
