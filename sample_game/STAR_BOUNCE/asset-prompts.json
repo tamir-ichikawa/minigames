@@ -1,0 +1,43 @@
+{
+  "tool": "built-in image_gen",
+  "prompts": [
+    {
+      "key": "good-sheet",
+      "prompt": "Create a production-ready transparent PNG sprite sheet. EXACTLY 6 equal columns, each row one character. Every cell has one complete centered full-body character, feet consistently at 88% cell height, same camera and scale, generous transparent margins, nothing crossing cell boundaries. Genuine alpha transparency, NO white background, NO checkerboard drawn into pixels, NO grid, NO text, NO floor shadows. Preserve reference character identities, clothes and colors. Simplified polished cute storybook/chibi game art readable at 80 pixels. Columns left to right: 1 calm idle leaning slightly left; 2 calm idle leaning slightly right with blink; 3 determined return gesture fist/wing forward; 4 happy jump celebrating; 5 sad drooped shoulders; 6 excited special move arms/wings out. Entire sheet is a regular grid with no outer margin. EXACTLY FOUR ROWS, output 1536x1024, each cell256x256. Row1 reference1 red panda Popo in brown cream robes. Row2 reference2 sheep Merry cream robe curled brown horns. Row3 reference3 Tokori round gray white orange bird (extract the bird from the design board, omit all board text). Row4 reference4 Mokkul small fluffy brown forest bear with leaf cape (extract from the design board, omit bow/weapons and all board text).",
+      "files": [
+        "B4469AC7-9484-43AC-8575-5A1CCE9E430D.png",
+        "94884962-652E-4BE9-B929-8ED8E5E1C5C4.png",
+        "D15FE97B-3C07-4435-9875-FBFD9F166F20.png",
+        "67906500-D5C2-4827-ABB9-4F97C1509D66.png"
+      ]
+    },
+    {
+      "key": "dark-sheet",
+      "prompt": "Create a production-ready transparent PNG sprite sheet. EXACTLY 6 equal columns, each row one character. Every cell has one complete centered full-body character, feet consistently at 88% cell height, same camera and scale, generous transparent margins, nothing crossing cell boundaries. Genuine alpha transparency, NO white background, NO checkerboard drawn into pixels, NO grid, NO text, NO floor shadows. Preserve reference character identities, clothes and colors. Simplified polished cute storybook/chibi game art readable at 80 pixels. Columns left to right: 1 calm idle leaning slightly left; 2 calm idle leaning slightly right with blink; 3 determined return gesture fist/wing forward; 4 happy jump celebrating; 5 sad drooped shoulders; 6 excited special move arms/wings out. Entire sheet is a regular grid with no outer margin. EXACTLY THREE ROWS, output1536x768, each cell256x256. Row1 reference1 Kuro cute black-white husky in dark helmet cape and muzzle. Row2 reference2 Neneko cute black cat in red-lined dark hooded cape. Row3 reference3 Akane cute reddish deer with antlers, black markings and black outfit. Mischievous but lovable, no threatening weapons, no franchise logos.",
+      "files": [
+        "583FEC36-0CF7-4008-A7B2-01F1A1FFD66B.png",
+        "577A7DEF-F543-4F5E-B3AB-4F922BE7522D.png",
+        "4F037391-5B6A-42B1-84C3-D527F423B293.png"
+      ]
+    },
+    {
+      "key": "good-cutout",
+      "prompt": "Background-extraction edit. Remove the entire brown background from this sprite sheet and replace it with ACTUAL TRANSPARENCY in the PNG alpha channel. Preserve every character, color, expression, pose, size, exact six-column four-row cell layout and all existing coordinates. DO NOT add any background color, texture, gradient, checkerboard or shadows. This must be a clean transparent game sprite atlas that can be composited over a dark starfield. All empty space alpha=0. Do not rearrange or rescale any sprites.",
+      "files": [
+        "/Users/solidol/.codex/generated_images/01a0f626-ce15-7363-be53-bc427ee5ed4f/exec-82e11f6d-f179-4a7c-8af9-37304d8001d7.png"
+      ]
+    },
+    {
+      "key": "bonus-sheet",
+      "prompt": "Create a transparent PNG sprite sheet for a cute space paddle game from reference1 artificial planet and reference2 airplane. EXACTLY FOUR COLUMNS and TWO ROWS, 1536x768, eight equal square cells384x384. Row1 same round metal artificial planet in4 animation frames, slight rotation and changing warm window lights, simplify details and omit all little escort ships. Row2 same white orange plane facing RIGHT in4 flight frames, exhaust changes length blue-orange, slight wing tilt but keep horizontal nose. Same object size and center in every cell, margin at least12% each cell, all subjects wholly inside their cell. Actual TRANSPARENT ALPHA background, no painted backdrop, no checkerboard, no text, no labels, no grid. Polished illustrated game art readable small.",
+      "files": [
+        "/Users/solidol/Documents/Codex/dev/minigames/sample_game/STAR_BOUNCE/sozai/79272DE1-3626-42E4-8E54-4ECDC740284E.png",
+        "/Users/solidol/Documents/Codex/dev/minigames/sample_game/STAR_BOUNCE/sozai/F82516EC-623D-4722-AD3A-96310A874311.png"
+      ]
+    },
+    {
+      "key": "candy-orbit",
+      "prompt": "Portrait 1024x1536 background illustration for a cozy cute space paddle videogame. An original orbital candy harbor seen from space: dark deep indigo violet sky, peach pink luminous nebula curling near edges, tiny stars, a small pastel artificial planet with rings shaped like wrapped sweet paths in upper right, tiny warm bakery windows on far orbital islands along lower corners. Center70% is quiet very dark navy open space for a bright moving ball. Elegant soft storybook painted style, cinematic gentle glow, visual depth. No foreground characters, no aircraft, no text, no logos, no UI, no white borders. Full bleed image."
+    }
+  ]
+}

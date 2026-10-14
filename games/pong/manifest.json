@@ -4,7 +4,7 @@
   "category": "action",
   "icon": "✦",
   "color": "#d3f4dd",
-  "description": "5色の星を守って宇宙ラリー！ルミと遊んで、UFOや流れ星を狙おう。",
+  "description": "GOODとDARK、7人の相棒と銀河のおやつ争奪戦へ。各3章の物語と必殺技を楽しもう。",
   "thumbnail": "games/pong/assets/thumbnail.png",
   "enabled": true,
   "engine": "phaser",
@@ -12,7 +12,7 @@
   "module": "games/pong/index.ts",
   "legacyUrl": "collection/games/pong/index.html",
   "recommendation": {
-    "order": 1,
-    "reason": "星を守る宇宙ラリー。UFOや流れ星も登場。"
+    "order": 2,
+    "reason": "7人の相棒・必殺技・GOOD／DARKの物語。"
   }
 }

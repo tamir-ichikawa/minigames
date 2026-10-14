@@ -1,0 +1,7 @@
+[
+  {"id":"deep","label":"低音ブン","description":"丸く、しっかり低い","base":65,"sweep":95,"duration":0.32,"air":0.35,"harmonic":0.09},
+  {"id":"soft","label":"やわらかい風","description":"息を混ぜた、ふわん","base":82,"sweep":65,"duration":0.36,"air":1.2,"harmonic":0.025},
+  {"id":"heavy","label":"重いヴォン","description":"太い低音と長めの余韻","base":48,"sweep":85,"duration":0.42,"air":0.3,"harmonic":0.18},
+  {"id":"short","label":"短いブッ","description":"ラリー向けの短い低音","base":75,"sweep":105,"duration":0.21,"air":0.65,"harmonic":0.07},
+  {"id":"original","label":"これまでの音","description":"高め・比較用","base":135,"sweep":220,"duration":0.25,"air":0.45,"harmonic":0.14}
+]

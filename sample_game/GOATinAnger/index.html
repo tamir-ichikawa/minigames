@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#252f26" />
+    <meta name="description" content="ヤギの小隊で狐の部隊を迎え撃つ、見下ろし型アクションシューティング。" />
+    <title>GOAT in ANGER — クローバー小隊</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='12' fill='%232b382c'/%3E%3Ctext x='24' y='35' text-anchor='middle' font-size='36' fill='%23dfdfbf'%3E♧%3C/text%3E%3C/svg%3E" />
+  </head>
+  <body>
+    <div id="app">
+      <header class="topbar">
+        <a class="brand" href="./" aria-label="クローバー小隊 ホーム"><span class="brand-mark">♧</span><span>CLOVER UNIT<small>クローバー小隊</small></span></a>
+        <div class="topbar-center"><span class="live-dot"></span> FIELD OPERATIONS <span class="divider">/</span> TRAINING GROUND</div>
+        <span class="version">PLAYABLE PROTOTYPE <b>01</b></span>
+      </header>
+      <main>
+        <section class="heading"><div><div class="eyebrow">TACTICAL ACTION / 見下ろし型シューティング</div><h1>小さな小隊、大きな任務。</h1><p>森の北の前哨地へ、進撃。クローバー小隊、出動。</p></div><div class="mission-stamp"><span>OPERATION</span><strong>GREEN HOLLOW</strong><small>グリーンホロウ防衛作戦</small></div></section>
+        <div class="game-layout">
+          <section class="game-shell" aria-label="ゲーム画面">
+            <div class="game-toolbar"><div><span class="live-dot"></span><b id="status-label">STANDBY</b><span class="toolbar-place">北部森林地帯 / 第07前哨地</span></div><div class="toolbar-actions"><button id="sound-button" aria-label="効果音をオンにする" title="効果音">SOUND OFF</button><button id="pause-button" title="一時停止 (P)" aria-label="一時停止" disabled>Ⅱ</button><button id="fullscreen-button" title="全画面表示" aria-label="ゲームを全画面表示">⛶</button></div></div>
+            <div class="game-stage" id="game-stage">
+              <div id="phaser-game"></div>
+              <div class="hud" id="hud"><div class="hud-health"><span>UNIT HEALTH</span><div id="health-pips"></div></div><div class="hud-wave"><span id="wave-label">SECTOR 01</span><b id="wave-value">出動待機</b></div><div class="hud-score"><span>SCORE</span><b id="score-value">00000</b></div></div>
+              <div id="mission-toast" class="mission-toast" aria-live="polite"></div>
+              <div class="overlay" id="overlay"><div class="intro-card"><div class="intro-kicker">FIELD MISSION — 001</div><div class="intro-emblem">♧</div><h2 id="overlay-title">北の前哨地へ、進撃。</h2><p id="overlay-description">方向パッドで移動、射撃ボタンで攻撃。<br>止まって撃つことも、移動しながら撃つことも。</p><div id="intro-controls" class="intro-controls"><span><kbd>W A S D</kbd> 移動・向きを変更</span><span><kbd>SPACE</kbd> 射撃</span></div><button id="start-button" class="primary-button" disabled>素材を読み込み中… <span>↗</span></button><span class="intro-note" id="overlay-note">敵を倒すと次の区間へ進めます。</span></div></div>
+              <div class="touch-controls" id="touch-controls" aria-label="タッチ操作"><div class="touch-pad" role="group" aria-label="移動"><button data-move="up" aria-label="上へ移動">↑</button><button data-move="left" aria-label="左へ移動">←</button><button data-move="right" aria-label="右へ移動">→</button><button data-move="down" aria-label="下へ移動">↓</button></div><button id="touch-fire" aria-label="射撃（押している間連射）">射撃<span>長押しで連射</span></button></div>
+              <div class="field-footer"><span>↑ N &nbsp; / &nbsp; GREEN HOLLOW</span><span id="remaining-label">RANGE 320 PX</span></div>
+            </div>
+            <div class="game-bottom"><span><i class="small-cross">+</i> <span id="game-hint">隊員を選んで、作戦を開始してください。</span></span><span class="build-tag">PHASER / v0.1</span></div>
+          </section>
+          <aside class="sidebar">
+            <section class="unit-panel"><div class="panel-heading"><span>YOUR UNIT</span><span class="panel-number">01 — 04</span></div><div class="portrait-wrap"><div class="portrait-grid"></div><span class="portrait-label">CLOVER<br>REGIMENT</span><img id="unit-portrait" alt="ヤギの小隊長" /><div class="portrait-badge">♧</div></div><div class="unit-info"><span id="unit-role" class="eyebrow">SQUAD LEADER</span><h2 id="unit-name">小隊長 <span>LEADER</span></h2><p id="unit-description">前線を切り拓く、頼れるリーダー。</p><div class="unit-stats"><div><span>移動速度</span><b id="stat-speed">●●●○</b></div><div><span>連射速度</span><b id="stat-fire">●●●○</b></div></div></div><div class="unit-select" role="group" aria-label="隊員を選択"><button class="unit-choice selected" data-unit="leader" aria-label="小隊長を選ぶ" aria-pressed="true" disabled><img alt=""/><span>小隊長</span></button><button class="unit-choice" data-unit="scout" aria-label="斥候を選ぶ" aria-pressed="false" disabled><img alt=""/><span>斥候</span></button><button class="unit-choice" data-unit="medic" aria-label="衛生兵を選ぶ" aria-pressed="false" disabled><img alt=""/><span>衛生兵</span></button><button class="unit-choice" data-unit="rifleman" aria-label="歩兵を選ぶ" aria-pressed="false" disabled><img alt=""/><span>歩兵</span></button></div></section>
+            <section class="briefing"><div class="panel-heading"><span>MISSION BRIEF</span><span>↗</span></div><ol><li><span>01</span> 狐の部隊を迎え撃つ</li><li><span>02</span> 3回の敵襲を制圧する</li><li><span>03</span> 北の撤収地点へ向かう</li></ol><p><span class="range-icon">⊕</span> 敵を射程内に捉えよう。<br><span>遮蔽物は敵の弾も防ぎます。</span></p></section>
+          </aside>
+        </div>
+        <section class="controls-strip"><div class="controls-title"><span>FIELD MANUAL</span><b>操作ガイド</b></div><div><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd><span>移動 / 矢印キーも使用可</span></div><div><kbd>SPACE</kbd><span>射撃 / 長押しで連射</span></div><div><kbd>P</kbd><span>一時停止</span></div></section>
+      </main>
+      <footer class="site-footer"><span>♧ CLOVER UNIT <span>—</span> HOLD YOUR GROUND.</span><span>ヤギと狐の、小さな戦場。</span></footer>
+    </div>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+{
+  "tool": "image_gen.imagegen",
+  "assets": [
+    {
+      "key": "harbor",
+      "prompt": "Portrait 1024x1536 production videogame background, original cozy storybook science-fiction, polished hand-painted detail and soft cinematic light. No people, no text, no UI, no logos. Dark quiet low-contrast CENTRAL 65% reserved for a luminous ball; all bright decoration along the outer edges, no obstructions in center. Full bleed. This is the FAR depth layer: no large objects directly in foreground. A friendly orbital spaceship harbor at blue hour. Curved docking gantries and distant little delivery spacecraft at the left and right edges, cyan landing lights, deep navy space with a softly glowing planet beyond a huge open hangar. Peach amber windows on the distant station. Spacious vertical composition, whimsical rather than military.",
+      "file": "assets/stage-harbor.png"
+    },
+    {
+      "key": "bridge",
+      "prompt": "Portrait 1024x1536 production videogame background, original cozy storybook science-fiction, polished hand-painted detail and soft cinematic light. No people, no text, no UI, no logos. Dark quiet low-contrast CENTRAL 65% reserved for a luminous ball; all bright decoration along the outer edges, no obstructions in center. Full bleed. This is the FAR depth layer: no large objects directly in foreground. Interior of a small luxurious violet spaceship command room used by a mischievous cute cat captain. Tall panoramic star-window in the upper third, gentle magenta and lavender edge lights, empty curved consoles only along extreme lower sides, muted burgundy cushions, distant stars beyond. Center is smooth dark midnight purple, no central console or chair. Friendly, secret clubhouse mood.",
+      "file": "assets/stage-bridge.png"
+    },
+    {
+      "key": "forest",
+      "prompt": "Portrait 1024x1536 production videogame background, original cozy storybook science-fiction, polished hand-painted detail and soft cinematic light. No people, no text, no UI, no logos. Dark quiet low-contrast CENTRAL 65% reserved for a luminous ball; all bright decoration along the outer edges, no obstructions in center. Full bleed. This is the FAR depth layer: no large objects directly in foreground. A quiet alien woodland at twilight, rich deep teal foliage, enormous trees along side edges, tiny warm firefly lights, a small distant wooden treehouse high on the right. Dim mint blue mist and deep green open forest clearing in center. A few mushroom lights at far lower corners. Cozy, soft, magical nature, no planets in this image.",
+      "file": "assets/stage-forest.png"
+    },
+    {
+      "key": "cafe",
+      "prompt": "Portrait 1024x1536 original cozy science-fiction game background, polished soft painterly storybook illustration. Dark quiet low-contrast CENTRAL 65% of image kept open for a luminous ball. All bright detailed decoration around edges. FAR depth layer, no huge foreground obstructions, no people, no text, no logos, no UI, full bleed. A warm little bakery cafe INSIDE a spaceship. Cream curved walls, warm peach lanterns and copper pipes framing the sides, small shelves of cookies only at the edges, a tall oval window showing distant stars near the upper right. Gentle warm twilight. Dark cocoa and midnight teal center, calm welcoming atmosphere. No central table or central object.",
+      "file": "assets/stage-cafe.png"
+    },
+    {
+      "key": "coast",
+      "prompt": "Portrait 1024x1536 original cozy science-fiction game background, polished soft painterly storybook illustration. Dark quiet low-contrast CENTRAL 65% of image kept open for a luminous ball. All bright detailed decoration around edges. FAR depth layer, no huge foreground obstructions, no people, no text, no logos, no UI, full bleed. An alien coastal nature scene at blue dusk. Tall green sea cliffs and smooth rocks along the sides, a deep turquoise lagoon and distant horizon, tiny islands, low soft clouds near upper edges, faint stars just appearing above. Gentle moonlit water through center, darker low contrast and no strong reflections across the center. Dreamy, fresh, tranquil.",
+      "file": "assets/stage-coast.png"
+    },
+    {
+      "key": "decor",
+      "prompt": "Transparent game decoration atlas, EXACTLY FOUR COLUMNS and TWO ROWS (8 equally sized square cells), landscape1536x768. Real alpha transparency around every isolated object, no background paint, no checkerboard, no shadows, no text, no grid. Each object centered and fully within its cell with20% transparent margin. Style polished soft storybook science-fiction to match cozy animal space game. Left to right top row: 1 pastel lavender planet with peach rings; 2 slim metallic harbor pylon with a tiny amber hanging lamp; 3 curved silver spaceship window frame segment with violet lights (open inside transparent); 4 lush teal leafy branch. Left to right bottom row: 5 a rounded coastal rock with a little turquoise wave at base; 6 a small cozy wooden pastry shelf with cookies; 7 a slender glowing peach candy-orbit arc with a few tiny candy-shaped satellites; 8 a soft small blue-white cloud cluster. Props only, no characters, no spacecraft vehicles. Preserve equal grid placement.",
+      "file": "assets/stage-decor.png"
+    }
+  ]
+}

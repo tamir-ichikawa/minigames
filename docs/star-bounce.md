@@ -1,4 +1,6 @@
-# STAR BOUNCE（仮称）
+# STAR BOUNCE：旧クラシック版の開発記録
+
+2026-10-15に公開版を7人の相棒・GOOD／DARK各3章のストーリー版へ更新しました。現在の編集先・仕様・確認方法は [ストーリー版README](../sample_game/STAR_BOUNCE/README.md) を参照してください。以下は更新前の実装記録です。`games/pong/` の登録と公開URLは維持し、接続先をストーリー版に変更しています。
 
 名前の候補は **STAR BOUNCE**（弾む楽しさ）、**STAR RALLY**（対戦のわかりやすさ）、**STAR POP ORBIT**（ポップな宇宙観）。今回は STAR BOUNCE を仮採用。商標の使用可否は未調査。
 

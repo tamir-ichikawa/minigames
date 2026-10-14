@@ -1,0 +1,17 @@
+{
+  "id": "goatinanger",
+  "title": "GOAT in ANGER",
+  "description": "4人のヤギ隊員から選び、8方向の移動と射撃で森林・渓谷・前哨地を進もう。",
+  "thumbnail": "games/goatinanger/thumbnail.svg",
+  "category": "action",
+  "enabled": true,
+  "engine": "phaser",
+  "module": "games/goatinanger/index.ts",
+  "order": 1,
+  "color": "#e2e6d5",
+  "icon": "🐐",
+  "recommendation": {
+    "order": 1,
+    "reason": "4人の隊員と、3区間を進む縦スクロール作戦。"
+  }
+}

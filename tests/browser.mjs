@@ -5,7 +5,7 @@ import path from 'node:path';
 import { existsSync } from 'node:fs';
 import { serve } from '../scripts/serve.mjs';
 import { discoverGames } from '../scripts/registry.mjs';
-import { testStarBounce } from './star-bounce-browser.mjs';
+import { testStarBounce } from './star-bounce-managed-browser.mjs';
 import { testBallpit } from './ballpit-browser.mjs';
 const output = path.resolve('.test-output'); await mkdir(output, { recursive:true });
 const app = await serve({ root:path.resolve('dist'), port:0, base:'/minigames' });
@@ -165,7 +165,7 @@ try {
   }
   console.log('PASS interactions, saves, errors, mobile layout, existing shooting checks');
   await testStarBounce(browser, base, output);
-  report.checks.push('STAR BOUNCE: gameplay, reactions, HP, scores, saves, lifecycle, mobile and Canvas fallback');
+  report.checks.push('STAR BOUNCE story: roster, input, lifecycle, saved settings, resize and fullscreen');
   await testBallpit(browser, base, output);
   report.checks.push('BALL＆PIT: keyboard/touch combat, upgrades, clear/defeat, saves, lifecycle, resize and fullscreen');
 } catch(error) { report.errors.push(error.stack); console.error(error); process.exitCode=1; }
