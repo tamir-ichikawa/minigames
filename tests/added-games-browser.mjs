@@ -63,20 +63,25 @@ try{
  // Test-only short chart keeps real audio, UI, event timestamps and scoring. Never emitted into dist.
  const bundle=await build({stdin:{resolveDir:process.cwd(),contents:`
  import {createGame} from './Dance/index';import {RhythmRound} from './Dance/rhythm';import {createWebPlatform} from './src/platform/web';
- const game=window.__dance=createGame();const begin=game.begin.bind(game);
- game.begin=async()=>{await begin();if(game.phase==='playing'){game.round=new RhythmRound([[2,0,0],[2,2,0],[3,1,0]]);game.duration=4;}};
+ const game=window.__dance=createGame();const begin=game.begin.bind(game);window.__danceEvents=[];
+ const press=game.press.bind(game);game.press=(lane,stamp)=>{window.__danceEvents.push({type:'press',lane,time:game.audio.time(0),eventTime:game.audio.time(0,stamp)});press(lane,stamp);};
+ window.addEventListener('pointerdown',e=>window.__danceEvents.push({type:'pointer',lane:e.target.dataset.lane,time:game.audio?.time(0),paused:game.paused}),true);
+ game.begin=async()=>{await begin();if(game.phase==='playing'){game.round=new RhythmRound([[2,0,0],[2,2,0],[3,1,0]]);game.duration=4;await game.pause();}};
  game.init({container:document.getElementById('app'),platform:createWebPlatform(),settings:{muted:true},assetUrl:p=>${JSON.stringify(base)}+'/'+p,reportScore:s=>window.__score=s,requestExit:()=>{}});
  `},bundle:true,write:false,format:'iife',logLevel:'silent'});
  const mobile=await browser.newPage({viewport:{width:390,height:844},hasTouch:true});capture(mobile);
  await mobile.route('**/__dance.js',r=>r.fulfill({contentType:'text/javascript',body:bundle.outputFiles[0].text}));
  await mobile.route('**/__dance.html',r=>r.fulfill({contentType:'text/html',body:'<!doctype html><html><head><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="data:,"><style>html,body{margin:0;height:100%;overflow:hidden}#app{height:100dvh;display:flex}</style></head><body><main id="app"></main><script src="__dance.js"></script></body></html>'}));
  await mobile.goto(`${base}/__dance.html`);await dancePhase(mobile,'title');await mobile.locator('.dance-menu [data-action=start]').click();await dancePhase(mobile,'playing');
- const cdp=await mobile.context().newCDPSession(mobile);const touch=[];
+ await mobile.waitForFunction(()=>__dance.hostPaused&&__dance.audio.context.state==='suspended');
+ const cdp=await mobile.context().newCDPSession(mobile);if(process.env.DANCE_CPU_RATE)await cdp.send('Emulation.setCPUThrottlingRate',{rate:Number(process.env.DANCE_CPU_RATE)});const touch=[];
  for(const lane of [0,2]){const b=await mobile.locator(`[data-lane="${lane}"]`).boundingBox();touch.push({x:b.x+b.width/2,y:b.y+b.height*.8,id:lane+1});}
+ assert.ok(await mobile.evaluate(()=>__dance.audio.time(0)<.1),'prepare input before starting the audio clock');
+ await mobile.evaluate(()=>__dance.resume());
  await mobile.waitForFunction(()=>__dance.audio.time(0)>=1.98,null,{polling:5});
  await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:touch});await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});
  await mobile.waitForFunction(()=>__dance.audio.time(0)>=2.98,null,{polling:5});await mobile.keyboard.press('KeyF');await dancePhase(mobile,'result');
- const result=await mobile.evaluate(()=>({counts:__dance.round.counts,score:__score.value,held:[0,1,2,3].some(l=>__dance.held(l)),best:__dance.best()}));
+ const result=await mobile.evaluate(()=>({counts:__dance.round.counts,score:__score.value,held:[0,1,2,3].some(l=>__dance.held(l)),best:__dance.best(),events:__danceEvents}));console.log('Dance input evidence',JSON.stringify(result));
  assert.equal(result.counts.MISS,0);assert.ok(result.score>0);assert.equal(result.best,result.score);assert.equal(result.held,false);await fits(mobile,'.dance-surface,[data-overlay=result] button');
  await mobile.screenshot({path:path.join(output,'dance-result.png')});await mobile.evaluate(()=>__dance.destroy());assert.equal(await mobile.locator('canvas').count(),0);
  checks.push('Dance real touch chord + keyboard input, scoring/result/best record, destroy cleanup');
