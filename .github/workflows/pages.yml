@@ -44,6 +44,9 @@ jobs:
           path: |
             .test-output/star-bounce-story/report.json
             .test-output/star-bounce-story/failure.png
+            .test-output/maro-adventure/report.json
+            .test-output/maro-adventure/failure.png
+            .test-output/added-games/
           if-no-files-found: ignore
       - name: Upload Pages artifact
         if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'

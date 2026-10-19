@@ -3,3 +3,5 @@ node_modules/
 dist/
 .test-output/
 sample_game/STAR_BOUNCE/.build/
+sample_game/斉藤さんゲーム/.build/
+Dance/.build/

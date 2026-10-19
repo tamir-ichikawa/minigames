@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta name="theme-color" content="#04030c">
+<title>インベーダーアタック v0.1</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html,body{height:100%;background:#04030c;color:#fff;font-family:"Hiragino Maru Gothic ProN","Hiragino Sans","Yu Gothic UI","Meiryo",system-ui,sans-serif;overflow:hidden;overscroll-behavior:none;-webkit-user-select:none;user-select:none}
+#app{position:fixed;inset:0;height:100%;height:100dvh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:max(52px,env(safe-area-inset-top)) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)}
+#stage{position:relative;flex:1 1 auto;width:100%;display:flex;align-items:center;justify-content:center;min-height:0}
+#cv{box-sizing:content-box;display:block;touch-action:none;border:2px solid rgba(80,255,170,.25);border-radius:6px;box-shadow:0 0 30px rgba(80,255,170,.12)}
+#pad{display:none;flex:0 0 auto;width:min(100%,520px);gap:10px;padding:10px 12px 12px}
+body.touch #pad{display:flex}
+#pad button{font:inherit;font-weight:900;color:#fff;border-radius:16px;border:2px solid rgba(255,255,255,.55);background:rgba(255,255,255,.08);touch-action:none;height:76px;font-size:30px}
+#pad .mv{flex:1}
+#pad #bFire{flex:1.6;font-size:22px;letter-spacing:.1em;background:linear-gradient(180deg,#ff4f8b,#c2185b);border-color:#ffd0e0;box-shadow:0 0 18px rgba(255,79,139,.6)}
+#pad button.on{background:rgba(255,255,255,.3)}
+#pad #bFire.on{filter:brightness(1.3)}
+.topbtn{position:fixed;top:max(8px,env(safe-area-inset-top));z-index:4;width:40px;height:40px;border-radius:50%;border:2px solid rgba(255,255,255,.45);background:rgba(0,0,0,.45);color:#fff;font-size:17px;font-weight:900;cursor:pointer}
+#bQuit{right:10px;display:none}
+#bPause{right:58px;display:none}
+#bSound{left:10px}
+.ov{position:fixed;inset:0;display:none;align-items:center;justify-content:center;padding:16px;background:radial-gradient(circle at 50% 30%,rgba(10,60,50,.88),rgba(2,2,10,.94));z-index:5;overflow:hidden;padding:max(12px,env(safe-area-inset-top)) max(12px,env(safe-area-inset-right)) max(12px,env(safe-area-inset-bottom)) max(12px,env(safe-area-inset-left))}
+.ov.show{display:flex}
+.card{width:min(540px,100%);text-align:center}
+.series{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.15em;color:#ffe066;border:1px solid rgba(255,224,102,.6);border-radius:99px;padding:3px 12px;margin-bottom:10px}
+.logo{font-family:ui-monospace,"Courier New",monospace;font-weight:900;font-size:clamp(40px,12vw,78px);line-height:.95;letter-spacing:.04em;color:#5dffb0;text-shadow:0 0 6px #5dffb0,0 0 22px rgba(93,255,176,.8),4px 4px 0 #0a3d2a}
+.logo b{display:block;color:#ff4f8b;text-shadow:0 0 6px #ff4f8b,0 0 22px rgba(255,79,139,.8),4px 4px 0 #4a0a22}
+.sub{margin-top:8px;font-weight:900;color:#c8fff0;letter-spacing:.3em;font-size:clamp(14px,4vw,18px)}
+#demo{display:block;margin:12px auto 0;width:min(320px,80%)}
+.ttl{margin:12px 0 8px;font-weight:900;font-size:15px;color:#b8ffe0;text-align:left}
+.diffs{display:flex;gap:10px}
+.df{flex:1;padding:10px 4px;border-radius:14px;border:3px solid rgba(255,255,255,.35);background:rgba(255,255,255,.06);color:#fff;font:inherit;font-weight:900;font-size:clamp(15px,4.2vw,19px);cursor:pointer;transition:transform .1s}
+.df small{display:block;font-size:11px;font-weight:700;opacity:.85;margin-top:2px}
+.df.on{transform:translateY(-3px)}
+.df.on[data-d=easy]{background:#22c55e;border-color:#bbf7d0;box-shadow:0 0 18px #22c55e}
+.df.on[data-d=normal]{background:#3b82f6;border-color:#bfdbfe;box-shadow:0 0 18px #3b82f6}
+.df.on[data-d=hard]{background:#ef4444;border-color:#fecaca;box-shadow:0 0 18px #ef4444}
+.best{margin-top:8px;font-size:12px;color:#a6f5d6;min-height:1em}
+.how{margin-top:10px;text-align:left;background:rgba(0,0,0,.4);border:2px solid rgba(255,255,255,.16);border-radius:14px;padding:10px 14px;font-size:clamp(12px,3.4vw,14px);line-height:1.8}
+.key{display:inline-block;min-width:1.8em;text-align:center;background:#fff;color:#111;border-radius:6px;padding:0 5px;font-weight:900;border-bottom:3px solid #999;line-height:1.35;margin:0 1px}
+.pts{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:6px;font-family:ui-monospace,monospace;font-weight:800;font-size:13px}
+.pts canvas{vertical-align:middle;margin-right:4px}
+.btn{margin-top:16px;font:inherit;font-weight:900;font-size:clamp(20px,6vw,28px);padding:12px 54px;border-radius:999px;border:3px solid #fff;background:linear-gradient(180deg,#38f5a0,#0e9f63);color:#04140c;cursor:pointer;box-shadow:0 0 24px rgba(56,245,160,.7),0 5px 0 #065a37;letter-spacing:.08em}
+.btn:active{transform:translateY(3px);box-shadow:0 0 24px rgba(56,245,160,.7),0 2px 0 #065a37}
+.btn2{margin:10px 6px 0;font:inherit;font-weight:900;font-size:16px;padding:10px 22px;border-radius:999px;border:2px solid rgba(255,255,255,.7);background:rgba(255,255,255,.08);color:#fff;cursor:pointer}
+.ver{margin-top:12px;font-size:11px;opacity:.5}
+.big{font-family:ui-monospace,"Courier New",monospace;font-weight:900;font-size:clamp(44px,13vw,80px);line-height:1;color:#ff4f8b;text-shadow:0 0 8px #ff4f8b,0 0 26px rgba(255,79,139,.8)}
+.tbl{margin:14px auto 0;width:min(300px,100%);border-collapse:collapse;font-weight:900;font-size:18px}
+.tbl td{padding:5px 8px;border-bottom:1px solid rgba(255,255,255,.12);text-align:left}
+.tbl td:last-child{text-align:right;font-family:ui-monospace,monospace}
+#rNew{color:#ffe066;font-weight:900;min-height:1.4em;margin-top:8px}
+@media(max-height:500px){#pad{padding:4px 12px 6px}#pad button{height:44px;font-size:24px}}
+</style>
+</head>
+<body>
+<div id="app">
+  <div id="stage"><canvas id="cv"></canvas></div>
+  <div id="pad">
+    <button class="mv" id="bL" aria-label="左へ">◀</button>
+    <button class="mv" id="bR" aria-label="右へ">▶</button>
+    <button id="bFire">発射</button>
+  </div>
+</div>
+<button class="topbtn" id="bSound" title="音のオン／オフ">🔊</button>
+<button class="topbtn" id="bPause" title="一時停止（P）">Ⅱ</button>
+<button class="topbtn" id="bQuit" title="やめる（Esc）">✕</button>
+
+<div class="ov show" id="title"><div class="card">
+  <div class="series">懐かしゲームシリーズ 第2弾</div>
+  <div class="logo">INVADER<b>ATTACK</b></div>
+  <div class="sub">インベーダーアタック</div>
+  <div class="pts" id="pts"></div>
+  <div class="ttl">▼ むずかしさをえらぼう</div>
+  <div class="diffs">
+    <button class="df" data-d="easy">やさしい<small>ゆっくり・残機4</small></button>
+    <button class="df on" data-d="normal">ふつう<small>アーケード風</small></button>
+    <button class="df" data-d="hard">むずかしい<small>速い・弾が多い</small></button>
+  </div>
+  <div class="best" id="best"></div>
+  <div class="how">
+    砲台を動かして、攻めてくるインベーダーを撃ち落とそう！<br>
+    🖥 パソコン：<span style="white-space:nowrap"><span class="key">←</span><span class="key">→</span> 移動</span>　<span style="white-space:nowrap"><span class="key">Space</span> 発射</span>　<span style="white-space:nowrap"><span class="key">P</span> 一時停止</span><br>
+    📱 スマホ：画面下の <b>◀ ▶</b> で移動、<b>発射</b>で撃つ（押しっぱなしで連射）<br>
+    🛡 緑のトーチカに隠れて弾をよけよう。ときどき飛んでくる<b style="color:#ff5a5a">UFO</b>はボーナス！<br>
+    ⚠ 撃たれるか、インベーダーが下まで来たらピンチ。全滅させると次のウェーブへ
+  </div>
+  <button class="btn" id="start">スタート！</button>
+  <div class="ver">インベーダーアタック 試作版 v0.1</div>
+</div></div>
+
+<div class="ov" id="paused"><div class="card">
+  <div class="big" style="color:#5dffb0;text-shadow:0 0 8px #5dffb0,0 0 26px rgba(93,255,176,.8)">PAUSE</div>
+  <button class="btn" id="resume">つづける</button><br>
+  <button class="btn2" id="pToTitle">タイトルへ</button>
+</div></div>
+
+<div class="ov" id="result"><div class="card">
+  <div class="big">GAME OVER</div>
+  <div style="margin-top:8px;font-weight:900;letter-spacing:.2em;color:#a6f5d6" id="rDiff"></div>
+  <table class="tbl">
+    <tr><td>スコア</td><td id="rScore">0</td></tr>
+    <tr><td>とどいたウェーブ</td><td id="rWave">1</td></tr>
+    <tr><td>やっつけた数</td><td id="rKills">0</td></tr>
+    <tr><td>ハイスコア</td><td id="rHi">0</td></tr>
+  </table>
+  <div id="rNew"></div>
+  <button class="btn" id="again">もう一回！</button><br>
+  <button class="btn2" id="toTitle">タイトルへ</button>
+</div></div>
+
+<script>
+/* =========================================================
+   インベーダーアタック v0.1 ― 調整用の設定
+   ========================================================= */
+const DIFFS = {
+  //  rows/cols＝インベーダーの数　step＝動く間かく(秒・最初)　fire＝敵が撃つ間かく(秒)　maxShots＝画面上の敵の弾の上限
+  //  ebSpeed＝敵の弾の速さ　lives＝残機　myShots＝自分の弾を同時に何発まで撃てるか
+  easy:   { name:'やさしい',   rows:4, cols:8,  step:0.70, fire:[1.6,2.8], maxShots:1, ebSpeed:65,  lives:4, myShots:2, color:'#22c55e' },
+  normal: { name:'ふつう',     rows:5, cols:11, step:0.55, fire:[0.8,1.6], maxShots:3, ebSpeed:90,  lives:3, myShots:1, color:'#3b82f6' },
+  hard:   { name:'むずかしい', rows:5, cols:11, step:0.40, fire:[0.45,1.0], maxShots:5, ebSpeed:120, lives:3, myShots:1, color:'#ef4444' },
+};
+const EXTRA_LIFE_AT = 1500;   // この点数で残機が1つ増える
+const W=240, H=320;           // ゲーム画面の大きさ（ドット）
+const PLAYER_Y=276, GROUND_Y=296, BUNKER_Y=236, FIELD_L=6, FIELD_R=234;
+
+/* ========== ドット絵 ========== */
+const SPR={
+  squid:[["...##...","..####..",".######.","##.##.##","########","..#..#..",".#.##.#.","#.#..#.#"],
+         ["...##...","..####..",".######.","##.##.##","########",".#.##.#.","#......#",".#....#."]],
+  crab:[["..#.....#..","...#...#...","..#######..",".##.###.##.","###########","#.#######.#","#.#.....#.#","...##.##..."],
+        ["..#.....#..","#..#...#..#","#.#######.#","###.###.###","###########",".#########.","..#.....#..",".#.......#."]],
+  octo:[["....####....",".##########.","############","###..##..###","############","...##..##...","..##.##.##..","##........##"],
+        ["....####....",".##########.","############","###..##..###","############","..###..###..",".##..##..##.","..##....##.."]],
+  player:[["......#......",".....###.....",".....###.....",".###########.","#############","#############","#############","#############"]],
+  ufo:[[".....######.....","...##########...","..############..",".##.##.##.##.##.","################","..###..##..###..","...#........#..."]],
+  boom:[["....#...#....",".#...#.#...#.","..#.......#..","...#.....#...","##.........##","...#.....#...","..#..#.#..#..",".#..#...#..#."]],
+  pboom:[["..#..#....#...","#....#..#...#.","...######...#.","#.##########..","..############","#############.","##############",".#############"],
+         [".#......#..#..","...#.#.......#","#..##.###.#...",".####.#####.#.","..#########...","####.###.####.","##############","#.###########."]],
+};
+const COLORS={squid:'#ff5fd2',crab:'#4fe3ff',octo:'#b6ff5a',player:'#5dffb0',ufo:'#ff5a5a',boom:'#ffffff',pboom:'#5dffb0'};
+const POINTS={squid:30,crab:20,octo:10};
+const SP=4, PAD=3; // 下書きの拡大率と光の余白
+function makeSprite(rows,color,glow=true){
+  const w=rows[0].length,h=rows.length, c=document.createElement('canvas');
+  c.width=(w+PAD*2)*SP; c.height=(h+PAD*2)*SP; const g=c.getContext('2d');
+  const draw=()=>{ g.fillStyle=color; for(let y=0;y<h;y++)for(let x=0;x<w;x++) if(rows[y][x]==='#') g.fillRect((x+PAD)*SP,(y+PAD)*SP,SP,SP); };
+  if(glow){ g.shadowColor=color; g.shadowBlur=SP*2.2; draw(); g.shadowBlur=0; }
+  draw(); return {img:c,w,h};
+}
+const IMG={};
+for(const k in SPR) IMG[k]=SPR[k].map(r=>makeSprite(r,COLORS[k]));
+const WHITE={}; for(const k of ['squid','crab','octo','player']) WHITE[k]=SPR[k].map(r=>makeSprite(r,'#ffffff'));
+function spr(ctx,s,x,y){ ctx.drawImage(s.img,x-PAD,y-PAD,s.w+PAD*2,s.h+PAD*2); }
+
+/* ========== 音（その場で作る効果音） ========== */
+let AC=null, soundOn=localStorage.getItem('ia_sound')!=='off', ufoOsc=null;
+function audio(){ if(!AC){ const C=window.AudioContext||window.webkitAudioContext; if(C) AC=new C(); } if(AC&&AC.state==='suspended') AC.resume(); }
+function tone(f,d,type='square',v=0.06,f2){ if(!soundOn||!AC) return; const t=AC.currentTime,o=AC.createOscillator(),g=AC.createGain();
+  o.type=type; o.frequency.setValueAtTime(f,t); if(f2) o.frequency.exponentialRampToValueAtTime(f2,t+d);
+  g.gain.setValueAtTime(v,t); g.gain.exponentialRampToValueAtTime(0.0001,t+d); o.connect(g).connect(AC.destination); o.start(t); o.stop(t+d+0.02); }
+let noiseBuf=null;
+function noise(d,v=0.12,lp=1800){ if(!soundOn||!AC) return; if(!noiseBuf){ noiseBuf=AC.createBuffer(1,AC.sampleRate,AC.sampleRate); const a=noiseBuf.getChannelData(0); for(let i=0;i<a.length;i++) a[i]=Math.random()*2-1; }
+  const t=AC.currentTime,s=AC.createBufferSource(),f=AC.createBiquadFilter(),g=AC.createGain(); s.buffer=noiseBuf; f.type='lowpass'; f.frequency.value=lp;
+  g.gain.setValueAtTime(v,t); g.gain.exponentialRampToValueAtTime(0.0001,t+d); s.connect(f).connect(g).connect(AC.destination); s.start(t); s.stop(t+d+0.02); }
+const MARCH=[98,87,78,73]; let marchI=0;
+const SFX={
+  shoot:()=>tone(1400,0.12,'square',0.035,180),
+  kill:()=>noise(0.18,0.14,2600),
+  march:()=>{ tone(MARCH[marchI],0.09,'triangle',0.16); marchI=(marchI+1)%4; },
+  die:()=>{ noise(0.9,0.22,900); tone(200,0.8,'sawtooth',0.05,40); },
+  ufoHit:()=>{ tone(880,0.1,'square',0.05); setTimeout(()=>tone(1320,0.15,'square',0.05),90); setTimeout(()=>tone(1760,0.2,'square',0.05),190); },
+  extra:()=>{ [523,659,784,1047].forEach((f,i)=>setTimeout(()=>tone(f,0.12,'square',0.05),i*80)); },
+  clear:()=>{ [392,523,659,784,1047].forEach((f,i)=>setTimeout(()=>tone(f,0.14,'square',0.05),i*90)); },
+};
+function ufoSound(on){ if(on&&soundOn&&AC&&!ufoOsc){ const o=AC.createOscillator(),l=AC.createOscillator(),lg=AC.createGain(),g=AC.createGain();
+    o.type='sine'; o.frequency.value=900; l.frequency.value=9; lg.gain.value=250; l.connect(lg).connect(o.frequency); g.gain.value=0.03; o.connect(g).connect(AC.destination); o.start(); l.start(); ufoOsc=[o,l]; }
+  if(!on&&ufoOsc){ ufoOsc.forEach(o=>{try{o.stop()}catch(e){}}); ufoOsc=null; } }
+
+/* ========== 画面サイズ ========== */
+const $=id=>document.getElementById(id), cv=$('cv'), ctx=cv.getContext('2d');
+const isTouch=('ontouchstart' in window)||navigator.maxTouchPoints>0||matchMedia('(pointer:coarse)').matches;
+if(isTouch) document.body.classList.add('touch');
+let SC=1;
+function resize(){
+  const st=$('stage').getBoundingClientRect(); const avW=st.width-12, avH=st.height-12;
+  const s=Math.max(0.01,Math.min(avW/W,avH/H)); const cw=W*s, ch=H*s;
+  const dpr=Math.min(2,window.devicePixelRatio||1); SC=s*dpr;
+  cv.style.width=cw+'px'; cv.style.height=ch+'px'; cv.width=Math.round(cw*dpr); cv.height=Math.round(ch*dpr);
+  fitOverlays();
+}
+function fitOverlays(){
+  document.querySelectorAll('.ov.show').forEach(overlay=>{
+    const card=overlay.querySelector('.card'), css=getComputedStyle(overlay);
+    const available=overlay.clientHeight-parseFloat(css.paddingTop)-parseFloat(css.paddingBottom);
+    card.style.transform=`scale(${Math.min(1,available/Math.max(1,card.offsetHeight))})`;
+  });
+}
+new ResizeObserver(resize).observe($('stage'));
+addEventListener('resize',resize);
+window.visualViewport?.addEventListener('resize',resize);
+
+/* ========== ゲームの状態 ========== */
+let diff=localStorage.getItem('ia_diff')||'normal'; if(!DIFFS[diff]) diff='normal';
+const D=()=>DIFFS[diff];
+let state='title', score=0, lives=0, wave=1, kills=0, extraGiven=false;
+let aliens=[], fx=0, fy=0, dir=1, stepT=0, frame=0, dropNext=false, totalAliens=0;
+let clearT=0, player, pShots=[], eShots=[], eFireT=1, booms=[], pops=[], ufo=null, ufoT=20, bunkers=[], stars=[], msg=null, shake=0, freeze=0;
+const keys={left:false,right:false,fire:false}; let fireHeld=0;
+
+function hiKey(){ return 'ia_hi_'+diff; }
+let hiCache={}; function hi(){ const k=hiKey(); if(hiCache[k]===undefined) hiCache[k]=+(localStorage.getItem(k)||0); return hiCache[k]; }
+for(let i=0;i<60;i++) stars.push({x:Math.random()*W,y:Math.random()*H,s:Math.random()*2+0.3,p:Math.random()*6});
+
+function makeBunkers(){
+  bunkers=[]; const bw=22,bh=16, n=4, gap=(W-n*bw)/(n+1);
+  for(let i=0;i<n;i++){
+    const m=new Uint8Array(bw*bh);
+    for(let y=0;y<bh;y++)for(let x=0;x<bw;x++){
+      let on=1;
+      if(y<4 && (x<4-y || x>bw-1-(4-y))) on=0;                     // 上の角を丸く
+      if(y>=bh-5 && x>=7 && x<=14 && !(y===bh-5&&(x===7||x===14))) on=0; // 下のアーチ
+      m[y*bw+x]=on;
+    }
+    const c=document.createElement('canvas'); c.width=bw; c.height=bh;
+    const b={x:Math.round(gap+i*(bw+gap)),y:BUNKER_Y,w:bw,h:bh,m,c,dirty:true}; bunkers.push(b);
+  }
+}
+function paintBunker(b){ const g=b.c.getContext('2d'), id=g.createImageData(b.w,b.h);
+  for(let i=0;i<b.m.length;i++) if(b.m[i]){ id.data[i*4]=60; id.data[i*4+1]=255; id.data[i*4+2]=150; id.data[i*4+3]=255; }
+  g.putImageData(id,0,0); b.dirty=false; }
+function bunkerAt(px,py){ for(const b of bunkers){ const x=Math.floor(px-b.x), y=Math.floor(py-b.y); if(x>=0&&y>=0&&x<b.w&&y<b.h&&b.m[y*b.w+x]) return {b,x,y}; } return null; }
+function chip(b,cx,cy,r=3){ for(let y=-r;y<=r;y++)for(let x=-r;x<=r;x++){ const xx=cx+x,yy=cy+y; if(xx<0||yy<0||xx>=b.w||yy>=b.h) continue;
+  const d=Math.hypot(x,y); if(d<=r*0.6 || (d<=r+0.3 && Math.random()<0.55)) b.m[yy*b.w+xx]=0; } b.dirty=true; }
+
+function newWave(){
+  const d=D(); aliens=[];
+  const types=d.rows===4?['squid','crab','octo','octo']:['squid','crab','crab','octo','octo'];
+  for(let r=0;r<d.rows;r++)for(let c=0;c<d.cols;c++){ const t=types[r]; aliens.push({r,c,t,w:SPR[t][0][0].length,alive:true}); }
+  totalAliens=aliens.length;
+  const gridW=d.cols*16; fx=Math.round((W-gridW)/2); fy=44+Math.min(5,wave-1)*8; dir=1; stepT=0.6; frame=0; dropNext=false;
+  pShots=[]; eShots=[]; eFireT=1.5; ufo=null; ufoSound(false); ufoT=15+Math.random()*10;
+  makeBunkers();
+  msg={text:'WAVE '+wave,t:1.6}; freeze=1.2;
+}
+function alienPos(a){ return {x:fx+a.c*16+(16-a.w)/2, y:fy+a.r*14}; }
+function stepInterval(){
+  const alive=aliens.filter(a=>a.alive).length, d=D();
+  const base=d.step*Math.pow(0.9,Math.min(wave-1,8));
+  return Math.max(0.02, 0.025+(base-0.025)*Math.pow(alive/totalAliens,1.3));
+}
+
+function startGame(){
+  clearInput(); audio(); const d=D();
+  score=0; lives=d.lives; wave=1; clearT=0; kills=0; extraGiven=false; booms=[]; pops=[]; shake=0;
+  player={x:W/2-6,dead:0,inv:0}; newWave();
+  state='play'; showOv(null); $('bQuit').style.display='block'; $('bPause').style.display='block';
+}
+function gameOver(){
+  state='over'; ufoSound(false); $('bQuit').style.display='none'; $('bPause').style.display='none';
+  const old=hi(); if(score>old){ localStorage.setItem(hiKey(),score); hiCache[hiKey()]=score; }
+  $('rDiff').textContent=D().name+'モード'; $('rScore').textContent=score.toLocaleString(); $('rWave').textContent=wave; $('rKills').textContent=kills;
+  $('rHi').textContent=Math.max(old,score).toLocaleString(); $('rNew').textContent=(score>old&&score>0)?'★ ハイスコア更新！ ★':'';
+  setTimeout(()=>{ if(state==='over') showOv('result'); },1200);
+}
+function toTitle(){ clearInput(); state='title'; ufoSound(false); $('bQuit').style.display='none'; $('bPause').style.display='none'; showOv('title'); showBest(); }
+function pause(on){ clearInput(); if(on&&state==='play'){ state='pause'; ufoSound(false); showOv('paused'); } else if(!on&&state==='pause'){ state='play'; audio(); showOv(null); last=performance.now(); } }
+function showOv(id){ ['title','paused','result'].forEach(k=>$(k).classList.toggle('show',k===id)); fitOverlays(); }
+function addScore(n){ score+=n; if(!extraGiven&&score>=EXTRA_LIFE_AT){ extraGiven=true; lives++; SFX.extra(); pops.push({x:W/2,y:H/2,text:'1UP!',t:0,c:'#5dffb0'}); } }
+
+/* ========== 1コマごとの処理 ========== */
+function update(dt){
+  for(const s of stars){ s.y+=s.s*dt*4; if(s.y>H){ s.y=0; s.x=Math.random()*W; } }
+  for(const b of booms) b.t+=dt; booms=booms.filter(b=>b.t<b.life);
+  for(const p of pops) p.t+=dt; pops=pops.filter(p=>p.t<1);
+  if(shake>0) shake-=dt;
+  if(msg){ msg.t-=dt; if(msg.t<=0) msg=null; }
+  if(state!=='play') return;
+  if(clearT>0){ clearT-=dt; if(clearT<=0) newWave(); return; }
+  if(freeze>0){ freeze-=dt; return; }
+  const d=D();
+  // 自分
+  if(player.dead>0){
+    player.dead-=dt;
+    if(player.dead<=0){ if(lives<=0){ gameOver(); return; } player.x=W/2-6; player.inv=1.5; }
+    else return; // やられている間はインベーダーも止まる（昔のゲームと同じ）
+  }
+  if(player.inv>0) player.inv-=dt;
+  const mv=(keys.right?1:0)-(keys.left?1:0); player.x=Math.max(FIELD_L,Math.min(FIELD_R-13,player.x+mv*72*dt));
+  fireHeld-=dt; if(keys.fire && fireHeld<=0 && shoot()) fireHeld=0.25;   // 押しっぱなしで連射
+  // 自分の弾
+  for(const s of pShots){
+    const steps=Math.ceil(240*dt/2); let hit=false;
+    for(let i=0;i<steps&&!hit;i++){
+      s.y-=240*dt/steps;
+      if(s.y<18){ hit=true; booms.push({x:s.x-3,y:18,t:0,life:0.25,k:'boom',small:true}); break; }
+      // UFO
+      if(ufo&&s.x>=ufo.x&&s.x<=ufo.x+16&&s.y>=ufo.y&&s.y<=ufo.y+7){ hit=true; const pts=[50,100,150,300][Math.floor(Math.random()*4)]; addScore(pts);
+        booms.push({x:ufo.x+1,y:ufo.y,t:0,life:0.5,k:'boom'}); pops.push({x:ufo.x+8,y:ufo.y+4,text:String(pts),t:0,c:'#ff5a5a'}); ufo=null; ufoSound(false); SFX.ufoHit(); break; }
+      // インベーダー
+      for(const a of aliens){ if(!a.alive) continue; const p=alienPos(a);
+        if(s.x>=p.x&&s.x<=p.x+a.w&&s.y>=p.y&&s.y<=p.y+8){ a.alive=false; hit=true; kills++; addScore(POINTS[a.t]); SFX.kill();
+          booms.push({x:p.x+a.w/2-6.5,y:p.y,t:0,life:0.3,k:'boom'}); break; } }
+      if(hit) break;
+      // 敵の弾とぶつかる
+      for(const e of eShots){ if(Math.abs(e.x-s.x)<2.5&&s.y>=e.y-1&&s.y<=e.y+7){ e.dead=true; hit=true; booms.push({x:s.x-6,y:s.y-4,t:0,life:0.2,k:'boom',small:true}); break; } }
+      if(hit) break;
+      const bk=bunkerAt(s.x,s.y); if(bk){ chip(bk.b,bk.x,bk.y,3); hit=true; }
+    }
+    if(hit) s.dead=true;
+  }
+  pShots=pShots.filter(s=>!s.dead);
+  // インベーダーの行進
+  const alive=aliens.filter(a=>a.alive);
+  if(alive.length===0){ SFX.clear(); wave++; msg={text:'WAVE CLEAR!',t:1.4}; clearT=1.6; ufo=null; ufoSound(false); eShots=[]; return; }
+  stepT-=dt;
+  if(stepT<=0){
+    stepT=stepInterval(); frame^=1; SFX.march();
+    if(dropNext){ fy+=8; dir=-dir; dropNext=false; }
+    else{ fx+=dir*(diff==='hard'?3:2);
+      let minX=1e9,maxX=-1e9; for(const a of alive){ const p=alienPos(a); minX=Math.min(minX,p.x); maxX=Math.max(maxX,p.x+a.w); }
+      if((dir>0&&maxX>=FIELD_R-1)||(dir<0&&minX<=FIELD_L+1)) dropNext=true; }
+    // トーチカをけずる・下まで来たら負け
+    for(const a of alive){ const p=alienPos(a);
+      for(const b of bunkers){ if(p.x+a.w<b.x||p.x>b.x+b.w||p.y+8<b.y||p.y>b.y+b.h) continue;
+        for(let y=0;y<8;y++)for(let x=0;x<a.w;x++){ const bx=Math.floor(p.x+x-b.x),by=Math.floor(p.y+y-b.y); if(bx>=0&&by>=0&&bx<b.w&&by<b.h) b.m[by*b.w+bx]=0; } b.dirty=true; }
+      if(p.y+8>=PLAYER_Y){ lives=0; killPlayer(true); return; } }
+  }
+  // インベーダーが撃つ
+  eFireT-=dt;
+  if(eFireT<=0 && eShots.length<d.maxShots){
+    eFireT=(d.fire[0]+Math.random()*(d.fire[1]-d.fire[0]))*Math.pow(0.93,Math.min(wave-1,6));
+    const cols={}; for(const a of alive){ if(!cols[a.c]||a.r>cols[a.c].r) cols[a.c]=a; }
+    const list=Object.values(cols); let shooter;
+    if(Math.random()<0.35){ shooter=list.reduce((m,a)=>{ const dx=Math.abs(alienPos(a).x+a.w/2-(player.x+6.5)); return (!m||dx<m.dx)?{a,dx}:m; },null).a; }
+    else shooter=list[Math.floor(Math.random()*list.length)];
+    const p=alienPos(shooter); eShots.push({x:Math.round(p.x+shooter.w/2),y:p.y+8,ph:0,kind:Math.random()<0.5?0:1});
+  }
+  for(const e of eShots){
+    const sp=d.ebSpeed*(1+Math.min(wave-1,6)*0.05); e.y+=sp*dt; e.ph+=dt*14;
+    if(e.y>GROUND_Y-7){ e.dead=true; booms.push({x:e.x-6,y:GROUND_Y-8,t:0,life:0.2,k:'boom',small:true}); continue; }
+    for(let k=0;k<7;k+=2){ const bk=bunkerAt(e.x,e.y+k); if(bk){ chip(bk.b,bk.x,bk.y+1,3); e.dead=true; break; } }
+    if(e.dead) continue;
+    if(player.inv<=0 && e.x>=player.x&&e.x<=player.x+13&&e.y+7>=PLAYER_Y+1&&e.y<=PLAYER_Y+8){ e.dead=true; killPlayer(false); }
+  }
+  eShots=eShots.filter(e=>!e.dead);
+  // UFO
+  if(ufo){ ufo.x+=ufo.v*dt; if(ufo.x<-20||ufo.x>W+4){ ufo=null; ufoSound(false); } }
+  else{ ufoT-=dt; if(ufoT<=0&&alive.length>6){ const l=Math.random()<0.5; ufo={x:l?-16:W,y:24,v:(l?1:-1)*(diff==='hard'?52:40)}; ufoSound(true); ufoT=18+Math.random()*12; } }
+}
+function shoot(){ if(state!=='play'||freeze>0||clearT>0||player.dead>0||pShots.length>=D().myShots) return false; pShots.push({x:player.x+6.5,y:PLAYER_Y-2}); SFX.shoot(); return true; }
+function killPlayer(invaded){
+  if(player.dead>0) return;
+  if(!invaded) lives--;
+  player.dead=1.6; shake=0.5; eShots=[]; pShots=[]; SFX.die(); ufoSound(false);
+  booms.push({x:player.x,y:PLAYER_Y,t:0,life:1.4,k:'pboom'});
+  if(invaded){ msg={text:'INVADED!',t:1.6}; }
+}
+
+/* ========== 描画 ========== */
+const pad5=n=>String(n).padStart(5,'0');
+function text(t,x,y,size,color,align='left',glow=true){
+  ctx.font=`900 ${size}px ui-monospace,"Courier New",monospace`; ctx.textAlign=align; ctx.textBaseline='top';
+  if(glow){ ctx.shadowColor=color; ctx.shadowBlur=6*SC/3; } ctx.fillStyle=color; ctx.fillText(t,x,y); ctx.shadowBlur=0;
+}
+function render(now){
+  ctx.setTransform(SC,0,0,SC,0,0); ctx.imageSmoothingEnabled=true;
+  ctx.fillStyle='#04030c'; ctx.fillRect(0,0,W,H);
+  if(shake>0) ctx.translate((Math.random()-.5)*3,(Math.random()-.5)*3);
+  for(const s of stars){ const a=0.25+0.35*Math.sin(now/600+s.p); ctx.fillStyle=`rgba(200,220,255,${a})`; ctx.fillRect(s.x,s.y,s.s>1.6?1:0.6,s.s>1.6?1:0.6); }
+  // HUD
+  text('SCORE',6,4,7,'#a6f5d6'); text(pad5(score),6,11,9,'#ffffff');
+  text('HI-SCORE',W/2,4,7,'#a6f5d6','center'); text(pad5(Math.max(hi(),score)),W/2,11,9,'#ffe066','center');
+  text('WAVE',W-6,4,7,'#a6f5d6','right'); text(String(wave),W-6,11,9,'#ffffff','right');
+  if(state==='title'){ ctx.setTransform(1,0,0,1,0,0); return; }
+  // トーチカ
+  for(const b of bunkers){ if(b.dirty) paintBunker(b); ctx.imageSmoothingEnabled=false; ctx.drawImage(b.c,b.x,b.y); ctx.imageSmoothingEnabled=true; }
+  // インベーダー
+  for(const a of aliens){ if(!a.alive) continue; const p=alienPos(a); spr(ctx,IMG[a.t][frame],p.x,p.y); }
+  // UFO
+  if(ufo) spr(ctx,IMG.ufo[0],ufo.x,ufo.y);
+  // 自分
+  if(player && player.dead<=0 && !(player.inv>0 && Math.floor(now/90)%2)) spr(ctx,IMG.player[0],player.x,PLAYER_Y);
+  // 弾
+  ctx.fillStyle='#ffffff'; ctx.shadowColor='#ffffff'; ctx.shadowBlur=4*SC/3;
+  for(const s of pShots) ctx.fillRect(s.x-0.5,s.y,1,4);
+  ctx.shadowBlur=0;
+  for(const e of eShots){ ctx.fillStyle='#ffe066';
+    if(e.kind===0){ const o=Math.floor(e.ph)%2; for(let i=0;i<7;i++) ctx.fillRect(e.x-1+((i+o)%2?1:0),e.y+i,1,1); }
+    else{ ctx.fillRect(e.x-0.5,e.y,1,7); const o=Math.floor(e.ph)%3; ctx.fillRect(e.x-1.5,e.y+1+o*2,3,1); } }
+  // 爆発
+  for(const b of booms){
+    if(b.k==='pboom'){ const f=Math.floor(b.t*10)%2; ctx.globalAlpha=b.t>1?Math.max(0,(b.life-b.t)/0.4):1; spr(ctx,IMG.pboom[f],b.x,b.y); ctx.globalAlpha=1; }
+    else{ ctx.globalAlpha=Math.max(0,1-b.t/b.life); const s=IMG.boom[0]; if(b.small) ctx.drawImage(s.img,b.x+2,b.y+1,(s.w+PAD*2)*0.6,(s.h+PAD*2)*0.6); else spr(ctx,s,b.x,b.y); ctx.globalAlpha=1; } }
+  // 点数ポップ
+  for(const p of pops){ ctx.globalAlpha=1-p.t; text(p.text,p.x,p.y-p.t*10,8,p.c,'center'); ctx.globalAlpha=1; }
+  // 地面と残機
+  ctx.fillStyle='#5dffb0'; ctx.fillRect(0,GROUND_Y,W,1);
+  text(String(Math.max(0,lives)),6,GROUND_Y+6,9,'#ffffff');
+  for(let i=0;i<Math.min(lives-1,6);i++){ const s=IMG.player[0]; ctx.drawImage(s.img,18+i*17-PAD*0.8,GROUND_Y+6-PAD*0.8,(s.w+PAD*2)*0.8,(s.h+PAD*2)*0.8); }
+  text(D().name,W-6,GROUND_Y+7,8,D().color,'right',false);
+  // メッセージ
+  if(msg){ const a=Math.min(1,msg.t*3); ctx.globalAlpha=a; text(msg.text,W/2,H/2-30,18,msg.text==='INVADED!'?'#ff4f8b':'#ffe066','center'); ctx.globalAlpha=1; }
+  if(state==='over'&&!$('result').classList.contains('show')){ text('GAME OVER',W/2,H/2-10,20,'#ff4f8b','center'); }
+}
+let last=performance.now();
+function loop(now){ const dt=Math.min(0.05,(now-last)/1000); last=now; update(dt); render(now); requestAnimationFrame(loop); }
+
+/* ========== 操作 ========== */
+const KEY={ArrowLeft:'left',KeyA:'left',ArrowRight:'right',KeyD:'right',Space:'fire',ArrowUp:'fire',KeyZ:'fire',KeyW:'fire'};
+addEventListener('keydown',e=>{
+  if(e.code==='Escape'){ if(state==='play'||state==='pause') toTitle(); return; }
+  if(e.code==='KeyP'){ if(state==='play') pause(true); else if(state==='pause') pause(false); return; }
+  const resultShown=state==='over'&&$('result').classList.contains('show');
+  if((e.code==='Enter'||e.code==='Space') && (state==='title'||resultShown)){ e.preventDefault(); startGame(); return; }
+  if(e.code==='Enter'&&state==='pause'){ pause(false); return; }
+  const k=KEY[e.code]; if(!k) return; e.preventDefault();
+  if(k==='fire'&&!keys.fire&&shoot()) fireHeld=0.25;
+  keys[k]=true;
+});
+addEventListener('keyup',e=>{ const k=KEY[e.code]; if(k) keys[k]=false; });
+function hold(id,k){ const b=$(id);
+  b.addEventListener('pointerdown',e=>{ e.preventDefault(); audio(); try{b.setPointerCapture(e.pointerId);}catch(_){}
+    if(k==='fire'&&!keys.fire&&shoot()) fireHeld=0.25; keys[k]=true; b.classList.add('on'); });
+  const up=()=>{ keys[k]=false; b.classList.remove('on'); };
+  b.addEventListener('pointerup',up); b.addEventListener('pointercancel',up); b.addEventListener('lostpointercapture',up);
+  b.addEventListener('contextmenu',e=>e.preventDefault());
+}
+hold('bL','left'); hold('bR','right'); hold('bFire','fire');
+document.addEventListener('touchmove',e=>{ if(state==='play') e.preventDefault(); },{passive:false});
+document.addEventListener('dblclick',e=>e.preventDefault());
+const managed=new URLSearchParams(location.search).has('minigame');
+function clearInput(){keys.left=keys.right=keys.fire=false;document.querySelectorAll('#pad .on').forEach(b=>b.classList.remove('on'));}
+addEventListener('blur',()=>{clearInput();if(!managed)pause(true);});
+document.addEventListener('gamepause',clearInput);
+window.GameShell={pause(){clearInput();last=performance.now();}};
+window.MinigameScore=()=>state==='title'?null:{value:score,unit:'点',direction:'higher'};
+document.addEventListener('visibilitychange',()=>{ if(document.hidden){clearInput();if(!managed)pause(true);} });
+
+$('start').addEventListener('click',startGame);
+$('again').addEventListener('click',startGame);
+$('toTitle').addEventListener('click',toTitle);
+$('pToTitle').addEventListener('click',toTitle);
+$('resume').addEventListener('click',()=>pause(false));
+$('bPause').addEventListener('click',()=>pause(state==='play'));
+$('bQuit').addEventListener('click',toTitle);
+function setSound(on){ soundOn=on; localStorage.setItem('ia_sound',on?'on':'off'); $('bSound').textContent=on?'🔊':'🔇'; if(!on) ufoSound(false); else audio(); }
+$('bSound').addEventListener('click',()=>setSound(!soundOn)); setSound(soundOn);
+
+function setDiff(d){ diff=d; localStorage.setItem('ia_diff',d); document.querySelectorAll('.df').forEach(b=>b.classList.toggle('on',b.dataset.d===d)); showBest(); }
+function showBest(){ const h=hi(); $('best').textContent=h?`この難易度のハイスコア：${h.toLocaleString()}点`:''; }
+document.querySelectorAll('.df').forEach(b=>b.addEventListener('click',()=>setDiff(b.dataset.d)));
+setDiff(diff);
+// タイトルの点数表
+(function(){ const box=$('pts'); [['ufo','？？？'],['squid','30点'],['crab','20点'],['octo','10点']].forEach(([k,t])=>{
+  const s=IMG[k][0], c=document.createElement('canvas'); c.width=s.img.width; c.height=s.img.height; c.style.width=(s.w+PAD*2)*2.2+'px'; c.style.height=(s.h+PAD*2)*2.2+'px';
+  c.getContext('2d').drawImage(s.img,0,0); const sp=document.createElement('span'); sp.appendChild(c); sp.append(t); sp.style.color=COLORS[k]; box.appendChild(sp); }); })();
+
+resize(); requestAnimationFrame(loop);
+window.IA={get state(){return state},get aliens(){return aliens},alienPos,get player(){return player},keys,get eShots(){return eShots},get score(){return score},get lives(){return lives},get wave(){return wave},get kills(){return kills},startGame,get bunkers(){return bunkers},get ufo(){return ufo}};
+</script>
+</body>
+</html>

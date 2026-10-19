@@ -7,6 +7,9 @@
     "node": ">=22"
   },
   "scripts": {
+    "dev:maro": "node sample_game/斉藤さんゲーム/build.mjs --serve",
+    "build:maro": "tsc --noEmit && node sample_game/斉藤さんゲーム/build.mjs",
+    "test:maro": "node --test tests/maro-adventure.test.mjs && node tests/maro-adventure-browser.mjs",
     "dev:star-bounce": "node sample_game/STAR_BOUNCE/dev.mjs --serve",
     "build:star-bounce": "tsc --noEmit && node sample_game/STAR_BOUNCE/dev.mjs",
     "test:star-bounce-story": "node tests/star-bounce-story-browser.mjs",
@@ -14,12 +17,15 @@
     "build": "tsc --noEmit && node scripts/build.mjs",
     "typecheck": "tsc --noEmit",
     "test": "node --test tests/*.test.mjs",
-    "test:browser": "node tests/browser.mjs && node tests/goatinanger-browser.mjs && node tests/goatinanger-navigation-browser.mjs && node tests/goatinanger-startup-browser.mjs && node tests/star-bounce-story-browser.mjs",
+    "test:browser": "node tests/browser.mjs && node tests/goatinanger-browser.mjs && node tests/goatinanger-navigation-browser.mjs && node tests/goatinanger-startup-browser.mjs && node tests/star-bounce-story-browser.mjs && node tests/maro-adventure-browser.mjs && node tests/added-games-browser.mjs",
     "preview": "node scripts/serve.mjs",
     "new-game": "node scripts/new-game.mjs",
     "dev:goatinanger": "npm --prefix sample_game/GOATinAnger run dev",
     "build:goatinanger": "npm --prefix sample_game/GOATinAnger run build",
-    "test:goatinanger": "node --test sample_game/GOATinAnger/tests/*.test.js"
+    "test:goatinanger": "node --test sample_game/GOATinAnger/tests/*.test.js",
+    "dev:dance": "node Dance/build.mjs --serve",
+    "build:dance": "tsc --noEmit && node Dance/build.mjs",
+    "test:dance": "node --test tests/dance.test.mjs"
   },
   "dependencies": {
     "phaser": "3.90.0"

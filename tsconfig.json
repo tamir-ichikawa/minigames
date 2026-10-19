@@ -5,5 +5,5 @@
     "noEmit": true, "skipLibCheck": true, "allowJs": false,
     "resolveJsonModule": true, "esModuleInterop": true
   },
-  "include": ["src/**/*.ts", "games/**/*.ts", "sample_game/STAR_BOUNCE/**/*.ts"]
+  "include": ["src/**/*.ts", "games/**/*.ts", "sample_game/STAR_BOUNCE/**/*.ts", "sample_game/斉藤さんゲーム/**/*.ts", "Dance/**/*.ts"]
 }

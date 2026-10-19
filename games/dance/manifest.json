@@ -1,0 +1,13 @@
+{
+  "id": "dance",
+  "title": "DDE ダンスダンスエボリューション",
+  "description": "佐藤さんの4レーンリズムゲーム。2曲・3つの難易度・リバース。音に合わせて矢印を重ねよう。",
+  "thumbnail": "games/dance/thumbnail.svg",
+  "category": "action",
+  "enabled": true,
+  "engine": "phaser",
+  "module": "games/dance/index.ts",
+  "order": 46,
+  "color": "#f1dbed",
+  "icon": "🎵"
+}

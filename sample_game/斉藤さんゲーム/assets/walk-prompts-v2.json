@@ -1,0 +1,74 @@
+[
+  {
+    "actor": "maro",
+    "direction": "down",
+    "prompt": "Use case: identity-preserve. Production walking animation sprite sheet. Input is CHARACTER REFERENCE only. Make exactly EIGHT full body quadruped walking frames of Maro the plump cream Scottish Fold cat, small folded ears, golden brown round eyes, faint tan tabby marks, fluffy thick tail, gentle watercolor illustration. Head about 15 percent smaller relative to torso than the front view in previous sheet: clearly show chest and torso, natural proportions, no huge balloon head. No clothes. ONE fixed view in ALL EIGHT cells: FRONT, facing toward viewer. Landscape image 1536x1024. EXACTLY 4 columns and 2 rows, sequential reading order phases 1 through 8, no ninth character. Eight smoothly spaced phases of one looping walk: contact, lower, pass, rise, opposite contact, lower, pass, rise. Each phase must have different paw placement, subtle consistent movement, NOT repeated copies. Constant head/body size and pose direction, NO perspective or size changes. Perfectly aligned fixed baseline within each cell, character occupies only 70% of each cell so full tails, ears and paws have clear margins and never get clipped. TRUE alpha transparent, absolutely NO checkerboard, no labels, no background, no shadows, no white noise/fringe outside silhouette. Fine clean outlines, smooth shading. Preserve recognizable reference style.",
+    "source": "/Users/solidol/.codex/generated_images/01a155f2-6ad6-7e21-ad9a-67d7a6d97fe9/exec-b80d7a37-04c2-42d4-8ac6-d4a044712608.png",
+    "file": "maro-down-walk-v2.png",
+    "method": "built-in image_gen"
+  },
+  {
+    "actor": "maro",
+    "direction": "left",
+    "prompt": "Use case: identity-preserve. Production walking animation sprite sheet. Input is CHARACTER REFERENCE only. Make exactly EIGHT full body quadruped walking frames of Maro the plump cream Scottish Fold cat, small folded ears, golden brown round eyes, faint tan tabby marks, fluffy thick tail, gentle watercolor illustration. Head about 15 percent smaller relative to torso than the front view in previous sheet: clearly show chest and torso, natural proportions, no huge balloon head. No clothes. ONE fixed view in ALL EIGHT cells: strict LEFT SIDE PROFILE, facing toward left edge. Landscape image 1536x1024. EXACTLY 4 columns and 2 rows, sequential reading order phases 1 through 8, no ninth character. Eight smoothly spaced phases of one looping walk: contact, lower, pass, rise, opposite contact, lower, pass, rise. Each phase must have different paw placement, subtle consistent movement, NOT repeated copies. Constant head/body size and pose direction, NO perspective or size changes. Perfectly aligned fixed baseline within each cell, character occupies only 70% of each cell so full tails, ears and paws have clear margins and never get clipped. TRUE alpha transparent, absolutely NO checkerboard, no labels, no background, no shadows, no white noise/fringe outside silhouette. Fine clean outlines, smooth shading. Preserve recognizable reference style.",
+    "source": "/Users/solidol/.codex/generated_images/01a155f2-6ad6-7e21-ad9a-67d7a6d97fe9/exec-d53f5ea2-e073-4921-8483-ae266f84f6d4.png",
+    "file": "maro-left-walk-v2.png",
+    "method": "built-in image_gen"
+  },
+  {
+    "actor": "maro",
+    "direction": "up",
+    "prompt": "Use case: identity-preserve. Production walking animation sprite sheet. Input is CHARACTER REFERENCE only. Make exactly EIGHT full body quadruped walking frames of Maro the plump cream Scottish Fold cat, small folded ears, golden brown round eyes, faint tan tabby marks, fluffy thick tail, gentle watercolor illustration. Head about 15 percent smaller relative to torso than the front view in previous sheet: clearly show chest and torso, natural proportions, no huge balloon head. No clothes. ONE fixed view in ALL EIGHT cells: BACK/REAR, walking away from viewer, back of head and torso, absolutely no face/eyes/pendant visible. Landscape image 1536x1024. EXACTLY 4 columns and 2 rows, sequential reading order phases 1 through 8, no ninth character. Eight smoothly spaced phases of one looping walk: contact, lower, pass, rise, opposite contact, lower, pass, rise. Each phase must have different paw placement, subtle consistent movement, NOT repeated copies. Constant head/body size and pose direction, NO perspective or size changes. Perfectly aligned fixed baseline within each cell, character occupies only 70% of each cell so full tails, ears and paws have clear margins and never get clipped. TRUE alpha transparent, absolutely NO checkerboard, no labels, no background, no shadows, no white noise/fringe outside silhouette. Fine clean outlines, smooth shading. Preserve recognizable reference style.",
+    "source": "/Users/solidol/.codex/generated_images/01a155f2-6ad6-7e21-ad9a-67d7a6d97fe9/exec-1d2de909-279e-45aa-8d0a-dd1752a47e6c.png",
+    "file": "maro-up-walk-v2.png",
+    "method": "built-in image_gen"
+  },
+  {
+    "actor": "spike",
+    "direction": "down",
+    "prompt": "Use case: identity-preserve. Production walking animation sprite sheet. Input is CHARACTER REFERENCE only. Make exactly EIGHT full body quadruped walking frames of Spike the very slim black/tan Doberman, long legs, pointed ears, narrow sly eyes, black leather jacket, spiked collar, golden skull pendant. Preserve original black/tan markings and confident face. Clean cartoon linework. ONE fixed view in ALL EIGHT cells: FRONT, facing toward viewer. Landscape image 1536x1024. EXACTLY 4 columns and 2 rows, sequential reading order phases 1 through 8, no ninth character. Eight smoothly spaced phases of one looping walk: contact, lower, pass, rise, opposite contact, lower, pass, rise. Each phase must have different paw placement, subtle consistent movement, NOT repeated copies. Constant head/body size and pose direction, NO perspective or size changes. Perfectly aligned fixed baseline within each cell, character occupies only 70% of each cell so full tails, ears and paws have clear margins and never get clipped. TRUE alpha transparent, absolutely NO checkerboard, no labels, no background, no shadows, no white noise/fringe outside silhouette. Fine clean outlines, smooth shading. Preserve recognizable reference style.",
+    "source": "/Users/solidol/.codex/generated_images/01a155f2-6ad6-7e21-ad9a-67d7a6d97fe9/exec-3614c60d-c633-4858-b12f-35e28cd5fb30.png",
+    "file": "spike-down-walk-v2.png",
+    "method": "built-in image_gen"
+  },
+  {
+    "actor": "spike",
+    "direction": "left",
+    "prompt": "Use case: identity-preserve. Production walking animation sprite sheet. Input is CHARACTER REFERENCE only. Make exactly EIGHT full body quadruped walking frames of Spike the very slim black/tan Doberman, long legs, pointed ears, narrow sly eyes, black leather jacket, spiked collar, golden skull pendant. Preserve original black/tan markings and confident face. Clean cartoon linework. ONE fixed view in ALL EIGHT cells: strict LEFT SIDE PROFILE, facing toward left edge. Landscape image 1536x1024. EXACTLY 4 columns and 2 rows, sequential reading order phases 1 through 8, no ninth character. Eight smoothly spaced phases of one looping walk: contact, lower, pass, rise, opposite contact, lower, pass, rise. Each phase must have different paw placement, subtle consistent movement, NOT repeated copies. Constant head/body size and pose direction, NO perspective or size changes. Perfectly aligned fixed baseline within each cell, character occupies only 70% of each cell so full tails, ears and paws have clear margins and never get clipped. TRUE alpha transparent, absolutely NO checkerboard, no labels, no background, no shadows, no white noise/fringe outside silhouette. Fine clean outlines, smooth shading. Preserve recognizable reference style.",
+    "source": "/Users/solidol/.codex/generated_images/01a155f2-6ad6-7e21-ad9a-67d7a6d97fe9/exec-8b97c15e-0aed-4dcf-a964-989073f84478.png",
+    "file": "spike-left-walk-v2.png",
+    "method": "built-in image_gen"
+  },
+  {
+    "actor": "spike",
+    "direction": "up",
+    "prompt": "Use case: identity-preserve. Production walking animation sprite sheet. Input is CHARACTER REFERENCE only. Make exactly EIGHT full body quadruped walking frames of Spike the very slim black/tan Doberman, long legs, pointed ears, narrow sly eyes, black leather jacket, spiked collar, golden skull pendant. Preserve original black/tan markings and confident face. Clean cartoon linework. ONE fixed view in ALL EIGHT cells: BACK/REAR, walking away from viewer, back of head and torso, absolutely no face/eyes/pendant visible. Landscape image 1536x1024. EXACTLY 4 columns and 2 rows, sequential reading order phases 1 through 8, no ninth character. Eight smoothly spaced phases of one looping walk: contact, lower, pass, rise, opposite contact, lower, pass, rise. Each phase must have different paw placement, subtle consistent movement, NOT repeated copies. Constant head/body size and pose direction, NO perspective or size changes. Perfectly aligned fixed baseline within each cell, character occupies only 70% of each cell so full tails, ears and paws have clear margins and never get clipped. TRUE alpha transparent, absolutely NO checkerboard, no labels, no background, no shadows, no white noise/fringe outside silhouette. Fine clean outlines, smooth shading. Preserve recognizable reference style.",
+    "source": "/Users/solidol/.codex/generated_images/01a155f2-6ad6-7e21-ad9a-67d7a6d97fe9/exec-65b14a5e-97cb-4ee0-a13c-b504ed32adce.png",
+    "file": "spike-up-walk-v2.png",
+    "method": "built-in image_gen"
+  },
+  {
+    "actor": "knuckle",
+    "direction": "down",
+    "prompt": "Use case: identity-preserve. Production walking animation sprite sheet. Input is CHARACTER REFERENCE only. Make exactly EIGHT full body quadruped walking frames of Knuckle the short stocky tan bulldog, broad squared head, upright ears, gray muzzle, short muscular legs, black jacket, golden skull chain. Preserve exact identity and clean cartoon linework. ONE fixed view in ALL EIGHT cells: FRONT, facing toward viewer. Landscape image 1536x1024. EXACTLY 4 columns and 2 rows, sequential reading order phases 1 through 8, no ninth character. Eight smoothly spaced phases of one looping walk: contact, lower, pass, rise, opposite contact, lower, pass, rise. Each phase must have different paw placement, subtle consistent movement, NOT repeated copies. Constant head/body size and pose direction, NO perspective or size changes. Perfectly aligned fixed baseline within each cell, character occupies only 70% of each cell so full tails, ears and paws have clear margins and never get clipped. TRUE alpha transparent, absolutely NO checkerboard, no labels, no background, no shadows, no white noise/fringe outside silhouette. Fine clean outlines, smooth shading. Preserve recognizable reference style.",
+    "source": "/Users/solidol/.codex/generated_images/01a155f2-6ad6-7e21-ad9a-67d7a6d97fe9/exec-c4abd25d-bf86-4d56-bb61-5e2fc6cba4b2.png",
+    "file": "knuckle-down-walk-v2.png",
+    "method": "built-in image_gen"
+  },
+  {
+    "actor": "knuckle",
+    "direction": "left",
+    "prompt": "Use case: identity-preserve. Production walking animation sprite sheet. Input is CHARACTER REFERENCE only. Make exactly EIGHT full body quadruped walking frames of Knuckle the short stocky tan bulldog, broad squared head, upright ears, gray muzzle, short muscular legs, black jacket, golden skull chain. Preserve exact identity and clean cartoon linework. ONE fixed view in ALL EIGHT cells: strict LEFT SIDE PROFILE, facing toward left edge. Landscape image 1536x1024. EXACTLY 4 columns and 2 rows, sequential reading order phases 1 through 8, no ninth character. Eight smoothly spaced phases of one looping walk: contact, lower, pass, rise, opposite contact, lower, pass, rise. Each phase must have different paw placement, subtle consistent movement, NOT repeated copies. Constant head/body size and pose direction, NO perspective or size changes. Perfectly aligned fixed baseline within each cell, character occupies only 70% of each cell so full tails, ears and paws have clear margins and never get clipped. TRUE alpha transparent, absolutely NO checkerboard, no labels, no background, no shadows, no white noise/fringe outside silhouette. Fine clean outlines, smooth shading. Preserve recognizable reference style.",
+    "source": "/Users/solidol/.codex/generated_images/01a155f2-6ad6-7e21-ad9a-67d7a6d97fe9/exec-4addc1d2-4c3f-4ebd-a2cf-4ca15580a9fb.png",
+    "file": "knuckle-left-walk-v2.png",
+    "method": "built-in image_gen"
+  },
+  {
+    "actor": "knuckle",
+    "direction": "up",
+    "prompt": "Use case: identity-preserve. Production walking animation sprite sheet. Input is CHARACTER REFERENCE only. Make exactly EIGHT full body quadruped walking frames of Knuckle the short stocky tan bulldog, broad squared head, upright ears, gray muzzle, short muscular legs, black jacket, golden skull chain. Preserve exact identity and clean cartoon linework. ONE fixed view in ALL EIGHT cells: BACK/REAR, walking away from viewer, back of head and torso, absolutely no face/eyes/pendant visible. Landscape image 1536x1024. EXACTLY 4 columns and 2 rows, sequential reading order phases 1 through 8, no ninth character. Eight smoothly spaced phases of one looping walk: contact, lower, pass, rise, opposite contact, lower, pass, rise. Each phase must have different paw placement, subtle consistent movement, NOT repeated copies. Constant head/body size and pose direction, NO perspective or size changes. Perfectly aligned fixed baseline within each cell, character occupies only 70% of each cell so full tails, ears and paws have clear margins and never get clipped. TRUE alpha transparent, absolutely NO checkerboard, no labels, no background, no shadows, no white noise/fringe outside silhouette. Fine clean outlines, smooth shading. Preserve recognizable reference style.",
+    "source": "/Users/solidol/.codex/generated_images/01a155f2-6ad6-7e21-ad9a-67d7a6d97fe9/exec-0115ccc3-54c1-4b46-aaf3-485449039e10.png",
+    "file": "knuckle-up-walk-v2.png",
+    "method": "built-in image_gen"
+  }
+]

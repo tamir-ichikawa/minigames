@@ -1,0 +1,13 @@
+{
+  "id": "maro-adventure",
+  "title": "マロの大冒険",
+  "description": "全10ステージ。森と川の細道、ナックルの巡回、スパイクの追跡。猫のマロを導いて栞音のもとへ帰ろう。",
+  "thumbnail": "games/maro-adventure/thumbnail.svg",
+  "category": "action",
+  "enabled": true,
+  "engine": "phaser",
+  "module": "games/maro-adventure/index.ts",
+  "order": 45,
+  "color": "#e4ead7",
+  "icon": "🐈"
+}

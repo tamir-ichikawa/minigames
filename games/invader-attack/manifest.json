@@ -1,0 +1,13 @@
+{
+  "id": "invader-attack",
+  "title": "INVADER ATTACK",
+  "description": "懐かしのインベーダーシューティング。3つの難易度、壊れるトーチカ、UFOと増援に挑もう。",
+  "thumbnail": "games/invader-attack/thumbnail.svg",
+  "category": "action",
+  "enabled": true,
+  "engine": "legacy",
+  "module": "sample_game/invader-attack/invader-attack.html",
+  "order": 47,
+  "color": "#c9ebde",
+  "icon": "👾"
+}
