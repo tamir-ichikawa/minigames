@@ -12,7 +12,7 @@
   "module": "games/reflex/index.ts",
   "legacyUrl": "collection/games/reflex/index.html",
   "recommendation": {
-    "order": 9,
+    "order": 12,
     "reason": "5回のチャレンジで、反応速度を測ろう。"
   }
 }

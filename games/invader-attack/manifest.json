@@ -9,5 +9,9 @@
   "module": "sample_game/invader-attack/invader-attack.html",
   "order": 47,
   "color": "#c9ebde",
-  "icon": "👾"
+  "icon": "👾",
+  "recommendation": {
+    "order": 1,
+    "reason": "3つの難易度で楽しむ、懐かしのインベーダー。"
+  }
 }

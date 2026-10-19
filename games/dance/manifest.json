@@ -9,5 +9,9 @@
   "module": "games/dance/index.ts",
   "order": 46,
   "color": "#f1dbed",
-  "icon": "🎵"
+  "icon": "🎵",
+  "recommendation": {
+    "order": 2,
+    "reason": "2曲・3難易度。4レーンのリズムに乗ろう。"
+  }
 }

@@ -89,7 +89,7 @@ Web公開では `npm run build` で生成した **distの内容** を配布し�
 
 [Actionsの実行結果](https://github.com/tamir-ichikawa/minigames/actions) / [公開サイト](https://tamir-ichikawa.github.io/minigames/)
 
-おすすめ欄は、実装・修正・動作確認を重ねた10本を先に表示します。[選定と並べ替え](docs/recommendations.md)。
+おすすめ欄は、実装・修正・動作確認を重ねた13本を先に表示します。[選定と並べ替え](docs/recommendations.md)。
 
 ### Enzine Rythm のファイル構成
 

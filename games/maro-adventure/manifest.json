@@ -9,5 +9,9 @@
   "module": "games/maro-adventure/index.ts",
   "order": 45,
   "color": "#e4ead7",
-  "icon": "🐈"
+  "icon": "🐈",
+  "recommendation": {
+    "order": 0,
+    "reason": "猫のマロと全10ステージの冒険へ。"
+  }
 }
