@@ -73,9 +73,9 @@ try{
  await mobile.goto(`${base}/__dance.html`);await dancePhase(mobile,'title');await mobile.locator('.dance-menu [data-action=start]').click();await dancePhase(mobile,'playing');
  const cdp=await mobile.context().newCDPSession(mobile);const touch=[];
  for(const lane of [0,2]){const b=await mobile.locator(`[data-lane="${lane}"]`).boundingBox();touch.push({x:b.x+b.width/2,y:b.y+b.height*.8,id:lane+1});}
- await mobile.waitForFunction(()=>__dance.audio.time(0)>=1.98,null,{polling:'raf'});
+ await mobile.waitForFunction(()=>__dance.audio.time(0)>=1.98,null,{polling:5});
  await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:touch});await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});
- await mobile.waitForFunction(()=>__dance.audio.time(0)>=2.98,null,{polling:'raf'});await mobile.keyboard.press('KeyF');await dancePhase(mobile,'result');
+ await mobile.waitForFunction(()=>__dance.audio.time(0)>=2.98,null,{polling:5});await mobile.keyboard.press('KeyF');await dancePhase(mobile,'result');
  const result=await mobile.evaluate(()=>({counts:__dance.round.counts,score:__score.value,held:[0,1,2,3].some(l=>__dance.held(l)),best:__dance.best()}));
  assert.equal(result.counts.MISS,0);assert.ok(result.score>0);assert.equal(result.best,result.score);assert.equal(result.held,false);await fits(mobile,'.dance-surface,[data-overlay=result] button');
  await mobile.screenshot({path:path.join(output,'dance-result.png')});await mobile.evaluate(()=>__dance.destroy());assert.equal(await mobile.locator('canvas').count(),0);

@@ -17,10 +17,17 @@ const phase=async(page,name)=>page.locator(`.maro-shell[data-phase="${name}"]`).
 const begin=async page=>{await page.getByRole('button',{name:'冒険にでかける'}).click();await page.getByRole('button',{name:'この道を進む'}).click();await phase(page,'playing');};
 const rect=page=>page.locator('canvas').boundingBox();
 const pos=page=>page.evaluate(()=>({...window.__maroScene.model.pos}));
+// Remote input/screenshot latency must not consume the dog's escape window.
+// In the timed chapters only, hold model updates between real mouse commands;
+// run normal production physics while moving or waiting for a patrol position.
+async function patrolWindow(page,predicate){
+ await page.waitForFunction(source=>{const ready=Function('return ('+source+')')()();window.__holdModel=ready;return ready;},predicate.toString(),{polling:'raf',timeout:15000});
+}
 async function dragTo(page,x,y){
  const b=await rect(page),p=await pos(page);await page.mouse.move(b.x+p.x*b.width/720,b.y+p.y*b.height/820);await page.mouse.down();
  await page.mouse.move(b.x+x*b.width/720,b.y+y*b.height/820,{steps:12});
- try{await page.waitForFunction(({x,y})=>{const m=window.__maroScene.model;return m.phase==='clear'||Math.hypot(m.pos.x-x,m.pos.y-y)<1.5;},{x,y},{timeout:5000});}catch(e){console.log('Drag failure',x,y,await page.evaluate(()=>({pos:window.__maroScene.model.pos,target:window.__maroScene.model.target,phase:window.__maroScene.model.phase,paused:window.__maroScene.paused,dragging:window.__maroScene.dragging,misses:window.__maroScene.model.misses})));await page.screenshot({path:path.join(output,'failure.png')});throw e;}
+ if(process.env.MARO_INPUT_DELAY&&await page.evaluate(()=>!!window.__timedInput))await page.waitForTimeout(Number(process.env.MARO_INPUT_DELAY));
+ try{await page.waitForFunction(({x,y})=>{const m=window.__maroScene.model;if(m.misses)throw new Error('Route collision before target');const arrived=m.phase==='clear'||Math.hypot(m.pos.x-x,m.pos.y-y)<1.5;if(window.__timedInput)window.__holdModel=arrived;return arrived;},{x,y},{timeout:15000});}catch(e){console.log('Drag failure',x,y,await page.evaluate(()=>({pos:window.__maroScene.model.pos,target:window.__maroScene.model.target,phase:window.__maroScene.model.phase,paused:window.__maroScene.paused,dragging:window.__maroScene.dragging,misses:window.__maroScene.model.misses})));await page.screenshot({path:path.join(output,'failure.png')});throw e;}
  await page.mouse.up();assert.equal(await page.evaluate(()=>window.__maroScene.model.misses),0,'route should be playable without a miss');
 }
 async function bounds(page){
@@ -46,7 +53,7 @@ try{
   import {createGame} from './sample_game/斉藤さんゲーム/index';
   import {MaroScene,ASSET_ROOT} from './sample_game/斉藤さんゲーム/scene';
   import {createWebPlatform} from './src/platform/web';
-  const originalUpdate=MaroScene.prototype.update;MaroScene.prototype.update=function(t,d){const before=this.model.dog,clock=this.model.clock;originalUpdate.call(this,t,d);const after=this.model.dog,h=this.model.level.hazard;if(before&&after&&h?.kind==='chase'&&this.model.clock>=clock){const jump=Math.hypot(after.x-before.x,after.y-before.y);window.__maxDogJump=Math.max(window.__maxDogJump||0,jump);}};
+  const originalUpdate=MaroScene.prototype.update;MaroScene.prototype.update=function(t,d){if(window.__holdModel)return;const before=this.model.dog,clock=this.model.clock;originalUpdate.call(this,t,d);const after=this.model.dog,h=this.model.level.hazard;if(before&&after&&h?.kind==='chase'&&this.model.clock>=clock){const jump=Math.hypot(after.x-before.x,after.y-before.y);window.__maxDogJump=Math.max(window.__maxDogJump||0,jump);}};
   const original=MaroScene.prototype.create;MaroScene.prototype.create=function(){window.__maroScene=this;original.call(this);};
   const game=window.__maroGame=createGame();
   Promise.resolve(game.init({container:document.getElementById('app'),platform:createWebPlatform(),settings:{muted:true},assetUrl:p=>${JSON.stringify(base)}+p.replace(ASSET_ROOT,''),reportScore:s=>window.__score=s,requestExit:()=>{}})).then(()=>game.start());
@@ -94,10 +101,11 @@ try{
  for(const [x,y]of [[300,610],[300,535],[180,535],[300,535],[300,460],[570,460],[570,305],[390,305],[390,140],[610,140]])await dragTo(page,x,y);
  await phase(page,'clear');assert.equal(await page.evaluate(()=>window.__maroScene.model.stageMedals),3);await page.screenshot({path:path.join(output,'forest-clear.png')});
  report.checks.push('Real mouse drag completes forest with all medals; release, keyboard, in-play resizing, fullscreen, local/host pause keep state');console.log(report.checks.at(-1));
+ await page.evaluate(()=>{window.__timedInput=true;window.__holdModel=true;});
  await page.getByRole('button',{name:'つぎの道へ'}).click();await page.getByRole('button',{name:'この道を進む'}).click();
  await dragTo(page,360,735);await dragTo(page,360,555);await dragTo(page,285,555);
  await page.screenshot({path:path.join(output,'knuckle-bridge.png')});
- await page.waitForFunction(()=>window.__maroScene.model.dog.y>605,null,{timeout:10000});
+ await patrolWindow(page,()=>{const m=window.__maroScene.model;return m.dog.y>605&&(m.clock*88)%810<405;});
  for(const [x,y]of [[360,555],[360,375],[435,375],[360,375],[360,130],[580,130]])await dragTo(page,x,y);
  await phase(page,'clear');assert.equal(await page.evaluate(()=>window.__maroScene.model.stageMedals),3);
  await page.getByRole('button',{name:'つぎの道へ'}).click();await page.getByRole('button',{name:'この道を進む'}).click();
@@ -111,11 +119,11 @@ try{
   assert.equal(await page.evaluate(()=>window.__maroScene.model.stage),stage);
   if(stage===6){
    await dragTo(page,100,430);
-   await page.waitForFunction(()=>{const m=window.__maroScene.model;return m.dog.x>270&&m.dog.x<340&&(m.clock*96)%660<330;},null,{timeout:10000});
+   await patrolWindow(page,()=>{const m=window.__maroScene.model;return m.dog.x>270&&m.dog.x<340&&(m.clock*96)%660<330;});
    for(const [x,y]of [[260,430],[260,510]])await dragTo(page,x,y);
-   await page.waitForFunction(()=>{const m=window.__maroScene.model;return m.dog.x>440&&m.dog.x<460&&(m.clock*96)%660<330;},null,{timeout:10000});
+   await patrolWindow(page,()=>{const m=window.__maroScene.model;return m.dog.x>440&&m.dog.x<460&&(m.clock*96)%660<330;});
    for(const [x,y]of [[260,430],[440,430],[440,350]])await dragTo(page,x,y);
-   await page.waitForFunction(()=>{const m=window.__maroScene.model;return m.dog.x<370&&(m.clock*96)%660>330;},null,{timeout:10000});
+   await patrolWindow(page,()=>{const m=window.__maroScene.model;return m.dog.x<370&&(m.clock*96)%660>330;});
    for(const [x,y]of [[440,430],[620,430],[620,130],[470,130]])await dragTo(page,x,y);
   }else{
    const route=await page.evaluate(()=>window.__maroScene.model.level.roads[0].points.slice(1));
@@ -135,7 +143,7 @@ try{
  await page.screenshot({path:path.join(output,'reunion-ending.png')});await bounds(page);
  report.checks.push('All ten chapters completed through real pointer input: Knuckle waiting bay, Spike chase/escape, thirty medals, reunion, best record');console.log(report.checks.at(-1));
  if(process.env.MARO_RECORD)await finishRecording(page,path.resolve('sample_game/斉藤さんゲーム/previews'));
- await page.evaluate(()=>window.__maroGame.reset());await phase(page,'title');assert.equal(await page.locator('canvas').count(),1);assert.match(await page.locator('.maro-panel').innerText(),/いちばんの冒険/);
+ await page.evaluate(()=>{window.__timedInput=false;window.__holdModel=false;window.__maroGame.reset();});await phase(page,'title');assert.equal(await page.locator('canvas').count(),1);assert.match(await page.locator('.maro-panel').innerText(),/いちばんの冒険/);
  await begin(page);
  // Miss feedback and automatic retry, then canceled touch/rotation in a true mobile context.
  const b=await rect(page),p=await pos(page);await page.mouse.move(b.x+p.x*b.width/720,b.y+p.y*b.height/820);await page.mouse.down();await page.mouse.move(b.x+(p.x+180)*b.width/720,b.y+p.y*b.height/820);await phase(page,'miss');await page.mouse.up();await page.waitForTimeout(380);assert.equal(await page.evaluate(()=>window.__maroScene.bubble.text),'ぽすっ…');await page.screenshot({path:path.join(output,'miss-feedback.png')});await phase(page,'playing');assert.equal(await page.locator('.maro-shell').getAttribute('data-misses'),'1');
