@@ -1,0 +1,17 @@
+{
+  "id": "rallypeke",
+  "title": "ラリーぺけ",
+  "description": "ピンクの車で迷路を走り、10本の旗を集めよう。シャボンで追手を止め、燃料を補給して次のステージへ。",
+  "thumbnail": "games/rallypeke/thumbnail.svg",
+  "category": "action",
+  "enabled": true,
+  "engine": "legacy",
+  "module": "sample_game/rallypeke/rallypeke.html",
+  "order": 50,
+  "color": "#ff6fae",
+  "icon": "🚗",
+  "recommendation": {
+    "order": 1,
+    "reason": "シャボンで追手を止め、迷路の旗を集めよう。"
+  }
+}

@@ -28,7 +28,7 @@ async function compile() {
   for (const name of ['sky-jump.js','goat-kid.js']) await cp(path.join(root, 'scripts', name), path.join(out, 'scripts', name));
   await mkdir(path.join(out, 'sample_game'), { recursive: true });
   for (const name of ['15-puzzle.html','whack-a-mole.html','memory-match.html']) await cp(path.join(root, 'sample_game', name), path.join(out, 'sample_game', name));
-  await cp(path.join(root, 'sample_game/invader-attack'), path.join(out, 'sample_game/invader-attack'), {recursive:true});
+  for (const name of ['invader-attack','pakkunman','rallypeke']) await cp(path.join(root, 'sample_game', name), path.join(out, 'sample_game', name), {recursive:true,filter:file=>!file.endsWith('.DS_Store')});
   await mkdir(path.join(out, 'src/launcher'), { recursive: true });
   await cp(path.join(root, 'src/launcher/player.css'), path.join(out, 'src/launcher/player.css'));
   if (games.some(game => game.id === 'goatinanger')) await buildGoatInAnger(out);
@@ -78,8 +78,8 @@ if (process.argv.includes('--serve')) {
     if (!filename || /^Dance\/(\.build|original)(\/|$)/.test(filename)) return;
     const maroSource = /^sample_game\/斉藤さんゲーム\//.test(filename.normalize('NFC')) &&
       !/^sample_game\/斉藤さんゲーム\/(\.build|素材)(\/|$)/.test(filename.normalize('NFC')) && !filename.endsWith('.DS_Store');
-    const gameSource = maroSource || /^sample_game\/(GOATinAnger|STAR_BOUNCE|invader-attack)\//.test(filename) &&
-      !/^sample_game\/(GOATinAnger|STAR_BOUNCE|invader-attack)\/(node_modules|dist|\.build|素材|sozai)(\/|$)/.test(filename) && !filename.endsWith('.DS_Store');
+    const gameSource = maroSource || /^sample_game\/(GOATinAnger|STAR_BOUNCE|invader-attack|pakkunman|rallypeke)\//.test(filename) &&
+      !/^sample_game\/(GOATinAnger|STAR_BOUNCE|invader-attack|pakkunman|rallypeke)\/(node_modules|dist|\.build|素材|sozai)(\/|$)/.test(filename) && !filename.endsWith('.DS_Store');
     if (!gameSource && /^(dist|node_modules|\.git|\.test-output|sample_game|deliverables|backups)(\/|$)/.test(filename)) return;
     clearTimeout(timer); timer = setTimeout(rebuild, 180);
   });

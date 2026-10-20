@@ -46,6 +46,9 @@ jobs:
       - name: Test Maro adventure in the browser
         if: ${{ !inputs.skip_browser_checks }}
         run: node tests/maro-adventure-browser.mjs
+      - name: Test Pakkunman and Rallypeke in the browser
+        if: ${{ !inputs.skip_browser_checks }}
+        run: node tests/pakkun-rally-browser.mjs
       - name: Test existing games in the browser
         if: ${{ !inputs.skip_browser_checks }}
         run: npm run test:browser:existing

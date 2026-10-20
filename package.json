@@ -26,7 +26,7 @@
     "dev:dance": "node Dance/build.mjs --serve",
     "build:dance": "tsc --noEmit && node Dance/build.mjs",
     "test:dance": "node --test tests/dance.test.mjs",
-    "test:browser:new": "node tests/added-games-browser.mjs && node tests/maro-adventure-browser.mjs",
+    "test:browser:new": "node tests/added-games-browser.mjs && node tests/maro-adventure-browser.mjs && node tests/pakkun-rally-browser.mjs",
     "test:browser:existing": "node tests/browser.mjs && node tests/goatinanger-browser.mjs && node tests/goatinanger-navigation-browser.mjs && node tests/goatinanger-startup-browser.mjs && node tests/star-bounce-story-browser.mjs"
   },
   "dependencies": {

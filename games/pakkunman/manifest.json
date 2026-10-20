@@ -1,0 +1,17 @@
+{
+  "id": "pakkunman",
+  "title": "ぱっくんまん",
+  "description": "迷路のドットを集め、おばけをかわそう。パワーえさとフルーツ、3つの難易度で楽しむアクション。",
+  "thumbnail": "games/pakkunman/thumbnail.svg",
+  "category": "action",
+  "enabled": true,
+  "engine": "legacy",
+  "module": "sample_game/pakkunman/pakkunman.html",
+  "order": 49,
+  "color": "#ffe14d",
+  "icon": "🟡",
+  "recommendation": {
+    "order": 0,
+    "reason": "パワーえさで逆転！迷路を駆け抜けるドット集め。"
+  }
+}

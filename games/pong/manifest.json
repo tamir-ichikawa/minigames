@@ -12,7 +12,7 @@
   "module": "games/pong/index.ts",
   "legacyUrl": "collection/games/pong/index.html",
   "recommendation": {
-    "order": 5,
+    "order": 7,
     "reason": "7人の相棒・必殺技・GOOD／DARKの物語。"
   }
 }
